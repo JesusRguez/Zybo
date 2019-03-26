@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/xmms2-plugin-pulse
+/usr/share/doc/xmms2-plugin-pulse/copyright
+/usr/share/doc/xmms2-plugin-pulse/NEWS.Debian.gz
+/usr/share/doc/xmms2-plugin-pulse/changelog.Debian.gz
+/usr/lib
+/usr/lib/xmms2
+/usr/lib/xmms2/libxmms_pulse.so

@@ -1,0 +1,12 @@
+44c19171dd00c281bf863178dcb591ae  usr/bin/obex-folder-listing
+5542728bc585d37fbf92fe046acc8ccb  usr/bin/obexpush_atd
+dfc92caec1b415302e107027c577f98c  usr/bin/obexpushd
+b557b999e1bc8589feeb2f39a02e6266  usr/share/doc/obexpushd/README
+641c9c028e327de57bc2d414e2e406f9  usr/share/doc/obexpushd/TODO
+1783c07cefb164b4a41bd52c7d62626a  usr/share/doc/obexpushd/changelog.Debian.gz
+4a104589f10126e178632a3038a196ed  usr/share/doc/obexpushd/changelog.gz
+dc456f0726537c02ae69fe296a345b31  usr/share/doc/obexpushd/copyright
+2379a0aa268a5e7e4350401f4fa72d70  usr/share/doc/obexpushd/examples/file_storage.sh
+7e325b03e48837e90aba73b620a5c01b  usr/share/man/man1/obex-folder-listing.1.gz
+ee128d34c4a37cafc0c0cbf1c6e7f877  usr/share/man/man1/obexpush_atd.1.gz
+2fe1941914da41129668343ee381c362  usr/share/man/man1/obexpushd.1.gz

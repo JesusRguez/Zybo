@@ -1,0 +1,10 @@
+7ebb335aefa207032e3204c2d4bc150a  usr/bin/evemu-describe
+ff7f78716df3dec6a2df48d49cd203f7  usr/bin/evemu-device
+dd235a1d8be8387ad3a5a6660f5ce032  usr/bin/evemu-event
+b0c51f6b3ba652c8722c299a94379f3e  usr/bin/evemu-play
+7ebb335aefa207032e3204c2d4bc150a  usr/bin/evemu-record
+e84a9f5ab3fd0668e1755169c752f216  usr/share/doc/evemu-tools/changelog.Debian.gz
+c286334be22e8f5026a779a0ddc6c79d  usr/share/doc/evemu-tools/changelog.gz
+dedfcf420843a6f1afa162dbb08c9846  usr/share/doc/evemu-tools/copyright
+adeb928c235cd4a05c1395d86c2ff34b  usr/share/man/man1/evemu-describe.1.gz
+089d0d1ec56602bec905596bb227f7a8  usr/share/man/man1/evemu-device.1.gz

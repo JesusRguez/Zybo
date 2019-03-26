@@ -1,0 +1,104 @@
+Starting the OBEX-Push service
+==============================
+
+Simply run:
+$ obexpushd
+
+It will automatically listen on bluetooth as nothing was specified.
+If you also want it to listen to default IrDA identifier, run:
+$ obexpushd -B -I
+
+If your remote device sends files with the "OBEX:IrXfer"
+identifier instead of using the "OBEX" identifier, you can
+_additionally_ listen to it:
+$ obexpush -B -IIrXfer
+
+
+Stopping the OBEX-Push service
+==============================
+
+I suggest to run:
+$ pkill -u $USER obexpushd
+
+As an alternative, let obexpushd create a pidfile and use that:
+$ kill $(cat pidfile)
+
+Note that it will not automatically be killed when you log out!
+
+
+Why does another OBEX-Push listener get the files?
+=================================================
+
+This can not be influenced as it depends on the sending entity.
+Usually, the service with the lower channel is contacted.
+Obexpushd uses channel 9 by default but you can change that:
+$ obexpushd -B3
+
+will listen to channel 3 instead of channel 9.
+You can check local service with
+$ sdptool browse local
+
+Some versions of Bluez contain a buggy SDP server that does not
+deregister entries on disconnect or close, automatically. However,
+some programs rely on that previously working and documented behaviour,
+e.g. kdebluetooth. As a work-around, either do not use those programs
+or restart the SDP server after doing so.
+Bluez-3.36 is known to fix those problem, thus it is _strongly_
+suggested to use this version. Since this bluez version also ships a
+obex-data-server, this may conflict with running obexpushd.
+
+
+Where does it save the files to?
+================================
+
+The files are stored in the directory where you start it.
+
+
+Some files are not stored, what happens?
+========================================
+
+The file may already exist. Existing files are not overwritten.
+Start obexpushd in non-detached mode (option -n) to see what
+happens.
+
+
+My OBEX client hardware does not work with obexpushd.
+How can I see what is going wrong?
+=====================================================
+
+First start obexpushd with the debug mode (option -d). You may
+additionally start a dump program for your bit transport layer:
+bluetooth: hcidump
+irda: irdadump
+tcp: tcpdump or wireshark
+
+The combination makes it often possible to see where a problem may be.
+A comparison with a working hardware makes it even easier.
+
+
+Even in debug mode, nothing happens when sending with bluetooth.
+================================================================
+
+Make sure that ISCAN and PSCAN are enabled for your blueooth dongle.
+With bluez, hciconfig is the tool to take a look at the current
+settings (root only) or via DBUS.
+Working settings for bluez-3.xx:
+* install bluez-utils (especially hcid)
+* configure hcid.conf and set (some options have alternative
+  settings that also work):
+      options {
+          autoinit yes;
+          security auto;
+          passkey "0000";
+          pairing multi;
+      }
+      device {
+          class 0x3e0100
+          iscan enable;
+          pscan enable;
+          discovto 0;
+          lm accept;
+      }
+* remove /var/lib/bluetooth/*/config (with /var/lib/bluetooth being the
+  runtime configuration directiory)
+* restart hcid

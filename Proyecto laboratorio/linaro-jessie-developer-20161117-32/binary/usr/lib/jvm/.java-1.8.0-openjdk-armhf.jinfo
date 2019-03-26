@@ -1,0 +1,47 @@
+name=java-8-openjdk-armhf
+alias=java-1.8.0-openjdk-armhf
+priority=1063
+section=main
+
+hl rmid /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/rmid
+hl java /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/java
+hl keytool /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/keytool
+hl jjs /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/jjs
+hl pack200 /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/pack200
+hl rmiregistry /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/rmiregistry
+hl unpack200 /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/unpack200
+hl orbd /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/orbd
+hl servertool /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/servertool
+hl tnameserv /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/tnameserv
+hl jexec /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/jexec
+jre policytool /usr/lib/jvm/java-8-openjdk-armhf/jre/bin/policytool
+jdkhl idlj /usr/lib/jvm/java-8-openjdk-armhf/bin/idlj
+jdkhl jdeps /usr/lib/jvm/java-8-openjdk-armhf/bin/jdeps
+jdkhl wsimport /usr/lib/jvm/java-8-openjdk-armhf/bin/wsimport
+jdkhl rmic /usr/lib/jvm/java-8-openjdk-armhf/bin/rmic
+jdkhl jinfo /usr/lib/jvm/java-8-openjdk-armhf/bin/jinfo
+jdkhl jsadebugd /usr/lib/jvm/java-8-openjdk-armhf/bin/jsadebugd
+jdkhl native2ascii /usr/lib/jvm/java-8-openjdk-armhf/bin/native2ascii
+jdkhl jstat /usr/lib/jvm/java-8-openjdk-armhf/bin/jstat
+jdkhl javadoc /usr/lib/jvm/java-8-openjdk-armhf/bin/javadoc
+jdkhl javah /usr/lib/jvm/java-8-openjdk-armhf/bin/javah
+jdkhl jstack /usr/lib/jvm/java-8-openjdk-armhf/bin/jstack
+jdkhl jrunscript /usr/lib/jvm/java-8-openjdk-armhf/bin/jrunscript
+jdkhl javac /usr/lib/jvm/java-8-openjdk-armhf/bin/javac
+jdkhl jhat /usr/lib/jvm/java-8-openjdk-armhf/bin/jhat
+jdkhl javap /usr/lib/jvm/java-8-openjdk-armhf/bin/javap
+jdkhl jar /usr/lib/jvm/java-8-openjdk-armhf/bin/jar
+jdkhl xjc /usr/lib/jvm/java-8-openjdk-armhf/bin/xjc
+jdkhl schemagen /usr/lib/jvm/java-8-openjdk-armhf/bin/schemagen
+jdkhl jps /usr/lib/jvm/java-8-openjdk-armhf/bin/jps
+jdkhl extcheck /usr/lib/jvm/java-8-openjdk-armhf/bin/extcheck
+jdkhl jmap /usr/lib/jvm/java-8-openjdk-armhf/bin/jmap
+jdkhl jstatd /usr/lib/jvm/java-8-openjdk-armhf/bin/jstatd
+jdkhl jdb /usr/lib/jvm/java-8-openjdk-armhf/bin/jdb
+jdkhl serialver /usr/lib/jvm/java-8-openjdk-armhf/bin/serialver
+jdkhl wsgen /usr/lib/jvm/java-8-openjdk-armhf/bin/wsgen
+jdkhl jcmd /usr/lib/jvm/java-8-openjdk-armhf/bin/jcmd
+jdkhl jarsigner /usr/lib/jvm/java-8-openjdk-armhf/bin/jarsigner
+jdk appletviewer /usr/lib/jvm/java-8-openjdk-armhf/bin/appletviewer
+jdk jconsole /usr/lib/jvm/java-8-openjdk-armhf/bin/jconsole
+plugin mozilla-javaplugin.so /usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/IcedTeaPlugin.so

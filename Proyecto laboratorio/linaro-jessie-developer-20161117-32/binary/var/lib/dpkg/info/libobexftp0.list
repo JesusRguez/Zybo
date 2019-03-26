@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libobexftp0
+/usr/share/doc/libobexftp0/copyright
+/usr/share/doc/libobexftp0/changelog.gz
+/usr/share/doc/libobexftp0/changelog.Debian.gz
+/usr/share/doc/libobexftp0/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/libobexftp.so.0.3.0
+/usr/lib/libobexftp.so.0

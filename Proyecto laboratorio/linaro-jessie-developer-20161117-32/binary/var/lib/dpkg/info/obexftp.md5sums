@@ -1,0 +1,8 @@
+2463a71603ddd707f62bfd82b2d9f2f5  usr/bin/obexftp
+5c9665322de902d1e33fdba7c0e7d163  usr/bin/obexftpd
+ac2f5be9237ce09a2313198d6e8b4b36  usr/share/doc/obexftp/changelog.Debian.armhf.gz
+c78828c1d35b8cceb35283f8eb0b28b2  usr/share/doc/obexftp/changelog.Debian.gz
+4179019257f24916e3f91950dabfaeb1  usr/share/doc/obexftp/changelog.gz
+3ba2ecbcf3ab9ddc4b453c3eac10ddcf  usr/share/doc/obexftp/copyright
+ed42311f4b238e702769da76336358ba  usr/share/man/man1/obexftp.1.gz
+74cad3e76b16f9582176a9084606bd9c  usr/share/man/man1/obexftpd.1.gz

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmraa.so.0.10.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmraa0
+/usr/share/doc/libmraa0/changelog.gz
+/usr/share/doc/libmraa0/changelog.Debian.gz
+/usr/share/doc/libmraa0/copyright
+/usr/lib/arm-linux-gnueabihf/libmraa.so.0

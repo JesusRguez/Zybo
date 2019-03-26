@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/libsoc
+/usr/lib/python2.7/dist-packages/libsoc/gpio.py
+/usr/lib/python2.7/dist-packages/libsoc/_libsoc.arm-linux-gnueabihf.so
+/usr/lib/python2.7/dist-packages/libsoc/__init__.py
+/usr/lib/python2.7/dist-packages/libsoc/i2c.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-libsoc
+/usr/share/doc/python-libsoc/changelog.gz
+/usr/share/doc/python-libsoc/changelog.Debian.gz
+/usr/share/doc/python-libsoc/copyright

@@ -1,0 +1,5 @@
+cad086e5298b1daa495d7f07facaa26b  usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/jamvm/Xusage.txt
+8180d1e47d6dcf6a9d3f7ec5caa0234c  usr/lib/jvm/java-8-openjdk-armhf/jre/lib/arm/jamvm/libjvm.so
+a0edb6b3e582c85d92e80679139ba417  usr/share/doc/openjdk-8-jre-jamvm/changelog.Debian.gz
+02df8199f23a36d8a8e0be86a6a88e1c  usr/share/doc/openjdk-8-jre-jamvm/copyright
+bfe4b9c126e2d0cf5a8239e9a0c17015  usr/share/lintian/overrides/openjdk-8-jre-jamvm

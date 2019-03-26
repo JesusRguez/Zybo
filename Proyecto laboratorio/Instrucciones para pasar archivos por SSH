@@ -1,0 +1,5 @@
+Enviar archivo:
+scp archivoLocal zyboX@192.168.1.X:/home/zyboX/archivoServidor
+
+Recibir archivo
+scp zyboX@192.168.1.X:/home/zyboX/archivoServidor archivoLocal

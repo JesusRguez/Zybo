@@ -1,0 +1,8 @@
+d25f10d5ed2988daa84e1d495ea75bd3  etc/ld.so.conf.d/fakeroot-arm-linux-gnueabihf.conf
+22013f475206d13483f97a292368fae4  usr/share/doc/libfakeroot/README
+8ad0d0741d3649ca5ab4b47d62465275  usr/share/doc/libfakeroot/README.saving
+ad0b04e0858f5ef21e557263f7193814  usr/share/doc/libfakeroot/DEBUG
+50a032ba9e5dbf2732170b0f75db2a80  usr/share/doc/libfakeroot/changelog.Debian.gz
+37dc7f657a7c4e0ddf1756921ea259ac  usr/share/doc/libfakeroot/copyright
+df4e12c6dba0eb856697188d3c538d72  usr/lib/arm-linux-gnueabihf/libfakeroot/libfakeroot-tcp.so
+84e7c0b6853b7ab961a7f9698ed754bf  usr/lib/arm-linux-gnueabihf/libfakeroot/libfakeroot-sysv.so

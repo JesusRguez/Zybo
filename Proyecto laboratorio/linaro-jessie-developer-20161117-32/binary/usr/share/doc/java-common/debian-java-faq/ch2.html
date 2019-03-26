@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Java FAQ. - Java Development</title>
+
+<link href="index.html" rel="start">
+<link href="ch1.html" rel="prev">
+<link href="ch3.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Java Development">
+<link href="ch3.html" rel="chapter" title="3 Managing Java (for users and administrators)">
+<link href="ch4.html" rel="chapter" title="4 Java Virtual Machines (JVM)">
+<link href="ch-browser-java.html" rel="chapter" title="5 Java Plugins for Browsers">
+<link href="ch6.html" rel="chapter" title="6 Java Servlets">
+<link href="ch7.html" rel="chapter" title="7 Java Policy">
+<link href="ch8.html" rel="chapter" title="8 Other Java alternatives for Debian">
+<link href="ch1.html#s1.1" rel="section" title="1.1 Introduction to this FAQ">
+<link href="ch1.html#s1.2" rel="section" title="1.2 Location of this FAQ">
+<link href="ch1.html#s-bugs" rel="section" title="1.3 Sending bugs on this FAQ">
+<link href="ch1.html#s1.4" rel="section" title="1.4 What is Java?">
+<link href="ch1.html#s1.5" rel="section" title="1.5 Where can I ask questions about Java on Debian?">
+<link href="ch1.html#s-moreinfo" rel="section" title="1.6 Complementary information">
+<link href="ch1.html#s-pending" rel="section" title="1.7 Uncovered issues">
+<link href="ch2.html#s2.1" rel="section" title="2.1 What full-fledged Java development platforms are available in Debian?">
+<link href="ch2.html#s-free" rel="section" title="2.2 What free platforms are there and how can I contribute?">
+<link href="ch2.html#s-license-concerns" rel="section" title="2.3 Questions on platforms and license concerns">
+<link href="ch2.html#s2.4" rel="section" title="2.4 Making Debian packages for Java programs.">
+<link href="ch4.html#s4.1" rel="section" title="4.1 What JVMs are available in Debian?">
+<link href="ch4.html#s4.2" rel="section" title="4.2 What Java Compilers are available in Debian?">
+<link href="ch4.html#s4.3" rel="section" title="4.3 What API do these JVMs provide?">
+<link href="ch4.html#s4.4" rel="section" title="4.4 Are there known problems?">
+<link href="ch4.html#s4.5" rel="section" title="4.5 How can I use the proprietary version of the JDK/JRE from Oracle as a Debian package?">
+<link href="ch4.html#s4.6" rel="section" title="4.6 Do I need a JVM to run a Java program in Debian?">
+<link href="ch6.html#s6.1" rel="section" title="6.1 How can I make Java servlets work?">
+<link href="ch7.html#s7.1" rel="section" title="7.1 Is there a Java policy for Debian?">
+<link href="ch7.html#s7.2" rel="section" title="7.2 Are there holes in the Java Policy?">
+<link href="ch8.html#s8.1" rel="section" title="8.1 Java programs not yet available on Debian">
+<link href="ch2.html#s-java6" rel="subsection" title="2.3.1 Java 6 and 7">
+<link href="ch2.html#s-openjdk" rel="subsection" title="2.3.2 Oracle proprietary JVM">
+<link href="ch2.html#s2.4.1" rel="subsection" title="2.4.1 Can the package go into main?">
+<link href="ch2.html#s2.4.2" rel="subsection" title="2.4.2 Is there a good example Debian package?">
+<link href="ch2.html#s2.4.3" rel="subsection" title="2.4.3 What tools are available to make maintaining a Java packages easier?">
+<link href="ch2.html#s2.4.4" rel="subsection" title="2.4.4 Linking package Javadoc to system javadoc.">
+<link href="ch4.html#s4.6.1" rel="subsection" title="4.6.1 How do I compile to native code?">
+
+</head>
+
+<body>
+
+<p><a name="ch2"></a></p>
+<hr>
+
+<p>
+[ <a href="ch1.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ 2 ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch-browser-java.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch3.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Java FAQ.
+<br>Chapter 2 - Java Development
+</h1>
+
+<hr>
+
+<hr>
+
+<h2 id="s2.1">2.1 What full-fledged Java development platforms are available in Debian?</h2>
+
+<p>
+If you are looking for an integrated, java virtual machine, compiler and
+runtime environment Debian does provide them.  Of course that would depend on
+the Debian GNU/Linux version you are using, generally speaking they would be:
+</p>
+<ul>
+<li>
+<p>
+Sun's OpenJDK 6, available since the Debian 5.0 <em>Lenny</em> release in the
+<em>main</em> section.
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Oracle's OpenJDK 7, available since the Debian 7.0 <em>Wheezy</em> release in
+the <em>main</em> section.
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+The combination GCJ, GIJ, and Classpath in the <em>main</em> section.
+</p>
+</li>
+</ul>
+
+<p>
+It is recommended to install one of the default-jdk or default-jre meta
+packages which either installs OpenJDK or GCJ depending on the architecture and
+Debian version.
+</p>
+
+<hr>
+
+<h2 id="s-free">2.2 What free platforms are there and how can I contribute?</h2>
+
+<p>
+Please help one of the Free Java implementations if you want to use Java in
+Debian.  There are a lot of projects that you can choose from:
+</p>
+<ul>
+<li>
+<p>
+openjdk: <code><a
+href="http://openjdk.java.net/">http://openjdk.java.net/</a></code>
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+gcj and libgcj: <code><a
+href="http://gcc.gnu.org/java/">http://gcc.gnu.org/java/</a></code>
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Classpath <code><a
+href="http://www.classpath.org">http://www.classpath.org</a></code>.  Most of
+the Standard classes for Java 1.2 (except Swing and RMI) are implemented by the
+ClassPath project, it tries to build an alternative to jdk's 1.2 core classes.
+(NB: This was removed from Squeeze)
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Mauve <code><a
+href="http://sources.redhat.com/mauve/">http://sources.redhat.com/mauve/</a></code>
+is a free suite to test if these tools are 'compliant'.
+</p>
+</li>
+</ul>
+
+<p>
+Most free Java development is grouped under the <code><a
+href="http://www.gnu.org/software/java/">Free Java Project</a></code>.
+</p>
+
+<hr>
+
+<h2 id="s-license-concerns">2.3 Questions on platforms and license concerns</h2>
+
+<hr>
+
+<h3 id="s-java6">2.3.1 Java 6 and 7</h3>
+
+<p>
+There are binary packages available for the Java 6 and Java 7 platforms since
+the Debian 7.0 ('wheezy') release.  Once this is done and you have updated your
+package database.  You can either install the Java development kit:
+</p>
+
+<pre>
+     apt-get install openjdk-6-jdk
+</pre>
+
+<p>
+or the Java runtime environment:
+</p>
+
+<pre>
+     apt-get install openjdk-6-jre
+</pre>
+
+<p>
+Similarly, you can install the Java 7 development kit:
+</p>
+
+<pre>
+     apt-get install openjdk-7-jdk
+</pre>
+
+<p>
+or the Java 7 runtime environment:
+</p>
+
+<pre>
+     apt-get install openjdk-7-jre
+</pre>
+
+<p>
+You might want to update the alternatives system to have Sun's tools as the
+default:
+</p>
+
+<pre>
+     update-java-alternatives -s java-1.6.0-openjdk-amd64
+</pre>
+
+<p>
+Or for java 7:
+</p>
+
+<pre>
+     update-java-alternatives -s java-1.7.0-openjdk-amd64
+</pre>
+
+<hr>
+
+<h3 id="s-openjdk">2.3.2 Oracle proprietary JVM</h3>
+
+<p>
+Since the version 7 of the OpenJDK, the proprietary JVM developments are done
+on the OpenJDK.  That means that the OpenJDK is strongly tested and high
+quality.
+</p>
+
+<p>
+However, some users might want to use the Oracle JVM for the proprietary
+extensions (for example: the browser plugin).  For such need, Debian provides a
+tool called <code><a
+href="http://packages.debian.org/sid/java-package">java-package</a></code>.
+The program make-jpkg will take an upstream archive and convert it to a Debian
+package.  For example:
+</p>
+
+<pre>
+         make-jpkg jdk-6u31-linux-x64.bin
+</pre>
+
+<p>
+For more information see <code><a
+href="http://www.oracle.com/technetwork/java/index.html">Oracle Technology
+Network Java</a></code>.
+</p>
+
+<hr>
+
+<h2 id="s2.4">2.4 Making Debian packages for Java programs.</h2>
+
+<hr>
+
+<h3 id="s2.4.1">2.4.1 Can the package go into main?</h3>
+
+<p>
+Yes, <em>but only if</em> it can be build and run with Java programs/tools in
+main, and if it has a Debian compliant open source license.  If it needs
+programs from contrib or non-free, then is <em>must</em> go into contrib or
+non-free, depending on the license of the program itself.
+</p>
+
+<hr>
+
+<h3 id="s2.4.2">2.4.2 Is there a good example Debian package?</h3>
+
+<p>
+There are many Debian packages of both Java applications and libraries.  These
+may serve as an good starting point, as it can serve as an example for making a
+new Debian package.
+</p>
+
+<p>
+A good start would be to check out the pkg-java project on Alioth: <code><a
+href="http://pkg-java.alioth.debian.org/">http://pkg-java.alioth.debian.org/</a></code>.
+</p>
+
+<p>
+Note that there are many ways to make a Debian package, making use of Ant or
+Makefiles does not really matter.  But, some tips for good practice are given
+on the pkg-java page: <code><a
+href="http://pkg-java.alioth.debian.org/developers.html#rules">http://pkg-java.alioth.debian.org/developers.html#rules</a></code>
+and <code><a
+href="http://pkg-java.alioth.debian.org/building.html">http://pkg-java.alioth.debian.org/building.html</a></code>.
+</p>
+
+<hr>
+
+<h3 id="s2.4.3">2.4.3 What tools are available to make maintaining a Java packages easier?</h3>
+
+<p>
+Both cdbs and debhelper (dh7) have support for ant scripts.  There are also a
+number of specialized tools or build helpers.  Have a look at
+<code>javahelper</code> or <code>maven-debian-helper</code>.
+<code>gcj-jdk</code> also has a dh_javadoc tool.
+</p>
+
+<hr>
+
+<h3 id="s2.4.4">2.4.4 Linking package Javadoc to system javadoc.</h3>
+
+<p>
+The java-policy mandates that documentation must be linked with the javadoc
+installed on the system.  This can be done by passing javadoc the
+&quot;-link&quot; argument or by using the &lt;link&gt; tag in ant.  An
+example:
+</p>
+
+<pre>
+     # command line example of linking against system doc.
+     javadoc -link /usr/share/doc/default-jdk-doc/api [other arguments]
+     
+     &lt;!-- Ant example of linking against system doc --&gt;
+     &lt;javadoc [attributes]&gt;
+         &lt;link href=&quot;/usr/share/doc/default-jdk-doc/api/&quot; /&gt;
+         [other tags]
+     &lt;/javadoc&gt;
+</pre>
+
+<p>
+The documentation must be installed at the time the linking is done; so in the
+example cases above the package would need a Build-Depends or a
+Build-Depends-Indep on <code>default-jdk-doc</code>.
+</p>
+
+<p>
+Here is a short list of packages that can be used for reference:
+</p>
+<ul>
+<li>
+<p>
+<code>commons-jci</code>
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+<code>ow-util-ant-tasks</code>
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+<code>libhamcrest-java</code>
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+<code>libfreemarker-java</code>
+</p>
+</li>
+</ul>
+
+<hr>
+
+<p>
+[ <a href="ch1.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ 2 ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch-browser-java.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch3.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Java FAQ.
+</p>
+
+<address>
+$Revision: 7831 $, $Date: 2013-06-05 21:17:15 +0100 $<br>
+<br>
+Torsten Werner <code><a href="mailto:twerner@debian.org">mailto:twerner@debian.org</a></code><br>
+Niels Thykier <code><a href="mailto:niels@thykier.net">mailto:niels@thykier.net</a></code><br>
+Javier Fernández-Sanguino Peña <code><a href="mailto:jfs@debian.org">mailto:jfs@debian.org</a></code><br>
+Sylvestre Ledru <code><a href="mailto:sylvestre@debian.org">mailto:sylvestre@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

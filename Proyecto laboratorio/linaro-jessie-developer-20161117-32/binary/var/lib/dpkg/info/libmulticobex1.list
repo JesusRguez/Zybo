@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmulticobex1
+/usr/share/doc/libmulticobex1/copyright
+/usr/share/doc/libmulticobex1/changelog.gz
+/usr/share/doc/libmulticobex1/changelog.Debian.gz
+/usr/share/doc/libmulticobex1/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/libmulticobex.so.1.0.1
+/usr/lib/libmulticobex.so.1

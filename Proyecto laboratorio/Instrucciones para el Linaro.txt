@@ -1,0 +1,1 @@
+Hacer un ".tar.gz" de la carpeta de linaro y seguir las instrucciones del git para continuar.

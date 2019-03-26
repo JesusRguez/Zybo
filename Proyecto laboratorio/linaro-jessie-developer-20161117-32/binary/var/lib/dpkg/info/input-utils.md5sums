@@ -1,0 +1,10 @@
+004ef1c7d35b880a0715072849576778  usr/bin/input-events
+d4fe094eaf2c099ec040763eaec557e6  usr/bin/input-kbd
+7dd4a7e88c98151b8a4b02dbf17669d5  usr/bin/lsinput
+a2c6fe446e140ee28a8e84f767daf497  usr/share/doc/input-utils/README.Debian
+6ff47563a9bb445ad1ae05c0734b066d  usr/share/doc/input-utils/changelog.Debian.gz
+873e0f07af7bc3119cb2ad65b308ffd9  usr/share/doc/input-utils/copyright
+055e181f98b8cf3a12ac045d1bc7e1a1  usr/share/doc/input-utils/examples/lircd.conf
+96cc87ccae6efee39852c14eea6fb212  usr/share/man/man8/input-events.8.gz
+d363cbd846da5ea6870d63abfce5c609  usr/share/man/man8/input-kbd.8.gz
+b708b677a0ad5d4665a466cd764bc79b  usr/share/man/man8/lsinput.8.gz

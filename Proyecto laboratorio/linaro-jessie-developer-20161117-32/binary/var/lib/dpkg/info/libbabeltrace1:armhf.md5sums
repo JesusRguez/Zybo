@@ -1,0 +1,6 @@
+42637aac4007d2ef212628ef46ae01bd  usr/lib/arm-linux-gnueabihf/libbabeltrace-dummy.so.1.0.0
+03a3810271932bf5f6f21c7ed041f888  usr/lib/arm-linux-gnueabihf/libbabeltrace-lttng-live.so.1.0.0
+e2e53615c233cbb9c934b17e457e5ea2  usr/lib/arm-linux-gnueabihf/libbabeltrace.so.1.0.0
+27b41d6a2363a4a08459963d4791fe55  usr/share/doc/libbabeltrace1/changelog.Debian.gz
+5fc5a8a5ac6abff3475b75f8463e3d49  usr/share/doc/libbabeltrace1/changelog.gz
+0ebf81d6f51727b128fc969186b0adce  usr/share/doc/libbabeltrace1/copyright

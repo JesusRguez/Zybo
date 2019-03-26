@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libbfb0
+/usr/share/doc/libbfb0/copyright
+/usr/share/doc/libbfb0/changelog.gz
+/usr/share/doc/libbfb0/changelog.Debian.gz
+/usr/share/doc/libbfb0/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/libbfb.so.0.0.5
+/usr/lib/libbfb.so.0
