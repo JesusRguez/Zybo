@@ -1,3 +1,0 @@
-# False positives:
-hardening-no-fortify-functions usr/lib/xmms2/libxmms_file.so
-hardening-no-fortify-functions usr/lib/xmms2/libxmms_wave.so

@@ -1,7 +1,0 @@
-ee75b12207e952e6764fd1df19a3def4  usr/sbin/exim4
-1e7a03f823b39a7d08ca48e9794595a1  usr/share/bug/exim4-daemon-light/script
-86f274b855b00a3be920e2b11cd630e6  usr/share/doc/exim4-daemon-light/EDITME.exim4-light.gz
-fc58067489ee4f8a5f25bfac580ed21a  usr/share/doc/exim4-daemon-light/NEWS.Debian.gz
-915a75482cb3d839623a9816ffa2944f  usr/share/doc/exim4-daemon-light/changelog.Debian.gz
-d9adb32bb6769b65fc8ba045abef95ed  usr/share/doc/exim4-daemon-light/copyright
-eb851282f6c652cbe08fbb2bf53fe171  usr/share/lintian/overrides/exim4-daemon-light

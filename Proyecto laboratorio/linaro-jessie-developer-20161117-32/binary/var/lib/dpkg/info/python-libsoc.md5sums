@@ -1,7 +1,0 @@
-9d1529838c03dc996f244eb9bab92fff  usr/lib/python2.7/dist-packages/libsoc/__init__.py
-88032022d349ac0998304f5a505ace02  usr/lib/python2.7/dist-packages/libsoc/_libsoc.arm-linux-gnueabihf.so
-d3efb62f769b1b1a0112b4b22d080f9a  usr/lib/python2.7/dist-packages/libsoc/gpio.py
-f36ea938c727544e8ea9d95afc4379e9  usr/lib/python2.7/dist-packages/libsoc/i2c.py
-cb94174a55c8f89972181ea8e108ab6d  usr/share/doc/python-libsoc/changelog.Debian.gz
-7ddfb2bd5a8c56cc11a69462db41471d  usr/share/doc/python-libsoc/changelog.gz
-5e2299dbfeee6bf933f9586ad1098db4  usr/share/doc/python-libsoc/copyright

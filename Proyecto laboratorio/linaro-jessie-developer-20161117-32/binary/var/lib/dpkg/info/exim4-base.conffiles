@@ -1,4 +1,0 @@
-/etc/cron.daily/exim4-base
-/etc/init.d/exim4
-/etc/logrotate.d/exim4-base
-/etc/logrotate.d/exim4-paniclog
