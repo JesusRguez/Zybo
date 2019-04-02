@@ -73,7 +73,7 @@
 % \end{lstlisting}
 
 
-\title{Análisis}
+\title{Tutorial de envío y recepción de ficheros}
 \author{Jesús Rodríguez Heras}
 
 \begin{document}
@@ -81,7 +81,7 @@
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
-			Desarrollo de la tabla con las combinaciones de los dos parámetros, su resultado y las impresiones recabadas al respecto.
+			En este documento se desarrolla un tutorial de envío y recepción de ficheros vía SSH entre las placas Zybo y el ordenador.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -101,52 +101,28 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
-
-\section{Tabla con las combinaciones de m, n y Ack(m, n)}
-
+\section{Envío}
+Para el envío de archivos (como el bitstream) desde el ordenador a las tarjetas Zybo debemos usar el siguiente comando:
 \begin{center}
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			\textbf{m} & \textbf{n} & \textbf{Ack(m,n)}  \\
-			\hline 
-			1 & 0 & 2\\ \hline	
-			1 & 1 & 3\\ \hline	
-			1 & 2 & 5\\ \hline	
-			1 & 3 & 13\\ \hline	
-			1 & 4 & StackOverFlow\\ \hline	
-			2 & 0 & 3\\ \hline	
-			2 & 1 & 4\\ \hline	
-			2 & 2 & 7\\ \hline	
-			2 & 3 & 29\\ \hline	
-			2 & 4 & StackOverFlow\\ \hline	
-			3 & 0 & 4\\ \hline	
-			3 & 1 & 5\\ \hline	
-			3 & 2 & 9\\ \hline
-			3 & 3 & 61\\ \hline
-			3 & 4 & StackOverFlow\\ \hline
-			4 & 0 & 5\\ \hline
-			4 & 1 & 6\\ \hline
-			4 & 2 & 11\\ \hline
-			4 & 3 & 125\\ \hline
-			4 & 4 & StackOverFlow\\ \hline
-		\end{tabular}
-		\caption{Valores de la función de Ackermann.}
-		\label{tabla:Valores de la función de Ackermann}
-	\end{center}
-\end{table}
+	\texttt{scp archivoLocal zyboX@192.168.1.X:/home/zyboX/archivoServidor}
 \end{center}
+Siendo:
+\begin{itemize}
+	\item \textbf{zyboX:} La tarjeta Zybo a la que queremos enviar el archivo. Por ejemplo: \texttt{zybo1}.
+	\item \textbf{archivoLocal:} Nombre del archivo local que queremos enviar.
+	\item \textbf{archivoServidor:} Nombre que tendrá el archivo en la tarjeta.
+\end{itemize}
 
-\section{Impresiones recabadas}
-
-Tal como vemos en la Tabla 1, la función de \textit{Ackermann} crece aún más rápido que la función exponencial $n^n$.\\
-Por ejemplo:
+\section{Recepción}
+Para el envío de archivos (como el bitstream) desde el ordenador a las tarjetas Zybo debemos usar el siguiente comando:
 \begin{center}
-	$3^3=9$\\
-	$Ack(3,3)=61$
+	\texttt{scp zyboX@192.168.1.X:/home/zyboX/archivoServidor archivoLocal}
 \end{center}
-
-Sin embargo, si aumentamos la $n$ a 4 o más, obtenemos valores extremadamente grandes, que en la ejecución del programa obtendremos el error de \texttt{java.lang.StackOverflowError}, lo que significa que se ha producido un desbordamiento de la memoria en la pila de llamadas recursivas.
+Siendo:
+\begin{itemize}
+	\item \textbf{zyboX:} La tarjeta Zybo a la que queremos enviar el archivo. Por ejemplo: \texttt{zybo1}.
+	\item \textbf{archivoLocal:} Nombre que tendrá el archivo en el ordenador.
+	\item \textbf{archivoServidor:} Nombre del archivo existente en la tarjeta que enviaremos al ordenador.
+\end{itemize}
 
 \end{document}
