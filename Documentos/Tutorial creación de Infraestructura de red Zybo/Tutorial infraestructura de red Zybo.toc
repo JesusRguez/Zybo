@@ -1,6 +1,6 @@
 \select@language {spanish}
 \contentsline {section}{\numberline {1}Material necesario}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Placas Zybo Zynq-7000}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Ordenador}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Software}{5}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Switch}{5}{subsection.1.3}
 \contentsline {section}{\numberline {2}Pasos para el montaje de la infraestructura}{5}{section.2}

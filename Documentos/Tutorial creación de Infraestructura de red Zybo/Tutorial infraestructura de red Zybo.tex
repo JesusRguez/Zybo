@@ -106,8 +106,8 @@
 \section{Material necesario}
 Para la creación de la infraestructura de red física de placas Zybo contaremos con el siguiente material:
 \begin{itemize}
-	\item 4 placas Zybo Zynq-7000.
-	\item Un ordenador con sistema operativo Linux (Debian 9 Stretch) y Windows 7.
+	\item Placas Zybo Zynq-7010.
+	\item Un ordenador con sistema operativo Linux (Debian 9 Stretch)\footnote{También es posible usar cualquier otra distribución de Linux.} y Windows 7.
 	\item Un switch tp-link modelo TL-SG1024D.
 \end{itemize}
 
@@ -116,34 +116,40 @@ Para la creación de la infraestructura de red física de placas Zybo contaremos
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{zybo.jpg}
+	\caption{Placa Zybo Zynq 7010}
+	\label{Placa Zybo}
 \end{figure}
-Para este proyecto necesitaremos poder programar la FPGA integrada en la placa desde la tarjeta SD de memoria. Para ello, tendremos que cambiar el jumper JP5 (situado arriba a la derecha) en los pines situados más a la izquierda. Dicho jumper está identificado con el número 21 en la siguiente página.
+Para este proyecto necesitaremos poder programar la FPGA integrada en la placa desde la tarjeta SD de memoria. Para ello se va a preparar una imagen para que el procesador ARM integrado en la placa arranque desde la tarjeta SD y pueda programar la FPGA. El sistema operativo elegido es Xilinux\footnote{Más información en: \url{http://xillybus.com/xillinux}.}.
+
+Las placas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos seleccionar con el jumper JP5: QSPI, SD, JTAG. En este proyecto, el sistema operativo estará en la tarjeta SD, por lo tanto, tendremos que cambiar el jumper JP5 (situado arriba a la derecha) a la posición ``SD''\footnote{Dicho jumper está identificado con el número 21 en la siguiente página.}.
 \newpage
-%\begin{figure}[h]
-\begin{center}
-	\includegraphics[scale=0.9]{Datasheet.pdf}
-\end{center}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{Datasheet.pdf}
+	\caption{Diagrama de Zybo Zynq 7010 substraído del manual de referencias}
+	\label{Datasheet}
+\end{figure}
+\noindent
+\url{https://www.xilinx.com/support/documentation/university/XUP\%20Boards/XUPZYBO/documentation/ZYBO_RM_B_V6.pdf}
 
 \newpage
-
-\subsection{Ordenador}
+\subsection{Software}
 El ordenador usado en el proyecto tendrá dos sistemas operativos.
 \begin{itemize}
-	\item \textbf{Debian 9 Stretch:} En este sistema operativo se realizará la compilación del sistema operativo Linux de las tarjetas Zybo y la programación del bitstream con el software de Vivado. El usuario será \texttt{zybo} y la contraseña de acceso, será \texttt{zybomonitor}. Asimismo, la contraseña de superusuario también será \texttt{zybomonitor}.
-	\item \textbf{Windows 7:} También tendrá la capacidad de programar la FPGA de la tarjeta.
+	\item \textbf{Debian 9 Stretch:} Este sistema operativo tendrá un usuario llamado \texttt{zybo} y su contraseña será \texttt{zybomonitor}. La contraseña para los permisos de super-usuario también será \texttt{zybomonitor}. En este sistema operativo se realizará la compilación del sistema operativo Xilinux\footnote{Más información en: \url{http://xillybus.com/xillinux}.} de las tarjetas Zybo y la programación del bitstream con el software Vivado.
+	\item \textbf{Windows 7:} También tendrá la capacidad de programar la FPGA de la tarjeta usando el software Vivado..
+	\item \textbf{Vivado:} Versión 2018.2 instalado en ambos sistemas operativos.
 \end{itemize}
 
 \subsection{Switch}
-El switch usado en este proyecto es el tp-link TL-SG1024D que cuenta con 24 puertos con tecnología Gigabit y conectores RJ-45.
+El switch usado en este proyecto es el tp-link TL-SG1024D que cuenta con 24 puertos con tecnología Gigabit y conectores RJ-45. También cuenta con interfaz accesible para su configuración.
 
 
 \section{Pasos para el montaje de la infraestructura}
-Llegados a este paso suponemos que las tarjetas ya tienen su sistema operativo instalado, pueden arrancar e iniciar sesión y se le ha asignado su dirección IP correspondiente.
+Llegados a este paso las tarjetas ya tienen su sistema operativo instalado y pueden arrancar e iniciar sesión en Xilinux.
 
-Las tarjetas estarán identificadas como ZyboX (siendo ``X'' un número entre 1 y 4) y el ordenador se identificará como ``Monitor''.
+Para asignarles una dirección IP debemos acceder al fichero \texttt{/etc/network/interfaces} con el editor \texttt{vi} que es el que trae Xilinux por defecto. Para ello introducimos el comando \texttt{sudo vi /etc/network/interfaces}, localizamos la interfaz y establecemos la dirección IP siguiendo la siguiente tabla:
 
-Los dispositivos tendrán la siguiente configuración de red:
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|c|c|}
@@ -155,10 +161,11 @@ Los dispositivos tendrán la siguiente configuración de red:
 		Zybo3 & 192.168.1.4 \\ \hline
 		Zybo4 & 192.168.1.5 \\ \hline
 	\end{tabular}
+\caption{Direcciones IP de las placas}
+\label{Direcciones}
 \end{table}
 
-Una vez tengamos los dispositivos identificados tenemos que conectarlos al switch\footnote{Podemos conectar los dispositivos al puerto del switch que queramos debido a que se encargará de ir rellenando su tabla CAM con las direcciones de los dispositivos que tiene conectados.}.
+Las tarjetas estarán identificadas como ZyboX (siendo ``X'' un número entre 1 y 4) y el ordenador se identificará como ``Monitor''.
 
-
-Para probar la conectividad entre todos los dispositivos tendremos que ejecutar el test de interconexión de red.
+Una vez tengamos los dispositivos identificados tenemos que conectarlos al switch\footnote{Podemos conectar los dispositivos al puerto del switch que queramos debido a que se encargará de ir rellenando su tabla CAM con las direcciones de los dispositivos que tiene conectados.}. Para probar la conectividad entre todos los dispositivos tendremos que ejecutar el test de interconexión de red.
 \end{document}
