@@ -102,9 +102,11 @@
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
 \section{Desarrollo}
-Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de interconexión de red Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
+Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de Creación de una infraestructura de red de placas Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
 
-Para ello, se ha desarrollado un script en el que se definen las cuatro tarjetas Zybo con su alias y su dirección IP de red (previamente establecida). El funcionamiento del script es el siguiente:
+Para ello, se ha desarrollado un script en el que se pueden definir las tarjetas Zybo que se vayan a usar, con su alias y su dirección IP de red (previamente establecida).
+
+El funcionamiento del script es el siguiente:
 \begin{itemize}
 	\item Si los cuatro paquetes de ping de una tarjeta tienen éxito, indicará que dicha tarjeta está conectada.
 	

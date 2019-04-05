@@ -74,7 +74,7 @@
 % \end{lstlisting}
 
 
-\title{Tutorial de infraestructura de red Zybo}
+\title{Creación de una infraestructura de red de placas Zybo}
 \author{Jesús Rodríguez Heras}
 
 \begin{document}
@@ -82,7 +82,7 @@
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
-			En este documento se desarrolla la creación de la infraestructura de red física de cuatro placas Zybo, un ordenador y un switch.
+			En este documento se desarrolla la creación de la infraestructura de red física de placas Zybo, un ordenador y un switch.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -109,6 +109,7 @@ Para la creación de la infraestructura de red física de placas Zybo contaremos
 	\item Placas Zybo Zynq-7010.
 	\item Un ordenador con sistema operativo Linux (Debian 9 Stretch)\footnote{También es posible usar cualquier otra distribución de Linux.} y Windows 7.
 	\item Un switch tp-link modelo TL-SG1024D.
+	\item Software Vivado.
 \end{itemize}
 
 
@@ -133,12 +134,16 @@ Las placas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos sel
 \url{https://www.xilinx.com/support/documentation/university/XUP\%20Boards/XUPZYBO/documentation/ZYBO_RM_B_V6.pdf}
 
 \newpage
-\subsection{Software}
+\subsection{Sistemas operativos}
 El ordenador usado en el proyecto tendrá dos sistemas operativos.
 \begin{itemize}
 	\item \textbf{Debian 9 Stretch:} Este sistema operativo tendrá un usuario llamado \texttt{zybo} y su contraseña será \texttt{zybomonitor}. La contraseña para los permisos de super-usuario también será \texttt{zybomonitor}. En este sistema operativo se realizará la compilación del sistema operativo Xilinux\footnote{Más información en: \url{http://xillybus.com/xillinux}.} de las tarjetas Zybo y la programación del bitstream con el software Vivado.
 	\item \textbf{Windows 7:} También tendrá la capacidad de programar la FPGA de la tarjeta usando el software Vivado..
-	\item \textbf{Vivado:} Versión 2018.2 instalado en ambos sistemas operativos.
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+	\item \textbf{Vivado:} Versión 2018.2 instalado en los sistemas operativos anteriormente mencionados.
 \end{itemize}
 
 \subsection{Switch}
@@ -146,9 +151,33 @@ El switch usado en este proyecto es el tp-link TL-SG1024D que cuenta con 24 puer
 
 
 \section{Pasos para el montaje de la infraestructura}
-Llegados a este paso las tarjetas ya tienen su sistema operativo instalado y pueden arrancar e iniciar sesión en Xilinux.
+\subsection{Preparación de la tarjeta SD para arrancar la placa con Linux}
 
-Para asignarles una dirección IP debemos acceder al fichero \texttt{/etc/network/interfaces} con el editor \texttt{vi} que es el que trae Xilinux por defecto. Para ello introducimos el comando \texttt{sudo vi /etc/network/interfaces}, localizamos la interfaz y establecemos la dirección IP siguiendo la siguiente tabla:
+\textcolor{red}{A la espera de que Gabri se decida por qué sistema operativo va a elegir, si el que ya hemos encontrado funcional o el de la guía de GitHub que no tiene pinta de tirar demasiado bien.}
+
+
+\subsection{Creación de usuario en las placas}
+Llegados a este paso las tarjetas ya tienen su sistema operativo instalado en la tarjeta SD y el jumper JP5 está en la posición ``SD'' para que la placa arranque desde dicha tarjeta.
+
+Si es la primera vez que encendemos las placas, solo estará creado el usuario \texttt{root} con contraseña \texttt{root} (viene por defecto), por lo que necesitamos crear un usuario para cada placa.
+
+Conectamos las placas al ordenador mediante la interfaz serie (USB), las encendemos e iniciamos un terminal serie (PuTTY) en el ordenador\footnote{Si lo hacemos en Linux usar el puerto \texttt{ttyUSB1} con una velocidad de 115200.}.
+
+A continuación, iniciamos sesión como root e introducimos el siguiente comando:
+\begin{center}
+	\texttt{adduser zyboX}
+\\	\textcolor{red}{Falta ponerlo mejor porque necesito probarlo en las placas de nuevo para detallarlo mejor.}
+\end{center}
+Donde \texttt{X} es el identificador de la placa con la que estamos trabajando.
+
+\subsection{Asignar direcciones IP}
+Para asignarles una dirección IP a los dispositivos debemos acceder al fichero\\ \texttt{/etc/network/interfaces}. Para ello usaremos el editor \texttt{vi} que es el que trae Xilinux por defecto. Accedemos a dicho fichero con el comando:
+\begin{center}
+	\texttt{sudo vi /etc/network/interfaces}
+\end{center}
+\textcolor{red}{Me falta la imagen porque también necesito estar en el laboratorio}
+
+Localizamos la interfaz de red de los dispositivos y establecemos la dirección IP siguiendo la siguiente tabla:
 
 \begin{table}[h]
 	\centering
@@ -165,7 +194,13 @@ Para asignarles una dirección IP debemos acceder al fichero \texttt{/etc/networ
 \label{Direcciones}
 \end{table}
 
-Las tarjetas estarán identificadas como ZyboX (siendo ``X'' un número entre 1 y 4) y el ordenador se identificará como ``Monitor''.
+Las tarjetas estarán identificadas como ZyboX (siendo ``X'' el identificador de la placa con la que estamos trabajando) y el ordenador se identificará como ``Monitor''.
+
+\subsection{Conexión al switch de las placas Zybo}
+\subsubsection{Acceder a la interfaz web del switch}
+\textcolor{red}{No se ha probado y esto es mejor que lo hablemos personalmente porque es bastante más fácil que describirlo, simplemente con la conexión del nuevo dispositivo, ya queda todo hecho, no hace falta configurar nada cuando se crea la red (se crea al enchufar los dispositivos) ni hay que modificar nada cuando se quieran añadir nuevas placas, solo con añadirlas, ya funcionan. Lo único que quedaría por redactar sería el acceso a la interfaz web del switch, que eso lo hago en el laboratorio.}
 
 Una vez tengamos los dispositivos identificados tenemos que conectarlos al switch\footnote{Podemos conectar los dispositivos al puerto del switch que queramos debido a que se encargará de ir rellenando su tabla CAM con las direcciones de los dispositivos que tiene conectados.}. Para probar la conectividad entre todos los dispositivos tendremos que ejecutar el test de interconexión de red.
+
+\textcolor{red}{En cuanto al test de interconexión está en el tutorial de interconexión de red Zybo. Eso no debería ir aquí, sino en el otro tutorial.}
 \end{document}
