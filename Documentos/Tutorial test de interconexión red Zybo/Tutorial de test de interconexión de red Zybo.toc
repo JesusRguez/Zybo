@@ -1,3 +1,5 @@
 \select@language {spanish}
-\contentsline {section}{\numberline {1}Desarrollo}{3}{section.1}
-\contentsline {section}{\numberline {2}Script}{3}{section.2}
+\contentsline {section}{\numberline {1}Descripci\IeC {\'o}n}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Normal}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Verboso}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Script}{4}{section.2}

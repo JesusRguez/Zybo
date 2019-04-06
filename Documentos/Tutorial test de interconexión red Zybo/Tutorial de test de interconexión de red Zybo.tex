@@ -101,19 +101,41 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
-\section{Desarrollo}
-Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de Creación de una infraestructura de red de placas Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
+\section{Descripción}
+Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de creación de una infraestructura de red de placas Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
 
-Para ello, se ha desarrollado un script en el que se pueden definir las tarjetas Zybo que se vayan a usar, con su alias y su dirección IP de red (previamente establecida).
-
-El funcionamiento del script es el siguiente:
+Para ello, se ha desarrollado un script en bash, llamado \texttt{Inicio.sh}, que comprueba el estado de conexión de los dispositivos. En este script se pueden definir las tarjetas Zybo que se vayan a usar, con su alias y su dirección IP de red (previamente establecida). Para ello, tendremos que abrir el fichero \texttt{Inicio.sh} con nuestro editor favorito y cambiar las siguientes líneas:
 \begin{itemize}
-	\item Si los cuatro paquetes de ping de una tarjeta tienen éxito, indicará que dicha tarjeta está conectada.
-	
-	\item Si en el último de ellos obtenemos el mensaje de que se han perdido el 100\% de los paquetes enviados, significará que la tarjeta está desconectada y habrá que revisar la conexión.
+	\item \textbf{Línea 3:} Introducir la dirección IP de la tarjeta que queramos añadir. O borrar la que queramos quitar.
+	\item \textbf{Línea 4:} Introducir el alias de la tarjeta que queramos añadir. O borrar la que queramos quitar.
 \end{itemize}
 
-Además, el script cuenta con la opción \texttt{-v} para que podamos ver el lanzamiento de los paquetes de ping en tiempo real.
+El script será ejecutado desde el ordenador abriendo una terminal en el directorio donde se ubique el script. Cabe destacar que tiene dos modos de funcionamiento:
+
+\subsection{Normal}
+En esta opción, la salida del script será meramente informativa, devolviendo si la tarjeta está o no conectada a la red.
+\begin{itemize}
+	\item Se ejecuta mediante el comando:
+	\begin{center}
+		\texttt{./Inicio.sh}
+	\end{center}
+	\item El script lanza cuatro paquetes de ping a cada una de las tarjetas, una por una, guardando el resultado del mismo comando en una variable y sin mostrarla por pantalla.
+	\item Mediante scraping\footnote{Técnica usada mediante programas software para extraer información de un texto.} el script lee la salida del último de los paquetes de ping.
+	\item \textbf{Éxito:} Si en dicho texto se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta a la cual se está realizando el ping, no está conectada.
+	\item \textbf{Fracaso:} Si en dicho texto no se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta está conectada.
+\end{itemize}
+
+\subsection{Verboso}
+En esta opción, la salida del script es más detallada ya que muestra más información al respecto de la conexión.
+
+\begin{itemize}
+	\item Se ejecuta mediante el comando:
+	\begin{center}
+		\texttt{./Inicio.sh -v}
+	\end{center}
+	\item El script lanza cuatro paquetes de ping a cada una de las tarjetas, una por una.
+	\item Mediante la opción \texttt{-v} le indicamos que nos muestre por pantalla la salida de los comandos de ping, para ver el estado de la conexión más detalladamente.
+\end{itemize}
 
 \section{Script}
 \lstinputlisting[language=Bash]{Inicio.sh}

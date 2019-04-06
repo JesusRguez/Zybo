@@ -73,7 +73,7 @@
 % \end{lstlisting}
 
 
-\title{Análisis}
+\title{Tutorial de instalación de Linux en tarjeta SD para Zybo}
 \author{Jesús Rodríguez Heras}
 
 \begin{document}
@@ -81,7 +81,7 @@
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
-			Desarrollo de la tabla con las combinaciones de los dos parámetros, su resultado y las impresiones recabadas al respecto.
+			En este documento se desarrolla la explicación de cómo instalar Linux (Xilinux) en las tarjetas SD de las placas Zybo Zynq 7010.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -101,52 +101,53 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
+\section{Preámbulo}
+Para este proyecto, optamos inicialmente por la instalación de un sistema operativo compilado por nosotros mismos, del cual encontramos una guía en GitHub\footnote{\url{https://github.com/SDU-Embedded/linux_zynq/wiki/Installing-Linux-on-the-ZYBO}.} que explica cómo descargar, compilar y montar el sistema operativo en la tarjeta SD desde cero.
 
-\section{Tabla con las combinaciones de m, n y Ack(m, n)}
-
-\begin{center}
-\begin{table}[htbp]
+Mientras seguíamos dicho tutorial, solo aparecían errores de compilación debido a incompatibilidad de librerías y dereferenciaciones de las mismas. Concretamente, los errores más importantes fueron:
+\begin{itemize}
+	\item A la hora de compilar el kernel nos vimos obligados a instalar el paquete ``\texttt{gcc-arm-linux\\-gnueabihf}'', que podemos instalarlo con el siguiente comando:
 	\begin{center}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			\textbf{m} & \textbf{n} & \textbf{Ack(m,n)}  \\
-			\hline 
-			1 & 0 & 2\\ \hline	
-			1 & 1 & 3\\ \hline	
-			1 & 2 & 5\\ \hline	
-			1 & 3 & 13\\ \hline	
-			1 & 4 & StackOverFlow\\ \hline	
-			2 & 0 & 3\\ \hline	
-			2 & 1 & 4\\ \hline	
-			2 & 2 & 7\\ \hline	
-			2 & 3 & 29\\ \hline	
-			2 & 4 & StackOverFlow\\ \hline	
-			3 & 0 & 4\\ \hline	
-			3 & 1 & 5\\ \hline	
-			3 & 2 & 9\\ \hline
-			3 & 3 & 61\\ \hline
-			3 & 4 & StackOverFlow\\ \hline
-			4 & 0 & 5\\ \hline
-			4 & 1 & 6\\ \hline
-			4 & 2 & 11\\ \hline
-			4 & 3 & 125\\ \hline
-			4 & 4 & StackOverFlow\\ \hline
-		\end{tabular}
-		\caption{Valores de la función de Ackermann.}
-		\label{tabla:Valores de la función de Ackermann}
+		\texttt{sudo apt-get install gcc-arm-linux-gnueabihf}
 	\end{center}
-\end{table}
-\end{center}
+	\item A la hora de compilar el fichero \texttt{U-BOOT}, nos devolvía el siguiente error: ``\texttt{dereferencing pointer to incomplete type ‘rsa aka struct rsa\_st}''. Para solucionarlo, debimos instalar las librerías de desarrollo de SSL con el siguiente comando:
+	\begin{center}
+		\texttt{sudo apt-get install libssl1.0-dev}
+	\end{center}
+\end{itemize}
+Una vez instaladas las librerías necesarias para solventar los errores existentes, llegó el momento de particionar la tarjeta SD tal y como se muestra en la guía de GitHub. Esto también nos dió serios problemas debido a que, al establecer el nombre de ``\texttt{ROOT\_FS}'' en la partición del sistema de ficheros de linux, no nos dejaba importar los ficheros creados tras la compilación así que los tuvimos que importar como super-usuario en el ordenador.
 
-\section{Impresiones recabadas}
+Cuando la tarjeta SD estuvo preparada, la conectamos a la placa Zybo, pusimos el jumper JP5 en modo SD, conectamos la placa al ordenador por USB, iniciamos la placa y abrimos un terminal de PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} en el ordenador, pero no mostraba nada por pantalla.
 
-Tal como vemos en la Tabla 1, la función de \textit{Ackermann} crece aún más rápido que la función exponencial $n^n$.\\
-Por ejemplo:
-\begin{center}
-	$3^3=9$\\
-	$Ack(3,3)=61$
-\end{center}
+\section{Decisión final}
+Después de probar muchas veces con el método mencionado, optamos por instalar en las placas Zybo el sistema operativo Xilinux que vimos en el blog ``diebotrise\footnote{\url{http://diebotreise.blogspot.com/2017/03/tutorial-zybo-linux-i-como-cargar-linux.html}.}''.
 
-Sin embargo, si aumentamos la $n$ a 4 o más, obtenemos valores extremadamente grandes, que en la ejecución del programa obtendremos el error de \texttt{java.lang.StackOverflowError}, lo que significa que se ha producido un desbordamiento de la memoria en la pila de llamadas recursivas.
+Por lo tanto, seguiremos los pasos de este tutorial:
+
+\subsection{Instalación de Xilinux en tarjeta SD}
+Para la instalación de Xiliniux, seguiremos los siguientes pasos:
+\begin{itemize}
+	\item Descargaremos una versión de Xilinux precompilada desde el siguiente \href{https://www.dropbox.com/s/9qgcoyjzoi764f0/2016.02.02.debian-cbaeef7e7f551052f5451957a5dbef43.zip?dl=0}{\textcolor{blue}{enlace}}.
+	\item Descomprimimos el archivo descargado.
+	\item Descargamos e instalamos el programa Win32 Disk Imager desde el siguiente \href{https://dw.uptodown.com/dwn/w76tVn7onjw1uZFTLSx7oG5vt1Y7gsfE_vPZCAa88I4YqL5Lp6S__CQhpJZGOLPYdjr73a4yGULPiRxv8Z2IsSRQjRPewPceg1Ol2gDzH3IkO3MHOCcuKQCNZwYI9Pvt/8_NYEhYYhGoJ_QXK-PQtvMDn5aHkqiWxwMofLuT2S5SxxDw2zu6f1OMCW0kqLnB0PGf-zrvou_F_nzjB4fn6Nuvp3WZcVrkFzGgNrhVLInDUMHPM0Jfxh76lJU_IATF7/9xrSlUN8npqZOVysN4LIc5iQnXIPmWNSWKNBLv7hcuQxXmyjX8qERxO48SnXIgr83mVVF-bcUsWJGGryhVqZ_LiBsoZmxxEyZE5JXoqVhCI=/}{\textcolor{blue}{enlace}}.
+	\item Ejecutamos Win32 Disk Imager y seleccionamos la imagen descomprimida y la unidad de destino.
+	\item Seleccionamos cread ``MD5 Hash'' para comprobar que la descarga no está corrupta. El resultado de dicho hash debe ser: ``cbaeef7e7f551052f5451957a5dbef43''.
+	\item Pulsamos el botón ``\texttt{Escribir}'' para flashear la unidad seleccionada.
+	\item Descargamos el archivo del kernel desde el siguiente \href{https://uc405c43ce82f6c3032b21ba76bf.dl.dropboxusercontent.com/cd/0/get/AehqJhpiTxZ90sAdGxOFqHxr04BAsug_4RaV6MPX5yBDOQBVaIpDw11X6LdVBi7DPsndN7IxeWYRcEmUAt4xnKoIeYJBRtYu4JtZ_M71as8xbw/file?_download_id=621489597300519201006251662619095482850364296264714456845096204891&_notify_domain=www.dropbox.com&dl=1}{\textcolor{blue}{enlace}}.
+	\item Abrimos la carpeta contenedora de la tarjeta SD recién creada.
+	\item Sobreescribimos los archivos de esa carpeta por los recién descargados del kernel\footnote{Si no se puede sobreescribir por falta de espacio, es preferible eliminarlos y volver a copiar los de la carpeta kernel dentro.}.
+	\item Sacamos la tarjeta SD del ordenador y la introducimos en la placa Zybo.
+\end{itemize}
+
+\subsection{Inicio de Xilinux desde la tarjeta SD}
+Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
+\begin{itemize}
+	\item Insertar la tarjeta SD en la placa Zybo.
+	\item Cambiar el jumper JP5 a la posición SD para que arranque desde dicha tarjeta SD.
+	\item Conectamos el cable USB de la placa al ordenador y arrancamos la placa.
+	\item Abrimos un terminal PuTTY en la consola del ordenador\footnote{Puerto ttyUSB1 y velocidad 115200.} y ahora podemos ver como sí tenemos señal.
+\end{itemize}
+
+\section{Creación de usuarios}
 
 \end{document}
