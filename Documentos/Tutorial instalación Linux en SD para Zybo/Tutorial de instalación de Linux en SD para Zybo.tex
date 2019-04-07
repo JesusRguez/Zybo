@@ -145,9 +145,15 @@ Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
 	\item Insertar la tarjeta SD en la placa Zybo.
 	\item Cambiar el jumper JP5 a la posición SD para que arranque desde dicha tarjeta SD.
 	\item Conectamos el cable USB de la placa al ordenador y arrancamos la placa.
-	\item Abrimos un terminal PuTTY en la consola del ordenador\footnote{Puerto ttyUSB1 y velocidad 115200.} y ahora podemos ver como sí tenemos señal.
+	\item Abrimos un terminal PuTTY en la consola del ordenador\footnote{Puerto ttyUSB1 y velocidad 115200.} y ahora podemos ver como sí tenemos señal y arranca el sistema operativo.
 \end{itemize}
 
 \section{Creación de usuarios}
+Al ser la primera vez que arrancamos el sistema operativo Xilinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
+\begin{center}
+	\texttt{adduser ZyboX}
+	\\\textcolor{red}{Falta ponerlo mejor porque necesito probarlo en las placas de nuevo para detallarlo mejor.}
+\end{center}
+Donde \texttt{X} es el identificador de la placa con la que estamos trabajando.
 
 \end{document}
