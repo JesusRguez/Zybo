@@ -101,30 +101,7 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
-\section{Preámbulo}
-Para este proyecto, optamos inicialmente por la instalación de un sistema operativo compilado por nosotros mismos, del cual encontramos una guía en GitHub\footnote{\url{https://github.com/SDU-Embedded/linux_zynq/wiki/Installing-Linux-on-the-ZYBO}.} que explica cómo descargar, compilar y montar el sistema operativo en la tarjeta SD desde cero.
-
-Mientras seguíamos dicho tutorial, solo aparecían errores de compilación debido a incompatibilidad de librerías y dereferenciaciones de las mismas. Concretamente, los errores más importantes fueron:
-\begin{itemize}
-	\item A la hora de compilar el kernel nos vimos obligados a instalar el paquete ``\texttt{gcc-arm-linux\\-gnueabihf}'', que podemos instalarlo con el siguiente comando:
-	\begin{center}
-		\texttt{sudo apt-get install gcc-arm-linux-gnueabihf}
-	\end{center}
-	\item A la hora de compilar el fichero \texttt{U-BOOT}, nos devolvía el siguiente error: ``\texttt{dereferencing pointer to incomplete type ‘rsa aka struct rsa\_st}''. Para solucionarlo, debimos instalar las librerías de desarrollo de SSL con el siguiente comando:
-	\begin{center}
-		\texttt{sudo apt-get install libssl1.0-dev}
-	\end{center}
-\end{itemize}
-Una vez instaladas las librerías necesarias para solventar los errores existentes, llegó el momento de particionar la tarjeta SD tal y como se muestra en la guía de GitHub. Esto también nos dió serios problemas debido a que, al establecer el nombre de ``\texttt{ROOT\_FS}'' en la partición del sistema de ficheros de linux, no nos dejaba importar los ficheros creados tras la compilación así que los tuvimos que importar como super-usuario en el ordenador.
-
-Cuando la tarjeta SD estuvo preparada, la conectamos a la placa Zybo, pusimos el jumper JP5 en modo SD, conectamos la placa al ordenador por USB, iniciamos la placa y abrimos un terminal de PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} en el ordenador, pero no mostraba nada por pantalla.
-
-\section{Decisión final}
-Después de probar muchas veces con el método mencionado, optamos por instalar en las placas Zybo el sistema operativo Xilinux que vimos en el blog ``diebotrise\footnote{\url{http://diebotreise.blogspot.com/2017/03/tutorial-zybo-linux-i-como-cargar-linux.html}.}''.
-
-Por lo tanto, seguiremos los pasos de este tutorial:
-
-\subsection{Instalación de Xilinux en tarjeta SD}
+\section{Instalación de Xilinux en tarjeta SD}
 Para la instalación de Xiliniux, seguiremos los siguientes pasos:
 \begin{itemize}
 	\item Descargaremos una versión de Xilinux precompilada desde el siguiente \href{https://www.dropbox.com/s/9qgcoyjzoi764f0/2016.02.02.debian-cbaeef7e7f551052f5451957a5dbef43.zip?dl=0}{\textcolor{blue}{enlace}}.
@@ -139,7 +116,7 @@ Para la instalación de Xiliniux, seguiremos los siguientes pasos:
 	\item Sacamos la tarjeta SD del ordenador y la introducimos en la placa Zybo.
 \end{itemize}
 
-\subsection{Inicio de Xilinux desde la tarjeta SD}
+\section{Inicio de Xilinux desde la tarjeta SD}
 Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
 \begin{itemize}
 	\item Insertar la tarjeta SD en la placa Zybo.
@@ -148,7 +125,7 @@ Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
 	\item Abrimos un terminal PuTTY en la consola del ordenador\footnote{Puerto ttyUSB1 y velocidad 115200.} y ahora podemos ver como sí tenemos señal y arranca el sistema operativo.
 \end{itemize}
 
-\subsection{Creación de usuarios}
+\section{Creación de usuarios}
 Al ser la primera vez que arrancamos el sistema operativo Xilinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
 \begin{center}
 	\texttt{adduser ZyboX}

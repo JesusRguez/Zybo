@@ -146,20 +146,8 @@ En esta opción, la salida del script es más detallada ya que muestra más info
 \section{Script}
 El script está programado en bash y su nombre es \texttt{Inicio.sh}.
 
-En su interior, podemos encontrar los siguientes elementos característicos:
-\subsection{Variables}
-\begin{itemize}
-	\item \textbf{Array de direcciones:} Contiene las direcciones IP de las tarjetas con las que vamos a trabajar.
-	\item \textbf{Array de tarjetas:} Contiene el alias de las tarjetas con las que vamos a trabajar en el mismo orden que sus direcciones IP, con el objetivo de que cada dirección se corresponda con su alias.
-	\item \textbf{Variable \texttt{a}:} Contador para iterar sobre el array de tarjetas.
-\end{itemize}
-
-\subsection{Estructuras de control}
-\begin{itemize}
-	\item \textbf{Bucle \texttt{for}:} Este bucle iterará sobre el array de direcciones.
-	\item \textbf{Estructura condicional externa:} Nos permite discernir entre el modo normal y el modo verboso.
-	\item \textbf{Estructura condicional interna:} Nos permite hacer scraping buscando la cadena de caracteres ``\texttt{100\% packet loss}'' para ver si la tarjeta está conectada o no.
-\end{itemize}
+\vspace{2cm}
+DIAGRAMA DE FLUJO
 
 \newpage
 \subsection{Código}

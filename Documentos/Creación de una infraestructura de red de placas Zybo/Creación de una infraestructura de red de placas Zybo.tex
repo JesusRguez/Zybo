@@ -182,8 +182,17 @@ allow-hotplug enp5s0
 \end{lstlisting}
 Configuración del archivo \texttt{/etc/network/interfaces.d/enp5s0} del ordenador central.
 
+\newpage
+
 \subsubsection{Tarjetas Zybo}
 Conectamos la tarjeta mediante USB al ordenador y abrimos un terminal serie en PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} e iniciamos sesión en Xilinux\footnote{Usuario: \texttt{zyboX}; contraseña \texttt{zyboX}. Siendo \texttt{X} el identificador de la tarjeta.}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{PuTTY.png}
+	\caption{Configuración de PuTTY}
+	\label{Configuración de PuTTY}
+\end{figure}
 
 Debemos identificar la interfaz de red con la que estamos trabajando. Para ello, ejecutamos el siguiente comando como super-usuario\footnote{Comando \texttt{su} y contraseña \texttt{root}.}:
 \begin{center}
@@ -199,7 +208,7 @@ Debemos identificar la interfaz de red con la que estamos trabajando. Para ello,
 
 Una vez identificada la interfaz, debemos acceder al fichero\\ \texttt{/etc/network/interfaces.d/INTERFAZ}\footnote{Siendo \texttt{INTERFAZ}, la interfaz que estamos usando. En este ejemplo \texttt{eth0}.} como super-usuario con el siguiente comando:
 \begin{center}
-	\texttt{vi /etc/network/interfaces.d/eth0}
+	\texttt{nano /etc/network/interfaces.d/eth0}
 \end{center}
 Y lo modificamos de la siguiente forma:
 \begin{lstlisting}

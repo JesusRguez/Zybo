@@ -3,6 +3,4 @@
 \contentsline {subsection}{\numberline {1.1}Normal}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Verboso}{4}{subsection.1.2}
 \contentsline {section}{\numberline {2}Script}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Variables}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Estructuras de control}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}C\IeC {\'o}digo}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.1}C\IeC {\'o}digo}{5}{subsection.2.1}
