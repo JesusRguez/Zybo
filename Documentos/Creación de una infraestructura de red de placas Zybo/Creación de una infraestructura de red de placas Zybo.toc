@@ -6,4 +6,6 @@
 \contentsline {subsection}{\numberline {1.4}Switch}{5}{subsection.1.4}
 \contentsline {section}{\numberline {2}Pasos para el montaje de la infraestructura}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Asignar direcciones IP}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Conexi\IeC {\'o}n al switch de las placas Zybo}{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.1.1}Ordenador}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Tarjetas Zybo}{6}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Conexi\IeC {\'o}n al switch de las placas Zybo}{8}{subsection.2.2}
