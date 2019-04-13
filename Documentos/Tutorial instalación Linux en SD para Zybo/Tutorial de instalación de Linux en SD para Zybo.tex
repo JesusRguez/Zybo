@@ -128,9 +128,55 @@ Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
 \section{Creación de usuarios}
 Al ser la primera vez que arrancamos el sistema operativo Xilinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
 \begin{center}
-	\texttt{adduser ZyboX}
-	\\\textcolor{red}{Falta ponerlo mejor porque necesito probarlo en las placas de nuevo para detallarlo mejor.}
+	\texttt{adduser zyboX}
 \end{center}
 Donde \texttt{X} es el identificador de la placa con la que estamos trabajando.
 
+A continuación, tendremos que rellenar los siguientes campos:
+\begin{itemize}
+	\item \textbf{Contraseña de usuario:} Introducimos la contraseña para el usuario creado. Si seguimos la nomenclatura que sigue el proyecto, será \texttt{zyboX}.
+	\item \textbf{Repetir contraseña:} Repetiremos la contraseña para comprobar que no nos hemos equivocado.
+	\item \textbf{Nombre:} Pondremos el nombre del usuario, \texttt{zyboX}, siguiendo la nomenclatura del proyecto.
+	\item \textbf{Número de habitación, teléfono de trabajo y de casa, y ``otro'':} Presionamos la tecla \texttt{ENTER} para dejarlo por defecto y continuar.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{NuevoUsuario.png}
+	\caption{Ejemplo de creación del usuario zybo0}
+	\label{Ejemplo de creación del usuario zybo0}
+\end{figure}
+
+
+\section{Habilitar SSH en placas Zybo}
+Para establecer una conexión entre el ordenador central y las placas, tendremos que usar el protocolo SSH, que viene deshabilitado por defecto en Xilinux.
+
+Para habilitarlo tendremos que acceder al archivo \texttt{/etc/ssh/sshd\_config} como super-usuario. Para ello, utilizaremos el siguiente comando:
+\begin{center}
+	\texttt{nano /etc/ssh/sshd\_config}
+\end{center}
+A continuación, nos dirigimos a la línea que tiene la siguiente sentencia:
+\begin{center}
+	\texttt{\#PasswordAuthentification yes}
+\end{center}
+Borramos la almohadilla (\#), guardamos y cerramos el fichero.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{SSH.png}
+	\caption{Fichero \texttt{sshd\_config} modificado}
+	\label{Fichero ssh_d modificado}
+\end{figure}
+
+Para establecer los cambios realizados, debemos reiniciar el servicio SSH. Para ello utilizamos:
+\begin{center}
+	\texttt{/etc/init.d/ssh restart}
+\end{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{SSHRestart.png}
+	\caption{Reiniciando el servicio SSH}
+	\label{Reiniciando el servicio SSH}
+\end{figure}
+
+A partir de aquí ya podemos establecer conexiones SSH desde el ordenador central al resto de placas Zybo y enviar cualquier tipo de ficheros bien sea desde el ordenador central a las placas o bien, entre placas.
 \end{document}

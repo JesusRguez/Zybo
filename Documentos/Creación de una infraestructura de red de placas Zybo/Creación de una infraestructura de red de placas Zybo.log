@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  9 APR 2019 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  13 APR 2019 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,7 +728,7 @@ f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf
 ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb>
 Output written on "Creación de una infraestructura de red de placas Zybo.pdf" 
-(9 pages, 713530 bytes).
+(9 pages, 713533 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams
