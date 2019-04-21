@@ -127,8 +127,8 @@ En esta opción, la salida del script será meramente informativa, devolviendo s
 	\end{center}
 	\item El script lanza cuatro paquetes de ping a cada una de las tarjetas, una por una, guardando el resultado del mismo comando en una variable y sin mostrarla por pantalla.
 	\item Mediante scraping\footnote{Técnica usada mediante programas software para extraer información de un texto.} el script lee la salida del último de los paquetes de ping.
-	\item \textbf{Éxito:} Si en dicho texto se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta a la cual se está realizando el ping, no está conectada.
-	\item \textbf{Fracaso:} Si en dicho texto no se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta está conectada.
+	\item \textbf{Éxito:} Si en dicho texto no se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta está conectada.
+	\item \textbf{Fracaso:} Si en dicho texto se encuentra la secuencia ``\texttt{100\% packet loss}'' indicará que la tarjeta a la cual se está realizando el ping, no está conectada.
 \end{itemize}
 
 \subsection{Verboso}
