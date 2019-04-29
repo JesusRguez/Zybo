@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  14 APR 2019 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.30)  29 APR 2019 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -620,13 +620,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `"Tutorial de instalación de Linux en SD par
 a Zybo".out' has not changed.
-(rerunfilecheck)             Checksum: 3A08037DB2879D31CE12369E5CD015DE;267.
+(rerunfilecheck)             Checksum: A10E137C2F44E8E82E70E52808BA2047;269.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
  9614 strings out of 493013
  137289 string characters out of 6135682
- 263417 words of memory out of 5000000
+ 262420 words of memory out of 5000000
  12983 multiletter control sequences out of 15000+600000
  59344 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -636,7 +636,7 @@ e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb>
 Output written on "Tutorial de instalación de Linux en SD para Zybo.pdf" (5 pa
-ges, 71816 bytes).
+ges, 71818 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream

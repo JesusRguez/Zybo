@@ -1,5 +1,5 @@
 \select@language {spanish}
-\contentsline {section}{\numberline {1}Instalaci\IeC {\'o}n de Xilinux en tarjeta SD}{3}{section.1}
-\contentsline {section}{\numberline {2}Inicio de Xilinux desde la tarjeta SD}{3}{section.2}
+\contentsline {section}{\numberline {1}Instalaci\IeC {\'o}n de Xillinux en tarjeta SD}{3}{section.1}
+\contentsline {section}{\numberline {2}Inicio de Xillinux desde la tarjeta SD}{3}{section.2}
 \contentsline {section}{\numberline {3}Creaci\IeC {\'o}n de usuarios}{3}{section.3}
 \contentsline {section}{\numberline {4}Habilitar SSH en placas Zybo}{4}{section.4}

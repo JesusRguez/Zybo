@@ -81,7 +81,7 @@
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
-			En este documento se desarrolla la explicación de cómo instalar Linux (Xilinux) en las tarjetas SD de las placas Zybo Zynq 7010.
+			En este documento se desarrolla la explicación de cómo instalar Linux (Xillinux) en las tarjetas SD de las placas Zybo Zynq 7010.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -101,10 +101,10 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
 
-\section{Instalación de Xilinux en tarjeta SD}
+\section{Instalación de Xillinux en tarjeta SD}
 Para la instalación de Xiliniux, seguiremos los siguientes pasos:
 \begin{itemize}
-	\item Descargaremos una versión de Xilinux precompilada desde el siguiente \href{https://www.dropbox.com/s/9qgcoyjzoi764f0/2016.02.02.debian-cbaeef7e7f551052f5451957a5dbef43.zip?dl=0}{\textcolor{blue}{enlace}}.
+	\item Descargaremos una versión de Xillinux precompilada desde el siguiente \href{https://www.dropbox.com/s/9qgcoyjzoi764f0/2016.02.02.debian-cbaeef7e7f551052f5451957a5dbef43.zip?dl=0}{\textcolor{blue}{enlace}}.
 	\item Descomprimimos el archivo descargado.
 	\item Descargamos e instalamos el programa Win32 Disk Imager desde el siguiente \href{https://dw.uptodown.com/dwn/w76tVn7onjw1uZFTLSx7oG5vt1Y7gsfE_vPZCAa88I4YqL5Lp6S__CQhpJZGOLPYdjr73a4yGULPiRxv8Z2IsSRQjRPewPceg1Ol2gDzH3IkO3MHOCcuKQCNZwYI9Pvt/8_NYEhYYhGoJ_QXK-PQtvMDn5aHkqiWxwMofLuT2S5SxxDw2zu6f1OMCW0kqLnB0PGf-zrvou_F_nzjB4fn6Nuvp3WZcVrkFzGgNrhVLInDUMHPM0Jfxh76lJU_IATF7/9xrSlUN8npqZOVysN4LIc5iQnXIPmWNSWKNBLv7hcuQxXmyjX8qERxO48SnXIgr83mVVF-bcUsWJGGryhVqZ_LiBsoZmxxEyZE5JXoqVhCI=/}{\textcolor{blue}{enlace}}.
 	\item Ejecutamos Win32 Disk Imager y seleccionamos la imagen descomprimida y la unidad de destino.
@@ -116,8 +116,8 @@ Para la instalación de Xiliniux, seguiremos los siguientes pasos:
 	\item Sacamos la tarjeta SD del ordenador y la introducimos en la placa Zybo.
 \end{itemize}
 
-\section{Inicio de Xilinux desde la tarjeta SD}
-Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
+\section{Inicio de Xillinux desde la tarjeta SD}
+Para iniciar la tarjeta con Xillinux debemos seguir los siguientes pasos:
 \begin{itemize}
 	\item Insertar la tarjeta SD en la placa Zybo.
 	\item Cambiar el jumper JP5 a la posición SD para que arranque desde dicha tarjeta SD.
@@ -126,7 +126,7 @@ Para iniciar la tarjeta con Xilinux debemos seguir los siguientes pasos:
 \end{itemize}
 
 \section{Creación de usuarios}
-Al ser la primera vez que arrancamos el sistema operativo Xilinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
+Al ser la primera vez que arrancamos el sistema operativo Xillinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
 \begin{center}
 	\texttt{adduser zyboX}
 \end{center}
@@ -149,7 +149,7 @@ A continuación, tendremos que rellenar los siguientes campos:
 
 
 \section{Habilitar SSH en placas Zybo}
-Para establecer una conexión entre el ordenador central y las placas, tendremos que usar el protocolo SSH, que viene deshabilitado por defecto en Xilinux.
+Para establecer una conexión entre el ordenador central y las placas, tendremos que usar el protocolo SSH, que viene deshabilitado por defecto en Xillinux.
 
 Para habilitarlo tendremos que acceder al archivo \texttt{/etc/ssh/sshd\_config} como super-usuario. Para ello, utilizaremos el siguiente comando:
 \begin{center}
