@@ -1,0 +1,7 @@
+Para mandar archivos sin contraseña ni nada:
+	- De ordenador a placa: sshpass -p 'contraseña' scp archivo zyboX@192.168.X:/home/zyboX/ficheros
+	- De placa a ordenador (o de placa a placa) tenemos dos formas (obviamente, hay que instalar sshpass en las placas, si no no tira):
+		* sshpass -p 'contraseña' scp archivo monitor@192.168.1.10:/home/monitor/ficheros
+		* sshpass -p 'contraseña' scp -o StrictHostKeyChecking=no archivo monitor@192.168.1.10:/home/monitor/ficheros
+		
+Entonces, si esto lo juntamos con el fichero de Estado.sh de antes, puede ser que funcione como quiero, es decir, viendo cuando se produce una actualización en el directorio y, cuando se produzca, pues envía el archivo modificado al nuevo dispositivo.
