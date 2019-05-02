@@ -1,7 +1,9 @@
 #!/bin/bash
 
 
-DIR_TO_CHECK=$PWD/trabajar #Directorio que queremos inspeccionar
+DIR_TO_CHECK=$PWD/desencriptar #Directorio que queremos inspeccionar
+
+DIR_TEMP=$PWD/trabajar
 
 DIR_TO_SEND=$PWD/enviar #Directorio donde enviar
 
@@ -36,6 +38,9 @@ then
 		fichero=$(ls -t | head -1) #Obtenemso el fichero más reciente
 		#echo $fichero
 #		echo Copiado el fichero $fichero a $DIR_TO_SEND
+		cp $fichero $DIR_TEMP
+		cd $DIR_TEMP
+		echo 'Archivo tratado en '$USER >> $fichero
 		cp $fichero $DIR_TO_SEND
 	fi
 

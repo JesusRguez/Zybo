@@ -1,0 +1,16 @@
+127.0.0.1	localhost
+::1		localhost ip6-localhost ip6-loopback
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
+192.168.1.10	monitor
+192.168.1.11	zybo1
+192.168.1.12	zybo2
+192.168.1.13	zybo3
+192.168.1.14	zybo4
+192.168.1.15	zybo5
+192.168.1.16	zybo6
+192.168.1.17	zybo7
+192.168.1.18	zybo8
+192.168.1.19	zybo9
+192.168.1.20	zybo10

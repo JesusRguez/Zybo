@@ -1,11 +1,11 @@
 #!/bin/bash
 
 
-DIR_TO_CHECK=$PWD/trabajar #Directorio que queremos inspeccionar
+DIR_TO_CHECK=$PWD/desencriptar #Directorio que queremos inspeccionar
 
-DIR_TO_SEND=$PWD/enviar #Directorio donde enviar
+DIR_TO_SEND=$PWD/trabajar #Directorio donde enviar
 
-OLD_STAT_FILE=$PWD/backups/ViejoTrabajar.txt #Fichero "hash" con el directorio antiguo
+OLD_STAT_FILE=$PWD/backups/ViejoDesencriptar.txt #Fichero "hash" con el directorio antiguo
 
 if [ -e $OLD_STAT_FILE ]
 then
