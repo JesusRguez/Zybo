@@ -46,6 +46,7 @@
 %% (Esto no funciona para todos los simbolos pero reduce mucho el tamaño del
 %% pdf si hay muchas matamaticas....
 \usepackage{mathptm}
+\usepackage{xcolor}
 
 %%% VARIOS:
 %\usepackage{slashbox}
@@ -73,7 +74,7 @@
 % \end{lstlisting}
 
 
-\title{Envío y recepción de ficheros}
+\title{Envío y recepción de ficheros con sshpass}
 \author{Jesús Rodríguez Heras}
 
 \begin{document}
@@ -81,7 +82,7 @@
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
-			En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre las placas Zybo y el ordenador.
+			En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre las placas Zybo y el ordenador usando la utilidad sshpass.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -103,17 +104,17 @@
 	
 
 \section{SSHPASS}
-Para el envío y recepción de archivos entre los distintos dispositivos, usaremos la utilidad ``\texttt{sshpass}'' que está diseñada para ejecutar ssh de modo no-interactivo.	
+Para el envío y recepción de archivos entre los distintos dispositivos, usaremos la utilidad ``\texttt{sshpass}''\footnote{Para  más información, consultar el manual en el siguiente \href{https://linux.die.net/man/1/sshpass}{\textcolor{blue}{enlace}}.} que está diseñada para ejecutar ssh de modo no-interactivo.	
 	
 \section{Entre ordenador y placa}
-Para el envío de archivos\footnote{Podremos enviar cualquier tipo de archivo independientemente de su extensión} desde el ordenador a las tarjetas Zybo debemos usar el siguiente comando en un terminal del ordenador ubicado en el directorio donde está el archivo que queramos enviar:
+Para el envío de archivos\footnote{Podremos enviar cualquier tipo de archivo independientemente de su extensión.} desde el ordenador a las tarjetas Zybo debemos usar el siguiente comando en un terminal del ordenador ubicado en el directorio donde está el archivo que queramos enviar:
 \begin{center}
 	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no archivoLocal zyboX@zyboX:/home/zyboX/ficheros/recibir}
 \end{center}
 Siendo:
 \begin{itemize}
 %	\item \textbf{contraseña:} Será la contraseña del usuario de la tarjeta zyboX.
-	\item \textbf{zyboX:} La tarjeta Zybo a la que queremos enviar el archivo\footnote{Gracias a la existencia del fichero \texttt{/etc/hosts} tenemos asociada cada tarjeta con su dirección de red. Por lo tanto, solo tenemos que poner el alias de la tarjeta para referirnos a su dirección IP}. Por ejemplo: \texttt{zybo1}.
+	\item \textbf{zyboX:} La tarjeta Zybo a la que queremos enviar el archivo\footnote{Gracias a la existencia del fichero \texttt{/etc/hosts} tenemos asociada cada tarjeta con su dirección de red. Por lo tanto, solo tenemos que poner el alias de la tarjeta para referirnos a su dirección IP.}. Por ejemplo: \texttt{zybo1}.
 	\item \textbf{archivoLocal:} Nombre del archivo local que queremos enviar.
 	\item \textbf{Directorio \texttt{/ficheros/recibir}:} Directorio donde se recibirán los archivos en el proyecto de anonimización\footnote{Si queremos enviar un fichero a otra ubicación, solo debemos cambiar la ruta donde queremos copiarlo.}.
 \end{itemize}
