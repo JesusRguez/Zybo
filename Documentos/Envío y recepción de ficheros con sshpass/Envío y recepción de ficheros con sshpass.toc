@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {2}Entre ordenador y placa}{3}{section.2}
 \contentsline {section}{\numberline {3}Entre placas}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}Manual}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Autom\IeC {\'a}tico}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Autom\IeC {\'a}tica}{4}{subsection.3.2}
