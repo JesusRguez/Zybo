@@ -106,10 +106,9 @@
 \section{Introducción}
 Para realizar una comunicación automática y secuencial entre los distintos dispositivos, cada tarjeta Zybo Zynq 7010 contará con la siguiente estructura de directorios:\\
 
-%Los que están comentados es porque ésta es la versión que emula el trabajo de Cristian, descomentarla para ver el proceso completo sin la emulación del trabajo de Cristian.
 \texttt{
 \textasciitilde/ficheros/backups/\\
-%\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
+\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
 \textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoEnviar.txt\\
 \textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoRecibir.txt\\
 \textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoTrabajar.txt\\
@@ -120,10 +119,10 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 \textcolor{white}{.}\hspace{2.9cm}|Automatico.sh\\
 \textcolor{white}{.}\hspace{2.9cm}|Borrar.sh\\
 \textcolor{white}{.}\hspace{2.9cm}|Cristian.sh\\
-%\textcolor{white}{.}\hspace{2.9cm}|Desencriptando.sh\\
+\textcolor{white}{.}\hspace{2.9cm}|Desencriptando.sh\\
 \textcolor{white}{.}\hspace{2.9cm}|Enviando.sh\\
 \textcolor{white}{.}\hspace{2.9cm}|Recibiendo.sh\\
-%\textcolor{white}{.}\hspace{2.9cm}|Tabajando.sh
+\textcolor{white}{.}\hspace{2.9cm}|Tabajando.sh
 }\\
 
 Este árbol de directorios estará en el archivo \texttt{ficheros.tar.gz} que se encontrará en el ordenador central y será distribuido a cada tarjeta mediante ssh\footnote{Recordemos que, tanto para \texttt{ssh} como para \texttt{scp}, el elemento \texttt{zyboX} es el identificador de la tarjeta Zybo con la que estamos trabajando.} con el siguiente comando:
@@ -205,21 +204,9 @@ Este script es el encargado de comprobar periódicamente el estado del directori
 	Código de \texttt{Recibiendo.sh}.
 \end{center}
 
-\newpage
 \subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{Recibiendo.png}
-	\caption{Diagrama de flujo de \texttt{Recibiendo.sh}.}
-	\label{Diagrama de flujo de Recibiendo.sh}
-\end{figure}
-%\begin{center}
-%	\includegraphics[scale=0.6]{Recibiendo.png}\\
-%	\caption{Diagrama de flujo de \texttt{Recibiendo.sh}}
-%	\label{Diagrama de flujo de Recibiendo.sh}
-%\end{center}
 
-\newpage
+
 \subsection{\texttt{Cristian.sh}}
 Este script es el encargado de emular el trabajo de nuestro compañero Cristian. Se encarga de comprobar periódicamente el estado del directorio \texttt{/desencriptar}, mueve el archivo allí situado al directorio \texttt{/trabajar} (simulando el desencriptado) y allí le añade un texto tal como el siguiente:
 \begin{center}
@@ -237,14 +224,8 @@ Por último, envía el fichero al directorio \texttt{/enviar}.
 \end{center}
 
 \subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.44]{Cristian.png}
-	\caption{Diagrama de flujo de \texttt{Cristian.sh}.}
-	\label{Diagrama de flujo de Cristian.sh}
-\end{figure}
 
-\newpage
+
 \subsection{\texttt{Enviando.sh}}
 Este script es el encargado de comprobar periódicamente el estado del directorio \texttt{/enviar} y, cuando detecta un cambio, envía el archivo a la siguiente tarjeta, o, si ésta se encuentra desconectada, al ordenador central.
 
@@ -266,14 +247,8 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 	Código de \texttt{Enviando.sh}.
 \end{center}
 
-\newpage
 \subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.435]{Enviando.png}
-	\caption{Diagrama de flujo de \texttt{Enviando.sh}.}
-	\label{Diagrama de flujo de Enviando.sh}
-\end{figure}
+
 
 \subsection{\texttt{Automatico.sh}}
 Este script es el encargado de lanzar el resto de scripts en segundo plano cada segundo para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
@@ -292,12 +267,7 @@ De esta forma, lo mandamos a segundo plano, para poder seguir utilizando la cons
 \end{center}
 
 \subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.9]{Automatico.png}
-	\caption{Diagrama de flujo de \texttt{Automatico.sh}.}
-	\label{Diagrama de flujo de Automatico.sh}
-\end{figure}
+
 
 %\subsubsection{Mejoras}
 %Que este script se lance solo al conectar la tarjeta a la corriente con cron o algo parecido.
@@ -317,12 +287,7 @@ Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{
 \end{center}
 
 \subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.9]{Borrar.png}
-	\caption{Diagrama de flujo de \texttt{Borrar.sh}.}
-	\label{Diagrama de flujo de Borrar.sh}
-\end{figure}
+
 
 %\subsection{\texttt{Desencriptando.sh}}
 
