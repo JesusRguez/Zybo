@@ -63,7 +63,7 @@
 %% Indenteacion en español...
 \usepackage[spanish]{babel}
 
-\usepackage{listings}
+\usepackage{listingsutf8}
 % Para escribir código en C
 % \begin{lstlisting}[language=C]
 % #include <stdio.h>
@@ -99,7 +99,7 @@
 	%%%% REAL WORK BEGINS HERE:
 	
 	%%Configuracion del paquete listings
-	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=latin1}
+	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=utf8/latin1}
 
 \section{Descripción}
 Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de creación de una infraestructura de red de placas Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
@@ -147,6 +147,7 @@ En esta opción, la salida del script es más detallada ya que muestra más info
 El script está programado en bash y su nombre es \texttt{Inicio.sh}.
 
 \subsection{Código}
+
 \lstinputlisting[language=Bash]{Inicio.sh}
 \begin{center}
 	Código de \texttt{Inicio.sh} usando cuatro tarjetas como ejemplo.

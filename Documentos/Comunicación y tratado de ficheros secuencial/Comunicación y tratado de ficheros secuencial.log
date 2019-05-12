@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.30)  12 MAY 2019 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.30)  12 MAY 2019 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Test de interconexión de red Zybo.tex"
-(./Test de interconexión de red Zybo.tex
+**"Comunicación y tratado de ficheros secuencial.tex"
+(./Comunicación y tratado de ficheros secuencial.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -342,7 +342,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks27
 \verbatim@line=\toks28
@@ -388,27 +405,27 @@ Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 ))
-(./Test de interconexión de red Zybo.aux
+(./Comunicación y tratado de ficheros secuencial.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-\openout1 = `"Test de interconexión de red Zybo.aux"'.
+\openout1 = `"Comunicación y tratado de ficheros secuencial.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -451,16 +468,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box30
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -470,14 +478,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 
-(./Test de interconexión de red Zybo.out)
-(./Test de interconexión de red Zybo.out)
+(./Comunicación y tratado de ficheros secuencial.out)
+(./Comunicación y tratado de ficheros secuencial.out)
 \@outlinefile=\write3
-\openout3 = `"Test de interconexión de red Zybo.out"'.
+\openout3 = `"Comunicación y tratado de ficheros secuencial.out"'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -510,103 +518,119 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 \c@lstlisting=\count132
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 82
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 83
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 82
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 83
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 82
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 83
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 82
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 83
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 82.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 82.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
- (./Test de interconexión de red Zybo.toc
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 91.
+
+(./Comunicación y tratado de ficheros secuencial.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 )
 \tf@toc=\write4
-\openout4 = `"Test de interconexión de red Zybo.toc"'.
+\openout4 = `"Comunicación y tratado de ficheros secuencial.toc"'.
 
-
-[2] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ [2]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 107.
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-<Script.png, id=46, 573.14125pt x 39.14626pt>
-File: Script.png Graphic file (type png)
- <use Script.png>
-Package pdftex.def Info: Script.png used on input line 110.
-(pdftex.def)             Requested size: 401.19614pt x 27.40218pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 121.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
- [3 <./Script.png>]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
+[3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 152.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 155.
+
+Overfull \hbox (26.32733pt too wide) in paragraph at lines 155--156
+[]\T1/pcr/b/n/12 ViejoDesencriptar.txt\T1/ptm/b/n/12 : \T1/ptm/m/n/12 Es-te fi-
+che-ro con-ten-dr� el es-ta-do del di-rec-to-rio \T1/pcr/m/n/12 /desencriptar
+ []
+
+[4]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 151.
+nput line 202.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
@@ -619,49 +643,47 @@ File: se-iso-8859-1.def 2016/05/16 v1.11 stringenc: ISO-8859-1
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 6.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 11.
+ [5]
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+) [6] [7]
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+) [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
 
-Overfull \hbox (1.01259pt too wide) in paragraph at lines 15--16
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[4] <Inicio.png, id=83, 467.7475pt x 861.2175pt>
-File: Inicio.png Graphic file (type png)
- <use Inicio.png>
-Package pdftex.def Info: Inicio.png used on input line 160.
-(pdftex.def)             Requested size: 271.29373pt x 499.5065pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
- [5 <./Inicio.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
- (./Test de interconexión de red Zybo.aux
+(./Comunicación y tratado de ficheros secuencial.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
-Package rerunfilecheck Info: File `"Test de interconexión de red Zybo".out' ha
-s not changed.
-(rerunfilecheck)             Checksum: 5857C60DEC9AB3DB6B2AD3AB9C5A8A0D;325.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
+Package rerunfilecheck Info: File `"Comunicación y tratado de ficheros secuenc
+ial".out' has not changed.
+(rerunfilecheck)             Checksum: F82E8314018CFE7467BDEDD50B356F38;1519.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
  ) 
 Here is how much of TeX's memory you used:
- 10215 strings out of 493013
- 143995 string characters out of 6135682
- 275797 words of memory out of 5000000
- 13540 multiletter control sequences out of 15000+600000
- 66848 words of font info for 111 fonts, out of 8000000 for 9000
+ 10803 strings out of 493013
+ 151406 string characters out of 6135682
+ 339385 words of memory out of 5000000
+ 13987 multiletter control sequences out of 15000+600000
+ 68711 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,8n,49p,512b,1632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,8n,49p,439b,2362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "Test de interconexión de red Zybo.pdf" (5 pages, 101856 byt
-es).
+Output written on "Comunicación y tratado de ficheros secuencial.pdf" (9 pages
+, 88297 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

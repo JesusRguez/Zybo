@@ -6,13 +6,13 @@ a=0
 for d in "${direcciones[@]}"
 do
 	if [[ $1 = "-v" ]]; then
-		echo Comprobando la conexion con ${tarjetas[a]}.
+		echo Comprobando la conexión con ${tarjetas[a]}.
 		ping -c 4 $d
 	else
-		echo Comprobando la conexion con ${tarjetas[a]}.
+		echo Comprobando la conexión con ${tarjetas[a]}.
 		string=$(ping -c 4 $d)
 		if [[ $string == *100%\ packet\ loss* ]]; then
-			echo Tarjeta ${tarjetas[a]} desconectada. Compruebe la conexion.$'\n'
+			echo Tarjeta ${tarjetas[a]} desconectada. Compruebe la conexión.$'\n'
 		else
 			echo Tarjeta ${tarjetas[a]} conectada.$'\n'
 		fi
