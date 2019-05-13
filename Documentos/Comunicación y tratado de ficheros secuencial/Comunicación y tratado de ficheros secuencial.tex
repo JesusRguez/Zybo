@@ -83,6 +83,10 @@
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
 		\begin{center}
 			En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre los dispositivos del proyecto de manera secuencial y automática.
+			
+			Para conseguir dicha finalidad, las tarjetas iniciarán automáticamente un proceso que comprobará si les envían un fichero nuevo y, en caso de que así sea, trabajarán con el y lo enviarán a la siguiente tarjeta, o, en caso de que no esté conectada, al ordenador central.
+			
+			El fichero será recibido en el directorio \texttt{\textasciitilde/ficheros/recibir} e irá pasando por los directorios \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \texttt{\textasciitilde/ficheros/enviar} antes de ser enviado al siguiente dispositivo.
 		\end{center}
 	\end{abstract}
 	\thispagestyle{empty}
@@ -109,22 +113,22 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 %Los que están comentados es porque ésta es la versión que emula el trabajo de Cristian, descomentarla para ver el proceso completo sin la emulación del trabajo de Cristian.
 \texttt{
 \textasciitilde/ficheros/backups/\\
-%\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
-\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoEnviar.txt\\
-\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoRecibir.txt\\
-\textcolor{white}{.}\hspace{2.9cm}|\hspace{1.8cm}|ViejoTrabajar.txt\\
-\textcolor{white}{.}\hspace{2.9cm}|desencriptar/..\\
-\textcolor{white}{.}\hspace{2.9cm}|enviar/..\\
-\textcolor{white}{.}\hspace{2.9cm}|recibir/..\\
-\textcolor{white}{.}\hspace{2.9cm}|trabajar/..\\
-\textcolor{white}{.}\hspace{2.9cm}|Automatico.sh\\
-\textcolor{white}{.}\hspace{2.9cm}|Borrar.sh\\
-\textcolor{white}{.}\hspace{2.9cm}|Cristian.sh\\
-%\textcolor{white}{.}\hspace{2.9cm}|Desencriptando.sh\\
-\textcolor{white}{.}\hspace{2.9cm}|Enviando.sh\\
-\textcolor{white}{.}\hspace{2.9cm}|Recibiendo.sh\\
-%\textcolor{white}{.}\hspace{2.9cm}|Tabajando.sh
-}\\
+%\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoEnviar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoRecibir.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoTrabajar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|desencriptar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|enviar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|recibir/..\\
+\textcolor{white}{.}\hspace{3.15cm}|trabajar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|Automatico.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Borrar.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Cristian.sh\\
+%\textcolor{white}{.}\hspace{3.15cm}|Desencriptando.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Enviando.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Recibiendo.sh\\
+%\textcolor{white}{.}\hspace{3.15cm}|Tabajando.sh
+}
 
 Este árbol de directorios estará en el archivo \texttt{ficheros.tar.gz} que se encontrará en el ordenador central y será distribuido a cada tarjeta mediante ssh\footnote{Recordemos que, tanto para \texttt{ssh} como para \texttt{scp}, el elemento \texttt{zyboX} es el identificador de la tarjeta Zybo con la que estamos trabajando.} con el siguiente comando:
 \begin{center}
@@ -174,7 +178,7 @@ Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.
 
 Aquí, será también el script \texttt{Cristian.sh} el que tome partido, ya que para simular un tratamiento de datos, es este script el que añade al archivo una nueva línea diciendo que el archivo (inicialmente enviado por el ordenador central) ha sido tratado en la tarjeta en la que nos encontremos.
 
-Concretamente, la línea que introduce en el archivo es la siguiente:\label{aqui}
+Concretamente, la línea que introduce en el archivo es la siguiente:
 \begin{center}
 	\texttt{Archivo tratado en zyboX}
 \end{center}
@@ -187,20 +191,69 @@ Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.
 Aquí también tendremos un script en segundo plano, \texttt{Enviando.sh}, que comprobará si hay algún cambio en los ficheros y los enviará al siguiente dispositivo mediante ssh\footnote{Para ver como funciona el envío de ficheros mediante ssh, ver el documento ``Envío y recepcion de ficheros con sshpass''.}.
 
 
-\section{Scritps}
+\section{Scripts}
 En este apartado, describiremos los distintos scripts que podemos encontrar en las tarjetas Zybo con su descripción y código correspondiente.
 
-Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el ordenador central.
+Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el ordenador central hasta ser enviado al siguiente dispositivo.
 
-Para comprobar el estado de todos los directorios, usaremos el comando \texttt{stat} (anteriormente mencionado en este documento) que nos dará la información de los ficheros que existen en un directorio.
+Para comprobar el estado de todos los directorios, usaremos el comando \texttt{stat} para comprobar el estado de los directorios.
 
-Debemos tener en cuenta que, para emular el trabajo de nuestro compañero Cristian, hemos hecho que el script \texttt{Cristian.sh} sea el que ``desencripta'' el fichero, añade información (tal como está en \ref{aqui}) y ``encripta'' el fichero de nuevo, justo antes de enviarlo al directorio \texttt{/enviar}.
+En el trabajo aquí mencionado se emula el desencriptado de un fichero, adición de información, cifrado, y envío del mismo a otro dispositivo\footnote{Para cambiar dicho comportamiento, solo tendremos que modificar los scritps que se encargan de automatizar el proceso.}.
+
+%Debemos tener en cuenta que, para emular el trabajo de nuestro compañero Cristian, hemos hecho que el script \texttt{Cristian.sh} sea el que ``desencripta'' el fichero, añade información y ``encripta'' el fichero de nuevo, justo antes de enviarlo al directorio \texttt{/enviar}.
+
+\subsection{\texttt{Lanzador.sh}}
+Este script se encarga de lanzar el script \texttt{Automatico.sh} mediante la herramienta cron\footnote{Para más información, ver el manual de crontab en este \href{https://linux.die.net/man/5/crontab}{\textcolor{blue}{enlace}}.} al inicio del sistema operativo Xillinux.
+
+Para usarlo, debemos usar el siguiente comando:
+\begin{center}
+	\texttt{crontab -e}
+\end{center}
+
+Y, luego, añadir la regla que queramos que se ejecute al final del fichero. En nuestro caso es la siguiente:
+\begin{center}
+	\texttt{@reboot (cd \textasciitilde/ficheros; ./Lanzador.sh)}
+\end{center}
+
+Esto hará que la herramienta cron inicie este script al iniciar el sistema operativo Xillinux de las tarjetas.
+\subsubsection{Código}
+\lstinputlisting[language=Bash]{Scripts/Lanzador.sh}
+\begin{center}
+	Código de \texttt{Lanzador.sh}.
+\end{center}
+
+\newpage
+\subsubsection{Diagrama de flujo}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{Diagramas/Lanzador.png}
+	\caption{Diagrama de flujo de \texttt{Lanzador.sh}.}
+	\label{Diagrama de flujo de Lanzador.sh}
+\end{figure}
+
+\subsection{\texttt{Automatico.sh}}
+Este script es el encargado de lanzar el resto de scripts cada segundo para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
+
+\subsubsection{Código}
+\lstinputlisting[language=Bash]{Scripts/Automatico.sh}
+\begin{center}
+	Código de \texttt{Automatico.sh}.
+\end{center}
+
+\newpage
+\subsubsection{Diagrama de flujo}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{Diagramas/Automatico.png}
+	\caption{Diagrama de flujo de \texttt{Automatico.sh}.}
+	\label{Diagrama de flujo de Automatico.sh}
+\end{figure}
 
 \subsection{\texttt{Recibiendo.sh}}
 Este script es el encargado de comprobar periódicamente el estado del directorio \texttt{/recibir} y, si llega un archivo nuevo, enviarlo al directorio \texttt{/desencriptar}.
 
 \subsubsection{Código}
-\lstinputlisting[language=Bash]{Recibiendo.sh}
+\lstinputlisting[language=Bash]{Scripts/Recibiendo.sh}
 \begin{center}
 	Código de \texttt{Recibiendo.sh}.
 \end{center}
@@ -209,15 +262,10 @@ Este script es el encargado de comprobar periódicamente el estado del directori
 \subsubsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{Recibiendo.png}
+	\includegraphics[scale=0.8]{Diagramas/Recibiendo.png}
 	\caption{Diagrama de flujo de \texttt{Recibiendo.sh}.}
 	\label{Diagrama de flujo de Recibiendo.sh}
 \end{figure}
-%\begin{center}
-%	\includegraphics[scale=0.6]{Recibiendo.png}\\
-%	\caption{Diagrama de flujo de \texttt{Recibiendo.sh}}
-%	\label{Diagrama de flujo de Recibiendo.sh}
-%\end{center}
 
 \newpage
 \subsection{\texttt{Cristian.sh}}
@@ -231,7 +279,7 @@ Siendo zyboX el identificador de la tarjeta con la que estamos trabajando.
 Por último, envía el fichero al directorio \texttt{/enviar}.
 
 \subsubsection{Código}
-\lstinputlisting[language=Bash]{Cristian.sh}
+\lstinputlisting[language=Bash]{Scripts/Cristian.sh}
 \begin{center}
 	Código de \texttt{Cristian.sh}.
 \end{center}
@@ -239,7 +287,7 @@ Por último, envía el fichero al directorio \texttt{/enviar}.
 \subsubsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.44]{Cristian.png}
+	\includegraphics[scale=0.7]{Diagramas/Cristian.png}
 	\caption{Diagrama de flujo de \texttt{Cristian.sh}.}
 	\label{Diagrama de flujo de Cristian.sh}
 \end{figure}
@@ -261,7 +309,7 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 \end{enumerate}
 
 \subsubsection{Código}
-\lstinputlisting[language=Bash]{Enviando.sh}
+\lstinputlisting[language=Bash]{Scripts/Enviando.sh}
 \begin{center}
 	Código de \texttt{Enviando.sh}.
 \end{center}
@@ -270,37 +318,11 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 \subsubsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.435]{Enviando.png}
-	\caption{Diagrama de flujo de \texttt{Enviando.sh}.}
+	\includegraphics[scale=0.65]{Diagramas/Enviando.png}
+	\caption{Diagrama de flujo de \texttt{Diagramas/Enviando.sh}.}
 	\label{Diagrama de flujo de Enviando.sh}
 \end{figure}
 
-\subsection{\texttt{Automatico.sh}}
-Este script es el encargado de lanzar el resto de scripts en segundo plano cada segundo para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
-
-Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{/ficheros} de las tarjetas Zybo:
-\begin{center}
-	\texttt{./Automatico.sh \&}
-\end{center}
-
-De esta forma, lo mandamos a segundo plano, para poder seguir utilizando la consola de las tarjetas con normalidad.
-
-\subsubsection{Código}
-\lstinputlisting[language=Bash]{Automatico.sh}
-\begin{center}
-	Código de \texttt{Automatico.sh}.
-\end{center}
-
-\subsubsection{Diagrama de flujo}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.9]{Automatico.png}
-	\caption{Diagrama de flujo de \texttt{Automatico.sh}.}
-	\label{Diagrama de flujo de Automatico.sh}
-\end{figure}
-
-%\subsubsection{Mejoras}
-%Que este script se lance solo al conectar la tarjeta a la corriente con cron o algo parecido.
 
 \subsection{\texttt{Borrar.sh}}
 Este script se encarga de vaciar los directorios \texttt{recibir}, \texttt{desencriptar}, \texttt{trabajar} y \texttt{recibir} de las tarjetas Zybo.
@@ -311,7 +333,7 @@ Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{
 \end{center}
 
 \subsubsection{Código}
-\lstinputlisting[language=Bash]{Borrar.sh}
+\lstinputlisting[language=Bash]{Scripts/Borrar.sh}
 \begin{center}
 	Código de \texttt{Borrar.sh}.
 \end{center}
@@ -319,10 +341,12 @@ Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{
 \subsubsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.9]{Borrar.png}
+	\includegraphics[scale=0.9]{Diagramas/Borrar.png}
 	\caption{Diagrama de flujo de \texttt{Borrar.sh}.}
 	\label{Diagrama de flujo de Borrar.sh}
 \end{figure}
+
+
 
 %\subsection{\texttt{Desencriptando.sh}}
 

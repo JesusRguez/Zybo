@@ -4,8 +4,8 @@
 
 while :
 do
-	./Recibiendo.sh &
-	./Cristian.sh &
-	./Enviando.sh &
+	./Recibiendo.sh
+	./Cristian.sh
+	./Enviando.sh
 	sleep 1
 done

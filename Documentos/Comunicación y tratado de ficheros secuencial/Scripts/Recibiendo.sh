@@ -30,5 +30,5 @@ then
         fichero=$(ls -t | head -1) #Obtenemos el fichero más reciente
         cp $fichero $DIR_TO_SEND
     fi
-        echo $NEW_STAT > $OLD_STAT_FILE #Actualiza el estado del directorio
+    echo $NEW_STAT > $OLD_STAT_FILE #Actualiza el estado del directorio
 fi
