@@ -140,14 +140,43 @@ Luego, entramos en la tarjeta mediante ssh con el siguiente comando:
 	\texttt{sshpass -p zyboX ssh -o StrictHostKeyChecking=no zyboX@zuboX}
 \end{center}
 
-\textcolor{red}{Poner alguna foto identificativa de lo que está pasando en todo el proceso\\}
+Para ver si tenemos el archivo \texttt{ficheros.tar.gz} usamos el comando:
+\begin{center}
+	\texttt{ls}
+\end{center}
 
-Una vez dentro del directorio \texttt{/home} de la tarjeta, aplicamos el siguiente comando para descomprimir el archivo \texttt{ficheros.tar.gz}:
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale=0.6]{ls.png}
+%	\caption{Salida del comando ls.}
+%	\label{Salida del comando ls}
+%\end{figure}
+
+A continuación, aplicamos el siguiente comando para descomprimir el archivo \texttt{ficheros.tar.gz}:
 \begin{center}
 	\texttt{tar -xzvf ficheros.tar.gz}
 \end{center}
 
-Y se nos creará el árbol de directorios anteriormente citado en el directorio \texttt{/home} de la tarjeta Zybo a la que hayamos accedido.
+Se nos creará el árbol de directorios anteriormente citado en el directorio \texttt{/home} de la tarjeta Zybo a la que hayamos accedido.
+% tal como podemos ver en la siguiente imagen:
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale=0.5]{arbol.png}
+%	\caption{Descompresión del archivo \texttt{ficheros.tar.gz}.}
+%	\label{Descompresión del archivo ficheros.tar.gz}
+%\end{figure}
+
+Para que la automatización del proceso se lleve a cabo correctamente, también tendremos que modificar el fichero \texttt{/etc/hosts} de la tarjeta. Para ello, enviamos el fichero con el siguiente comando:
+\begin{center}
+	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no hosts zyboX@zyboX:}
+\end{center}
+
+Y, luego, lo copiamos como super-usuario\footnote{Comando: \texttt{su}, y contraseña \texttt{root}.} en el directorio \texttt{/etc} con el siguiente comando:
+\begin{center}
+	\texttt{cp hosts /etc}
+\end{center}
+
+Una vez hecho esto, el proceso de automatización estaría listo para ser lanzado.
 
 \section{Directorios}
 En este apartado, describiremos los distintos directorios que podemos encontrar en las tarjetas Zybo una vez que se ha descomprimido el archivo \texttt{ficheros.tar.gz}.
