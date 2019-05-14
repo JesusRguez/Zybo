@@ -81,13 +81,20 @@
 	
 	\maketitle
 	\begin{abstract} %Poner esto en todas las prácticas de PCTR
-		\begin{center}
-			En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre los dispositivos del proyecto de manera secuencial y automática.
+		~
+		\begin{itemize}
+			\item En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre los dispositivos de la red de manera secuencial y automática.
 			
-			Para conseguir dicha finalidad, las tarjetas iniciarán automáticamente un proceso que comprobará si les envían un fichero nuevo y, en caso de que así sea, trabajarán con el y lo enviarán a la siguiente tarjeta, o, en caso de que no esté conectada, al ordenador central.
+			Para conseguir dicha finalidad, las tarjetas iniciarán automáticamente un proceso que comprobará si les envían un fichero nuevo y, en caso de que así sea, realizarán alguna modificación en él y lo enviarán a la siguiente tarjeta, o, en caso de que no esté conectada, al ordenador central.
 			
-			El fichero será recibido en el directorio \texttt{\textasciitilde/ficheros/recibir} e irá pasando por los directorios \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \texttt{\textasciitilde/ficheros/enviar} antes de ser enviado al siguiente dispositivo.
-		\end{center}
+			\item Particularmente, la tarea a realizar aquí consta de la recepción de un fichero cifrado, su descifrado, su modificación, su cifrado y, por último su envío hacia el siguiente dispositivo.
+			
+			\item Se describirá una estructura de directorios que serán recorridos por el fichero inicial en sus distintos estados.
+			
+			Basándonos en dichos estados, nombraremos dichos directorios tal como se describen a continuación.
+			
+			\item El fichero será recibido en el directorio \texttt{\textasciitilde/ficheros/recibir} e irá pasando por los directorios \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \\ \texttt{\textasciitilde/ficheros/enviar} antes de ser enviado al siguiente dispositivo.
+		\end{itemize}
 	\end{abstract}
 	\thispagestyle{empty}
 	\newpage
@@ -152,7 +159,7 @@ Para ver si tenemos el archivo \texttt{ficheros.tar.gz} usamos el comando:
 %	\label{Salida del comando ls}
 %\end{figure}
 
-A continuación, aplicamos el siguiente comando para descomprimir el archivo \texttt{ficheros.tar.gz}:
+A continuación, aplicamos el siguiente comando para descomprimir el archivo\\ \texttt{ficheros.tar.gz}:
 \begin{center}
 	\texttt{tar -xzvf ficheros.tar.gz}
 \end{center}
@@ -184,7 +191,7 @@ En este apartado, describiremos los distintos directorios que podemos encontrar 
 Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el ordenador central, salvo el directorio \texttt{/backups} que se describirá primero ya que no interviene de forma directa en el camino a recorrer por el archivo recibido.
 
 \subsection{Directorio \texttt{/backups}}
-En este directorio se guardarán los estados de los siguientes directorios generados por el comando \texttt{stat}\footnote{Para más información leer el manual del comando \texttt{stat} en este \href{https://linux.die.net/man/2/stat}{\textcolor{blue}{enlace}}.}.
+En este directorio se guardarán los últimos estados de los directorios nombrados a continuación, generados por el comando \texttt{stat}\footnote{Para más información leer el manual del comando \texttt{stat} en este \href{https://linux.die.net/man/2/stat}{\textcolor{blue}{enlace}}.}.
 \begin{itemize}
 	\item \textbf{\texttt{ViejoDesencriptar.txt}:} Este fichero contendrá el estado del directorio \texttt{/desencriptar} una vez que el script \texttt{Desencriptando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
 	\item \textbf{\texttt{ViejoEnviar.txt}:} Este fichero contendrá el estado del directorio \texttt{/enviar} una vez que el script \texttt{Enviando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
@@ -193,14 +200,10 @@ En este directorio se guardarán los estados de los siguientes directorios gener
 \end{itemize}
 
 \subsection{Directorio \texttt{/recibir}}
-Este directorio contendrá los ficheros enviados por el ordenador central mediante ssh\footnote{Para ver como enviar ficheros desde el ordenador central hasta este directorio, ver el documento ``Envío y recepción de ficheros con sshpass''.}.
-
-Tendremos un script en segundo plano, \texttt{Recibiendo.sh}, que comprobará si hay algún cambio en el directorio. Si lo hay\footnote{Si hay un cambio en el directorio, supone que ha llegado un nuevo archivo por parte del ordenador.}, envía el archivo al directorio \texttt{/desencriptar}.
+Este directorio contendrá los ficheros enviados por otros dispositivos mediante ssh\footnote{Para ver como enviar ficheros desde un dispositivo a otro hasta este directorio, ver el documento ``Envío y recepción de ficheros con sshpass''.}.
 
 \subsection{Directorio \texttt{/desencriptar}}
 Este directorio contendrá los ficheros enviados desde el directorio \texttt{/recibir} por el script \texttt{Recibiendo.sh} que comprobará el estado del directorio anterior.
-
-Tendremos un script en segundo plano, \texttt{Cristian.sh} que comprobará si hay algún cambio en el directorio. Si lo hay, envía el archivo al directorio \texttt{/trabajar}.
 
 \subsection{Directorio \texttt{/trabajar}}
 Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.sh} que comprobará el estado del directorio anterior.
@@ -261,7 +264,7 @@ Esto hará que la herramienta cron inicie este script al iniciar el sistema oper
 \end{figure}
 
 \subsection{\texttt{Automatico.sh}}
-Este script es el encargado de lanzar el resto de scripts cada segundo para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
+Este script es el encargado de lanzar el resto de scripts periódicamente para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
 
 \subsubsection{Código}
 \lstinputlisting[language=Bash]{Scripts/Automatico.sh}
@@ -279,7 +282,7 @@ Este script es el encargado de lanzar el resto de scripts cada segundo para que 
 \end{figure}
 
 \subsection{\texttt{Recibiendo.sh}}
-Este script es el encargado de comprobar periódicamente el estado del directorio \texttt{/recibir} y, si llega un archivo nuevo, enviarlo al directorio \texttt{/desencriptar}.
+Este script es el encargado de comprobar el estado del directorio \texttt{\textasciitilde/ficheros/recibir} y, si llega un archivo nuevo, enviarlo al directorio \texttt{\textasciitilde/ficheros/desencriptar}.
 
 \subsubsection{Código}
 \lstinputlisting[language=Bash]{Scripts/Recibiendo.sh}
@@ -298,14 +301,17 @@ Este script es el encargado de comprobar periódicamente el estado del directori
 
 \newpage
 \subsection{\texttt{Cristian.sh}}
-Este script es el encargado de emular el trabajo de nuestro compañero Cristian. Se encarga de comprobar periódicamente el estado del directorio \texttt{/desencriptar}, mueve el archivo allí situado al directorio \texttt{/trabajar} (simulando el desencriptado) y allí le añade un texto tal como el siguiente:
-\begin{center}
-	\texttt{Archivo tratado en zyboX}
-\end{center}
-
-Siendo zyboX el identificador de la tarjeta con la que estamos trabajando.
-
-Por último, envía el fichero al directorio \texttt{/enviar}.
+Este script es el encargado de emular el trabajo de nuestro compañero Cristian y realiza las siguientes tareas:
+\begin{itemize}
+	\item Gracias al crontab establecido, se encarga de comprobar periódicamente el estado del directorio \texttt{\textasciitilde/ficheros/desencriptar}.
+	\item Mueve el archivo allí situado al directorio \texttt{\textasciitilde/ficheros/trabajar} (simulando el desencriptado del mismo).
+	\item Una vez allí, añade un texto como el siguiente:
+	\begin{center}
+		\texttt{Archivo tratado en zyboX}
+	\end{center}	
+	Siendo zyboX el identificador de la tarjeta con la que estamos trabajando.
+	\item Por último, envía el fichero al directorio \texttt{\textasciitilde/ficheros/enviar}.
+\end{itemize}
 
 \subsubsection{Código}
 \lstinputlisting[language=Bash]{Scripts/Cristian.sh}
@@ -323,9 +329,13 @@ Por último, envía el fichero al directorio \texttt{/enviar}.
 
 \newpage
 \subsection{\texttt{Enviando.sh}}
-Este script es el encargado de comprobar periódicamente el estado del directorio \texttt{/enviar} y, cuando detecta un cambio, envía el archivo a la siguiente tarjeta, o, si ésta se encuentra desconectada, al ordenador central.
+Este script es el encargado de comprobar periódicamente el estado del directorio\\ \texttt{\textasciitilde/ficheros/enviar} y, cuando detecta un cambio, envía el archivo a la siguiente tarjeta, o, si ésta se encuentra desconectada, al ordenador central.
 
-A la hora de comprobar si la siguiente tarjeta está conectada o no, se hace enviando un comando ping a la siguiente tarjeta.
+A la hora de comprobar si la siguiente tarjeta está conectada o no, se hace enviando un comando ping a la siguiente tarjeta, por lo que se nos presentarán dos posibles casos:
+\begin{itemize}
+	\item \textbf{Éxito:} La tarjeta está conectada y será allí donde se envíe el fichero.
+	\item \textbf{Fracaso:} La tarjeta no está conectada y el fichero será enviado al ordenador central.
+\end{itemize}
 
 Para que podamos usar el comando ping desde este script, debemos darle permisos de ejecución en modo usuario de la siguiente forma:
 \begin{enumerate}
@@ -354,7 +364,7 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 
 
 \subsection{\texttt{Borrar.sh}}
-Este script se encarga de vaciar los directorios \texttt{recibir}, \texttt{desencriptar}, \texttt{trabajar} y \texttt{recibir} de las tarjetas Zybo.
+Este script se encarga de vaciar los directorios \texttt{\textasciitilde/ficheros/recibir},\\ \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \texttt{\textasciitilde/ficheros/recibir} de las tarjetas Zybo.
 
 Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{/ficheros} de las tarjetas Zybo:
 \begin{center}

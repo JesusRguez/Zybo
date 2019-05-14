@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.1}Directorio \texttt {/backups}}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Directorio \texttt {/recibir}}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Directorio \texttt {/desencriptar}}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Directorio \texttt {/trabajar}}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Directorio \texttt {/trabajar}}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Directorio \texttt {/enviar}}{5}{subsection.2.5}
 \contentsline {section}{\numberline {3}Scripts}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}\texttt {Lanzador.sh}}{5}{subsection.3.1}
@@ -23,5 +23,5 @@
 \contentsline {subsubsection}{\numberline {3.5.1}C\IeC {\'o}digo}{13}{subsubsection.3.5.1}
 \contentsline {subsubsection}{\numberline {3.5.2}Diagrama de flujo}{15}{subsubsection.3.5.2}
 \contentsline {subsection}{\numberline {3.6}\texttt {Borrar.sh}}{15}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}C\IeC {\'o}digo}{16}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}Diagrama de flujo}{16}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.1}C\IeC {\'o}digo}{15}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Diagrama de flujo}{15}{subsubsection.3.6.2}

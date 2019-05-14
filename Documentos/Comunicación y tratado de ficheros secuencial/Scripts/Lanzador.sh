@@ -2,4 +2,4 @@
 
 #Lanzador.sh
 
-./Automatico.sh &
+./Automatico.sh
