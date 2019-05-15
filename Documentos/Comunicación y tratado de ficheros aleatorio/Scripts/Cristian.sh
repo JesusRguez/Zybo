@@ -32,9 +32,9 @@ then
         fichero=$(ls -t | head -1) #Obtenemos el fichero más reciente
         cp $fichero $DIR_TEMP
         cd $DIR_TEMP
-        #Trabajamos con el fichero
-        echo 'Archivo tratado en '$USER >> $fichero
+        tarjeta=$(cat /etc/passwd | cut -d : -f1 | grep zybo)
+        echo 'Archivo tratado en '$tarjeta >> $fichero
         cp $fichero $DIR_TO_SEND
     fi
-    echo $NEW_STAT > $OLD_STAT_FILE
+    echo $NEW_STAT > $OLD_STAT_FILE #Actualiza el estado del directorio
 fi

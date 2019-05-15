@@ -27,7 +27,7 @@ then
     then
         fichero=$(ls -t | head -1) #Obtenemos el fichero más reciente
 
-        actual=$USER
+        actual=$(cat /etc/passwd | cut -d : -f1 | grep zybo)
         nActual=$(echo ${actual##*o})
         let nSiguiente=nActual+1
         siguiente=zybo$nSiguiente
@@ -36,7 +36,7 @@ then
 
         if [[ $string == *100%\ packet\ loss* ]]
         then
-            sshpass -p zybomonitor scp -o StrictHostKeyChecking=no $fichero zybo@monitor:/home/zybo/Documentos/Zybo
+            sshpass -p zybomonitor scp -o StrictHostKeyChecking=no $fichero zybo@monitor:/home/zybo/Documento/Zybo
         else
             siguienteZybo=$siguiente
             siguienteZybo+=@
@@ -48,5 +48,5 @@ then
             sshpass -p $siguiente scp -o StrictHostKeyChecking=no $fichero $siguienteZybo
         fi
     fi
-    echo $NEW_STAT > $OLD_STAT_FILE
+    echo $NEW_STAT > $OLD_STAT_FILE #Actualiza el estado del directorio
 fi

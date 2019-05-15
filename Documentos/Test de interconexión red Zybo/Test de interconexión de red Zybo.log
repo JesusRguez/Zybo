@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.30)  12 MAY 2019 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.30)  15 MAY 2019 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,9 +604,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
- [3 <./Script.png>]
+ [3 <./Script.png>] [4] <Inicio.png, id=59, 467.7475pt x 861.2175pt>
+File: Inicio.png Graphic file (type png)
+ <use Inicio.png>
+Package pdftex.def Info: Inicio.png used on input line 153.
+(pdftex.def)             Requested size: 271.29373pt x 499.5065pt.
+ [5 <./Inicio.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 151.
+nput line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
@@ -619,19 +624,14 @@ File: se-iso-8859-1.def 2016/05/16 v1.11 stringenc: ISO-8859-1
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 6.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 8.
 
-Overfull \hbox (1.01259pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.72275pt too wide) in paragraph at lines 17--18
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[4] <Inicio.png, id=83, 467.7475pt x 861.2175pt>
-File: Inicio.png Graphic file (type png)
- <use Inicio.png>
-Package pdftex.def Info: Inicio.png used on input line 160.
-(pdftex.def)             Requested size: 271.29373pt x 499.5065pt.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
- [5 <./Inicio.png>]
+[6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
  (./Test de interconexión de red Zybo.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -641,13 +641,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
 Package rerunfilecheck Info: File `"Test de interconexión de red Zybo".out' ha
 s not changed.
-(rerunfilecheck)             Checksum: 5857C60DEC9AB3DB6B2AD3AB9C5A8A0D;325.
+(rerunfilecheck)             Checksum: 355E3C69A60253DA85701F1BAB6E0395;325.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 10215 strings out of 493013
- 143995 string characters out of 6135682
- 275797 words of memory out of 5000000
+ 10218 strings out of 493013
+ 144031 string characters out of 6135682
+ 274797 words of memory out of 5000000
  13540 multiletter control sequences out of 15000+600000
  66848 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -657,11 +657,11 @@ e/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "Test de interconexión de red Zybo.pdf" (5 pages, 101856 byt
+Output written on "Test de interconexión de red Zybo.pdf" (6 pages, 102579 byt
 es).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

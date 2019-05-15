@@ -1,24 +1,27 @@
 \select@language {spanish}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}{section.1}
-\contentsline {section}{\numberline {2}Directorios}{3}{section.2}
+\contentsline {section}{\numberline {2}Directorios}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Directorio \texttt {/backups}}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Directorio \texttt {/recibir}}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Directorio \texttt {/desencriptar}}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Directorio \texttt {/trabajar}}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Directorio \texttt {/enviar}}{5}{subsection.2.5}
-\contentsline {section}{\numberline {3}Scritps}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}\texttt {Recibiendo.sh}}{5}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}C\IeC {\'o}digo}{5}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Diagrama de flujo}{6}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}\texttt {Cristian.sh}}{6}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}C\IeC {\'o}digo}{6}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Diagrama de flujo}{7}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}\texttt {Enviando.sh}}{7}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}C\IeC {\'o}digo}{8}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Diagrama de flujo}{9}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}\texttt {Automatico.sh}}{9}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}C\IeC {\'o}digo}{9}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Diagrama de flujo}{10}{subsubsection.3.4.2}
-\contentsline {subsection}{\numberline {3.5}\texttt {Borrar.sh}}{10}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}C\IeC {\'o}digo}{10}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Diagrama de flujo}{10}{subsubsection.3.5.2}
+\contentsline {section}{\numberline {3}Scripts}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}\texttt {Lanzador.sh}}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Diagrama de flujo}{6}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}C\IeC {\'o}digo}{6}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}\texttt {Automatico.sh}}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Diagrama de flujo}{7}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}C\IeC {\'o}digo}{7}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}\texttt {Recibiendo.sh}}{7}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Diagrama de flujo}{8}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}C\IeC {\'o}digo}{8}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}\texttt {Cristian.sh}}{9}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Diagrama de flujo}{10}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}C\IeC {\'o}digo}{11}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}\texttt {Enviando.sh}}{12}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Diagrama de flujo}{13}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}C\IeC {\'o}digo}{14}{subsubsection.3.5.2}
+\contentsline {subsection}{\numberline {3.6}\texttt {Borrar.sh}}{15}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Diagrama de flujo}{15}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}C\IeC {\'o}digo}{16}{subsubsection.3.6.2}
