@@ -1,0 +1,298 @@
+%%\documentclass[a4paper,12pt,oneside]{llncs}
+\documentclass{book}
+%\usepackage[right=2cm,left=3cm,top=2cm,bottom=2cm,headsep=0cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Juego de caracteres usado en el archivo fuente: UTF-8
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+%\usepackage{eurosym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Juego de caracteres usado en la salida dvi
+% Otra posibilidad: \usepackage{t1enc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ajusta maergenes para a4
+\usepackage{a4wide}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Uso fuente postscript times, para que los ps y pdf queden y pequeños...
+\usepackage{times}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Posibilidad de hipertexto (especialmente en pdf)
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graficos 
+\usepackage{graphics,graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ciertos caracteres "raros"...
+\usepackage{latexsym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Matematicas aun más fuertes (american math dociety)
+%\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{multirow} % para las tablas
+%\usepackage[spanish,es-tabla]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fuentes matematicas lo mas compatibles posibles con postscript (times)
+%% (Esto no funciona para todos los simbolos pero reduce mucho el tamaño del
+%% pdf si hay muchas matamaticas....
+%\usepackage{mathptm}
+
+%%% VARIOS:
+%\usepackage{slashbox}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{titling}
+
+%% MARCA DE AGUA
+%% Este package de "draft copy" NO funciona con pdflatex
+%%\usepackage{draftcopy}
+%% Este package de "draft copy" SI funciona con pdflatex
+%%%\usepackage{pdfdraftcopy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Indenteacion en español...
+%\usepackage[spanish]{babel}
+\usepackage{Estilos/Apuntes}
+\usepackage[svgnames,x11names,table]{xcolor}
+\usepackage{listingsutf8}
+% Para escribir código en C
+% \begin{verbatim}[language=C]
+% #include <stdio.h>
+% int main(int argc, char* argv[]) {
+% puts("Hola mundo!");
+% }
+% \end{verbatim}
+\usepackage{hyphenat}
+
+\newenvironment{changemargin}[2]{%
+	\begin{list}{}{%
+			\setlength{\topsep}{0pt}%
+			\setlength{\leftmargin}{#1}%
+			\setlength{\rightmargin}{#2}%
+			\setlength{\listparindent}{\parindent}%
+			\setlength{\itemindent}{\parindent}%
+			\setlength{\parsep}{\parskip}%
+		}%
+		\item[]}{\end{list}}
+	
+\newenvironment{nota}{
+	\begin{changemargin}{2em}{2em}
+		\textbf{\textsc{Nota: }}
+	}{
+	\end{changemargin}
+}
+
+
+\title{\huge{Infraestructura de red de nodos cifradores/descifradores AES basada en ApSoC}}
+\author{Jesús Rodríguez Heras}
+
+
+%%Configuracion del paquete listings
+\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1, basicstyle=\small\ttfamily, tabsize=1, extendedchars=true, inputencoding=utf8/latin1, breaklines=true}
+
+\begin{document}
+%	\maketitle
+
+%	\begin{titlepage}
+%		\centering
+%		
+%		{\scshape\huge Escuela Superior de Ingeniería \par}
+%		\vspace{1cm}
+%		{\scshape\LARGE Universidad de Cádiz\par}
+%		\vspace{1cm}
+%		{\scshape\Large{Stimey}\par}
+%		\vspace{1cm}
+%		{\Huge\bfseries Fantasy\par}
+%		\vspace{1cm}
+%		{\Large\itshape Luis Gutiérrez Flores\\
+%			Nicolás Ruiz Requejo\\
+%			Jesús Rodríguez Heras\\
+%			Arantzazu Otal Alberro\\
+%			Alejandro Segovia Gallardo\\
+%			Alejandro José Caraballo García\\
+%			Gabriel Fernando Sánchez Reina\par}
+%		\vspace{2.5cm}
+%		\begin{table}[htb]
+%			\centering
+%			\begin{tabular}{ccc}
+%				\includegraphics[width=0.15\textwidth]{UCA.png}\par\vspace{1.2cm} & \includegraphics[width=0.15\textwidth]{ESI.png}\par\vspace{1.2cm} & \includegraphics[width=0.15\textwidth]{Stimey.png}\par\vspace{1.2cm}
+%			\end{tabular}
+%		\end{table}
+%%		\vfill
+%		
+%		
+%		
+%		% Bottom of the page
+%%		{\large \today\par}
+%	\end{titlepage}
+
+\begin{titlepage}
+	\centering
+%	\includegraphics[width=.1\textwidth]{UCA.png}
+
+\begin{table}[htb]
+				\centering
+				\begin{tabular}{cc}
+					\includegraphics[width=0.15\textwidth]{UCA.png}\par\vspace{0.2cm} & \includegraphics[width=0.15\textwidth]{ESI.png}\par\vspace{0.2cm}
+				\end{tabular}
+			\end{table}
+	
+%	\bigskip
+%	\bigskip
+%	\bigskip
+	
+	\begin{changemargin}{3em}{3em}
+		\centering
+		
+		{\LARGE \textsc{\nohyphens{Escuela Superior de Ingeniería}}}
+		
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		
+		{\LARGE \nohyphens{Grado en Ingeniería Informática}}
+		
+		\bigskip
+		\bigskip
+%		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		
+		{\LARGE \nohyphens{\textbf{Infraestructura de red de nodos cifradores/descifradores AES basada en ApSoC}}}
+		
+		\bigskip
+		\bigskip
+%		\bigskip
+		\bigskip
+		\bigskip
+		
+		{\large Curso 2019-2020}
+		
+		\bigskip
+		\bigskip
+%		\bigskip
+%		\bigskip
+		\bigskip
+		\bigskip
+		
+	\end{changemargin}
+	
+	{\Large Jesús Rodríguez Heras} \\
+	\bigskip
+	\bigskip 
+	\bigskip 
+	{\large Puerto Real, \today}
+	
+\end{titlepage}
+\newpage{\pagestyle{empty}\cleardoublepage}  
+{
+	\thispagestyle{empty} 
+	\centering
+%	\includegraphics[width=.1\textwidth]{UCA.png}
+\begin{table}[htb]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=0.15\textwidth]{UCA.png}\par\vspace{0.2cm} & \includegraphics[width=0.15\textwidth]{ESI.png}\par\vspace{0.2cm}
+	\end{tabular}
+\end{table}
+	
+%	\bigskip
+%	\bigskip
+%	\bigskip
+	
+	\begin{changemargin}{3em}{3em}
+		
+		\begin{center}
+			{\LARGE \textsc{\nohyphens{Escuela Superior de Ingeniería}}}
+			
+			\bigskip
+			\bigskip
+			
+			{\LARGE \nohyphens{Grado en Ingeniería Informática}}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			{\LARGE \nohyphens{\textbf{Infraestructura de red de nodos cifradores/descifradores AES basada en ApSoC}}}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+		\end{center}
+	\end{changemargin}
+	
+	\begin{flushleft}
+		\Large
+		
+		\textsc{Departamento}: \nohyphens{Ingeniería Informática.} \\
+		\textsc{Directora del proyecto}: \nohyphens{María Ángeles Cifredo Chacón.} \\
+		\textsc{Codirectora del proyecto}: \nohyphens{María Mercedes Rodríguez García.} \\		
+		\textsc{Autor del proyecto}: \nohyphens{Jesús Rodríguez Heras}. \\
+	\end{flushleft}
+	
+	\bigskip
+	\bigskip
+	\bigskip
+	
+	\begin{flushright}
+		\large
+		Puerto Real, \today
+		
+		\bigskip    
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		Fdo.: Jesús Rodríguez Heras
+		
+	\end{flushright}
+	
+}
+	
+%	\thispagestyle{empty}
+	\newpage
+	
+%	\include{Resumen}
+	
+	\tableofcontents
+	\newpage
+	
+	\part{Prolegómeno}
+	\include{Prolegomeno/Introduccion}
+	\include{Prolegomeno/PlanProyecto}
+	
+	\part{Desarrollo}
+	\include{Desarrollo/AnalisisRequisitos}
+	\include{Desarrollo/CasosUso}
+	\include{Desarrollo/Implementacion}
+	\include{Desarrollo/Pruebas}
+
+	\part{Eplílogo}
+	\include{Epilogo/ManualUsuario}
+	\include{Epilogo/ManualInstalacionExplotacion}
+	\include{Epilogo/Conclusiones}
+	
+%	\include{Bibliografia}
+	
+\end{document}

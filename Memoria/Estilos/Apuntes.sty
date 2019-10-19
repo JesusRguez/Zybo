@@ -1,0 +1,183 @@
+%%
+%% ----------------- Opciones para el paquete hyperref --------------------------------------------------------------------- %%
+%%
+\hypersetup{%
+  pdffitwindow=true,%
+  pdfcenterwindow=true,%
+  pdfwindowui=false,%
+  pdfview=Fit,%
+  pdfstartview=Fit,%
+  pdftitle={Fantasy}, %<--------------- Título del Resumen ------------------->
+  pdfkeywords={Fantasy},
+  pdfauthor={Jesús Rodríguez Heras}, % <--------------- Autor del PDF --------------------->
+  pdfsubject={Fantasy},
+  colorlinks=true,
+  linkcolor=Red4,
+  citecolor=Red3,
+  urlcolor=Red3}
+%%
+%% ---------------------------------- Renombrar en castellano --------------------------------------------------- %%
+%%
+\renewcommand\contentsname  {Contenido}
+\renewcommand\listfigurename{Lista de Figuras}
+\renewcommand\listtablename {Lista of Tablas}
+\renewcommand\bibname       {Bibliografía}
+\renewcommand\indexname     {Índice}
+\renewcommand\figurename    {Figura}
+\renewcommand\tablename     {Tabla}
+\renewcommand\partname      {Parte}
+\renewcommand\chaptername   {Capítulo}
+\renewcommand\appendixname  {Apéndice}
+%%
+%% ----------------------- Fecha de hoy en castellano ------------------------------------------------------------ %%
+%%
+\def\today{%
+    \number\day\space de
+    \ifcase\month
+    \or
+      Enero
+    \or
+      Febrero
+    \or
+      Marzo
+    \or
+      Abril
+    \or
+      Mayo
+    \or
+      Junio
+    \or
+      Julio
+    \or
+      Agosto
+    \or
+      Septiembre
+    \or
+      Octubre
+    \or
+      Noviembre
+    \or
+      Diciembre
+    \fi
+    \space de \number\year
+  }%
+%%
+%% ------------------------------ Renombrando seno y arcoseno ----------------------------------------------------------- %%
+%%
+\renewcommand\sin{\mathop{\operator@font sen}\nolimits}
+\renewcommand\arcsin{\mathop{\operator@font arcsen}\nolimits}
+%%
+%% ----------------------------- Cambiamos el estilo de página myheadings ----------------------------------------------- %%
+%%
+\renewcommand{\ps@myheadings}{%
+              \renewcommand{\@evenhead}{%
+                            \hss\vbox{%
+                            \emph{Escuela Superior de Ingeniería\hfill Universidad de Cádiz}}}
+              \renewcommand{\@oddhead}{%
+                            \hss\vbox{%
+                            \emph{Fantasy\hfill Stimey}}}
+              \renewcommand{\@oddfoot}{\hfill\normalsize\rm\thepage\hfill}
+              \renewcommand\@evenfoot{{\hfill\normalsize\rm\thepage\hfill}}}
+%%
+%% ----------------------------- Estilo de página  ----------------------------------------------- %%
+%%
+\pagestyle{myheadings}
+%%
+%% ----------------------------------------------------- Parámetros de la página --------------------------------------- %%
+%%
+\voffset=0pt%
+\hoffset=0pt%
+\setlength\topmargin      {-0.5in}        % Subimos la cabecera para que est� m�s cerca del borde del papel.
+\setlength\headheight     {10pt}          % Altura de la cabecera.
+\setlength\headsep        {0.25in}        % Separaci�n entre la cabecera y el texto.
+\setlength\footskip       {0.75in}        % Distancia entre la parte inferior de texto y la parte inferior del pie de p�gina.
+\setlength\textwidth      {\paperwidth}   % Anchura del texto igual al ancho del papel. \paperwidth=210mm.
+\addtolength\textwidth    {-2in}          % Le quitamos una pulgada por cada lado para que quede centrado en anchura.
+\setlength\textheight     {\paperheight}  % Altura del texto igual al ancho de la pantalla. \paperheight=297mm.
+\addtolength\textheight   {-2in}          % Le quitamos 2 pulgadas para que quede centrado en altura.
+\setlength\oddsidemargin  {0in}           % Margen izquierdo en las p�ginas impares.
+\setlength\evensidemargin {0in}           % Margen izquierdo en las p�ginas pares.
+\setlength\parindent      {0pt}           % Sangrado a cero.
+\setlength\parskip        {10pt plus 5pt minus 5pt}          % Distancia entre p�rrafos.
+%%
+%% ---------------------------------------- Secciones ----------------------------------------------------------------- %% 
+%%
+\newcommand\seccion{\@startsection {section}{1}{\z@}%
+                    {-3.5ex \@plus -1ex \@minus -.2ex}%
+                    {2.3ex \@plus.2ex}%
+                    {\normalfont\Large\bfseries\color{Purple4}}}
+%%
+\renewcommand{\section}[1]
+              {\seccion{#1}}%
+%%
+\newcommand{\FinSeccion}
+           {\par\hfill{\color{Blue4}\ensuremath{\blacksquare}}\par}
+%%
+%% ---------------------------------------- Subsecciones ----------------------------------------------------------------- %%
+%%
+\newcommand\subseccion{\@startsection{subsection}{2}{\z@}%
+                      {-3.25ex\@plus -1ex \@minus -.2ex}%
+                      {.5ex \@plus .2ex}%
+                      {\normalfont\large\bfseries\color{Blue4}}}
+%%
+\renewcommand{\subsection}[1]
+              {\subseccion{#1}}%
+%%
+%% ---------------------------------------- Subsubsecciones ----------------------------------------------------------------- %%
+%%
+\newcommand\subsubseccion{\@startsection{subsubsection}{3}{\z@}%
+                          {-3.25ex\@plus -1ex \@minus -.2ex}%
+                          {.5ex \@plus .2ex}%
+                          {\normalfont\normalsize\bfseries\color{Magenta4}}}
+\renewcommand{\subsubsection}[1]
+              {\subsubseccion{#1}}
+%%
+%% ---------------------------------------- Ejemplos ----------------------------------------------------------------- %%
+%%
+\newcounter{ejemplo}[chapter]
+\renewcommand{\theejemplo}{%
+                \thechapter.\arabic{ejemplo}
+              }%
+%%
+\newenvironment{Ejemplo}{\refstepcounter{ejemplo}\subsubsection{\bf Ejemplo\ \theejemplo}\color{Black}}
+                        {\par
+                          \ifdim\lastskip<\medskipamount%
+                            \removelastskip%
+                            \penalty55%
+                            \medskip%
+                          \fi}
+%%                        
+\newcommand{\FinEjemplo}
+           {\par\hfill{\color{Magenta4}\ensuremath{\blacksquare}}\par}
+%%
+%% ---------------------------------------- Notas ----------------------------------------------------------------- %%
+%%
+\newcounter{nota}[chapter]
+\renewcommand{\thenota}{%
+              \thechapter.\arabic{nota}}
+%%
+\def\Nota{\refstepcounter{nota}\paragraph{Nota\ \thenota}}
+%%
+\newcommand{\FinNota}
+           {\par\hfill{\ensuremath{\blacksquare}}\par}
+%%
+%% ---------------------------------------- Explicación ----------------------------------------------------------------- %%
+%%
+\def\Explicacion{\par{\underline{Explicación}}\par
+                  \ifdim\lastskip<\medskipamount%
+                    \removelastskip%
+                    \penalty55%
+                    \medskip%
+                  \fi}
+%%
+%% ---------------------------------------- Demostración ----------------------------------------------------------------- %%
+%%
+\def\Demostracion{\par\medskip\underline{Demostración}\par
+                      \ifdim\lastskip<\medskipamount%
+                        \removelastskip%
+                        \penalty55%
+                        \medskip%
+                      \fi}
+%%
+%% ----------------------------------------------------------------------------------------------------------------------- %%
+%% 
