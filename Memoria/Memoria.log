@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.7)  19 OCT 2019 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.7)  26 NOV 2019 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,7 +313,9 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (./Memoria.aux
-(./Prolegomeno/Introduccion.aux) (./Prolegomeno/PlanProyecto.aux)
+(./Inicio/Agradecimientos.aux) (./Inicio/Resumen.aux)
+(./Inicio/PalabrasClave.aux) (./Introduccion/Objetivos.aux)
+(./Introduccion/Descripcion.aux) (./Introduccion/Alcance.aux)
 (./Desarrollo/AnalisisRequisitos.aux) (./Desarrollo/CasosUso.aux)
 (./Desarrollo/Implementacion.aux) (./Desarrollo/Pruebas.aux)
 (./Epilogo/ManualUsuario.aux) (./Epilogo/ManualInstalacionExplotacion.aux)
@@ -394,26 +396,26 @@ e
 ))
 \c@lstlisting=\count119
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 147.
+(Font)              <7> on input line 149.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 147.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 147.
+(Font)              <5> on input line 149.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<UCA.png, id=241, 401.5pt x 401.5pt>
+<UCA.png, id=192, 401.5pt x 401.5pt>
 File: UCA.png Graphic file (type png)
 <use UCA.png>
-Package pdftex.def Info: UCA.png  used on input line 148.
+Package pdftex.def Info: UCA.png  used on input line 150.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
-<ESI.png, id=243, 1027.84pt x 1027.84pt>
+<ESI.png, id=194, 1027.84pt x 1027.84pt>
 File: ESI.png Graphic file (type png)
 <use ESI.png>
-Package pdftex.def Info: ESI.png  used on input line 148.
+Package pdftex.def Info: ESI.png  used on input line 150.
 (pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 175.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 177.
  [1
 
 
@@ -422,150 +424,186 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 ]
 File: UCA.png Graphic file (type png)
 <use UCA.png>
-Package pdftex.def Info: UCA.png  used on input line 209.
+Package pdftex.def Info: UCA.png  used on input line 215.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
 File: ESI.png Graphic file (type png)
 <use ESI.png>
-Package pdftex.def Info: ESI.png  used on input line 209.
+Package pdftex.def Info: ESI.png  used on input line 215.
 (pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
  [3] [4
 
 ]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 278.
+File: UCA.png Graphic file (type png)
+<use UCA.png>
+Package pdftex.def Info: UCA.png  used on input line 290.
+(pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
+File: ESI.png Graphic file (type png)
+<use ESI.png>
+Package pdftex.def Info: ESI.png  used on input line 290.
+(pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
+ [5]
+\openout2 = `Inicio/Agradecimientos.aux'.
 
-(./Memoria.toc
+
+(./Inicio/Agradecimientos.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+) [6
+
+]
+\openout2 = `Inicio/Resumen.aux'.
+
+ (./Inicio/Resumen.tex) [7
+
+
+]
+\openout2 = `Inicio/PalabrasClave.aux'.
+
+
+(./Inicio/PalabrasClave.tex) [8
+
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 363.
+ (./Memoria.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
- [5] [6])
+ [9
+
+
+])
 \tf@toc=\write4
 \openout4 = `Memoria.toc'.
 
- [7] [8
+ [10] [11
 
-]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 281.
- [9] [10]
-\openout2 = `Prolegomeno/Introduccion.aux'.
+] [12]
+\openout2 = `Introduccion/Objetivos.aux'.
 
- (./Prolegomeno/Introduccion.tex
+
+(./Introduccion/Objetivos.tex
 Cap\IeC {\'\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [11
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+) [13
 
 
-]) [12]
-\openout2 = `Prolegomeno/PlanProyecto.aux'.
+]
+\openout2 = `Introduccion/Descripcion.aux'.
 
 
-(./Prolegomeno/PlanProyecto.tex
+(./Introduccion/Descripcion.tex [14
+
+
+
+]
 Cap\IeC {\'\i }tulo 2.
+) [15]
+\openout2 = `Introduccion/Alcance.aux'.
 
-Overfull \hbox (6.79047pt too wide) in paragraph at lines 2--3
-\T1/ptm/m/n/10 En este capí-tulo se recoge la plan-i-fi-cación y el planteamien
-to de un proyecto al que hemos de-nom-i-nado ``\T1/ptm/b/n/10 Infraestructura
- []
-
-[13
+ (./Introduccion/Alcance.tex [16
 
 
 
-]) [14] [15
+]
+Cap\IeC {\'\i }tulo 3.
+) [17] [18
 
 
-] [16]
+] [19] [20]
 \openout2 = `Desarrollo/AnalisisRequisitos.aux'.
 
  (./Desarrollo/AnalisisRequisitos.tex
-Cap\IeC {\'\i }tulo 3.
-) [17
+Cap\IeC {\'\i }tulo 4.
+) [21
 
 
 ]
 \openout2 = `Desarrollo/CasosUso.aux'.
 
- (./Desarrollo/CasosUso.tex [18
-
-
-
-]
-Cap\IeC {\'\i }tulo 4.
-) [19]
-\openout2 = `Desarrollo/Implementacion.aux'.
-
- (./Desarrollo/Implementacion.tex [20
+ (./Desarrollo/CasosUso.tex [22
 
 
 
 ]
 Cap\IeC {\'\i }tulo 5.
-) [21]
-\openout2 = `Desarrollo/Pruebas.aux'.
+) [23]
+\openout2 = `Desarrollo/Implementacion.aux'.
 
- (./Desarrollo/Pruebas.tex [22
+ (./Desarrollo/Implementacion.tex [24
 
 
 
 ]
 Cap\IeC {\'\i }tulo 6.
-) [23] [24
+) [25]
+\openout2 = `Desarrollo/Pruebas.aux'.
+
+ (./Desarrollo/Pruebas.tex [26
 
 
-] [25] [26]
+
+]
+Cap\IeC {\'\i }tulo 7.
+) [27] [28
+
+
+] [29] [30]
 \openout2 = `Epilogo/ManualUsuario.aux'.
 
  (./Epilogo/ManualUsuario.tex
-Cap\IeC {\'\i }tulo 7.
-) [27
+Cap\IeC {\'\i }tulo 8.
+) [31
 
 
 ]
 \openout2 = `Epilogo/ManualInstalacionExplotacion.aux'.
 
- (./Epilogo/ManualInstalacionExplotacion.tex [28
-
-
-
-]
-Cap\IeC {\'\i }tulo 8.
-) [29]
-\openout2 = `Epilogo/Conclusiones.aux'.
-
- (./Epilogo/Conclusiones.tex [30
+ (./Epilogo/ManualInstalacionExplotacion.tex [32
 
 
 
 ]
 Cap\IeC {\'\i }tulo 9.
-) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
- (./Memoria.aux (./Prolegomeno/Introduccion.aux)
-(./Prolegomeno/PlanProyecto.aux) (./Desarrollo/AnalisisRequisitos.aux)
-(./Desarrollo/CasosUso.aux) (./Desarrollo/Implementacion.aux)
-(./Desarrollo/Pruebas.aux) (./Epilogo/ManualUsuario.aux)
-(./Epilogo/ManualInstalacionExplotacion.aux) (./Epilogo/Conclusiones.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+) [33]
+\openout2 = `Epilogo/Conclusiones.aux'.
+
+ (./Epilogo/Conclusiones.tex [34
+
+
+
+]
+Cap\IeC {\'\i }tulo 10.
+) [35]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+ (./Memoria.aux (./Inicio/Agradecimientos.aux) (./Inicio/Resumen.aux)
+(./Inicio/PalabrasClave.aux) (./Introduccion/Objetivos.aux)
+(./Introduccion/Descripcion.aux) (./Introduccion/Alcance.aux)
+(./Desarrollo/AnalisisRequisitos.aux) (./Desarrollo/CasosUso.aux)
+(./Desarrollo/Implementacion.aux) (./Desarrollo/Pruebas.aux)
+(./Epilogo/ManualUsuario.aux) (./Epilogo/ManualInstalacionExplotacion.aux)
+(./Epilogo/Conclusiones.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 5B1C06CF3A53A3C0D7BD014DE72EA6DA;3945.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+(rerunfilecheck)             Checksum: 9B3E284A7D7DB903EF8E5EE84ECAC504;3117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
  ) 
 Here is how much of TeX's memory you used:
- 9019 strings out of 494561
- 130924 string characters out of 6177455
- 441358 words of memory out of 5000000
- 12377 multiletter control sequences out of 15000+600000
+ 9020 strings out of 494561
+ 131230 string characters out of 6177455
+ 439358 words of memory out of 5000000
+ 12367 multiletter control sequences out of 15000+600000
  48995 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,13n,49p,488b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -574,10 +612,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on Memoria.pdf (31 pages, 374687 bytes).
+Output written on Memoria.pdf (35 pages, 372435 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 483 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -138,6 +138,8 @@
 %%		{\large \today\par}
 %	\end{titlepage}
 
+% Portada externa
+
 \begin{titlepage}
 	\centering
 %	\includegraphics[width=.1\textwidth]{UCA.png}
@@ -198,7 +200,11 @@
 	{\large Puerto Real, \today}
 	
 \end{titlepage}
+
 \newpage{\pagestyle{empty}\cleardoublepage}  
+
+% Primera portada interna
+
 {
 	\thispagestyle{empty} 
 	\centering
@@ -269,18 +275,98 @@
 	\end{flushright}
 	
 }
+
+\newpage{\pagestyle{empty}\cleardoublepage}  
+
+% Segunda portada interna
+
+{
+	\thispagestyle{empty} 
+	\centering
+	%	\includegraphics[width=.1\textwidth]{UCA.png}
+	\begin{table}[htb]
+		\centering
+		\begin{tabular}{cc}
+			\includegraphics[width=0.15\textwidth]{UCA.png}\par\vspace{0.2cm} & \includegraphics[width=0.15\textwidth]{ESI.png}\par\vspace{0.2cm}
+		\end{tabular}
+	\end{table}
+	
+	%	\bigskip
+	%	\bigskip
+	%	\bigskip
+	
+	\begin{changemargin}{3em}{3em}
+		
+		\begin{center}
+			{\LARGE \textsc{\nohyphens{Escuela Superior de Ingeniería}}}
+			
+			\bigskip
+			\bigskip
+			
+			{\LARGE \nohyphens{Grado en Ingeniería Informática}}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			{\LARGE \nohyphens{\textbf{Infraestructura de red de nodos cifradores/descifradores AES basada en ApSoC}}}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+		\end{center}
+	\end{changemargin}
+	
+	\begin{flushleft}
+		\Large
+		
+		\textsc{Departamento}: \nohyphens{Ingeniería Informática.} \\
+		\textsc{Directora del proyecto}: \nohyphens{María Ángeles Cifredo Chacón.} \\
+		\textsc{Codirectora del proyecto}: \nohyphens{María Mercedes Rodríguez García.} \\		
+		\textsc{Autor del proyecto}: \nohyphens{Jesús Rodríguez Heras}. \\
+	\end{flushleft}
+	
+	\bigskip
+	\bigskip
+	\bigskip
+	
+	\begin{flushright}
+		\large
+		Puerto Real, \today
+		
+		\bigskip    
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		\bigskip
+		Fdo.: Jesús Rodríguez Heras
+		
+	\end{flushright}
+	
+}
 	
 %	\thispagestyle{empty}
 	\newpage
 	
 %	\include{Resumen}
+
+	\include{Inicio/Agradecimientos}
+	\include{Inicio/Resumen}
+	\include{Inicio/PalabrasClave}
 	
 	\tableofcontents
 	\newpage
 	
-	\part{Prolegómeno}
-	\include{Prolegomeno/Introduccion}
-	\include{Prolegomeno/PlanProyecto}
+	\part{Introducción}
+	\include{Introduccion/Objetivos}
+	\include{Introduccion/Descripcion}
+	\include{Introduccion/Alcance}
 	
 	\part{Desarrollo}
 	\include{Desarrollo/AnalisisRequisitos}
