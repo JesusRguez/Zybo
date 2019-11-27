@@ -1,12 +1,21 @@
 \chapter{Objetivos}
-\section{Objetivos}
-%El objetivo principal de este proyecto es la creación de una estructura de red funcional para las interconexión entre nodos cifradores/descifradores AES basada en ApSoC.
+\section{Objetivo principal}
+El objetivo del trabajo es diseñar una red de nodos basada en tecnología ApSoC, de modo que cada uno de los nodos/elementos de la red reciban un fichero de datos, lo descifre, inserte
+información adicional y lo vuelva a cifrar antes de enviarlo a otro elemento de la red. El monitor generará el primer conjunto de datos que enviará a uno de los nodos, y cuando haya
+pasado por todos, recibirá el conjunto final. La red será privada y contará con un monitor basado en un ordenador personal.
 
-El objetivo principal del proyecto es conseguir una comunicación estable y cifrada entre todos los nodos de la red.
+%Para cumplir con el objetivo principal, tendremos que cubrir los siguientes puntos:
+%\begin{itemize}
+%	\item Comprobación del estado de la red por parte de los dispositivos.
+%	\item Creación de rutinas que automaticen el procesado de datos.
+%	\item Creación de rutinas de inicio automáticas.
+%\end{itemize}
 
-Para cumplir con el objetivo principal, tendremos que cubrir los siguientes puntos:
-\begin{itemize}
-	\item Creación de rutinas que automaticen el procesado de datos.
-	\item Creación de rutinas de inicio automáticas.
-	\item Comprobación del estado de la red por parte de los dispositivos.
-\end{itemize}
+%\section{Objetivo secundario}
+%El objetivo secundario del proyecto es conseguir que, dicha comunicación anteriormente mencionada se realice de forma aleatoria entre los nodos de la red, de forma que no se sepa quién será el sucesor del nodo actual en ningún momento.
+%
+%Para cumplir este objetivo, tendremos que cubrir los siguientes puntos:
+%\begin{itemize}
+%	\item Generación del sucesor aleatorio en cada nodo.
+%	\item Agenda de direcciones para saber qué dirección corresponde a qué nodo de la red.
+%\end{itemize}

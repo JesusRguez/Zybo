@@ -1,8 +1,7 @@
 \contentsline {part}{I\hspace {1em}Introducci\IeC {\'o}n}{19}{part.1}% 
 \contentsline {chapter}{\numberline {1}Objetivos}{21}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Objetivos}{21}{section.1.1}% 
+\contentsline {section}{\numberline {1.1}Objetivo principal}{21}{section.1.1}% 
 \contentsline {chapter}{\numberline {2}Descripci\IeC {\'o}n}{23}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del sistema actual}{23}{section.2.1}% 
 \contentsline {chapter}{\numberline {3}Alcance}{25}{chapter.3}% 
 \contentsline {part}{II\hspace {1em}Metodolog\IeC {\'\i }a}{27}{part.2}% 
 \contentsline {chapter}{\numberline {4}Marco te\IeC {\'o}rico}{29}{chapter.4}% 
@@ -25,26 +24,16 @@
 \contentsline {section}{\numberline {8.4}Pruebas de integraci\IeC {\'o}n}{37}{section.8.4}% 
 \contentsline {section}{\numberline {8.5}Pruebas de sistema}{37}{section.8.5}% 
 \contentsline {subsection}{\numberline {8.5.1}Pruebas funcionales}{37}{subsection.8.5.1}% 
-\contentsline {subsection}{\numberline {8.5.2}Pruebas no funcionales}{37}{subsection.8.5.2}% 
-\contentsline {section}{\numberline {8.6}Pruebas de aceptaci\IeC {\'o}n}{37}{section.8.6}% 
+\contentsline {subsection}{\numberline {8.5.2}Pruebas no funcionales}{38}{subsection.8.5.2}% 
+\contentsline {section}{\numberline {8.6}Pruebas de aceptaci\IeC {\'o}n}{38}{section.8.6}% 
 \contentsline {part}{III\hspace {1em}Conclusiones y trabajo futuro}{39}{part.3}% 
-\contentsline {chapter}{\numberline {9}Manual de usuario}{41}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}Introducci\IeC {\'o}n}{41}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}Caracter\IeC {\'\i }sticas}{41}{section.9.2}% 
-\contentsline {section}{\numberline {9.3}Requisitos previos}{41}{section.9.3}% 
-\contentsline {chapter}{\numberline {10}Manual de instalaci\IeC {\'o}n}{43}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Introducci\IeC {\'o}n}{43}{section.10.1}% 
-\contentsline {section}{\numberline {10.2}Requisitos previos}{43}{section.10.2}% 
-\contentsline {section}{\numberline {10.3}Inventario de componentes}{43}{section.10.3}% 
-\contentsline {section}{\numberline {10.4}Procedimientos de instalaci\IeC {\'o}n}{43}{section.10.4}% 
-\contentsline {section}{\numberline {10.5}Pruebas de implantaci\IeC {\'o}n}{43}{section.10.5}% 
-\contentsline {chapter}{\numberline {11}Conclusiones}{45}{chapter.11}% 
-\contentsline {section}{\numberline {11.1}Objetivos}{45}{section.11.1}% 
-\contentsline {section}{\numberline {11.2}Lecciones aprendidas}{45}{section.11.2}% 
-\contentsline {section}{\numberline {11.3}Trabajo futuro}{45}{section.11.3}% 
-\contentsline {part}{IV\hspace {1em}Referencias/Bibliograf\IeC {\'\i }a}{47}{part.4}% 
-\contentsline {chapter}{\numberline {12}Referencias bibliogr\IeC {\'a}ficas}{49}{chapter.12}% 
-\contentsline {part}{V\hspace {1em}Anexos t\IeC {\'e}cnicos}{51}{part.5}% 
-\contentsline {chapter}{\numberline {A}Manual de usuario}{53}{appendix.A}% 
-\contentsline {chapter}{\numberline {B}Datos t\IeC {\'e}cnicos}{55}{appendix.B}% 
-\contentsline {chapter}{\numberline {C}C\IeC {\'o}digos}{57}{appendix.C}% 
+\contentsline {chapter}{\numberline {9}Conclusiones}{41}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Objetivos}{41}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Lecciones aprendidas}{41}{section.9.2}% 
+\contentsline {section}{\numberline {9.3}Trabajo futuro}{41}{section.9.3}% 
+\contentsline {part}{IV\hspace {1em}Referencias/Bibliograf\IeC {\'\i }a}{43}{part.4}% 
+\contentsline {chapter}{\numberline {10}Referencias bibliogr\IeC {\'a}ficas}{45}{chapter.10}% 
+\contentsline {part}{V\hspace {1em}Anexos t\IeC {\'e}cnicos}{47}{part.5}% 
+\contentsline {chapter}{\numberline {A}Manual de usuario}{49}{appendix.A}% 
+\contentsline {chapter}{\numberline {B}Datos t\IeC {\'e}cnicos}{51}{appendix.B}% 
+\contentsline {chapter}{\numberline {C}C\IeC {\'o}digos}{53}{appendix.C}% 
