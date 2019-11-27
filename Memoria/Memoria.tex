@@ -352,15 +352,21 @@
 }
 	
 %	\thispagestyle{empty}
-	\newpage
+	\newpage{\pagestyle{empty}\cleardoublepage}  
 	
 %	\include{Resumen}
 
 	\include{Inicio/Agradecimientos}
+	\newpage{\pagestyle{empty}\cleardoublepage}  
 	\include{Inicio/Resumen}
+	\newpage{\pagestyle{empty}\cleardoublepage}  
 	\include{Inicio/PalabrasClave}
 	
 	\tableofcontents
+	\newpage
+	\listoffigures
+	\newpage
+	\listoftables
 	\newpage
 	
 	\part{Introducción}
@@ -368,17 +374,25 @@
 	\include{Introduccion/Descripcion}
 	\include{Introduccion/Alcance}
 	
-	\part{Desarrollo}
-	\include{Desarrollo/AnalisisRequisitos}
-	\include{Desarrollo/CasosUso}
-	\include{Desarrollo/Implementacion}
-	\include{Desarrollo/Pruebas}
+	\part{Metodología}
+	\include{Metodologia/MarcoTeorico}
+	\include{Metodologia/Tecnologias}
+	\include{Metodologia/Analisis}
+	\include{Metodologia/DisenoDesarrollo}
+	\include{Metodologia/Pruebas}
 
-	\part{Eplílogo}
+	\part{Conclusiones y trabajo futuro}
 	\include{Epilogo/ManualUsuario}
 	\include{Epilogo/ManualInstalacionExplotacion}
 	\include{Epilogo/Conclusiones}
 	
-%	\include{Bibliografia}
+	\part{Referencias/Bibliografía}
+	\include{Bibliografia}
+	
+	\part{Anexos técnicos}
+	\appendix
+	\include{Anexos/Anexo1}
+	\include{Anexos/Anexo2}
+	\include{Anexos/Anexo3}
 	
 \end{document}

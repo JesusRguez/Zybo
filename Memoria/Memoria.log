@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.7)  26 NOV 2019 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.7)  27 NOV 2019 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,10 +316,12 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 (./Inicio/Agradecimientos.aux) (./Inicio/Resumen.aux)
 (./Inicio/PalabrasClave.aux) (./Introduccion/Objetivos.aux)
 (./Introduccion/Descripcion.aux) (./Introduccion/Alcance.aux)
-(./Desarrollo/AnalisisRequisitos.aux) (./Desarrollo/CasosUso.aux)
-(./Desarrollo/Implementacion.aux) (./Desarrollo/Pruebas.aux)
-(./Epilogo/ManualUsuario.aux) (./Epilogo/ManualInstalacionExplotacion.aux)
-(./Epilogo/Conclusiones.aux))
+(./Metodologia/MarcoTeorico.aux) (./Metodologia/Tecnologias.aux)
+(./Metodologia/Analisis.aux) (./Metodologia/DisenoDesarrollo.aux)
+(./Metodologia/Pruebas.aux) (./Epilogo/ManualUsuario.aux)
+(./Epilogo/ManualInstalacionExplotacion.aux) (./Epilogo/Conclusiones.aux)
+(./Bibliografia.aux) (./Anexos/Anexo1.aux) (./Anexos/Anexo2.aux)
+(./Anexos/Anexo3.aux))
 \openout1 = `Memoria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -337,11 +339,9 @@ LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box31
@@ -404,12 +404,12 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 149.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<UCA.png, id=192, 401.5pt x 401.5pt>
+<UCA.png, id=205, 401.5pt x 401.5pt>
 File: UCA.png Graphic file (type png)
 <use UCA.png>
 Package pdftex.def Info: UCA.png  used on input line 150.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
-<ESI.png, id=194, 1027.84pt x 1027.84pt>
+<ESI.png, id=207, 1027.84pt x 1027.84pt>
 File: ESI.png Graphic file (type png)
 <use ESI.png>
 Package pdftex.def Info: ESI.png  used on input line 150.
@@ -442,49 +442,66 @@ File: ESI.png Graphic file (type png)
 Package pdftex.def Info: ESI.png  used on input line 290.
 (pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
  [5]
+[6
+
+]
 \openout2 = `Inicio/Agradecimientos.aux'.
 
-
-(./Inicio/Agradecimientos.tex
+ (./Inicio/Agradecimientos.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
-) [6
+) [7
+
+] [8
+
 
 ]
 \openout2 = `Inicio/Resumen.aux'.
 
- (./Inicio/Resumen.tex) [7
+ (./Inicio/Resumen.tex) [9
+
+] [10
 
 
 ]
 \openout2 = `Inicio/PalabrasClave.aux'.
 
 
-(./Inicio/PalabrasClave.tex) [8
+(./Inicio/PalabrasClave.tex) [11
+
+] [12
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 363.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 365.
  (./Memoria.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [9
-
-
-])
+ [13])
 \tf@toc=\write4
 \openout4 = `Memoria.toc'.
 
- [10] [11
+ [14] (./Memoria.lof)
+\tf@lof=\write5
+\openout5 = `Memoria.lof'.
 
-] [12]
+ [15
+
+] [16
+
+] (./Memoria.lot)
+\tf@lot=\write6
+\openout6 = `Memoria.lot'.
+
+ [17] [18
+
+] [19] [20]
 \openout2 = `Introduccion/Objetivos.aux'.
 
-
-(./Introduccion/Objetivos.tex
+ (./Introduccion/Objetivos.tex
 Cap\IeC {\'\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
@@ -494,116 +511,167 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-) [13
+) [21
 
 
 ]
 \openout2 = `Introduccion/Descripcion.aux'.
 
 
-(./Introduccion/Descripcion.tex [14
+(./Introduccion/Descripcion.tex [22
 
 
 
 ]
 Cap\IeC {\'\i }tulo 2.
-) [15]
+) [23]
 \openout2 = `Introduccion/Alcance.aux'.
 
- (./Introduccion/Alcance.tex [16
+ (./Introduccion/Alcance.tex [24
 
 
 
 ]
 Cap\IeC {\'\i }tulo 3.
-) [17] [18
+) [25] [26
 
 
-] [19] [20]
-\openout2 = `Desarrollo/AnalisisRequisitos.aux'.
+] [27] [28]
+\openout2 = `Metodologia/MarcoTeorico.aux'.
 
- (./Desarrollo/AnalisisRequisitos.tex
+ (./Metodologia/MarcoTeorico.tex
 Cap\IeC {\'\i }tulo 4.
-) [21
+) [29
 
 
 ]
-\openout2 = `Desarrollo/CasosUso.aux'.
+\openout2 = `Metodologia/Tecnologias.aux'.
 
- (./Desarrollo/CasosUso.tex [22
+ (./Metodologia/Tecnologias.tex [30
 
 
 
 ]
 Cap\IeC {\'\i }tulo 5.
-) [23]
-\openout2 = `Desarrollo/Implementacion.aux'.
+) [31]
+\openout2 = `Metodologia/Analisis.aux'.
 
- (./Desarrollo/Implementacion.tex [24
+ (./Metodologia/Analisis.tex [32
 
 
 
 ]
 Cap\IeC {\'\i }tulo 6.
-) [25]
-\openout2 = `Desarrollo/Pruebas.aux'.
+) [33]
+\openout2 = `Metodologia/DisenoDesarrollo.aux'.
 
- (./Desarrollo/Pruebas.tex [26
+ (./Metodologia/DisenoDesarrollo.tex [34
 
 
 
 ]
 Cap\IeC {\'\i }tulo 7.
-) [27] [28
+) [35]
+\openout2 = `Metodologia/Pruebas.aux'.
+
+ (./Metodologia/Pruebas.tex [36
 
 
-] [29] [30]
+
+]
+Cap\IeC {\'\i }tulo 8.
+) [37] [38
+
+
+] [39] [40]
 \openout2 = `Epilogo/ManualUsuario.aux'.
 
  (./Epilogo/ManualUsuario.tex
-Cap\IeC {\'\i }tulo 8.
-) [31
+Cap\IeC {\'\i }tulo 9.
+) [41
 
 
 ]
 \openout2 = `Epilogo/ManualInstalacionExplotacion.aux'.
 
- (./Epilogo/ManualInstalacionExplotacion.tex [32
-
-
-
-]
-Cap\IeC {\'\i }tulo 9.
-) [33]
-\openout2 = `Epilogo/Conclusiones.aux'.
-
- (./Epilogo/Conclusiones.tex [34
+ (./Epilogo/ManualInstalacionExplotacion.tex [42
 
 
 
 ]
 Cap\IeC {\'\i }tulo 10.
-) [35]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+) [43]
+\openout2 = `Epilogo/Conclusiones.aux'.
+
+ (./Epilogo/Conclusiones.tex [44
+
+
+
+]
+Cap\IeC {\'\i }tulo 11.
+) [45] [46
+
+
+] [47] [48]
+\openout2 = `Bibliografia.aux'.
+
+ (./Bibliografia.tex
+Cap\IeC {\'\i }tulo 12.
+) [49
+
+
+] [50
+
+
+] [51] [52]
+\openout2 = `Anexos/Anexo1.aux'.
+
+ (./Anexos/Anexo1.tex
+Ap\IeC {\'e}ndice A.
+) [53
+
+
+]
+\openout2 = `Anexos/Anexo2.aux'.
+
+ (./Anexos/Anexo2.tex [54
+
+
+
+]
+Ap\IeC {\'e}ndice B.
+) [55]
+\openout2 = `Anexos/Anexo3.aux'.
+
+ (./Anexos/Anexo3.tex [56
+
+
+
+]
+Ap\IeC {\'e}ndice C.
+) [57]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 398.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 398.
  (./Memoria.aux (./Inicio/Agradecimientos.aux) (./Inicio/Resumen.aux)
 (./Inicio/PalabrasClave.aux) (./Introduccion/Objetivos.aux)
 (./Introduccion/Descripcion.aux) (./Introduccion/Alcance.aux)
-(./Desarrollo/AnalisisRequisitos.aux) (./Desarrollo/CasosUso.aux)
-(./Desarrollo/Implementacion.aux) (./Desarrollo/Pruebas.aux)
-(./Epilogo/ManualUsuario.aux) (./Epilogo/ManualInstalacionExplotacion.aux)
-(./Epilogo/Conclusiones.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+(./Metodologia/MarcoTeorico.aux) (./Metodologia/Tecnologias.aux)
+(./Metodologia/Analisis.aux) (./Metodologia/DisenoDesarrollo.aux)
+(./Metodologia/Pruebas.aux) (./Epilogo/ManualUsuario.aux)
+(./Epilogo/ManualInstalacionExplotacion.aux) (./Epilogo/Conclusiones.aux)
+(./Bibliografia.aux) (./Anexos/Anexo1.aux) (./Anexos/Anexo2.aux)
+(./Anexos/Anexo3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 398.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 398.
 Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 9B3E284A7D7DB903EF8E5EE84ECAC504;3117.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
+(rerunfilecheck)             Checksum: D7F35E14BBE3A15407D4D6F30E55CF92;3182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 398.
  ) 
 Here is how much of TeX's memory you used:
- 9020 strings out of 494561
- 131230 string characters out of 6177455
- 439358 words of memory out of 5000000
- 12367 multiletter control sequences out of 15000+600000
+ 9099 strings out of 494561
+ 132212 string characters out of 6177455
+ 440696 words of memory out of 5000000
+ 12377 multiletter control sequences out of 15000+600000
  48995 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  32i,13n,49p,488b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -612,10 +680,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on Memoria.pdf (35 pages, 372435 bytes).
+Output written on Memoria.pdf (57 pages, 380205 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 387 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
