@@ -1,0 +1,105 @@
+\section{Comunicación y tratado de ficheros}
+En este documento se desarrolla un tutorial de envío y recepción de ficheros mediante SSH entre los dispositivos de la red de manera secuencial y automática.
+
+Para conseguir dicha finalidad, las tarjetas iniciarán automáticamente un proceso que comprobará si les envían un fichero nuevo y, en caso de que así sea, realizarán alguna modificación en él y lo enviarán a la siguiente tarjeta, o, en caso de que dicha tarjeta sea la última, al ordenador central.
+
+Particularmente, la tarea a realizar aquí consta de la recepción de un fichero cifrado, su descifrado, modificación, cifrado y, por último, su envío hacia el siguiente dispositivo.
+
+Se describirá una estructura de directorios que será nrecorridos por el fichero inicial en sus distintos estados. Basándosnos en dichos estados, nombraremos los directorios tal como se describen a continuación:
+
+\begin{itemize}
+	\item \texttt{~/ficheros/recibir}: Directorio donde se recibirán los ficheros.
+	\item \texttt{~/ficheros/desencriptar}: Directorio donde se dejan los ficheros una vez desencriptados.
+	\item \texttt{~/ficheros/trabajar}: Directorio donde se dejan los ficheros para incluir los datos y volverlo a cifrar.
+	\item \texttt{~/ficheros/enviar}: Directorio donde se dejan los ficheros que están listos para ser enviados al siguiente dispositivo.
+\end{itemize}
+
+\subsection{Introducción}
+Para realizar una comunicación automática y secuencial entre los distintos dispositivos, cada tarjeta Zybo Zynq 7010 contará con la siguiente estructura de directorios:\\
+
+%Los que están comentados es porque ésta es la versión que emula el trabajo de Cristian, descomentarla para ver el proceso completo sin la emulación del trabajo de Cristian.
+\texttt{
+\textasciitilde/ficheros/backups/\\
+%\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoEnviar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoRecibir.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoTrabajar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|desencriptar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|enviar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|recibir/..\\
+\textcolor{white}{.}\hspace{3.15cm}|trabajar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|Automatico.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Borrar.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Cristian.sh\\
+%\textcolor{white}{.}\hspace{3.15cm}|Desencriptando.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Enviando.sh\\
+\textcolor{white}{.}\hspace{3.15cm}|Recibiendo.sh\\
+%\textcolor{white}{.}\hspace{3.15cm}|Tabajando.sh
+}
+
+Este árbol de directorios estará en el archivo \texttt{ficheros.tar.gz} que se encontrará en el ordenador central y será distribuido a cada tarjeta mediante ssh\footnote{Recordemos que, tanto para \texttt{ssh} como para \texttt{scp}, el elemento \texttt{zyboX} es el identificador de la tarjeta Zybo con la que estamos trabajando.} con el siguiente comando:
+\begin{center}
+	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no ficheros.tar.gz zyboX@zyboX:}
+\end{center}
+
+Luego, entramos en la tarjeta mediante ssh con el siguiente comando:
+\begin{center}
+	\texttt{sshpass -p zyboX ssh -o StrictHostKeyChecking=no zyboX@zuboX}
+\end{center}
+
+Para ver si tenemos el archivo \texttt{ficheros.tar.gz} usamos el comando:
+\begin{center}
+	\texttt{ls}
+\end{center}
+
+A continuación, aplicamos el siguiente comando para descomprimir el archivo\\ \texttt{ficheros.tar.gz}:
+\begin{center}
+	\texttt{tar -xzvf ficheros.tar.gz}
+\end{center}
+
+Se nos creará el árbol de directorios anteriormente citado en el directorio \texttt{/home} de la tarjeta Zybo a la que hayamos accedido.
+
+Para que la automatización del proceso se lleve a cabo correctamente, también tendremos que modificar el fichero \texttt{/etc/hosts} de la tarjeta. Para ello, enviamos el fichero con el siguiente comando:
+\begin{center}
+	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no hosts zyboX@zyboX:}
+\end{center}
+
+Y, luego, lo copiamos como super-usuario\footnote{Comando: \texttt{su}, y contraseña \texttt{root}.} en el directorio \texttt{/etc} con el siguiente comando:
+\begin{center}
+	\texttt{cp hosts /etc}
+\end{center}
+
+Una vez hecho esto, el proceso de automatización estaría listo para ser lanzado.
+
+\subsection{Directorios}
+En este apartado, describiremos los distintos directorios que podemos encontrar en las tarjetas Zybo una vez que se ha descomprimido el archivo \texttt{ficheros.tar.gz}.
+
+Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el ordenador central, salvo el directorio \texttt{/backups} que se describirá primero ya que no interviene de forma directa en el camino a recorrer por el archivo recibido.
+
+\subsubsection{Directorio \texttt{/backups}}
+En este directorio se guardarán los últimos estados de los directorios nombrados a continuación, generados por el comando \texttt{stat}\footnote{Para más información leer el manual del comando \texttt{stat} en este \href{https://linux.die.net/man/2/stat}{\textcolor{blue}{enlace}}.}.
+\begin{itemize}
+	\item \textbf{\texttt{ViejoDesencriptar.txt}:} Este fichero contendrá el estado del directorio \texttt{/desencriptar} una vez que el script \texttt{Desencriptando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+	\item \textbf{\texttt{ViejoEnviar.txt}:} Este fichero contendrá el estado del directorio \texttt{/enviar} una vez que el script \texttt{Enviando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+	\item \textbf{\texttt{ViejoRecibir.txt}:} Este fichero contendrá el estado del directorio \texttt{/recibir} una vez que el script \texttt{Recibiendo.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+	\item \textbf{\texttt{ViejoTrabajar.txt}:} Este fichero contendrá el estado del directorio \texttt{/trabajar} una vez que el script \texttt{Trabajando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+\end{itemize}
+
+\subsubsection{Directorio \texttt{/recibir}}
+Este directorio contendrá los ficheros enviados por otros dispositivos mediante ssh\footnote{Para ver como enviar ficheros desde un dispositivo a otro hasta este directorio, ver el documento ``Envío y recepción de ficheros con sshpass''.}.
+
+\subsubsection{Directorio \texttt{/desencriptar}}
+Este directorio contendrá los ficheros enviados desde el directorio \texttt{/recibir} por el script \texttt{Recibiendo.sh} que comprobará el estado del directorio anterior.
+
+\subsubsection{Directorio \texttt{/trabajar}}
+Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.sh} que comprobará el estado del directorio anterior.
+
+Será donde ser realicen las acciones específicas que se contemplan en este tutorial.
+
+\subsubsection{Directorio \texttt{/enviar}}
+Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.sh} que comprobará el estado del directorio anterior.
+
+Una vez aquí, dichos ficheros estarán listos para pasar al siguiente dispositivo.
+
+
+

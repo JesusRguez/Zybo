@@ -45,7 +45,7 @@
 %% Fuentes matematicas lo mas compatibles posibles con postscript (times)
 %% (Esto no funciona para todos los simbolos pero reduce mucho el tamaño del
 %% pdf si hay muchas matamaticas....
-%\usepackage{mathptm}
+\usepackage{mathptm}
 
 %%% VARIOS:
 %\usepackage{slashbox}
@@ -55,6 +55,7 @@
 \usepackage{multirow}
 \usepackage{hhline}
 \usepackage{titling}
+\usepackage{amssymb}
 
 %% MARCA DE AGUA
 %% Este package de "draft copy" NO funciona con pdflatex
@@ -286,22 +287,22 @@ Fdo.: Jesús Rodríguez Heras
 	
 	\part{Contenido}
 	\chapter{Introducción}
-	\include{Introduccion/Objetivos}
-	\include{Introduccion/Descripcion}
-	\include{Introduccion/Alcance}
+	\input{Introduccion/Objetivos}
+	\input{Introduccion/Descripcion}
+	\input{Introduccion/Alcance}
 	
 	\chapter{Metodología}
-	\include{Metodologia/MarcoTeorico}
-	\include{Metodologia/Tecnologias}
-	\include{Metodologia/Analisis}
-	\include{Metodologia/DisenoDesarrollo}
-	\include{Metodologia/Pruebas}
+	\input{Metodologia/MarcoTeorico}
+	\input{Metodologia/Tecnologias}
+	\input{Metodologia/Analisis}
+	\input{Metodologia/DisenoDesarrollo}
+	\input{Metodologia/Pruebas}
 
 	\chapter{Conclusiones y trabajo futuro}
-	\include{Epilogo/Conclusiones}
+	\input{Epilogo/Conclusiones}
 	
 	\chapter{Referencias/Bibliografía}
-	\include{Bibliografia}
+	\input{Bibliografia}
 	
 	\part{Anexos técnicos}
 	\appendix

@@ -1,7 +1,18 @@
 \section{Diseño y desarrollo}
-
 \subsection{Hardware}
-Aquí explicamos lo citado en el apartado de análisis.
+%Aquí explicamos lo citado en el apartado de análisis.
+Tanto las tarjetas Zybo como el ordenador monitor se conectarán al switch usando un cableado de red adecuado (podemos usar prácticamente cualquier tipo de cableado homologado, aunque, para este proyecto se han usado cables UTP categoría 5e y categoría 6).
+
+Todos los dispositivos de la red tienen IP fija por lo que debemos configurar dichas IP en todos los ellos. Como estamos usando Linux, tendremos que configurar la IP en la interfaz correspondiente.
+
+Para asociar una IP al nombre de cada dispositivo, solo tendremos que rellenar el fichero \texttt{/etc/hosts} con las direcciones IP y el nombre de los dispositivos. Este archivo será idéntico en todos los dispositivos.
 
 \subsection{Software}
-Aquí explicamos lo citado en el apartado de análisis.
+%Aquí explicamos lo citado en el apartado de análisis.
+El proceso de comunicación se inicia en el ordenador monitor cuando éste envía un fichero a la primera tarjeta Zybo. Cuando ésta lo recibe, descifra el contenido, introduce los cambios necesarios, cifra el fichero y lo envía a la siguiente tarjeta.
+
+Dicho proceso se lleva a cabo de la misma forma entre todas las tarjetas hasta que se llega a la última de éstas, la cual envía el archivo nuevamente al ordenador monitor.
+
+Toda esta comunicación se realiza gracias a la función de varios scripts programados en bash, por lo que tanto las tarjetas con Linux, como el ordenador monitor, son capaces de ejecutarlos.
+
+\textcolor{red}{No se si aquí sale más rentable poner los scripts o poner una referencia a los anexos para que se vean allí o hacer una mezcla de los dos y poner aquí la parte teórica (dentro de lo que cabe) y poner también una referencia al anexo donde estará tanto el diagrama de flujo como el código en sí del script.}

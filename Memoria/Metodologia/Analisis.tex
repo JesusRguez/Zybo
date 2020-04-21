@@ -1,38 +1,10 @@
 \section{Análisis del sistema}
-Aparte de lo que hay debajo, añadir por ahí también que son capaces de descifrar y añadir información proporcionada por el usuario mediante un pendrive.
+Una vez que los dispositivos están conectados y se ha creado la infraestructura de red (\textcolor{red}{Creo que aquí sería conveniente hacer referencia a cómo se conecta todo de algún anexo}), el sistema es capaz de cifrar los datos, enviarlos por el conjunto de placas que forman la red, descifrar los datos y volverlos a enviar. De esta forma, se consigue que la recolecta de datos sea totalmente cifrada, ya que las comunicaciones están cifradas gracias al protocolo AES y al protocolo SSH mediante el cual se envían y reciben los datos.
 
 \subsection{Hardware}
-Requisitos de la red en si, explicando lo que tendrá que haber y como deberá conectarse, sin decir todavía cómo. 
+%Requisitos de la red en si, explicando lo que tendrá que haber y como deberá conectarse, sin decir todavía cómo.
+La red estará formada por las tarjetas Zybo, el ordenador central (monitor) y el switch. Cada tarjta debe tener instalado un sistema operativo Linux para permitir el uso del protocolo SSH y la gestión de ficheros en su interior.
 
 \subsection{Software}
-Hablará de los test que habrá que diseñar y luego de los scripts que deberán automatizar el funcionamiento del sistema.
-
-
-
-%
-%\begin{huge}
-%No se si poner los siguientes puntos también (del 6.3 hasta el 6.6)
-%\end{huge}
-%
-%
-%\section{Requisitos funcionales}
-%\textcolor{red}{No me se los requisitos funcionales que buscamos}
-%
-%
-%\section{Requisitos de información}
-%\textcolor{red}{No me se los requisitos de información}
-%
-%\section{Requisitos no funcionales}
-%\textcolor{red}{Algo como lo siguiente??:}
-%\subsection{Eficiencia}
-%
-%\subsection{Seguridad lógica y de datos}
-%
-%\subsection{Usabilidad}
-%
-%\subsection{Dependibilidad}
-%
-%
-%\section{Estudio de alternativas tecnológicas}
-%\textcolor{red}{Proponer alguna alternativa??}
-
+%Hablará de los test que habrá que diseñar y luego de los scripts que deberán automatizar el funcionamiento del sistema.
+Una vez que se ha montado la red completa, debemos probar que las comunicaciones entre las tarjetas y el ordenador monitor están habilitadas. Para ello, se ha diseñado un pequeño script con un test de prueba de conectividad (\textcolor{red}{Aquí habría que poner una referencia al anexo de abajo (el 3) donde se muestra el código de Inicio.sh con su diagrama de flujo y tal tal como está en el documento "Test de interconexión de red Zybo"}), el cual nos dirá qué tarjeta está conectada a la red y, en caso de que una de ellas tenga un problema de red, solo tendremos que solventarlo de la manera adecuada (bien volviendo a conectar la tarjeta si ésta estaba mal conectada, o configurando correctamente su dirección IP).

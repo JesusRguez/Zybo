@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  21 APR 2020 09:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  21 APR 2020 11:48
 entering extended mode
 **./Memoria.tex
 (Memoria.tex
@@ -210,7 +210,46 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip51
 \bigstrutjot=\dimen141
 )
-("D:\Archivos de programa\MiKTeX\tex/latex/tools\verbatim.sty"
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\mathptm.sty"
+Package: mathptm 2020/03/25 PSNFSS-v9.3 Times w/ Math (SPQR, WaS) 
+
+
+Package mathptm Warning: This package is to be regarded as obsolete.
+(mathptm)                See the PSNFSS documentation.
+
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 32.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 34.
+\symbold=\mathgroup5
+\symitalic=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 37.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 38.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 38.
+) ("D:\Archivos de programa\MiKTeX\tex/latex/tools\verbatim.sty"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks21
 \verbatim@line=\toks22
@@ -260,6 +299,18 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip55
 \droptitle=\skip56
 )
+("D:\Archivos de programa\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("D:\Archivos de programa\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks25
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (Estilos/Apuntes.sty
 Package hyperref Info: Option `pdffitwindow' set `true' on input line 17.
 Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 17.
@@ -282,7 +333,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks25
+\everycr=\toks26
 \minrowclearance=\skip57
 )
 \rownum=\count198
@@ -325,41 +376,35 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count199
 \l__pdf_internal_box=\box49
 ) (Memoria.aux (Inicio/Agradecimientos.aux) (Inicio/Resumen.aux)
-(Inicio/PalabrasClave.aux) (Introduccion/Objetivos.aux)
-(Introduccion/Descripcion.aux) (Introduccion/Alcance.aux)
-(Metodologia/MarcoTeorico.aux) (Metodologia/Tecnologias.aux)
-(Metodologia/Analisis.aux) (Metodologia/DisenoDesarrollo.aux)
-(Metodologia/Pruebas.aux) (Epilogo/Conclusiones.aux) (Bibliografia.aux)
-(Anexos/Anexo1.aux) (Anexos/Anexo2.aux) (Anexos/Anexo3.aux))
+(Inicio/PalabrasClave.aux) (Anexos/Anexo1.aux) (Anexos/Anexo2.aux)
+(Anexos/Anexo3.aux))
 \openout1 = `Memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 10
-5.
-
-("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\t1ptm.fd"
+6.
+ ("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/latex/ucs\ucsencs.def
+) (C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \AtBeginShipoutBox=\box50
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 106.
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -373,9 +418,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count266
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
  (Memoria.out) (Memoria.out)
 \@outlinefile=\write3
 \openout3 = `Memoria.out'.
@@ -388,12 +433,12 @@ LaTeX Info: Redefining \nameref on input line 105.
 \scratchbox=\box51
 \nofMPsegments=\count268
 \nofMParguments=\count269
-\everyMPshowfont=\toks26
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count270
 \MPscratchDim=\dimen149
 \MPnumerator=\count271
 \makeMPintoPDFobject=\count272
-\everyMPtoPDFconversion=\toks27
+\everyMPtoPDFconversion=\toks28
 )
 (C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/latex/epstopdf-pkg\epstopdf-bas
 e.sty
@@ -401,40 +446,86 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
+\big@size=\dimen150
 \c@lstlisting=\count273
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 112.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 112.
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
+ 113.
+ ("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
+ 113.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
+ 113.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
+ 113.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 11
-2.
- ("D:\Archivos de programa\MiKTeX\tex/latex/base\ulasy.fd"
+3.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<UCA.png, id=115, 401.5pt x 401.5pt>
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+13.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 113
+.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 113
+.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<UCA.png, id=211, 401.5pt x 401.5pt>
 File: UCA.png Graphic file (type png)
 <use UCA.png>
-Package pdftex.def Info: UCA.png  used on input line 113.
+Package pdftex.def Info: UCA.png  used on input line 114.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
-<ESI.png, id=117, 1027.84pt x 1027.84pt>
+<ESI.png, id=213, 1027.84pt x 1027.84pt>
 File: ESI.png Graphic file (type png)
 <use ESI.png>
-Package pdftex.def Info: ESI.png  used on input line 113.
+Package pdftex.def Info: ESI.png  used on input line 114.
 (pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
  [1
 
 
 {C:/Users/Jes√∫s/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./UCA.png>
- <./ESI.png>] [2
+ <./ESI.png>]
+[2
 
 ]
 File: UCA.png Graphic file (type png)
 <use UCA.png>
-Package pdftex.def Info: UCA.png  used on input line 180.
+Package pdftex.def Info: UCA.png  used on input line 181.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
 File: ESI.png Graphic file (type png)
 <use ESI.png>
-Package pdftex.def Info: ESI.png  used on input line 180.
+Package pdftex.def Info: ESI.png  used on input line 181.
 (pdftex.def)             Requested size: 70.46037pt x 70.45053pt.
  [3] [4
 
@@ -451,7 +542,8 @@ Package pdftex.def Info: ESI.png  used on input line 180.
 ]
 \openout2 = `Inicio/Resumen.aux'.
 
- (Inicio/Resumen.tex) [9
+ (Inicio/Resumen.tex)
+[9
 
 ] [10
 
@@ -464,12 +556,17 @@ Package pdftex.def Info: ESI.png  used on input line 180.
 ] [12
 
 
-] (Memoria.toc [13])
+] (Memoria.toc [13]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 65
+.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
 \tf@toc=\write4
 \openout4 = `Memoria.toc'.
 
- [14]
-(Memoria.lof)
+ [14] (Memoria.lof)
 \tf@lof=\write5
 \openout5 = `Memoria.lof'.
 
@@ -485,148 +582,280 @@ Package pdftex.def Info: ESI.png  used on input line 180.
 
 ] [19] [20]
 Cap\IeC {\'\i }tulo 1.
-[21
-
-]
-\openout2 = `Introduccion/Objetivos.aux'.
-
- (Introduccion/Objetivos.tex) [22
-
-]
-\openout2 = `Introduccion/Descripcion.aux'.
-
- (Introduccion/Descripcion.tex) [23
-
-
-]
-\openout2 = `Introduccion/Alcance.aux'.
-
-
+(Introduccion/Objetivos.tex) (Introduccion/Descripcion.tex)
 (Introduccion/Alcance.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
 .
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) [24
+) [21
 
-
-]
+]) [22]
 Cap\IeC {\'\i }tulo 2.
-[25
+(Metodologia/MarcoTeorico.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+) (Metodologia/Tecnologias.tex)
+(Metodologia/Analisis.tex [23
 
-
-]
-\openout2 = `Metodologia/MarcoTeorico.aux'.
-
- (Metodologia/MarcoTeorico.tex) [26
-
-]
-\openout2 = `Metodologia/Tecnologias.aux'.
-
- (Metodologia/Tecnologias.tex) [27
-
-
-]
-\openout2 = `Metodologia/Analisis.aux'.
-
-
-(Metodologia/Analisis.tex) [28
-
-
-]
-\openout2 = `Metodologia/DisenoDesarrollo.aux'.
-
- (Metodologia/DisenoDesarrollo.tex) [29
-
-
-]
-\openout2 = `Metodologia/Pruebas.aux'.
-
-
-(Metodologia/Pruebas.tex) [30
-
+]) (Metodologia/DisenoDesarrollo.tex)
+(Metodologia/Pruebas.tex [24]) [25] [26
 
 ]
 Cap\IeC {\'\i }tulo 3.
-[31
-
-
-]
-\openout2 = `Epilogo/Conclusiones.aux'.
-
- (Epilogo/Conclusiones.tex) [32
+(Epilogo/Conclusiones.tex) [27] [28
 
 ]
 Cap\IeC {\'\i }tulo 4.
-[33
+(Bibliografia.tex) [29] [30
 
-
-]
-\openout2 = `Bibliografia.aux'.
-
- (Bibliografia.tex) [34
-
-] [35
-
-
-] [36]
+] [31] [32]
 \openout2 = `Anexos/Anexo1.aux'.
 
  (Anexos/Anexo1.tex
 Ap\IeC {\'e}ndice A.
-) [37
+) [33
 
 
 ]
 \openout2 = `Anexos/Anexo2.aux'.
 
- (Anexos/Anexo2.tex [38
+ (Anexos/Anexo2.tex [34
 
 
 
 ]
 Ap\IeC {\'e}ndice B.
-) [39]
+(Anexos/Anexo2/Linux/InstalacionLinux.tex [35]
+<Anexos/Anexo2/Linux/NuevoUsuario.png, id=466, 501.875pt x 345.29pt>
+File: Anexos/Anexo2/Linux/NuevoUsuario.png Graphic file (type png)
+<use Anexos/Anexo2/Linux/NuevoUsuario.png>
+Package pdftex.def Info: Anexos/Anexo2/Linux/NuevoUsuario.png  used on input li
+ne 44.
+(pdftex.def)             Requested size: 451.68332pt x 310.7581pt.
+ [36 <./Anexos/Anexo2/Linux/NuevoUsuario.png>]
+<Anexos/Anexo2/Linux/SSH.png, id=471, 501.875pt x 346.29375pt>
+File: Anexos/Anexo2/Linux/SSH.png Graphic file (type png)
+<use Anexos/Anexo2/Linux/SSH.png>
+Package pdftex.def Info: Anexos/Anexo2/Linux/SSH.png  used on input line 64.
+(pdftex.def)             Requested size: 401.50053pt x 277.03537pt.
+ [37 <./Anexos/Anexo2/Linux/SSH.png>]
+<Anexos/Anexo2/Linux/SSHRestart.png, id=477, 501.875pt x 73.27374pt>
+File: Anexos/Anexo2/Linux/SSHRestart.png Graphic file (type png)
+<use Anexos/Anexo2/Linux/SSHRestart.png>
+Package pdftex.def Info: Anexos/Anexo2/Linux/SSHRestart.png  used on input line
+ 76.
+(pdftex.def)             Requested size: 401.50053pt x 58.61905pt.
+) [38 <./Anexos/Anexo2/Linux/SSHRestart.png>] (Anexos/Anexo2/Infraestructura/Mo
+ntarInfraestructura.tex
+<Anexos/Anexo2/Infraestructura/zybo.jpg, id=483, 487.8225pt x 353.82187pt>
+File: Anexos/Anexo2/Infraestructura/zybo.jpg Graphic file (type jpg)
+<use Anexos/Anexo2/Infraestructura/zybo.jpg>
+Package pdftex.def Info: Anexos/Anexo2/Infraestructura/zybo.jpg  used on input 
+line 15.
+(pdftex.def)             Requested size: 243.91064pt x 176.91049pt.
+
+[39 <./Anexos/Anexo2/Infraestructura/zybo.jpg>]
+<Anexos/Anexo2/Infraestructura/Datasheet.pdf, id=495, 512.26842pt x 691.85184pt
+>
+File: Anexos/Anexo2/Infraestructura/Datasheet.pdf Graphic file (type pdf)
+<use Anexos/Anexo2/Infraestructura/Datasheet.pdf>
+Package pdftex.def Info: Anexos/Anexo2/Infraestructura/Datasheet.pdf  used on i
+nput line 26.
+(pdftex.def)             Requested size: 353.46559pt x 477.37828pt.
+ [40 <./Anexos/Anexo2/Infraestructura/Datasheet.pdf>]
+Overfull \hbox (22.8915pt too wide) in paragraph at lines 39--40
+[]\T1/ptm/b/n/10 Debian 9 Stretch: \T1/ptm/m/n/10 Este sis-tema op-er-a-tivo te
+n-dr· un usuario lla-mado \T1/pcr/m/n/10 zybo \T1/ptm/m/n/10 y su con-traseÒa s
+er· \T1/pcr/m/n/10 zybomonitor\T1/ptm/m/n/10 .
+ []
+
+[41]
+<Anexos/Anexo2/Infraestructura/ifconfigPC.png, id=560, 680.5425pt x 555.07375pt
+>
+File: Anexos/Anexo2/Infraestructura/ifconfigPC.png Graphic file (type png)
+<use Anexos/Anexo2/Infraestructura/ifconfigPC.png>
+Package pdftex.def Info: Anexos/Anexo2/Infraestructura/ifconfigPC.png  used on 
+input line 71.
+(pdftex.def)             Requested size: 340.27042pt x 277.53618pt.
+ ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+) [42 <./Anexos/Anexo2/Infraestructura/ifconfigPC.png>]
+<Anexos/Anexo2/Infraestructura/PuTTY.png, id=576, 567.11874pt x 574.145pt>
+File: Anexos/Anexo2/Infraestructura/PuTTY.png Graphic file (type png)
+<use Anexos/Anexo2/Infraestructura/PuTTY.png>
+Package pdftex.def Info: Anexos/Anexo2/Infraestructura/PuTTY.png  used on input
+ line 100.
+(pdftex.def)             Requested size: 396.98041pt x 401.89876pt.
+ [43 <./Anexos/Anexo2/Infraestructura/PuTTY.png>]
+<Anexos/Anexo2/Infraestructura/ifconfigZybo.png, id=586, 501.875pt x 344.28625p
+t>
+File: Anexos/Anexo2/Infraestructura/ifconfigZybo.png Graphic file (type png)
+<use Anexos/Anexo2/Infraestructura/ifconfigZybo.png>
+Package pdftex.def Info: Anexos/Anexo2/Infraestructura/ifconfigZybo.png  used o
+n input line 112.
+(pdftex.def)             Requested size: 401.50053pt x 275.42937pt.
+ ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+[44 <./Anexos/Anexo2/Infraestructura/ifconfigZybo.png>]) [45]
+(Anexos/Anexo2/Test/TestInterconexion.tex
+<Anexos/Anexo2/Test/Script.png, id=607, 573.14125pt x 39.14626pt>
+File: Anexos/Anexo2/Test/Script.png Graphic file (type png)
+<use Anexos/Anexo2/Test/Script.png>
+Package pdftex.def Info: Anexos/Anexo2/Test/Script.png  used on input line 8.
+(pdftex.def)             Requested size: 401.19614pt x 27.40218pt.
+ [46 <./Anexos/Anexo2/Test/Script.png>]) [47] (Anexos/Anexo2/Envio/EnvioFichero
+s.tex [48]) [49]
+(Anexos/Anexo2/ComunicacionSecuencial/Secuencial.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+[50]
+Overfull \hbox (24.41252pt too wide) in paragraph at lines 83--84
+[]\T1/pcr/b/n/10 ViejoEnviar.txt\T1/ptm/b/n/10 : \T1/ptm/m/n/10 Este fichero co
+n-tendr· el es-tado del di-rec-to-rio \T1/pcr/m/n/10 /enviar \T1/ptm/m/n/10 una
+ vez que el script \T1/pcr/m/n/10 Enviando.sh
+ []
+
+[51])) [52]
 \openout2 = `Anexos/Anexo3.aux'.
 
- (Anexos/Anexo3.tex [40
+ (Anexos/Anexo3.tex
+Ap\IeC {\'e}ndice C.
+[53
 
 
 
 ]
-Ap\IeC {\'e}ndice C.
-) [41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
- (Memoria.aux (Inicio/Agradecimientos.aux) (Inicio/Resumen.aux)
-(Inicio/PalabrasClave.aux) (Introduccion/Objetivos.aux)
-(Introduccion/Descripcion.aux) (Introduccion/Alcance.aux)
-(Metodologia/MarcoTeorico.aux) (Metodologia/Tecnologias.aux)
-(Metodologia/Analisis.aux) (Metodologia/DisenoDesarrollo.aux)
-(Metodologia/Pruebas.aux) (Epilogo/Conclusiones.aux) (Bibliografia.aux)
-(Anexos/Anexo1.aux) (Anexos/Anexo2.aux) (Anexos/Anexo3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+<Anexos/Anexo2/Test/Inicio.png, id=681, 467.7475pt x 861.2175pt>
+File: Anexos/Anexo2/Test/Inicio.png Graphic file (type png)
+<use Anexos/Anexo2/Test/Inicio.png>
+Package pdftex.def Info: Anexos/Anexo2/Test/Inicio.png  used on input line 19.
+(pdftex.def)             Requested size: 262.87178pt x 484.0pt.
+ [54 <./Anexos/Anexo2/Test/Inicio.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 26.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+(C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/generic/stringenc\se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+)
+(C:\Users\Jes√∫s\AppData\Roaming\MiKTeX\2.9\tex/generic/stringenc\se-iso-8859-1
+.def
+File: se-iso-8859-1.def 2019/11/29 v1.12 stringenc: ISO-8859-1
+)
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1.
+ [55]
+<Anexos/Anexo3/Diagramas/Lanzador.png, id=722, 121.45375pt x 191.71625pt>
+File: Anexos/Anexo3/Diagramas/Lanzador.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Lanzador.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Lanzador.png  used on input li
+ne 53.
+(pdftex.def)             Requested size: 109.30734pt x 172.54301pt.
+ ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+[56 <./Anexos/Anexo3/Diagramas/Lanzador.png>]
+<Anexos/Anexo3/Diagramas/Automatico.png, id=736, 148.555pt x 214.8025pt>
+File: Anexos/Anexo3/Diagramas/Automatico.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Automatico.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Automatico.png  used on input 
+line 73.
+(pdftex.def)             Requested size: 133.69824pt x 193.32045pt.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+) [57 <./Anexos/Anexo3/Diagramas/Automatico.png>]
+<Anexos/Anexo3/Diagramas/Recibiendo.png, id=756, 388.45125pt x 562.1pt>
+File: Anexos/Anexo3/Diagramas/Recibiendo.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Recibiendo.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Recibiendo.png  used on input 
+line 93.
+(pdftex.def)             Requested size: 310.76141pt x 449.68062pt.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+) [58 <./Anexos/Anexo3/Diagramas/Recibiendo.png>]
+Overfull \hbox (73.27112pt too wide) in paragraph at lines 107--108
+[]\T1/ptm/m/n/10 Gracias al crontab es-table-cido, se en-carga de com-pro-bar p
+er-iÛdica-mente el es-tado del di-rec-to-rio \T1/pcr/m/n/10 ~/ficheros/desencri
+ptar\T1/ptm/m/n/10 . 
+ []
+
+[59]
+<Anexos/Anexo3/Diagramas/Cristian.png, id=803, 387.4475pt x 685.56125pt>
+File: Anexos/Anexo3/Diagramas/Cristian.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Cristian.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Cristian.png  used on input li
+ne 121.
+(pdftex.def)             Requested size: 271.2114pt x 479.8896pt.
+ [60 <./Anexos/Anexo3/Diagramas/Cristian.png>]
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+) [61] [62]
+<Anexos/Anexo3/Diagramas/Enviando.png, id=863, 464.73625pt x 744.7825pt>
+File: Anexos/Anexo3/Diagramas/Enviando.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Enviando.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Enviando.png  used on input li
+ne 157.
+(pdftex.def)             Requested size: 302.07498pt x 484.10289pt.
+ [63 <./Anexos/Anexo3/Diagramas/Enviando.png>]
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+) [64]
+<Anexos/Anexo3/Diagramas/Borrar.png, id=928, 121.45375pt x 224.84pt>
+File: Anexos/Anexo3/Diagramas/Borrar.png Graphic file (type png)
+<use Anexos/Anexo3/Diagramas/Borrar.png>
+Package pdftex.def Info: Anexos/Anexo3/Diagramas/Borrar.png  used on input line
+ 181.
+(pdftex.def)             Requested size: 109.30734pt x 202.35413pt.
+
+("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)) [65 <./Anexos/Anexo3/Diagramas/Borrar.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+ (Memoria.aux (Inicio/Agradecimientos.aux)
+(Inicio/Resumen.aux) (Inicio/PalabrasClave.aux) (Anexos/Anexo1.aux)
+(Anexos/Anexo2.aux) (Anexos/Anexo3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 57EFA5F518EE1A8BBB41796E04CB63FB;1756.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+(rerunfilecheck)             Checksum: E00AC2D9F682B8048168671CD5990290;3583.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 9314 strings out of 480896
- 143882 string characters out of 2906720
- 619108 words of memory out of 3000000
- 24805 multiletter control sequences out of 15000+200000
- 578007 words of font info for 57 fonts, out of 3000000 for 9000
+ 10925 strings out of 480896
+ 165143 string characters out of 2906720
+ 705046 words of memory out of 3000000
+ 26005 multiletter control sequences out of 15000+200000
+ 611842 words of font info for 124 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,13n,49p,421b,516s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,13n,50p,834b,2303s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Archivos de programa/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Archivos de p
-rograma/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/Archivos de programa/MiKTeX
-/fonts/type1/urw/times/utmr8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on Memoria.pdf (41 pages, 396449 bytes).
+rograma/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de progra
+ma/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Archivos de progra
+ma/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><D:/Archivos de programa/MiKTeX/fo
+nts/type1/urw/courier/ucrr8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/ur
+w/courier/ucrro8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/urw/times/utm
+b8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Ar
+chivos de programa/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Memoria.pdf (65 pages, 1367038 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1056 PDF objects out of 1200 (max. 8388607)
+ 393 named destinations out of 1000 (max. 500000)
+ 507 words of extra memory for PDF output out of 10000 (max. 10000000)
 
