@@ -1,4 +1,5 @@
 \section{Test de interconexión de red Zybo}
+\hypertarget{TestConexion}{}
 \subsection{Descripción}
 Una vez se han conectado todos los dispositivos al switch como se indicó en el tutorial de creación de una infraestructura de red de placas Zybo, y, estando encendidos todos los dispositivos, necesitamos comprobar que existe conexión entre todos ellos.
 
@@ -10,14 +11,15 @@ Para ello, se ha desarrollado un script en bash, llamado \texttt{Inicio.sh}, que
 	\label{Líneas a modificar en el script}
 \end{figure}
 
-\textcolor{red}{Esta foto hay que cambiarla debido a un cambio en las IP's.}
+\textcolor{red}{Esta foto hay que cambiarla debido a un cambio en las IP's. Pero eso lo haré cuando tenga las tarjetas que me dejé en Madrid.}
 \begin{itemize}
 	\item \textbf{Línea 3:} Introducir la dirección IP de la tarjeta que queramos añadir. O borrar la que queramos quitar.
 	\item \textbf{Línea 4:} Introducir el alias de la tarjeta que queramos añadir. O borrar la que queramos quitar.
 \end{itemize}
 
-El script será ejecutado desde el ordenador central abriendo una terminal en el directorio donde se ubique el mismo. Cabe destacar que tiene dos modos de funcionamiento:
+El script será ejecutado desde el ordenador central abriendo una terminal en el directorio donde se ubique el mismo. Este script lo podemos encontrar en el anexo \hyperlink{ScriptConexion}{Inicio.sh}.
 
+Cabe destacar que tiene dos modos de funcionamiento:
 \subsubsection{Normal}
 En esta opción, la salida del script será meramente informativa, devolviendo si la tarjeta está o no conectada a la red.
 \begin{itemize}

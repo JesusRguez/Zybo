@@ -1,8 +1,28 @@
 \section{Tecnologías a utilizar}
 \subsection{Diseño de la arquitectura}
-La arquitectura consta de una red privada, (cableada y con IP fija), el switch y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
+La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5e.}, interconectada mediante un switch, y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
 
-Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES (\textcolor{red}{Creo que aquí debería nombrar a Cristian, debido a que el cifrado es suyo.}).
+Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP (\textcolor{red}{He puesto IP porque no me acuerdo de lo que significaba cada letra.}) diseñado y verificado en otro TFG realizado por Cristian Ambrosio Costoya.
 
 \subsection{Diseño de componentes}
-\textcolor{red}{Este subapartado no lo termino de entender demasiado bien ya que los componentes son como son, me refiero a, por ejemplo, las placas son las que son sin más. O también, podría poner un poco del datasheet de las placas y tal con una figurita tal como lo tengo en el documento "Creación de una infraestructura de red de placas Zybo".}
+Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que tienen las siguientes características:
+\begin{itemize}
+	\item Procesador Cortex-A9 doble núcleo a 650 MHz.
+	\item Memoria DDR3 con 8 canales de DMA\footnote{Acceso Directo a Memoria: Permite a cierto tipo de componentes de una computadora acceder a la memoria del sistema para leer o escribir independientemente de la unidad central de procesamiento (CPU) principal.}.
+	\item Controladores de periféricos de gran ancho de banda: 1Gb Ethernet, USB 2.0.
+	\item Controladores de periféricos de bajo ancho de banda: SPI, UART, CAN, I$^2$C.
+	\item Ranura MicroSD (compatible con el sistema de archivos Linux).
+	\item Lógica reprogramable equivalente a Artix-7 FPGA:
+	\begin{itemize}
+		\item 4.400 segmentos lógicos, cada uno con cuatro LUT de 6 entradas y 8 flip-flops.
+		\item 512 MB x32 DDR3 con ancho de banda de 1050 Mbps.
+		\item Dos cristales de administración de reloj, cada uno con un bucle de fase bloqueada (PLL) y un administrador de reloj de modo mixto (MMCM).
+		\item Procesadores digitales de señales de 80 componentes.
+		\item Velocidades de reloj interno que exceden los 450MHz.
+		\item Convertidor analógico a digital en chip (XADC).
+	\end{itemize}
+\end{itemize}
+
+Además de las características base de las tarjetas Zybo, cada una de ellas tiene instalado un sistema operativo Linux para facilitar la gestión de los ficheros.
+
+\textcolor{red}{No se si voy a usar el SO de Gabri o si voy a implementar lo de gabri en el mío, la verdad es que me da igual una cosa que otra. El problema está en que le he preguntado si tiene el sistema operativo por ahí y cree que lo ha borrado así que no se cómo hacer esto del sistema operativo, porque debe de tener tanto lo de Gabri como lo de Cristian para que funcione todo correctamente. Use el que use, lo tengo que detallar aquí.}

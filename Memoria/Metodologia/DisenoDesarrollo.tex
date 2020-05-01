@@ -5,14 +5,14 @@ Tanto las tarjetas Zybo como el ordenador monitor se conectarán al switch usand
 
 Todos los dispositivos de la red tienen IP fija por lo que debemos configurar dichas IP en todos los ellos. Como estamos usando Linux, tendremos que configurar la IP en la interfaz correspondiente.
 
-Para asociar una IP al nombre de cada dispositivo, solo tendremos que rellenar el fichero \texttt{/etc/hosts} con las direcciones IP y el nombre de los dispositivos. Este archivo será idéntico en todos los dispositivos.
+Para asociar una dirección IP al nombre de cada dispositivo, tendremos que rellenar el fichero \texttt{/etc/hosts} de todos los dispositivos con las direcciones IP y el nombre de los dispositivos conectados a la red. Este archivo será idéntico en todos los dispositivos para garantizar una consistente agenda de direcciones.
 
 \subsection{Software}
 %Aquí explicamos lo citado en el apartado de análisis.
 El proceso de comunicación se inicia en el ordenador monitor cuando éste envía un fichero a la primera tarjeta Zybo. Cuando ésta lo recibe, descifra el contenido, introduce los cambios necesarios, cifra el fichero y lo envía a la siguiente tarjeta.
 
-Dicho proceso se lleva a cabo de la misma forma entre todas las tarjetas hasta que se llega a la última de éstas, la cual envía el archivo nuevamente al ordenador monitor.
+Dicho proceso se lleva a cabo de la misma forma entre todas las tarjetas hasta que se llega a la última de éstas\footnote{Esto se puede ver en el archivo \texttt{/etc/hosts}, donde están almacenadas todas las direcciones IP de los dispositivos.}, la cual envía el archivo nuevamente al ordenador monitor.
 
 Toda esta comunicación se realiza gracias a la función de varios scripts programados en bash, por lo que tanto las tarjetas con Linux, como el ordenador monitor, son capaces de ejecutarlos.
 
-\textcolor{red}{No se si aquí sale más rentable poner los scripts o poner una referencia a los anexos para que se vean allí o hacer una mezcla de los dos y poner aquí la parte teórica (dentro de lo que cabe) y poner también una referencia al anexo donde estará tanto el diagrama de flujo como el código en sí del script.}
+\textcolor{red}{A pesar de que en la revisión anterior me dijiste: "Creo que deberías poner aqui lo qué hace cada uno documentándolo con el diagrama de flujo.", a mí me gusta más poner una pequeña explicación diciendo algo como: "También se han desarrollado una serie de scripts para controlar y automatizar la comunicación entre las tarjetas Zybo". Y ya luego, añadir una referencia al anexo 3 que es donde se encuentran los scipts, con su explicación, diagrama de flujo y código.}

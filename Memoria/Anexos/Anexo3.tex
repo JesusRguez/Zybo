@@ -1,7 +1,6 @@
 \chapter{Códigos}
 %Aquí puedo incrustar tal cual los scripts del proyecto.
-\section{Scripts}
-En este anexo, describiremos los distintos scripts que podemos encontrar en las tarjetas Zybo con su explicación y código correspondiente.
+En este apéndice, describiremos los distintos scripts que podemos encontrar en las tarjetas Zybo con su explicación y código correspondiente.
 
 Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el dispositivo anterior hasta ser enviado al siguiente dispositivo.
 
@@ -10,10 +9,11 @@ Para comprobar el estado de todos los directorios, usaremos el comando \texttt{s
 En el trabajo aquí mencionado se emula el desencriptado de un fichero, adición de información, cifrado, y envío del mismo a otro dispositivo\footnote{Para cambiar dicho comportamiento, solo tendremos que modificar los scritps que se encargan de automatizar el proceso.}. \textcolor{red}{Esto habría que cambiarlo puesto que ahora sí que tenemos el trabajo de Cristian.}
 
 \newpage
-\subsection{Inicio.sh}
+\section{\texttt{Inicio.sh}}
+\hypertarget{ScriptConexion}{}
 El script se encarga de probar las conexiones de todos los dispositivos de la red para ver que están conectados al switch.
 
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.562]{Anexos/Anexo2/Test/Inicio.png}
@@ -22,16 +22,14 @@ El script se encarga de probar las conexiones de todos los dispositivos de la re
 \end{figure}
 
 \newpage
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo2/Test/Inicio.sh}
 \begin{center}
 	Código de \texttt{Inicio.sh} usando cuatro tarjetas como ejemplo.
 \end{center}
 
-\textcolor{red}{No se si es mejor hacerlo así o poner todos los códigos con su correspondiente diagrama de flujo en el apéndice C que es el que he dejado exclusivamente para los códigos.}
 
-
-\subsection{\texttt{Lanzador.sh}}
+\section{\texttt{Lanzador.sh}}
 Este script se encarga de lanzar el script \texttt{Automatico.sh} mediante la herramienta cron\footnote{Para más información, ver el manual de crontab en este \href{https://linux.die.net/man/5/crontab}{\textcolor{blue}{enlace}}.} al inicio del sistema operativo Xillinux.
 
 Para usarlo, debemos usar el siguiente comando:
@@ -47,7 +45,7 @@ Y, luego, añadir la regla que queramos que se ejecute al final del fichero. En 
 Esto hará que la herramienta cron inicie este script al iniciar el sistema operativo Xillinux de las tarjetas Zybo.
 
 \newpage
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.9]{Anexos/Anexo3/Diagramas/Lanzador.png}
@@ -55,7 +53,7 @@ Esto hará que la herramienta cron inicie este script al iniciar el sistema oper
 	\label{Diagrama de flujo de Lanzador.sh}
 \end{figure}
 
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Lanzador.sh}
 \begin{center}
 	Código de \texttt{Lanzador.sh}.
@@ -63,11 +61,11 @@ Esto hará que la herramienta cron inicie este script al iniciar el sistema oper
 
 
 \newpage
-\subsection{\texttt{Automatico.sh}}
+\section{\texttt{Automatico.sh}}
 Este script es el encargado de lanzar el resto de scripts periódicamente para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
 
 %\newpage
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.9]{Anexos/Anexo3/Diagramas/Automatico.png}
@@ -75,7 +73,7 @@ Este script es el encargado de lanzar el resto de scripts periódicamente para q
 	\label{Diagrama de flujo de Automatico.sh}
 \end{figure}
 
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Automatico.sh}
 \begin{center}
 	Código de \texttt{Anexos/Anexo3/Automatico.sh}.
@@ -83,11 +81,11 @@ Este script es el encargado de lanzar el resto de scripts periódicamente para q
 
 
 \newpage
-\subsection{\texttt{Recibiendo.sh}}
+\section{\texttt{Recibiendo.sh}}
 Este script es el encargado de comprobar el estado del directorio \texttt{\textasciitilde/ficheros/recibir} y, si llega un archivo nuevo, enviarlo al directorio \texttt{\textasciitilde/ficheros/desencriptar}.
 
 %\newpage
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{Anexos/Anexo3/Diagramas/Recibiendo.png}
@@ -95,13 +93,15 @@ Este script es el encargado de comprobar el estado del directorio \texttt{\texta
 	\label{Diagrama de flujo de Recibiendo.sh}
 \end{figure}
 
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Recibiendo.sh}
 \begin{center}
 	Código de \texttt{Recibiendo.sh}.
 \end{center}
 
-\subsection{\texttt{Cristian.sh}}
+\section{\texttt{Cristian.sh}}
+\textcolor{red}{A este script le pondré el nombre \texttt{Encriptando.sh} seguramente, porque básicamente se encargará de eso (tanto encriptar como desencriptar), o, a unas malas, le pongo \texttt{Trabajando.sh}. También tengo la opción de hacer dos, uno que encripte y otro que desencripte, depende de como vea que funciona una vez que tenga las tarjetas. Así que, hasta que no tenga las tarjetas y me ponga a hacer las pruebas de verdad con todo (tanto lo de Gabri como lo de Cristian, esta parte queda un poco en el aire para perfeccionarla luego.).}
+
 Este script es el encargado de emular el trabajo de nuestro compañero Cristian y realiza las siguientes tareas:
 \begin{itemize}
 	\item Gracias al crontab establecido, se encarga de comprobar periódicamente el estado del directorio \texttt{\textasciitilde/ficheros/desencriptar}.
@@ -115,7 +115,7 @@ Este script es el encargado de emular el trabajo de nuestro compañero Cristian 
 \end{itemize}
 
 \newpage
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{Anexos/Anexo3/Diagramas/Cristian.png}
@@ -124,14 +124,15 @@ Este script es el encargado de emular el trabajo de nuestro compañero Cristian 
 \end{figure}
 
 \newpage
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Cristian.sh}
 \begin{center}
 	Código de \texttt{Cristian.sh}.
 \end{center}
 
 \newpage
-\subsection{\texttt{Enviando.sh}}
+\section{\texttt{Enviando.sh}}
+\hypertarget{ScriptEnviando}{}
 Este script es el encargado de comprobar periódicamente el estado del directorio\\ \texttt{\textasciitilde/ficheros/enviar} y, cuando detecta un cambio, envía el archivo a la siguiente tarjeta, o, si ésta se encuentra desconectada, al ordenador central.
 
 A la hora de comprobar si la siguiente tarjeta está conectada o no, se hace enviando un comando ping a la siguiente tarjeta, por lo que se nos presentarán dos posibles casos:
@@ -151,7 +152,7 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 \end{enumerate}
 
 \newpage
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.65]{Anexos/Anexo3/Diagramas/Enviando.png}
@@ -160,14 +161,14 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 \end{figure}
 
 \newpage
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Enviando.sh}
 \begin{center}
 	Código de \texttt{Enviando.sh}.
 \end{center}
 
 
-\subsection{\texttt{Borrar.sh}}
+\section{\texttt{Borrar.sh}}
 Este script se encarga de borrar el contenido de los directorios \texttt{\textasciitilde/ficheros/recibir},\\ \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \texttt{\textasciitilde/ficheros/enviar} de las tarjetas Zybo.
 
 Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{\textasciitilde/ficheros} de las tarjetas Zybo:
@@ -175,7 +176,7 @@ Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{
 	\texttt{./Borrar.sh}
 \end{center}
 
-\subsubsection{Diagrama de flujo}
+\subsection{Diagrama de flujo}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.9]{Anexos/Anexo3/Diagramas/Borrar.png}
@@ -184,7 +185,7 @@ Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{
 \end{figure}
 
 %\newpage
-\subsubsection{Código}
+\subsection{Código}
 \lstinputlisting[language=Bash]{Anexos/Anexo3/Scripts/Borrar.sh}
 \begin{center}
 	Código de \texttt{Borrar.sh}.
