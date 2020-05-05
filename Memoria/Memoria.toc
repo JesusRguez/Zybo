@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Dise\IeC {\~n}o de componentes}{26}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}An\IeC {\'a}lisis del sistema}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Hardware}{26}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Software}{27}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Software}{26}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Dise\IeC {\~n}o y desarrollo}{27}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Hardware}{27}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Software}{27}{subsection.2.4.2}%
@@ -23,7 +23,6 @@
 \contentsline {section}{\numberline {3.1}Conclusiones}{29}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Trabajo futuro}{29}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Referencias/Bibliograf\IeC {\'\i }a}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Referencias bibliogr\IeC {\'a}ficas}{31}{section.4.1}%
 \contentsline {part}{II\hspace {1em}Anexos t\IeC {\'e}cnicos}{33}{part.2}%
 \contentsline {chapter}{\numberline {A}Datos t\IeC {\'e}cnicos}{35}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Ordenador monitor}{35}{section.A.1}%
@@ -60,7 +59,7 @@
 \contentsline {subsubsection}{Directorio \texttt {/desencriptar}}{54}{section*.17}%
 \contentsline {subsubsection}{Directorio \texttt {/trabajar}}{54}{section*.18}%
 \contentsline {subsubsection}{Directorio \texttt {/enviar}}{54}{section*.19}%
-\contentsline {chapter}{\numberline {C}C\IeC {\'o}digos}{55}{appendix.C}%
+\contentsline {chapter}{\numberline {C}Scripts}{55}{appendix.C}%
 \contentsline {section}{\numberline {C.1}\texttt {Inicio.sh}}{56}{section.C.1}%
 \contentsline {subsection}{\numberline {C.1.1}Diagrama de flujo}{56}{subsection.C.1.1}%
 \contentsline {subsection}{\numberline {C.1.2}C\IeC {\'o}digo}{57}{subsection.C.1.2}%

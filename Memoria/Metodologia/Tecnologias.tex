@@ -1,8 +1,8 @@
 \section{Tecnologías a utilizar}
 \subsection{Diseño de la arquitectura}
-La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5e.}, interconectada mediante un switch, y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
+La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5e.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
 
-Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP (\textcolor{red}{He puesto IP porque no me acuerdo de lo que significaba cada letra.}) diseñado y verificado en otro TFG realizado por Cristian Ambrosio Costoya.
+Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro TFG realizado por Cristian Ambrosio Costoya.
 
 \subsection{Diseño de componentes}
 Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que tienen las siguientes características:
@@ -23,6 +23,8 @@ Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que
 	\end{itemize}
 \end{itemize}
 
-Además de las características base de las tarjetas Zybo, cada una de ellas tiene instalado un sistema operativo Linux para facilitar la gestión de los ficheros.
+Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros. El sistema operativo usado en el proyecto es Xillinux el cual ha sido desarrollado por Xilinx e irá instalado en la tarjeta micro SD de cada tarjeta Zybo.
 
-\textcolor{red}{No se si voy a usar el SO de Gabri o si voy a implementar lo de gabri en el mío, la verdad es que me da igual una cosa que otra. El problema está en que le he preguntado si tiene el sistema operativo por ahí y cree que lo ha borrado así que no se cómo hacer esto del sistema operativo, porque debe de tener tanto lo de Gabri como lo de Cristian para que funcione todo correctamente. Use el que use, lo tengo que detallar aquí.}
+Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.}
+
+%\textcolor{red}{No se si voy a usar el SO de Gabri o si voy a implementar lo de gabri en el mío, la verdad es que me da igual una cosa que otra. El problema está en que le he preguntado si tiene el sistema operativo por ahí y cree que lo ha borrado así que no se cómo hacer esto del sistema operativo, porque debe de tener tanto lo de Gabri como lo de Cristian para que funcione todo correctamente. Use el que use, lo tengo que detallar aquí.}

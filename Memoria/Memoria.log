@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  1 MAY 2020 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.20)  5 MAY 2020 13:12
 entering extended mode
 **./Memoria.tex
 (Memoria.tex
@@ -501,12 +501,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 113
 ("D:\Archivos de programa\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<UCA.png, id=275, 401.5pt x 401.5pt>
+<UCA.png, id=271, 401.5pt x 401.5pt>
 File: UCA.png Graphic file (type png)
 <use UCA.png>
 Package pdftex.def Info: UCA.png  used on input line 114.
 (pdftex.def)             Requested size: 70.46037pt x 70.4596pt.
-<ESI.png, id=277, 1027.84pt x 1027.84pt>
+<ESI.png, id=273, 1027.84pt x 1027.84pt>
 File: ESI.png Graphic file (type png)
 <use ESI.png>
 Package pdftex.def Info: ESI.png  used on input line 114.
@@ -557,7 +557,7 @@ Package pdftex.def Info: ESI.png  used on input line 181.
 
 
 ] (Memoria.toc [13]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 64
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 63
 .
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/psnfss\t1pcr.fd"
@@ -631,28 +631,28 @@ Ap\IeC {\'e}ndice A.
 ]
 Ap\IeC {\'e}ndice B.
 (Anexos/Anexo2/Linux/InstalacionLinux.tex [37]
-<Anexos/Anexo2/Linux/NuevoUsuario.png, id=566, 501.875pt x 345.29pt>
+<Anexos/Anexo2/Linux/NuevoUsuario.png, id=567, 501.875pt x 345.29pt>
 File: Anexos/Anexo2/Linux/NuevoUsuario.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/NuevoUsuario.png>
 Package pdftex.def Info: Anexos/Anexo2/Linux/NuevoUsuario.png  used on input li
-ne 44.
+ne 45.
 (pdftex.def)             Requested size: 451.68332pt x 310.7581pt.
  [38 <./Anexos/Anexo2/Linux/NuevoUsuario.png>]
-<Anexos/Anexo2/Linux/SSH.png, id=571, 501.875pt x 346.29375pt>
+<Anexos/Anexo2/Linux/SSH.png, id=572, 501.875pt x 346.29375pt>
 File: Anexos/Anexo2/Linux/SSH.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/SSH.png>
-Package pdftex.def Info: Anexos/Anexo2/Linux/SSH.png  used on input line 64.
+Package pdftex.def Info: Anexos/Anexo2/Linux/SSH.png  used on input line 65.
 (pdftex.def)             Requested size: 401.50053pt x 277.03537pt.
  [39 <./Anexos/Anexo2/Linux/SSH.png>]
-<Anexos/Anexo2/Linux/SSHRestart.png, id=576, 501.875pt x 73.27374pt>
+<Anexos/Anexo2/Linux/SSHRestart.png, id=577, 501.875pt x 73.27374pt>
 File: Anexos/Anexo2/Linux/SSHRestart.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/SSHRestart.png>
 Package pdftex.def Info: Anexos/Anexo2/Linux/SSHRestart.png  used on input line
- 76.
+ 77.
 (pdftex.def)             Requested size: 401.50053pt x 58.61905pt.
 ) [40 <./Anexos/Anexo2/Linux/SSHRestart.png>] (Anexos/Anexo2/Infraestructura/Mo
 ntarInfraestructura.tex
-<Anexos/Anexo2/Infraestructura/zybo.jpg, id=582, 487.8225pt x 353.82187pt>
+<Anexos/Anexo2/Infraestructura/zybo.jpg, id=583, 487.8225pt x 353.82187pt>
 File: Anexos/Anexo2/Infraestructura/zybo.jpg Graphic file (type jpg)
 <use Anexos/Anexo2/Infraestructura/zybo.jpg>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/zybo.jpg  used on input 
@@ -660,7 +660,7 @@ line 16.
 (pdftex.def)             Requested size: 243.91064pt x 176.91049pt.
 
 [41 <./Anexos/Anexo2/Infraestructura/zybo.jpg>]
-<Anexos/Anexo2/Infraestructura/Datasheet.pdf, id=594, 512.26842pt x 691.85184pt
+<Anexos/Anexo2/Infraestructura/Datasheet.pdf, id=595, 512.26842pt x 691.85184pt
 >
 File: Anexos/Anexo2/Infraestructura/Datasheet.pdf Graphic file (type pdf)
 <use Anexos/Anexo2/Infraestructura/Datasheet.pdf>
@@ -675,7 +675,7 @@ erá \T1/pcr/m/n/10 zybomonitor\T1/ptm/m/n/10 .
  []
 
 [43]
-<Anexos/Anexo2/Infraestructura/ifconfigPC.png, id=660, 680.5425pt x 555.07375pt
+<Anexos/Anexo2/Infraestructura/ifconfigPC.png, id=661, 680.5425pt x 555.07375pt
 >
 File: Anexos/Anexo2/Infraestructura/ifconfigPC.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/ifconfigPC.png>
@@ -685,14 +685,14 @@ input line 72.
  ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ) [44 <./Anexos/Anexo2/Infraestructura/ifconfigPC.png>]
-<Anexos/Anexo2/Infraestructura/PuTTY.png, id=676, 567.11874pt x 574.145pt>
+<Anexos/Anexo2/Infraestructura/PuTTY.png, id=677, 567.11874pt x 574.145pt>
 File: Anexos/Anexo2/Infraestructura/PuTTY.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/PuTTY.png>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/PuTTY.png  used on input
  line 101.
 (pdftex.def)             Requested size: 396.98041pt x 401.89876pt.
  [45 <./Anexos/Anexo2/Infraestructura/PuTTY.png>]
-<Anexos/Anexo2/Infraestructura/ifconfigZybo.png, id=685, 501.875pt x 344.28625p
+<Anexos/Anexo2/Infraestructura/ifconfigZybo.png, id=686, 501.875pt x 344.28625p
 t>
 File: Anexos/Anexo2/Infraestructura/ifconfigZybo.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/ifconfigZybo.png>
@@ -704,7 +704,7 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 [46 <./Anexos/Anexo2/Infraestructura/ifconfigZybo.png>]) [47]
 (Anexos/Anexo2/Test/TestInterconexion.tex
-<Anexos/Anexo2/Test/Script.png, id=707, 573.14125pt x 39.14626pt>
+<Anexos/Anexo2/Test/Script.png, id=708, 573.14125pt x 39.14626pt>
 File: Anexos/Anexo2/Test/Script.png Graphic file (type png)
 <use Anexos/Anexo2/Test/Script.png>
 Package pdftex.def Info: Anexos/Anexo2/Test/Script.png  used on input line 9.
@@ -738,14 +738,14 @@ Ap\IeC {\'e}ndice C.
 
 
 ]
-<Anexos/Anexo2/Test/Inicio.png, id=786, 467.7475pt x 861.2175pt>
+<Anexos/Anexo2/Test/Inicio.png, id=787, 467.7475pt x 861.2175pt>
 File: Anexos/Anexo2/Test/Inicio.png Graphic file (type png)
 <use Anexos/Anexo2/Test/Inicio.png>
-Package pdftex.def Info: Anexos/Anexo2/Test/Inicio.png  used on input line 19.
+Package pdftex.def Info: Anexos/Anexo2/Test/Inicio.png  used on input line 20.
 (pdftex.def)             Requested size: 262.87178pt x 484.0pt.
  [56 <./Anexos/Anexo2/Test/Inicio.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 26.
+nput line 27.
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
@@ -760,68 +760,68 @@ File: se-iso-8859-1.def 2019/11/29 v1.12 stringenc: ISO-8859-1
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1.
  [57]
-<Anexos/Anexo3/Diagramas/Lanzador.png, id=824, 121.45375pt x 191.71625pt>
+<Anexos/Anexo3/Diagramas/Lanzador.png, id=825, 121.45375pt x 191.71625pt>
 File: Anexos/Anexo3/Diagramas/Lanzador.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Lanzador.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Lanzador.png  used on input li
-ne 51.
+ne 52.
 (pdftex.def)             Requested size: 109.30734pt x 172.54301pt.
  ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 [58 <./Anexos/Anexo3/Diagramas/Lanzador.png>]
-<Anexos/Anexo3/Diagramas/Automatico.png, id=836, 148.555pt x 214.8025pt>
+<Anexos/Anexo3/Diagramas/Automatico.png, id=837, 148.555pt x 214.8025pt>
 File: Anexos/Anexo3/Diagramas/Automatico.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Automatico.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Automatico.png  used on input 
-line 71.
+line 72.
 (pdftex.def)             Requested size: 133.69824pt x 193.32045pt.
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ) [59 <./Anexos/Anexo3/Diagramas/Automatico.png>]
-<Anexos/Anexo3/Diagramas/Recibiendo.png, id=854, 388.45125pt x 562.1pt>
+<Anexos/Anexo3/Diagramas/Recibiendo.png, id=855, 388.45125pt x 562.1pt>
 File: Anexos/Anexo3/Diagramas/Recibiendo.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Recibiendo.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Recibiendo.png  used on input 
-line 91.
+line 92.
 (pdftex.def)             Requested size: 310.76141pt x 449.68062pt.
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ) [60 <./Anexos/Anexo3/Diagramas/Recibiendo.png>]
-Overfull \hbox (73.27112pt too wide) in paragraph at lines 107--108
+Overfull \hbox (73.27112pt too wide) in paragraph at lines 108--109
 []\T1/ptm/m/n/10 Gracias al crontab es-table-cido, se en-carga de com-pro-bar p
 er-iódica-mente el es-tado del di-rec-to-rio \T1/pcr/m/n/10 ~/ficheros/desencri
 ptar\T1/ptm/m/n/10 . 
  []
 
 [61]
-<Anexos/Anexo3/Diagramas/Cristian.png, id=900, 387.4475pt x 685.56125pt>
+<Anexos/Anexo3/Diagramas/Cristian.png, id=901, 387.4475pt x 685.56125pt>
 File: Anexos/Anexo3/Diagramas/Cristian.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Cristian.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Cristian.png  used on input li
-ne 121.
+ne 122.
 (pdftex.def)             Requested size: 271.2114pt x 479.8896pt.
  [62 <./Anexos/Anexo3/Diagramas/Cristian.png>]
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ) [63] [64]
-<Anexos/Anexo3/Diagramas/Enviando.png, id=957, 464.73625pt x 744.7825pt>
+<Anexos/Anexo3/Diagramas/Enviando.png, id=958, 464.73625pt x 744.7825pt>
 File: Anexos/Anexo3/Diagramas/Enviando.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Enviando.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Enviando.png  used on input li
-ne 158.
+ne 159.
 (pdftex.def)             Requested size: 302.07498pt x 484.10289pt.
  [65 <./Anexos/Anexo3/Diagramas/Enviando.png>]
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ) [66]
-<Anexos/Anexo3/Diagramas/Borrar.png, id=1020, 121.45375pt x 224.84pt>
+<Anexos/Anexo3/Diagramas/Borrar.png, id=1021, 121.45375pt x 224.84pt>
 File: Anexos/Anexo3/Diagramas/Borrar.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Borrar.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Borrar.png  used on input line
- 182.
+ 183.
 (pdftex.def)             Requested size: 109.30734pt x 202.35413pt.
 
 ("D:\Archivos de programa\MiKTeX\tex/latex/base\latin1.def"
@@ -835,14 +835,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `Memoria.out' has not changed.
-(rerunfilecheck)             Checksum: A427855C573454691A35406F6A6B471C;4616.
+(rerunfilecheck)             Checksum: CD1823B254246C2303269A67718FC12C;4537.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
  10954 strings out of 480896
- 165567 string characters out of 2906720
+ 165562 string characters out of 2906720
  705046 words of memory out of 3000000
- 26021 multiletter control sequences out of 15000+200000
+ 26020 multiletter control sequences out of 15000+200000
  612472 words of font info for 126 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,13n,50p,834b,2301s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -854,9 +854,9 @@ nts/type1/urw/courier/ucrr8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/ur
 w/courier/ucrro8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><D:/Archivos de programa/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/Ar
 chivos de programa/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Memoria.pdf (67 pages, 1382069 bytes).
+Output written on Memoria.pdf (67 pages, 1382417 bytes).
 PDF statistics:
- 1150 PDF objects out of 1200 (max. 8388607)
- 404 named destinations out of 1000 (max. 500000)
- 635 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1151 PDF objects out of 1200 (max. 8388607)
+ 406 named destinations out of 1000 (max. 500000)
+ 627 words of extra memory for PDF output out of 10000 (max. 10000000)
 
