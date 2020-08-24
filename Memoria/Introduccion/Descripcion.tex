@@ -1,9 +1,9 @@
 \section{Descripción}
 Cada uno de los nodos de la red será una tarjeta basada en la tecnología Zynq de Xilinx. Esta tecnología incluye un procesador ARM dual-core que se encargará de gestionar las
-comunicaciones en la red mediante protocolo TCP/IP. El otro elemento constituyente de Zynq es lógica programable, en la que estará implementado el periféricos o IP, ya diseñado y
-verificado, para el cifrado/descifrado AES. Se evaluará la posibilidad de que cada tarjeta incluya solo lo necesario para contar con comunicación TCP/IP o bien un sistema operativo
-basado en Linux.
+comunicaciones en la red mediante protocolo TCP/IP. Para ello, se incluirá un sistema operativo basado en Linux.
 
-El diseño de la infraestructura de red implica la instalación de un arranque autónomo de cada tarjeta desde memoria SD. La interconexión física de las tarjetas y el monitor a través de
-un switch mediante topología Ethernet, siendo el número de nodos ampliable de forma dinámica y automática. La creación y ejecución de un conjunto de pruebas que permitan confirmar
+El otro elemento constituyente de Zynq es lógica programable, en la que estará implementado el periférico cifrador/descifrador, ya diseñado y verificado en el trabajo de Fin de Grado de Cristian Ambrosio Costoya.
+
+El diseño de la infraestructura de red implica la instalación de un arranque autónomo de cada tarjeta desde una memoria SD. La interconexión física de las tarjetas y el monitor a través de
+un switch mediante una topología Ethernet, siendo el número de nodos ampliable de forma dinámica y automática. La creación y ejecución de un conjunto de pruebas que permitan confirmar
 el correcto funcionamiento de la red, en primera instancia, y el correcto funcionamiento del sistema de envío/recepción de datos, en segunda.

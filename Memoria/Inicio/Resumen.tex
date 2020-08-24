@@ -3,22 +3,23 @@
 	\bigskip
 	\textbf{\huge {Resumen}}\\
 	\bigskip
+\end{center}
 %	Qué trabajas?
 	En este proyecto se ha trabajado en la creación de una estructura de red que conecta un ordenador con unos nodos cifradores/descifradores entre sí.
 	
 %	Para qué?
-	Dichos nodos, cuentan con la capacidad suficiente para incorporar un cifrado/descifrado AES basado en tecnología ApSoC. Con ello se pretende mantener la seguridad de los ficheros en su paso por todos los nodos de la red, garantizando el anonimato de los mismos.
+	Para tal fin, implementan un periférico de cifrado/descifrado AES implementado en su lógica programada ApSoC. Cada nodo de la red recibe información del anterior, la descifra, agrega información adicional y vuelve a cifrar el conjunto.
 	
 %	Cómo lo conecto físicamente?
 	Para la correcta conexión de todos los dispositivos de la red se han usado cables de red UTP de categoría 5E y un switch Tp-Link TL-SG1024D.
 
 %	Cómo se entienden ellos? Por SSH
-	Gracias a una serie de scripts, se ha conseguido la recepción, el cifrado-descifrado y el envío de un fichero mediante SSH. Este proceso ha sido automatizado con el objetivo de conseguir una mayor independencia del agente humano por parte del sistema.
+	Un conjunto de scripts, se encarga de la recepción, el cifrado-descifrado y el envío de un fichero mediante SSH. Este proceso ha sido automatizado con el objetivo de conseguir una mayor independencia del agente humano por parte del sistema.
 	
 %	Cuántas?
 	Aunque en las pruebas realizadas se ha usado un máximo de tres nodos cifradores/descifradores, éste proyecto está pensado para aumentar el número de dispositivos en base a las necesidades y las capacidades físicas de la red.
 	
 %	Basándonos en las pruebas obtenidas podemos verificar que la conexión y la automatización del proceso es exitosa.
-\end{center}
+%\end{center}
 
 %También tenemos la opción de poner las palabras clave en este documento para que no tengan una página entera vacía solo con las palabras clave.

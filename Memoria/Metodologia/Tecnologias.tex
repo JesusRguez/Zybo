@@ -2,9 +2,19 @@
 \subsection{Diseño de la arquitectura}
 La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5e.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
 
-Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro TFG realizado por Cristian Ambrosio Costoya.
+Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro Trabajo de Fin de Grado realizado por Cristian Ambrosio Costoya.
 
 \subsection{Diseño de componentes}
+\subsubsection{Ordenador monitor}
+El ordenador usado como monitor central es un Toshiba Satellite L750 que cuenta con los siguientes componentes:
+\begin{itemize}
+	\item Procesador Intel Core I5-3240 quad-core.
+	\item 6 Gb de memoria RAM.
+	\item Disco duro SSD de 240 Gb.
+	\item SO Debian 9 Stretch.
+\end{itemize}
+
+\subsubsection{Tarjetas Zybo Zynq 7010}
 Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que tienen las siguientes características:
 \begin{itemize}
 	\item Procesador Cortex-A9 doble núcleo a 650 MHz.
@@ -23,8 +33,20 @@ Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que
 	\end{itemize}
 \end{itemize}
 
-Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros. El sistema operativo usado en el proyecto es Xillinux el cual ha sido desarrollado por Xilinx e irá instalado en la tarjeta micro SD de cada tarjeta Zybo.
+Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros y las comunicaciones entre los nodos. El sistema operativo incluido en cada tarjeta SD del proyecto ha sido diseñado en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina, el cual ya incluye el IP cifrador/descifrador del Trabajo de Fin de Grado de Cristian Ambrosio Costoya.
 
-Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.}
+Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.} \textcolor{red}{Ahora no se si dejar esta frase o no, porque yo lo que estoy haciendo es clonar la tarjeta de Gabri en otras para que tengan la misma versión de todo y que sean idénticas. Otra posibilidad sería poner el proceso de clonación de las SD en el anexo de la instalación que tengo yo, porque a ese sistema operativo aún tengo que hacerle yo una minimísima modificación para que me deje funcionar a mí. El único problema es que tarda unas dos horas en clonarlo, pero no hay problema con eso.}
 
-%\textcolor{red}{No se si voy a usar el SO de Gabri o si voy a implementar lo de gabri en el mío, la verdad es que me da igual una cosa que otra. El problema está en que le he preguntado si tiene el sistema operativo por ahí y cree que lo ha borrado así que no se cómo hacer esto del sistema operativo, porque debe de tener tanto lo de Gabri como lo de Cristian para que funcione todo correctamente. Use el que use, lo tengo que detallar aquí.}
+\subsubsection{Switch}
+El switch utilizado es un Tp-Link TL-SG1024D con las siguientes especificaciones:
+\begin{itemize}
+	\item Estándares y protocolos: IEEE 802.3i, IEEE 802.3u, IEEE 802.3ab , IEEE 802.3x.
+	\item Interfaz: 24 puertos RJ45 a 10/100/1000 Mbps con negociación automática
+	(MDI/MDIX automático).
+	\item Medios de red: 10BASE-T: cable UTP categoría 3, 4, 5 (100 metros máximo)
+	100BASE-TX/1000BASE-T: cable UTP categoría 5, 5e o above cable (máximo 100 metros).
+	\item Capacidad de conmutación: 48 Gbps.
+	\item Tasa de reenvío de paquetes: 35.7 Mpps.
+	\item Tabla de direcciones MAC: 8K.
+	\item Certificaciones: FCC, CE, RoHS.
+\end{itemize}

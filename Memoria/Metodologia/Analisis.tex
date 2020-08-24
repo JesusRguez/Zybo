@@ -1,10 +1,23 @@
 \section{Análisis del sistema}
-Una vez que los dispositivos están conectados y se ha creado la infraestructura de red (ver anexo \hyperlink{CreacionInfraestructura}{Creación de una infraestructura de red con tarjetas Zybo}), el sistema es capaz de cifrar los datos, enviarlos por el conjunto de placas que forman la red, descifrar los datos y volverlos a enviar. De esta forma, se consigue que la recolecta de datos sea totalmente cifrada, ya que las comunicaciones están cifradas gracias al protocolo AES y al protocolo SSH mediante el cual se envían y reciben los datos.
+Una vez que los dispositivos están conectados y se ha creado la infraestructura de red (ver anexo \hyperlink{CreacionInfraestructura}{Creación de una infraestructura de red con tarjetas Zybo}), el sistema es capaz de cifrar los datos, enviarlos por el conjunto de placas que forman la red, descifrar los datos, añadir nueva información, cifrar de nuevo los datos y volverlos a enviar al siguiente nodo de la red mediante una conexión segura establecida mediante SSH.
 
 \subsection{Hardware}
 %Requisitos de la red en si, explicando lo que tendrá que haber y como deberá conectarse, sin decir todavía cómo.
-La red estará formada por las tarjetas Zybo, el ordenador central (monitor) y el switch. Cada tarjeta debe tener instalado un sistema operativo Linux para permitir la gestión de ficheros y el uso del protocolo SSH, que será usado en el envío y recepción de ficheros de datos.
+La red estará formada por las tarjetas Zybo que tendrán instalado el IP AES cifrador/descifrador, el ordenador central (monitor) y el switch. Cada tarjeta debe tener instalado un sistema operativo Linux para permitir la gestión de ficheros y el uso del protocolo SSH, que será usado en el envío y recepción de ficheros de datos para poder garantizar la correcta seguridad de los mismos.
 
 \subsection{Software}
 %Hablará de los test que habrá que diseñar y luego de los scripts que deberán automatizar el funcionamiento del sistema.
 Una vez que se ha montado la red completa, debemos probar que las conexiones entre las tarjetas y el ordenador monitor están habilitadas. Para ello, se ha diseñado un pequeño script con un test de prueba de conectividad (ver anexo \hyperlink{TestConexion}{Test de interconexión de red Zybo}), el cual nos dirá qué tarjeta está conectada a la red y, en caso de que una de ellas tenga un problema de red, solo tendremos que solventarlo de la manera adecuada (bien volviendo a conectar la tarjeta si ésta estaba mal conectada, o configurando correctamente su dirección IP).
+
+También se han diseñado una serie de scripts para automatizar el proceso de transmisión, cifrado/descifrado y adición de datos. Estos scripts\footnote{Para ver detalladamente todos los scripts, ver el \hyperlink{Scripts}{Anexo 3}.} son los siguientes:
+\begin{itemize}
+	\item \hyperlink{ScriptConexion}{\textbf{\texttt{Inicio.sh}:}} Script encargado de probar las conexiones de todos los dispositivos de la red.
+	\item \hyperlink{ScriptLanzador}{\textbf{\texttt{Lanzador.sh}:}} Script encargado de lanzar el script \texttt{Automatico.sh} que contará con las correspondientes comprobaciones cíclicas. Éste script será lanzado mediante la herramienta cron al inicio del sistema operativo.
+	\item \hyperlink{ScriptAutomatico}{\textbf{\texttt{Automatico.sh}:}} Script encargado de lanzar periódicamente los siguientes scripts cada segundo para realizar las comprobaciones pertinentes.
+	\item \hyperlink{ScriptRecibiendo}{\textbf{\texttt{Recibiendo.sh}:}} Script encargado de comprobar si se ha recibido algo.
+	\item \hyperlink{ScriptCristian}{\textbf{\texttt{Cristian.sh}:}} Script encargado de descifrar los datos, añadir información y volver a cifrarlos. \textcolor{red}{Esto cambiará de nombre una vez que tenga lo de Gabri implementado.}
+	\item \hyperlink{ScriptEnviando}{\textbf{\texttt{Enviando.sh}:}} Script encargado de enviar los datos al siguiente nodo.
+	\item \hyperlink{ScriptBorrar}{\textbf{\texttt{Borrar.sh}:}} Sctipt encargado de borrar vaciar todos los directorios de trabajo.
+\end{itemize}
+
+\textcolor{red}{Cuando tenga todo completo, hay que añadir un diagrama de flujo para ver aquí como va la secuencia de scripts desde que llega un nuevo fichero a un nodo hasta que se envía al nuevo nodo.}

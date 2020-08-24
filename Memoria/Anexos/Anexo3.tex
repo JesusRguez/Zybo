@@ -31,6 +31,7 @@ El script se encarga de probar las conexiones de todos los dispositivos de la re
 
 
 \section{\texttt{Lanzador.sh}}
+\hypertarget{ScriptLanzador}{}
 Este script se encarga de lanzar el script \texttt{Automatico.sh} mediante la herramienta cron\footnote{Para más información, ver el manual de crontab en este \href{https://linux.die.net/man/5/crontab}{\textcolor{blue}{enlace}}.} al inicio del sistema operativo Xillinux.
 
 Para usarlo, debemos usar el siguiente comando:
@@ -63,6 +64,7 @@ Esto hará que la herramienta cron inicie este script al iniciar el sistema oper
 
 \newpage
 \section{\texttt{Automatico.sh}}
+\hypertarget{ScriptAutomatico}{}
 Este script es el encargado de lanzar el resto de scripts periódicamente para que vayan comprobando los directorios correspondientes y se produzca la comunicación de forma automática.
 
 %\newpage
@@ -83,6 +85,7 @@ Este script es el encargado de lanzar el resto de scripts periódicamente para q
 
 \newpage
 \section{\texttt{Recibiendo.sh}}
+\hypertarget{ScriptRecibiendo}{}
 Este script es el encargado de comprobar el estado del directorio \texttt{\textasciitilde/ficheros/recibir} y, si llega un archivo nuevo, enviarlo al directorio \texttt{\textasciitilde/ficheros/desencriptar}.
 
 %\newpage
@@ -101,6 +104,7 @@ Este script es el encargado de comprobar el estado del directorio \texttt{\texta
 \end{center}
 
 \section{\texttt{Cristian.sh}}
+\hypertarget{ScriptCristian}{}
 \textcolor{red}{A este script le pondré el nombre \texttt{Encriptando.sh} seguramente, porque básicamente se encargará de eso (tanto encriptar como desencriptar), o, a unas malas, le pongo \texttt{Trabajando.sh}. También tengo la opción de hacer dos, uno que encripte y otro que desencripte, depende de como vea que funciona una vez que tenga las tarjetas. Así que, hasta que no tenga las tarjetas y me ponga a hacer las pruebas de verdad con todo (tanto lo de Gabri como lo de Cristian, esta parte queda un poco en el aire para perfeccionarla luego.).}
 
 Este script es el encargado de emular el trabajo de nuestro compañero Cristian y realiza las siguientes tareas:
@@ -170,6 +174,7 @@ Para que podamos usar el comando ping desde este script, debemos darle permisos 
 
 
 \section{\texttt{Borrar.sh}}
+\hypertarget{ScriptBorrar}{}
 Este script se encarga de borrar el contenido de los directorios \texttt{\textasciitilde/ficheros/recibir},\\ \texttt{\textasciitilde/ficheros/desencriptar}, \texttt{\textasciitilde/ficheros/trabajar} y \texttt{\textasciitilde/ficheros/enviar} de las tarjetas Zybo.
 
 Para ejecutarlo solo debemos usar el siguiente comando en el directorio \texttt{\textasciitilde/ficheros} de las tarjetas Zybo:
