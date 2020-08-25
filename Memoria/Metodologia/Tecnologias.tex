@@ -1,8 +1,8 @@
 \section{Tecnologías a utilizar}
 \subsection{Diseño de la arquitectura}
-La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5e.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado "monitor" ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
+La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5E.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado ``monitor'' ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
 
-Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro Trabajo de Fin de Grado realizado por Cristian Ambrosio Costoya.
+Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro Trabajo de Fin de Grado realizado por Cristian Ambrosio Costoya \hyperlink{2}{[2]}.
 
 \subsection{Diseño de componentes}
 \subsubsection{Ordenador monitor}
@@ -33,9 +33,11 @@ Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que
 	\end{itemize}
 \end{itemize}
 
-Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros y las comunicaciones entre los nodos. El sistema operativo incluido en cada tarjeta SD del proyecto ha sido diseñado en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina, el cual ya incluye el IP cifrador/descifrador del Trabajo de Fin de Grado de Cristian Ambrosio Costoya.
+Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros y las comunicaciones entre los nodos. El sistema operativo incluido en cada tarjeta SD del proyecto ha sido diseñado en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina, el cual ya incluye el IP cifrador/descifrador del Trabajo de Fin de Grado de Cristian Ambrosio Costoya \hyperlink{2}{[2]}.
 
-Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.} \textcolor{red}{Ahora no se si dejar esta frase o no, porque yo lo que estoy haciendo es clonar la tarjeta de Gabri en otras para que tengan la misma versión de todo y que sean idénticas. Otra posibilidad sería poner el proceso de clonación de las SD en el anexo de la instalación que tengo yo, porque a ese sistema operativo aún tengo que hacerle yo una minimísima modificación para que me deje funcionar a mí. El único problema es que tarda unas dos horas en clonarlo, pero no hay problema con eso.}
+Para la instalación del sistema operativo se ha clonado la tarjeta SD usada en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina \hyperlink{3}{[3]}. Este proceso lo podemos ver en el apéndice \hyperlink{InstalacionLinux}{Clonación de tarjetas SD para tarjetas Zybo.}
+
+%Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.}  Me hadicho Mirian que lo quite y borre el apéndice correspondiente.
 
 \subsubsection{Switch}
 El switch utilizado es un Tp-Link TL-SG1024D con las siguientes especificaciones:

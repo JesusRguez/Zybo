@@ -1,22 +1,24 @@
-\section{Instalación de Linux en SD para tarjetas Zybo}
+\section{Clonación de tarjetas SD para tarjetas Zybo}
 \hypertarget{InstalacionLinux}{}
-\subsection{Instalación de Xillinux en tarjeta SD}
-Para la instalación de Xiliniux, seguiremos los siguientes pasos:
+\subsection{Clonación de Linux en tarjeta SD}
+Como sistema operativo de las tarjetas Zybo, usaremos el que creó nuestro compañero Gabriel Fernando Sánchez Reina \hyperlink{2}{[2]}, el cual ya está preparado para usar el IP hardware de Cristian Ambrosio Costoya \hyperlink{3}{[3]}.
+
+Para ello, seguiremos los siguientes pasos:
 \begin{itemize}
-	\item Descargaremos una versión de Xillinux precompilada desde el siguiente \href{https://www.dropbox.com/s/9qgcoyjzoi764f0/2016.02.02.debian-cbaeef7e7f551052f5451957a5dbef43.zip?dl=0}{\textcolor{blue}{enlace}}.
-	\item Descomprimimos el archivo descargado.
-	\item Descargamos e instalamos el programa Win32 Disk Imager desde el siguiente \href{https://dw.uptodown.com/dwn/w76tVn7onjw1uZFTLSx7oG5vt1Y7gsfE_vPZCAa88I4YqL5Lp6S__CQhpJZGOLPYdjr73a4yGULPiRxv8Z2IsSRQjRPewPceg1Ol2gDzH3IkO3MHOCcuKQCNZwYI9Pvt/8_NYEhYYhGoJ_QXK-PQtvMDn5aHkqiWxwMofLuT2S5SxxDw2zu6f1OMCW0kqLnB0PGf-zrvou_F_nzjB4fn6Nuvp3WZcVrkFzGgNrhVLInDUMHPM0Jfxh76lJU_IATF7/9xrSlUN8npqZOVysN4LIc5iQnXIPmWNSWKNBLv7hcuQxXmyjX8qERxO48SnXIgr83mVVF-bcUsWJGGryhVqZ_LiBsoZmxxEyZE5JXoqVhCI=/}{\textcolor{blue}{enlace}}.
-	\item Ejecutamos Win32 Disk Imager y seleccionamos la imagen descomprimida y la unidad de destino.
-	\item Seleccionamos cread ``MD5 Hash'' para comprobar que la descarga no está corrupta. El resultado de dicho hash debe ser: ``cbaeef7e7f551052f5451957a5dbef43''.
-	\item Pulsamos el botón ``\texttt{Escribir}'' para flashear la unidad seleccionada.
-	\item Descargamos el archivo del kernel desde el siguiente \href{https://uc405c43ce82f6c3032b21ba76bf.dl.dropboxusercontent.com/cd/0/get/AehqJhpiTxZ90sAdGxOFqHxr04BAsug_4RaV6MPX5yBDOQBVaIpDw11X6LdVBi7DPsndN7IxeWYRcEmUAt4xnKoIeYJBRtYu4JtZ_M71as8xbw/file?_download_id=621489597300519201006251662619095482850364296264714456845096204891&_notify_domain=www.dropbox.com&dl=1}{\textcolor{blue}{enlace}}.
-	\item Abrimos la carpeta contenedora de la tarjeta SD recién creada.
-	\item Sobreescribimos los archivos de esa carpeta por los recién descargados del kernel\footnote{Si no se puede sobreescribir por falta de espacio, es preferible eliminarlos y volver a copiar los de la carpeta kernel dentro.}.
-	\item Sacamos la tarjeta SD del ordenador y la introducimos en la placa Zybo.
+	\item Insertaremos la tarjeta SD con el sistema operativo en nuestro ordenador.
+	\item Mediante la herramienta \texttt{dd} \hyperlink{8}{[8]}, guardaremos un fichero con extensión \texttt{.img} en nuestro ordenador, que será la copia de seguridad de la tarjeta SD.
+	\begin{center}
+		\texttt{sudo dd if=/dev/sdb of=/media/jesus/Gabri/Zybo.img}
+	\end{center}
+	\item A continuación, introducimos una tarjeta SD vacía de igual o mayor capacidad en nuestro ordenador.
+	\item Mediante la herramienta \texttt{dd} \hyperlink{8}{[8]}, restauramos la copia de seguridad anterior en la nueva tarjeta SD.
+	\begin{center}
+		\texttt{sudo dd if=/media/jesus/Gabri/Zybo.img of=/dev/sdb}
+	\end{center}
 \end{itemize}
 
-\subsection{Inicio de Xillinux desde la tarjeta SD}
-Para iniciar la tarjeta con Xillinux debemos seguir los siguientes pasos:
+\subsection{Inicio de Linux desde la tarjeta SD}
+Para iniciar la tarjeta con Linux debemos seguir los siguientes pasos:
 \begin{itemize}
 	\item Insertar la tarjeta SD en la placa Zybo.
 	\item Cambiar el jumper JP5 a la posición SD para que arranque desde dicha tarjeta SD.
@@ -26,7 +28,7 @@ Para iniciar la tarjeta con Xillinux debemos seguir los siguientes pasos:
 
 \newpage
 \subsection{Creación de usuarios}
-Al ser la primera vez que arrancamos el sistema operativo Xillinux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
+Al ser la primera vez que arrancamos el sistema operativo Linux, contamos únicamente con el usuario \texttt{root}, cuya contraseña es \texttt{root}. Por lo tanto, tenemos que crear otro usuario, que será con el que iniciemos sesión en las placas usando el comando:
 \begin{center}
 	\texttt{adduser zyboX}
 \end{center}
@@ -49,7 +51,7 @@ A continuación, tendremos que rellenar los siguientes campos:
 
 
 \subsection{Habilitar SSH en placas Zybo}
-Para establecer una conexión entre el ordenador central y las placas, tendremos que usar el protocolo SSH, que viene deshabilitado por defecto en Xillinux.
+Para establecer una conexión entre el ordenador central y las placas, tendremos que usar el protocolo SSH, que viene deshabilitado por defecto en Linux.
 
 Para habilitarlo tendremos que acceder al archivo \texttt{/etc/ssh/sshd\_config} como super-usuario. Para ello, utilizaremos el siguiente comando:
 \begin{center}

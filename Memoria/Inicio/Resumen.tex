@@ -4,22 +4,9 @@
 	\textbf{\huge {Resumen}}\\
 	\bigskip
 \end{center}
-%	Qué trabajas?
-	En este proyecto se ha trabajado en la creación de una estructura de red que conecta un ordenador con unos nodos cifradores/descifradores entre sí.
-	
-%	Para qué?
-	Para tal fin, implementan un periférico de cifrado/descifrado AES implementado en su lógica programada ApSoC. Cada nodo de la red recibe información del anterior, la descifra, agrega información adicional y vuelve a cifrar el conjunto.
-	
-%	Cómo lo conecto físicamente?
-	Para la correcta conexión de todos los dispositivos de la red se han usado cables de red UTP de categoría 5E y un switch Tp-Link TL-SG1024D.
 
-%	Cómo se entienden ellos? Por SSH
-	Un conjunto de scripts, se encarga de la recepción, el cifrado-descifrado y el envío de un fichero mediante SSH. Este proceso ha sido automatizado con el objetivo de conseguir una mayor independencia del agente humano por parte del sistema.
+	En este proyecto se ha trabajado en el diseño de una estructura de red que conecta un ordenador con unos nodos cifradores/descifradores basados en tecnología programable ApSoC.Para tal fin, los nodos implementan un periférico hardware de cifrado/descifrado AES-128 implementado en la lógica programable ApSoC. Cada nodo de la red recibe información del nodo anterior, la descifra, agrega información  vuelve a cifrar el conjunto para enviarlo al siguiente nodo.
 	
-%	Cuántas?
-	Aunque en las pruebas realizadas se ha usado un máximo de tres nodos cifradores/descifradores, éste proyecto está pensado para aumentar el número de dispositivos en base a las necesidades y las capacidades físicas de la red.
+	Para la conexión de todos los dispositivos de red se han usado cables de red UTP de categoría 5E y un switch TP-Link TL-SG1024D. Se ha desarrollado un conjunto de scripts que automatizan el proceso al completo, encargándose por tanto de la recepción, cifrado/descifrado y envío del conjunto de información mediante el protocolo de comunicación SSH. Este proceso ha sido automatizado con el objetivo de conseguir una mayor independencia del agente humano por parte del sistema.
 	
-%	Basándonos en las pruebas obtenidas podemos verificar que la conexión y la automatización del proceso es exitosa.
-%\end{center}
-
-%También tenemos la opción de poner las palabras clave en este documento para que no tengan una página entera vacía solo con las palabras clave.
+	La red montada para el proceso de test y verificación del sistema, usa un total de tres nodos, sin embargo, el diseño permite aumentar el número de dispositivos en base a las necesidades y capacidades físicas de la red.
