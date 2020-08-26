@@ -1,8 +1,16 @@
 \section{Tecnologías a utilizar}
 \subsection{Diseño de la arquitectura}
-La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5E.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado ``monitor'' ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
+%La arquitectura consta de una red privada\footnote{La red será cableada mediante cables UTP de categoría 5E.}, interconectada mediante un switch, las tarjetas Zybo y un ordenador que será denominado ``monitor'' ya que será el encargado de enviar los ficheros iniciales y recibir los ficheros con los datos finales.
+La infraestructura a diseñar es una red privada Ethernet TCP/IP y consta de los siguientes elementos:
+\begin{itemize}
+	\item Tarjetas Zybo Zynq-7010 actuando como nodos de la red.
+	\item Un ordenador con sistema operativo Linux (Debian 10 Buster)\footnote{Es posible usar cualquier distribución de Linux.} y Windows 10. Será denominado ``monitor'' y será el encargado de enviar el fichero inicial de datos y recibir el fichero final.
+	\item Un switch Tp-Link TL-SG1024D.
+\end{itemize}
 
-Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro Trabajo de Fin de Grado realizado por Cristian Ambrosio Costoya \hyperlink{2}{[2]}.
+\textcolor{red}{Imagen de la red completa.}
+
+Los datos manejados por las tarjetas Zybo estarán cifrados usando el cifrado AES de 128 bits tipo EBC. Para ello se ha empleado un IP\footnote{Intelectual Property.} diseñado y verificado en otro Trabajo de Fin de Grado realizado por Cristian Ambrosio Costoya \hyperlink{2}{[2]}.
 
 \subsection{Diseño de componentes}
 \subsubsection{Ordenador monitor}
@@ -33,9 +41,9 @@ Los componentes principales de este proyecto son las tarjetas Zybo Zynq 7010 que
 	\end{itemize}
 \end{itemize}
 
-Cada tarjeta Zybo incluye una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros y las comunicaciones entre los nodos. El sistema operativo incluido en cada tarjeta SD del proyecto ha sido diseñado en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina, el cual ya incluye el IP cifrador/descifrador del Trabajo de Fin de Grado de Cristian Ambrosio Costoya \hyperlink{2}{[2]}.
-
-Para la instalación del sistema operativo se ha clonado la tarjeta SD usada en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina \hyperlink{3}{[3]}. Este proceso lo podemos ver en el apéndice \hyperlink{InstalacionLinux}{Clonación de tarjetas SD para tarjetas Zybo.}
+%Cada tarjeta Zybo deberá incluir una instalación de un sistema operativo Linux para facilitar la gestión de los ficheros y las comunicaciones entre los nodos. El sistema operativo, el bitstream con el IP cifrador/descifrador y la aplicación forman una imagen desarrollada en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina \hyperlink{3}{[3]}. Esta imagen, se clonará en las tarjetas de memoria SD incorporadas en cada tarjeta Zybo.
+%
+%El proceso de clonación de las tarjetas SD lo podemos ver en el apéndice \hyperlink{InstalacionLinux}{Clonación de tarjetas SD para tarjetas Zybo.}
 
 %Para la instalación del sistema operativo podemos ver el apéndice \hyperlink{InstalacionLinux}{Instalación de Linux en SD para tarjetas Zybo.}  Me hadicho Mirian que lo quite y borre el apéndice correspondiente.
 

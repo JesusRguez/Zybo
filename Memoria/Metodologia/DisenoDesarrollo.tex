@@ -4,6 +4,7 @@
 Tanto las tarjetas Zybo como el ordenador monitor se conectarán al switch usando un cableado de red adecuado (podemos usar prácticamente cualquier tipo de cableado homologado, aunque, para este proyecto se han usado cables UTP categoría 5E).
 
 Todos los dispositivos de la red tienen IP fija por lo que debemos configurar dichas IP en todos los ellos. Como estamos usando Linux, tendremos que configurar la IP en la interfaz correspondiente.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{Anexos/Anexo2/Infraestructura/ifconfigZybo.png}
@@ -14,6 +15,8 @@ Todos los dispositivos de la red tienen IP fija por lo que debemos configurar di
 Para asociar una dirección IP al nombre de cada dispositivo, tendremos que rellenar el fichero \texttt{/etc/hosts} de todos los dispositivos con las direcciones IP y el nombre de los dispositivos conectados a la red. Este archivo será idéntico en todos los dispositivos para garantizar una consistente agenda de direcciones.
 
 Este proyecto ha sido diseñado para que se puedan usar tantas tarjetas como se requiera o como permitan las capacidades físicas de la red ya que solo habrá que ajustar el fichero\texttt{/etc/hosts} para añadir más nodos en caso de que sea necesario.
+
+Todo el proceso de asignación de IP's para la creación de la infraestructura de red, lo podemos ver en el anexo \hyperlink{CreacionInfraestructura}{Creación de una infraestructura de red de tarjetas Zybo}.
 
 A la hora de hacer las pruebas del proyecto, hemos usado solo tres nodos cifradores/descifradores ya que es suficiente como para comprobar el correcto funcionamiento del mismo.
 
