@@ -48,7 +48,7 @@
 \contentsline {subsection}{\numberline {A.4.2}Entre tarjetas}{51}{subsection.A.4.2}% 
 \contentsline {subsubsection}{Manual}{51}{section*.14}% 
 \contentsline {subsubsection}{Autom\IeC {\'a}tica}{51}{section*.15}% 
-\contentsline {section}{\numberline {A.5}Comunicaci\IeC {\'o}n y tratado de ficheros}{52}{section.A.5}% 
+\contentsline {section}{\numberline {A.5}Comunicaci\IeC {\'o}n y tratamiento de ficheros}{52}{section.A.5}% 
 \contentsline {subsection}{\numberline {A.5.1}Introducci\IeC {\'o}n}{52}{subsection.A.5.1}% 
 \contentsline {subsection}{\numberline {A.5.2}Directorios}{53}{subsection.A.5.2}% 
 \contentsline {subsubsection}{Directorio \texttt {/backups}}{53}{section*.16}% 
