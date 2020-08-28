@@ -1,6 +1,6 @@
 #!/bin/bash
 
-direcciones=(192.168.1.2 192.168.1.3 192.168.1.4 192.168.1.5)
+direcciones=(192.168.1.11 192.168.1.12 192.168.1.13 192.168.1.14)
 tarjetas=(zybo1 zybo2 zybo3 zybo4)
 a=0
 for d in "${direcciones[@]}"

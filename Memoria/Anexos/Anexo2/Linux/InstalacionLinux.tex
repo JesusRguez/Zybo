@@ -1,17 +1,17 @@
 \section{Clonación de tarjetas SD para tarjetas Zybo}
 \hypertarget{InstalacionLinux}{}
 \subsection{Clonación de Linux en tarjeta SD}
-Como sistema operativo de las tarjetas Zybo, usaremos el que creó nuestro compañero Gabriel Fernando Sánchez Reina \hyperlink{2}{[2]}, el cual ya está preparado para usar el IP hardware de Cristian Ambrosio Costoya \hyperlink{3}{[3]}.
+Como sistema operativo de las tarjetas Zybo, usaremos el que creó nuestro compañero Gabriel Fernando Sánchez Reina \hyperlink{2}{[2]}, el cual ya está preparado para usar el IP hardware de Cristian Ambrosio Costoya \hyperlink{1}{[1]}.
 
 Para ello, seguiremos los siguientes pasos:
 \begin{itemize}
 	\item Insertaremos la tarjeta SD con el sistema operativo en nuestro ordenador.
-	\item Mediante la herramienta \texttt{dd} \hyperlink{8}{[8]}, guardaremos un fichero con extensión \texttt{.img} en nuestro ordenador, que será la copia de seguridad de la tarjeta SD.
+	\item Mediante la herramienta \texttt{dd} \hyperlink{5}{[5]}, guardaremos un fichero con extensión \texttt{.img} en nuestro ordenador, que será la copia de seguridad de la tarjeta SD.
 	\begin{center}
 		\texttt{sudo dd if=/dev/sdb of=/media/jesus/Gabri/Zybo.img}
 	\end{center}
 	\item A continuación, introducimos una tarjeta SD vacía de igual o mayor capacidad en nuestro ordenador.
-	\item Mediante la herramienta \texttt{dd} \hyperlink{8}{[8]}, restauramos la copia de seguridad anterior en la nueva tarjeta SD.
+	\item Mediante la herramienta \texttt{dd}, restauramos la copia de seguridad anterior en la nueva tarjeta SD.
 	\begin{center}
 		\texttt{sudo dd if=/media/jesus/Gabri/Zybo.img of=/dev/sdb}
 	\end{center}

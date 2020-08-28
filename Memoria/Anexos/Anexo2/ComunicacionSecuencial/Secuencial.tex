@@ -37,6 +37,8 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 %\textcolor{white}{.}\hspace{3.15cm}|Tabajando.sh
 }
 
+\textcolor{red}{Este árbol de directorios cambiará una vez que tenga los nuevos nombres del script de Gabri y lo que me haga falta.}
+
 Este árbol de directorios estará en el archivo \texttt{ficheros.tar.gz} que se encontrará en el ordenador central y será distribuido a cada tarjeta mediante ssh\footnote{Recordemos que, tanto para \texttt{ssh} como para \texttt{scp}, el elemento \texttt{zyboX} es el identificador de la tarjeta Zybo con la que estamos trabajando.} con el siguiente comando:
 \begin{center}
 	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no ficheros.tar.gz zyboX@zyboX:}
@@ -52,7 +54,7 @@ Para ver si tenemos el archivo \texttt{ficheros.tar.gz} usamos el comando:
 	\texttt{ls}
 \end{center}
 
-A continuación, aplicamos el siguiente comando para descomprimir \hyperlink{1}{[1]} el archivo \texttt{ficheros.tar.gz}:
+A continuación, aplicamos el siguiente comando para descomprimir \hyperlink{8}{[8]} el archivo \texttt{ficheros.tar.gz}:
 \begin{center}
 	\texttt{tar -xzvf ficheros.tar.gz}
 \end{center}
@@ -77,7 +79,7 @@ En este apartado, describiremos los distintos directorios que podemos encontrar 
 Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibido desde el ordenador central, salvo el directorio \texttt{/backups} que se describirá primero ya que no interviene de forma directa en el camino a recorrer por el archivo recibido.
 
 \subsubsection{Directorio \texttt{/backups}}
-En este directorio se guardarán los últimos estados de los directorios nombrados a continuación, generados por el comando \texttt{stat}\footnote{Para más información leer el manual del comando \texttt{stat} en este \href{https://linux.die.net/man/2/stat}{\textcolor{blue}{enlace}}.}.
+En este directorio se guardarán los últimos estados de los directorios nombrados a continuación, generados por el comando \texttt{stat} \hyperlink{9}{[9]}.
 \begin{itemize}
 	\item \textbf{\texttt{ViejoDesencriptar.txt}:} Este fichero contendrá el estado del directorio \texttt{/desencriptar} una vez que el script \texttt{Desencriptando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
 	\item \textbf{\texttt{ViejoEnviar.txt}:} Este fichero contendrá el estado del directorio \texttt{/enviar} una vez que el script \texttt{Enviando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.

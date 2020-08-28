@@ -6,18 +6,16 @@ Una vez se han conectado todos los dispositivos al switch como se indicó en el 
 Para ello, se ha desarrollado un script en bash, llamado \texttt{Inicio.sh}, que comprueba el estado de conexión de los dispositivos. En este script se pueden definir las tarjetas Zybo que se vayan a usar, con su alias y su dirección IP de red (previamente establecida). Para ello, tendremos que abrir el fichero \texttt{Inicio.sh} con nuestro editor favorito y cambiar las siguientes líneas:
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{Anexos/Anexo2/Test/Script.png}
-	\caption{Líneas a modificar en el script.}
-	\label{Líneas a modificar en el script}
+	\includegraphics[scale=0.9]{Anexos/Anexo2/Test/Script.png}
+	\caption{Líneas a modificar en el script Inicio.sh.}
+	\label{Líneas a modificar en el script Inicio.sh}
 \end{figure}
-
-\textcolor{red}{Esta foto hay que cambiarla debido a un cambio en las IP's. Pero eso lo haré cuando tenga las tarjetas que me dejé en Madrid.}
 \begin{itemize}
 	\item \textbf{Línea 3:} Introducir la dirección IP de la tarjeta que queramos añadir. O borrar la que queramos quitar.
 	\item \textbf{Línea 4:} Introducir el alias de la tarjeta que queramos añadir. O borrar la que queramos quitar.
 \end{itemize}
 
-El script será ejecutado desde el ordenador central abriendo una terminal en el directorio donde se ubique el mismo. Este script lo podemos encontrar en el anexo \hyperlink{ScriptConexion}{Inicio.sh}.
+El script será ejecutado desde el ordenador central abriendo una terminal en el directorio donde se ubique el mismo. Este script lo podemos encontrar en el apéndice \hyperlink{ScriptConexion}{Inicio.sh}.
 
 Cabe destacar que tiene dos modos de funcionamiento:
 \subsubsection{Normal}

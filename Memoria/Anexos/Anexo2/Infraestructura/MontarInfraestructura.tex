@@ -17,7 +17,7 @@ Para la creación de la infraestructura de red física de placas Zybo contaremos
 	\caption{Placa Zybo Zynq 7010}
 	\label{Placa Zybo}
 \end{figure}
-Para este proyecto necesitaremos poder programar la FPGA integrada en la placa desde la tarjeta SD de memoria. Para ello se va a preparar una imagen para que el procesador ARM integrado en la placa arranque desde la tarjeta SD y pueda programar la FPGA. El sistema operativo elegido es Xillinux\footnote{Más información en: \url{http://xillybus.com/xillinux}.}.
+Para este proyecto necesitaremos poder programar la FPGA integrada en la placa desde la tarjeta SD de memoria. Para ello se va a preparar una imagen para que el procesador ARM integrado en la placa arranque desde la tarjeta SD y pueda programar la FPGA. El sistema operativo elegido es Linux.
 
 Las placas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos seleccionar con el jumper JP5: QSPI, SD, JTAG. En este proyecto, el sistema operativo estará en la tarjeta SD, por lo tanto, tendremos que cambiar el jumper JP5 (situado arriba a la derecha) a la posición ``SD''\footnote{Dicho jumper está identificado con el número 21 en la imagen de la siguiente página.}.
 
@@ -37,19 +37,13 @@ Las placas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos sel
 \begin{itemize}
 	\item \textbf{Sistemas operativos:} El ordenador usado en el proyecto tendrá dos sistemas operativos.
 	\begin{itemize}
-		\item \textbf{Debian 9 Stretch:} Este sistema operativo tendrá un usuario llamado \texttt{zybo} y su contraseña será \texttt{zybomonitor}. La contraseña para los permisos de super-usuario también será \texttt{zybomonitor}. Este sistema operativo realizará la compilación del sistema operativo Xillinux\footnote{Más información en: \url{http://xillybus.com/xillinux}.} de las tarjetas Zybo\footnote{Guía sobre la instalación de Xillinux en las placas Zybo en este \href{http://diebotreise.blogspot.com/2017/03/tutorial-zybo-linux-i-como-cargar-linux.html}{\textcolor{blue}{enlace}}.}. También realizará la generación del bitstream con el software Vivado y la posterior programación de la FPGA.
-		\item \textbf{Windows 7:} También tendrá la capacidad de programar la FPGA de la tarjeta usando el software Vivado. Será donde, tras los problemas indicados en el tutorial ``Instalación de Linux en SD para Zybo'', tenga lugar la instalación de Xillinux en las tarjetas SD de las placas.
+		\item \textbf{Debian 9 Stretch:} Este sistema operativo tendrá un usuario llamado \texttt{zybo} y su contraseña será \texttt{zybomonitor}. La contraseña para los permisos de super-usuario también será \texttt{zybomonitor}. Este sistema operativo realizará la clonación del sistema operativo Linux a partir de la imagen generada en el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina \hyperlink{2}{[2]}.
 	\end{itemize}
 
 	\item \textbf{Red:} El ordenador central tendrá dos interfaces de red:
 	\begin{itemize}
 		\item \textbf{Red externa:} Interfaz que nos proporcionará acceso a Internet en el ordenador central mediante la red de la UCA.
 		\item \textbf{Red interna:} Interfaz conectada al switch del proyecto y tendrá la IP 192.168.1.10 (estática).
-	\end{itemize}
-
-	\item \textbf{Software:}
-	\begin{itemize}
-		\item \textbf{Vivado:} Versión 2018.2 instalado en los sistemas operativos anteriormente mencionados.
 	\end{itemize}
 \end{itemize}
 
@@ -94,7 +88,7 @@ Para asignarles las direcciones de IP a los dispositivos diferenciamos entre:
 	\end{lstlisting}
 	
 	\newpage
-	\item \textbf{Tarjetas Zybo:} Conectamos la tarjeta mediante USB al ordenador y abrimos un terminal serie en PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} e iniciamos sesión en Xillinux\footnote{Usuario: \texttt{zyboX}; contraseña \texttt{zyboX}. Siendo \texttt{X} el identificador de la tarjeta.}.
+	\item \textbf{Tarjetas Zybo:} Conectamos la tarjeta mediante USB al ordenador y abrimos un terminal serie en PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} e iniciamos sesión en Linux\footnote{Usuario: \texttt{zyboX}; contraseña \texttt{zyboX}. Siendo \texttt{X} el identificador de la tarjeta.}.
 	
 	\begin{figure}[h]
 		\centering

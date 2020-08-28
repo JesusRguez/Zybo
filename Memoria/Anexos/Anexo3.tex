@@ -32,7 +32,7 @@ El script se encarga de probar las conexiones de todos los dispositivos de la re
 
 \section{\texttt{Lanzador.sh}}
 \hypertarget{ScriptLanzador}{}
-Este script se encarga de lanzar el script \texttt{Automatico.sh} mediante la herramienta cron\footnote{Para más información, ver el manual de crontab en este \href{https://linux.die.net/man/5/crontab}{\textcolor{blue}{enlace}}.} al inicio del sistema operativo Xillinux.
+Este script se encarga de lanzar el script \texttt{Automatico.sh} mediante la herramienta crontab \hyperlink{10}{[10]} al inicio del sistema operativo Linux.
 
 Para usarlo, debemos usar el siguiente comando:
 \begin{center}
@@ -44,7 +44,7 @@ Y, luego, añadir la regla que queramos que se ejecute al final del fichero. En 
 	\texttt{@reboot (cd \textasciitilde/ficheros; ./Lanzador.sh)}
 \end{center}
 
-Esto hará que la herramienta cron inicie este script al iniciar el sistema operativo Xillinux de las tarjetas Zybo.
+Esto hará que la herramienta cron inicie este script al iniciar el sistema operativo Linux de las tarjetas Zybo.
 
 \newpage
 \subsection{Diagrama de flujo}
@@ -109,7 +109,7 @@ Este script es el encargado de comprobar el estado del directorio \texttt{\texta
 
 Este script es el encargado de emular el trabajo de nuestro compañero Cristian y realiza las siguientes tareas:
 \begin{itemize}
-	\item Gracias al crontab establecido, se encarga de comprobar periódicamente el estado del directorio \texttt{\textasciitilde/ficheros/desencriptar}.
+	\item Gracias al crontab establecido, se encarga de comprobar periódicamente el estado del directorio\\ \texttt{\textasciitilde/ficheros/desencriptar}.
 	\item Mueve el archivo allí situado al directorio \texttt{\textasciitilde/ficheros/trabajar} (simulando el desencriptado del mismo).
 	\item Una vez allí, añade un texto como el siguiente:
 	\begin{center}

@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {A.6}{\ignorespaces Interfaces de red del ordenador central}}{44}{figure.A.6}% 
 \contentsline {figure}{\numberline {A.7}{\ignorespaces Configuraci\IeC {\'o}n de PuTTY}}{45}{figure.A.7}% 
 \contentsline {figure}{\numberline {A.8}{\ignorespaces Interfaces de red de la tarjeta Zybo}}{46}{figure.A.8}% 
-\contentsline {figure}{\numberline {A.9}{\ignorespaces L\IeC {\'\i }neas a modificar en el script.}}{48}{figure.A.9}% 
+\contentsline {figure}{\numberline {A.9}{\ignorespaces L\IeC {\'\i }neas a modificar en el script Inicio.sh.}}{48}{figure.A.9}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de flujo de \texttt {Inicio.sh}}}{56}{figure.B.1}% 
 \contentsline {figure}{\numberline {B.2}{\ignorespaces Diagrama de flujo de \texttt {Lanzador.sh}.}}{58}{figure.B.2}% 
