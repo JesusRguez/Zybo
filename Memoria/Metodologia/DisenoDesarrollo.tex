@@ -3,13 +3,13 @@
 %Aquí explicamos lo citado en el apartado de análisis.
 Tanto las tarjetas Zybo como el ordenador monitor se conectarán al switch usando un cableado de red adecuado (podemos usar prácticamente cualquier tipo de cableado homologado, aunque, para este proyecto se han usado cables UTP categoría 5E).
 
-Todos los dispositivos de la red tienen IP fija por lo que debemos configurar dichas IP en todos los ellos. Como estamos usando Linux, tendremos que configurar la IP en la interfaz correspondiente.
+Todos los dispositivos de la red tienen IP fija por lo que debemos configurar dichas IP en todos los ellos. Como estamos usando Linux, tendremos que configurar la IP en la interfaz correspondiente: Figura \ref{Interfaces de red en la tarjeta Zybo}.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{Anexos/Anexo2/Infraestructura/ifconfigZybo.png}
-	\caption{Interfaces de en la tarjeta Zybo}
-	\label{Interfaces de en la tarjeta Zybo}
+	\caption{Interfaces de red en la tarjeta Zybo}
+	\label{Interfaces de red en la tarjeta Zybo}
 \end{figure}
 
 Para asociar una dirección IP al nombre de cada dispositivo, tendremos que rellenar el fichero \texttt{/etc/hosts} de todos los dispositivos con las direcciones IP y el nombre de los dispositivos conectados a la red. Este archivo será idéntico en todos los dispositivos para garantizar una consistente agenda de direcciones.
@@ -30,11 +30,11 @@ Dicho proceso se lleva a cabo de la misma forma entre todas las tarjetas hasta q
 
 Toda esta comunicación se realiza gracias a la función de varios scripts programados en bash, por lo que tanto las tarjetas con Linux, como el ordenador monitor, son capaces de ejecutarlos.
 
-Dichos scripts los podemos encontrar en el \hyperlink{Scripts}{Apéndice B} y se corresponden con la siguiente secuencia:
+Dichos scripts estarán automatizados mediante crontab. Los podemos encontrar en el \hyperlink{Scripts}{Apéndice B} y se corresponden con la siguiente secuencia:
 \begin{enumerate}
-	\item Recepción del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptRecibiendo}{\texttt{Recibiendo.sh}}.
+	\item Recepción del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptRecibiendo}{\texttt{Recibiendo.sh}}. Gracias al comando \texttt{stat} de Linux, podemos comprobar el estado del directorio de forma cíclica para poder detectar cualquier cambio (como la recepción de un fichero) en cuanto se produzca.
 	\item Descifrado, adición de datos y cifrado del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}}. \textcolor{red}{Esto cambiará de nombre una vez que tenga lo de Gabri implementado.}
-	\item Envío del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptEnviando}{\texttt{Enviando.sh}}.
+	\item Envío del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptEnviando}{\texttt{Enviando.sh}}. Gracias al protocolo SSH y a la herramienta \texttt{sshpass} de Linux, podremos enviar de forma automática el fichero modificado al siguiente nodo de la red.
 \end{enumerate}
 
-En caso e que se quieran vaciar los directorios de trabajo, siempre se podrá lanzar de forma manual el script \hyperlink{ScriptBorrar}{Borrar.sh}.
+En caso de que se quieran vaciar los directorios de trabajo, siempre se podrá lanzar de forma manual el script \hyperlink{ScriptBorrar}{Borrar.sh}.

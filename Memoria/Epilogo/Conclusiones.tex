@@ -1,7 +1,16 @@
 \section{Conclusiones}
-Después de las pruebas llevadas a cabo, podemos concluir el proyecto con un enfoque positivo. Gracias a la infraestructura de red creada, se ha conseguido con éxito una recopilación de datos totalmente anónima partiendo de un fichero inicial de datos desde el ordenador central, pasando por todos los nodos de la red y llegando, de nuevo, al ordenador central.
+Después de las pruebas llevadas a cabo, podemos concluir el proyecto con un enfoque positivo. Gracias a la infraestructura de red creada, se ha conseguido con éxito una recopilación de datos colaborativa partiendo de un fichero inicial de datos desde el ordenador central, pasando por todos los nodos de la red y llegando, de nuevo, al ordenador central.
+
+Se pueden destacar varios escenarios de trabajo: \textcolor{red}{Creo que lo más sensato a la hora de ilustrar los escenarios de trabajo a los que me refiero, sería poner una imagen con los nodos que están conectados y desconectados en la red y así poder visualizarlo todo directamente sin echarle mucha cuenta a la explicación, ya que solo con la explicación queda un poco...raro. ¿No crees?}
+\begin{itemize}
+	\item Si todos los nodos están conectados correctamente a la red, se producirá un recorrido lineal que partirá desde el ordenador central, viajará por todos los nodos desde zybo1 hasta zyboX. Una vez que se recorra toda la cadena y, al no detectar el siguiente nodo, zybo(X+1), el fichero retornará al ordenador central.
+	\item Cuando algún nodo central de la red está desconectado, la cadena se romperá y se enviará el fichero al ordenador central obviando el resto de nodos.
+	\item \textcolor{red}{Mirian, no entiendo el tercer guión que me has puesto donde dice: Analizar si el monitor podría asociar info con IP. Si me lo pudieras explicar algo mejor, te lo agradecería, porque no se a que te refieres.}
+\end{itemize}
 
 \section{Trabajo futuro}
 Como trabajo futuro quedaría cambiar la cadena de conexiones y que, en vez de recorrer los nodos de forma secuencial, se hiciera de forma aleatoria, para que no se supiera qué nodo ha seguido a cual.
 
 También se podría mejorar el proyecto incluyendo un módulo Wi-Fi, de modo que los nodos, no tengan que estar necesariamente conectados por cable. Esto nos daría la posibilidad de ubicar cada nodo donde quisiéramos (dentro de las capacidades físicas de la red Wi-Fi) y así poder usar dicha estructura en un entorno de IoT\footnote{Internet of Things.} para una casa o el edificio que necesitemos.
+
+Este proyecto nos aporta una gran ventaja frente a la seguridad informática ya que, los ficheros transmitidos están doblemente cifrados, tanto por el propio protocolo SSH como por el IP cifrador/descifrador AES incorporado en los nodos Zybo. Esto hace que podamos recrearlo en cualquier red sin miedo a posibles filtraciones de datos.
