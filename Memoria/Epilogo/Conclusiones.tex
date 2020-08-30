@@ -1,11 +1,16 @@
 \section{Conclusiones}
 Después de las pruebas llevadas a cabo, podemos concluir el proyecto con un enfoque positivo. Gracias a la infraestructura de red creada, se ha conseguido con éxito una recopilación de datos colaborativa partiendo de un fichero inicial de datos desde el ordenador central, pasando por todos los nodos de la red y llegando, de nuevo, al ordenador central.
 
-Se pueden destacar varios escenarios de trabajo: \textcolor{red}{Creo que lo más sensato a la hora de ilustrar los escenarios de trabajo a los que me refiero, sería poner una imagen con los nodos que están conectados y desconectados en la red y así poder visualizarlo todo directamente sin echarle mucha cuenta a la explicación, ya que solo con la explicación queda un poco...raro. ¿No crees?}
+Se pueden destacar varios escenarios de trabajo: \textcolor{red}{Poner una imagen por cada escenario de trabajo.}
 \begin{itemize}
 	\item Si todos los nodos están conectados correctamente a la red, se producirá un recorrido lineal que partirá desde el ordenador central, viajará por todos los nodos desde zybo1 hasta zyboX. Una vez que se recorra toda la cadena y, al no detectar el siguiente nodo, zybo(X+1), el fichero retornará al ordenador central.
-	\item Cuando algún nodo central de la red está desconectado, la cadena se romperá y se enviará el fichero al ordenador central obviando el resto de nodos.
-	\item \textcolor{red}{Mirian, no entiendo el tercer guión que me has puesto donde dice: Analizar si el monitor podría asociar info con IP. Si me lo pudieras explicar algo mejor, te lo agradecería, porque no se a que te refieres.}
+	\item Cuando algún nodo intermedio de la red está desconectado, la cadena se romperá y, el nodo anterior, al no conseguir comunicación, enviará el fichero con la información recopilada al ordenador central, obviando el resto de nodos.
+	\item Si el primer nodo de la red está desconectado, tendremos dos opciones:
+	\begin{itemize}
+		\item Volver a revisar la conexión con el primer nodo hasta conseguir solucionar el problema.
+		\item Usar como primer nodo el segundo, enviando el fichero inicial directamente al segundo nodo de la red.
+	\end{itemize}
+	\item \textcolor{red}{Creo que ahora sí que lo he entendido un poco mejor. Te refieres a que si la información ``Hola 1'', se ha añadido en el primer nodo, que al lado ponga la ip del primer nodo y que si pone, ``Hola 50'', al lado esté la ip del nodo 50, ¿correcto? Si es eso a lo que te refieres, sí que se podría hacer añadiendo la IP de cada nodo a lo que añade, pero claro, así sí que tendría sentido porque si se salta un nodo que está desconectado o lo que sea, sí que se podría saber de qué nodo procede cada información añadida al fichero. Ahora bien, ¿lo hago como contenido del proyecto (sería ajustar bastantes cosas) o lo pongo abajo como trabajo futuro?}
 \end{itemize}
 
 \section{Trabajo futuro}

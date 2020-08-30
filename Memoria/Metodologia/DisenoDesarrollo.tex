@@ -30,11 +30,11 @@ Dicho proceso se lleva a cabo de la misma forma entre todas las tarjetas hasta q
 
 Toda esta comunicación se realiza gracias a la función de varios scripts programados en bash, por lo que tanto las tarjetas con Linux, como el ordenador monitor, son capaces de ejecutarlos.
 
-Dichos scripts estarán automatizados mediante crontab. Los podemos encontrar en el \hyperlink{Scripts}{Apéndice B} y se corresponden con la siguiente secuencia:
+Dichos scripts estarán automatizados mediante crontab\footnote{Crontab es un administrador regular de procesos en segundo plano que ejecuta procesos o guiones a intervalos regulares.}. Los podemos encontrar en el \hyperlink{Scripts}{Apéndice B} y se corresponden con la siguiente secuencia:
 \begin{enumerate}
 	\item Recepción del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptRecibiendo}{\texttt{Recibiendo.sh}}. Gracias al comando \texttt{stat} de Linux, podemos comprobar el estado del directorio de forma cíclica para poder detectar cualquier cambio (como la recepción de un fichero) en cuanto se produzca.
 	\item Descifrado, adición de datos y cifrado del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}}. \textcolor{red}{Esto cambiará de nombre una vez que tenga lo de Gabri implementado.}
-	\item Envío del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptEnviando}{\texttt{Enviando.sh}}. Gracias al protocolo SSH y a la herramienta \texttt{sshpass} de Linux, podremos enviar de forma automática el fichero modificado al siguiente nodo de la red.
+	\item Envío del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptEnviando}{\texttt{Enviando.sh}}. Gracias al protocolo SSH y a la herramienta \texttt{sshpass}\footnote{Esta herramienta es necesaria para poder funcionar automáticamente sin tener que aceptar manualmente la conexión con el servidor.} de Linux, podremos enviar de forma automática el fichero modificado al siguiente nodo de la red.
 \end{enumerate}
 
 En caso de que se quieran vaciar los directorios de trabajo, siempre se podrá lanzar de forma manual el script \hyperlink{ScriptBorrar}{Borrar.sh}.
