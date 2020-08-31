@@ -3,11 +3,30 @@ Después de las pruebas llevadas a cabo, podemos concluir el proyecto con un enf
 
 La información aportada por cada uno de los nodos de la red, está desligada de su dirección IP, de forma que, a priori, no se conozca la información que añadió cada nodo. El único inconveniente de esto es que, al ser una cadena secuencial, solo tendremos que saber qué nodos están conectados a la red para saber la información añadida por cada nodo.
 
-Se pueden destacar varios escenarios de trabajo: \textcolor{red}{Poner una imagen por cada escenario de trabajo.}
+Se pueden destacar varios escenarios de trabajo:
 \begin{itemize}
 	\item Si todos los nodos están conectados correctamente a la red, se producirá un recorrido lineal que partirá desde el ordenador central, viajará por todos los nodos desde zybo1 hasta zyboX. Una vez que se recorra toda la cadena y, al no detectar el siguiente nodo, zybo(X+1), el fichero retornará al ordenador central.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{Epilogo/RedCompleta.png}
+		\caption{Red completa}
+		\label{Red completa}
+	\end{figure}
 	\item Cuando algún nodo intermedio de la red está desconectado, la cadena se romperá y, el nodo anterior, al no conseguir comunicación, enviará el fichero con la información recopilada al ordenador central, obviando el resto de nodos.
-	\item Si el primer nodo de la red está desconectado, tendremos dos opciones:
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{Epilogo/RedSinNodo2.png}
+		\caption{Red sin nodo intermedio}
+		\label{Red sin nodo intermedio}
+	\end{figure}
+	\item Otro escenario será cuando el primer nodo de la red está desconectado.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{Epilogo/RedSinNodo1.png}
+		\caption{Red sin primer nodo}
+		\label{Red sin primer nodo}
+	\end{figure}\\
+	Entonces, tendremos dos opciones:
 	\begin{itemize}
 		\item Volver a revisar la conexión con el primer nodo hasta conseguir solucionar el problema.
 		\item Usar como primer nodo el segundo, enviando el fichero inicial directamente al segundo nodo de la red.

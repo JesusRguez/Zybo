@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  30 AUG 2020 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  31 AUG 2020 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -613,7 +613,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 35.
  [27]) (./Metodologia/DisenoDesarrollo.tex
-<Anexos/Anexo2/Infraestructura/ifconfigZybo.png, id=527, 501.875pt x 344.28625p
+<Anexos/Anexo2/Infraestructura/ifconfigZybo.png, id=535, 501.875pt x 344.28625p
 t>
 File: Anexos/Anexo2/Infraestructura/ifconfigZybo.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/ifconfigZybo.png>
@@ -621,12 +621,36 @@ Package pdftex.def Info: Anexos/Anexo2/Infraestructura/ifconfigZybo.png  used o
 n input line 10.
 (pdftex.def)             Requested size: 401.50053pt x 275.42937pt.
 
-[28 <./Anexos/Anexo2/Infraestructura/ifconfigZybo.png>])
-(./Metodologia/Pruebas.tex) [29] [30
+[28 <./Anexos/Anexo2/Infraestructura/ifconfigZybo.png>]
+<Epilogo/RedCompleta.png, id=543, 652.4375pt x 369.38pt>
+File: Epilogo/RedCompleta.png Graphic file (type png)
+<use Epilogo/RedCompleta.png>
+Package pdftex.def Info: Epilogo/RedCompleta.png  used on input line 25.
+(pdftex.def)             Requested size: 326.21794pt x 184.68954pt.
+)
+(./Metodologia/Pruebas.tex [29 <./Epilogo/RedCompleta.png>]) [30]
+Cap\IeC {\'\i }tulo 3.
+(./Epilogo/Conclusiones.tex
+File: Epilogo/RedCompleta.png Graphic file (type png)
+<use Epilogo/RedCompleta.png>
+Package pdftex.def Info: Epilogo/RedCompleta.png  used on input line 11.
+(pdftex.def)             Requested size: 326.21794pt x 184.68954pt.
+<Epilogo/RedSinNodo2.png, id=569, 652.4375pt x 369.38pt>
+File: Epilogo/RedSinNodo2.png Graphic file (type png)
+<use Epilogo/RedSinNodo2.png>
+Package pdftex.def Info: Epilogo/RedSinNodo2.png  used on input line 18.
+(pdftex.def)             Requested size: 326.21794pt x 184.68954pt.
+ [31
 
 ]
-Cap\IeC {\'\i }tulo 3.
-(./Epilogo/Conclusiones.tex) [31] [32]
+<Epilogo/RedSinNodo1.png, id=575, 652.4375pt x 369.38pt>
+File: Epilogo/RedSinNodo1.png Graphic file (type png)
+<use Epilogo/RedSinNodo1.png>
+Package pdftex.def Info: Epilogo/RedSinNodo1.png  used on input line 25.
+(pdftex.def)             Requested size: 326.21794pt x 184.68954pt.
+ [32 <./Epilogo/RedSinNodo2.png> <./Epilogo/RedSinNodo1.png>]) [33] [34
+
+]
 Cap\IeC {\'\i }tulo 4.
 (./Bibliografia.tex
 Overfull \hbox (2.4099pt too wide) in paragraph at lines 17--18
@@ -634,64 +658,62 @@ Overfull \hbox (2.4099pt too wide) in paragraph at lines 17--18
 cr/m/n/10 http : / / ecapy . com / comprimir-[]y-[]descomprimir-[]tgz-[]$[][]
  []
 
-) [33
+) [35] [36
 
-] [34
-
-] [35] [36]
+] [37] [38]
 \openout2 = `Anexos/Anexo2.aux'.
 
  (./Anexos/Anexo2.tex
 Ap\IeC {\'e}ndice A.
-(./Anexos/Anexo2/Linux/InstalacionLinux.tex [37
+(./Anexos/Anexo2/Linux/InstalacionLinux.tex [39
 
 
 ]
-<Anexos/Anexo2/Linux/NuevoUsuario.png, id=620, 501.875pt x 345.29pt>
+<Anexos/Anexo2/Linux/NuevoUsuario.png, id=642, 501.875pt x 345.29pt>
 File: Anexos/Anexo2/Linux/NuevoUsuario.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/NuevoUsuario.png>
 Package pdftex.def Info: Anexos/Anexo2/Linux/NuevoUsuario.png  used on input li
 ne 47.
 (pdftex.def)             Requested size: 451.68332pt x 310.7581pt.
- [38 <./Anexos/Anexo2/Linux/NuevoUsuario.png>]
-<Anexos/Anexo2/Linux/SSH.png, id=625, 501.875pt x 346.29375pt>
+ [40 <./Anexos/Anexo2/Linux/NuevoUsuario.png>]
+<Anexos/Anexo2/Linux/SSH.png, id=647, 501.875pt x 346.29375pt>
 File: Anexos/Anexo2/Linux/SSH.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/SSH.png>
 Package pdftex.def Info: Anexos/Anexo2/Linux/SSH.png  used on input line 67.
 (pdftex.def)             Requested size: 401.50053pt x 277.03537pt.
- [39 <./Anexos/Anexo2/Linux/SSH.png>]
-<Anexos/Anexo2/Linux/SSHRestart.png, id=630, 501.875pt x 73.27374pt>
+ [41 <./Anexos/Anexo2/Linux/SSH.png>]
+<Anexos/Anexo2/Linux/SSHRestart.png, id=652, 501.875pt x 73.27374pt>
 File: Anexos/Anexo2/Linux/SSHRestart.png Graphic file (type png)
 <use Anexos/Anexo2/Linux/SSHRestart.png>
 Package pdftex.def Info: Anexos/Anexo2/Linux/SSHRestart.png  used on input line
  79.
 (pdftex.def)             Requested size: 401.50053pt x 58.61905pt.
-) [40 <./Anexos/Anexo2/Linux/SSHRestart.png>] (./Anexos/Anexo2/Infraestructura/
+) [42 <./Anexos/Anexo2/Linux/SSHRestart.png>] (./Anexos/Anexo2/Infraestructura/
 MontarInfraestructura.tex
-<Anexos/Anexo2/Infraestructura/zybo.jpg, id=636, 487.8225pt x 353.82187pt>
+<Anexos/Anexo2/Infraestructura/zybo.jpg, id=658, 487.8225pt x 353.82187pt>
 File: Anexos/Anexo2/Infraestructura/zybo.jpg Graphic file (type jpg)
 <use Anexos/Anexo2/Infraestructura/zybo.jpg>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/zybo.jpg  used on input 
 line 16.
 (pdftex.def)             Requested size: 243.91064pt x 176.91049pt.
 
-[41 <./Anexos/Anexo2/Infraestructura/zybo.jpg>]
-<Anexos/Anexo2/Infraestructura/Datasheet.pdf, id=645, 512.26842pt x 691.85184pt
+[43 <./Anexos/Anexo2/Infraestructura/zybo.jpg>]
+<Anexos/Anexo2/Infraestructura/Datasheet.pdf, id=668, 512.26842pt x 691.85184pt
 >
 File: Anexos/Anexo2/Infraestructura/Datasheet.pdf Graphic file (type pdf)
 <use Anexos/Anexo2/Infraestructura/Datasheet.pdf>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/Datasheet.pdf  used on i
 nput line 27.
 (pdftex.def)             Requested size: 353.46559pt x 477.37828pt.
- [42 <./Anexos/Anexo2/Infraestructura/Datasheet.pdf>]
+ [44 <./Anexos/Anexo2/Infraestructura/Datasheet.pdf>]
 Overfull \hbox (22.8915pt too wide) in paragraph at lines 40--41
 []\T1/ptm/b/n/10 Debian 9 Stretch: \T1/ptm/m/n/10 Este sis-tema op-er-a-tivo te
 n-drá un usuario lla-mado \T1/pcr/m/n/10 zybo \T1/ptm/m/n/10 y su con-traseña s
 erá \T1/pcr/m/n/10 zybomonitor\T1/ptm/m/n/10 .
  []
 
-[43]
-<Anexos/Anexo2/Infraestructura/ifconfigPC.png, id=707, 680.5425pt x 555.07375pt
+[45]
+<Anexos/Anexo2/Infraestructura/ifconfigPC.png, id=729, 680.5425pt x 555.07375pt
 >
 File: Anexos/Anexo2/Infraestructura/ifconfigPC.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/ifconfigPC.png>
@@ -700,14 +722,14 @@ input line 66.
 (pdftex.def)             Requested size: 340.27042pt x 277.53618pt.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [44 <./Anexos/Anexo2/Infraestructura/ifconfigPC.png>]
-<Anexos/Anexo2/Infraestructura/PuTTY.png, id=723, 567.11874pt x 574.145pt>
+) [46 <./Anexos/Anexo2/Infraestructura/ifconfigPC.png>]
+<Anexos/Anexo2/Infraestructura/PuTTY.png, id=745, 567.11874pt x 574.145pt>
 File: Anexos/Anexo2/Infraestructura/PuTTY.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/PuTTY.png>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/PuTTY.png  used on input
  line 95.
 (pdftex.def)             Requested size: 396.98041pt x 401.89876pt.
- [45 <./Anexos/Anexo2/Infraestructura/PuTTY.png>]
+ [47 <./Anexos/Anexo2/Infraestructura/PuTTY.png>]
 File: Anexos/Anexo2/Infraestructura/ifconfigZybo.png Graphic file (type png)
 <use Anexos/Anexo2/Infraestructura/ifconfigZybo.png>
 Package pdftex.def Info: Anexos/Anexo2/Infraestructura/ifconfigZybo.png  used o
@@ -715,16 +737,16 @@ n input line 107.
 (pdftex.def)             Requested size: 401.50053pt x 275.42937pt.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [46])
-[47] (./Anexos/Anexo2/Test/TestInterconexion.tex
-<Anexos/Anexo2/Test/Script.png, id=753, 453.19313pt x 27.10126pt>
+) [48])
+[49] (./Anexos/Anexo2/Test/TestInterconexion.tex
+<Anexos/Anexo2/Test/Script.png, id=776, 453.19313pt x 27.10126pt>
 File: Anexos/Anexo2/Test/Script.png Graphic file (type png)
 <use Anexos/Anexo2/Test/Script.png>
 Package pdftex.def Info: Anexos/Anexo2/Test/Script.png  used on input line 9.
 (pdftex.def)             Requested size: 407.87004pt x 24.39088pt.
-) [48 <./Anexos/Anexo2/Test/Script.png (PNG copy)>] [49] (./Anexos/Anexo2/Envio
-/EnvioFicheros.tex [50])
-[51] (./Anexos/Anexo2/ComunicacionSecuencial/Secuencial.tex
+) [50 <./Anexos/Anexo2/Test/Script.png (PNG copy)>] [51] (./Anexos/Anexo2/Envio
+/EnvioFicheros.tex [52])
+[53] (./Anexos/Anexo2/ComunicacionSecuencial/Secuencial.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -734,31 +756,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[52]
+[54]
 Overfull \hbox (24.41252pt too wide) in paragraph at lines 85--86
 []\T1/pcr/b/n/10 ViejoEnviar.txt\T1/ptm/b/n/10 : \T1/ptm/m/n/10 Este fichero co
 n-tendrá el es-tado del di-rec-to-rio \T1/pcr/m/n/10 /enviar \T1/ptm/m/n/10 una
  vez que el script \T1/pcr/m/n/10 Enviando.sh
  []
 
-[53])) [54]
+[55])) [56]
 \openout2 = `Anexos/Anexo3.aux'.
 
  (./Anexos/Anexo3.tex
 Ap\IeC {\'e}ndice B.
-[55
+[57
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 13.
-<Anexos/Anexo2/Test/Inicio.png, id=826, 467.7475pt x 861.2175pt>
+<Anexos/Anexo2/Test/Inicio.png, id=848, 467.7475pt x 861.2175pt>
 File: Anexos/Anexo2/Test/Inicio.png Graphic file (type png)
 <use Anexos/Anexo2/Test/Inicio.png>
 Package pdftex.def Info: Anexos/Anexo2/Test/Inicio.png  used on input line 20.
 (pdftex.def)             Requested size: 262.87178pt x 484.0pt.
- [56 <./Anexos/Anexo2/Test/Inicio.png>]
+ [58 <./Anexos/Anexo2/Test/Inicio.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 27.
 
@@ -775,8 +797,8 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 8.
- [57]
-<Anexos/Anexo3/Diagramas/Lanzador.png, id=862, 121.45375pt x 191.71625pt>
+ [59]
+<Anexos/Anexo3/Diagramas/Lanzador.png, id=884, 121.45375pt x 191.71625pt>
 File: Anexos/Anexo3/Diagramas/Lanzador.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Lanzador.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Lanzador.png  used on input li
@@ -785,8 +807,8 @@ ne 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [58 <./Anexos/Anexo3/Diagramas/Lanzador.png>]
-<Anexos/Anexo3/Diagramas/Automatico.png, id=874, 148.555pt x 214.8025pt>
+) [60 <./Anexos/Anexo3/Diagramas/Lanzador.png>]
+<Anexos/Anexo3/Diagramas/Automatico.png, id=896, 148.555pt x 214.8025pt>
 File: Anexos/Anexo3/Diagramas/Automatico.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Automatico.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Automatico.png  used on input 
@@ -795,8 +817,8 @@ line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [59 <./Anexos/Anexo3/Diagramas/Automatico.png>]
-<Anexos/Anexo3/Diagramas/Recibiendo.png, id=892, 388.45125pt x 562.1pt>
+) [61 <./Anexos/Anexo3/Diagramas/Automatico.png>]
+<Anexos/Anexo3/Diagramas/Recibiendo.png, id=916, 388.45125pt x 562.1pt>
 File: Anexos/Anexo3/Diagramas/Recibiendo.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Recibiendo.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Recibiendo.png  used on input 
@@ -805,28 +827,28 @@ line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [60 <./Anexos/Anexo3/Diagramas/Recibiendo.png>] [61]
-<Anexos/Anexo3/Diagramas/Cristian.png, id=939, 387.4475pt x 685.56125pt>
+) [62 <./Anexos/Anexo3/Diagramas/Recibiendo.png>] [63]
+<Anexos/Anexo3/Diagramas/Cristian.png, id=961, 387.4475pt x 685.56125pt>
 File: Anexos/Anexo3/Diagramas/Cristian.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Cristian.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Cristian.png  used on input li
 ne 126.
 (pdftex.def)             Requested size: 271.2114pt x 479.8896pt.
- [62 <./Anexos/Anexo3/Diagramas/Cristian.png>]
+ [64 <./Anexos/Anexo3/Diagramas/Cristian.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [63] [64]
-<Anexos/Anexo3/Diagramas/Enviando.png, id=996, 464.73625pt x 744.7825pt>
+) [65] [66]
+<Anexos/Anexo3/Diagramas/Enviando.png, id=1019, 464.73625pt x 744.7825pt>
 File: Anexos/Anexo3/Diagramas/Enviando.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Enviando.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Enviando.png  used on input li
 ne 163.
 (pdftex.def)             Requested size: 302.07498pt x 484.10289pt.
- [65 <./Anexos/Anexo3/Diagramas/Enviando.png>]
+ [67 <./Anexos/Anexo3/Diagramas/Enviando.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [66]
-<Anexos/Anexo3/Diagramas/Borrar.png, id=1060, 121.45375pt x 224.84pt>
+) [68]
+<Anexos/Anexo3/Diagramas/Borrar.png, id=1083, 121.45375pt x 224.84pt>
 File: Anexos/Anexo3/Diagramas/Borrar.png Graphic file (type png)
 <use Anexos/Anexo3/Diagramas/Borrar.png>
 Package pdftex.def Info: Anexos/Anexo3/Diagramas/Borrar.png  used on input line
@@ -835,7 +857,7 @@ Package pdftex.def Info: Anexos/Anexo3/Diagramas/Borrar.png  used on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-)) [67 <./Anexos/Anexo3/Diagramas/Borrar.png>]
+)) [69 <./Anexos/Anexo3/Diagramas/Borrar.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
  (./Memoria.aux (./Inicio/Agradecimientos.aux)
@@ -848,10 +870,10 @@ Package rerunfilecheck Info: File `Memoria.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 10448 strings out of 492615
- 150455 string characters out of 6131390
+ 10473 strings out of 492615
+ 150988 string characters out of 6131390
  531593 words of memory out of 5000000
- 13595 multiletter control sequences out of 15000+600000
+ 13611 multiletter control sequences out of 15000+600000
  83460 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,13n,49p,651b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -863,10 +885,10 @@ ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
 ier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Memoria.pdf (67 pages, 1292396 bytes).
+Output written on Memoria.pdf (69 pages, 1519690 bytes).
 PDF statistics:
- 1196 PDF objects out of 1200 (max. 8388607)
- 1069 compressed objects within 11 object streams
- 424 named destinations out of 1000 (max. 500000)
- 595 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1219 PDF objects out of 1440 (max. 8388607)
+ 1084 compressed objects within 11 object streams
+ 430 named destinations out of 1000 (max. 500000)
+ 610 words of extra memory for PDF output out of 10000 (max. 10000000)
 
