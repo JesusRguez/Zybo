@@ -2,26 +2,30 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Interfaces de red en la tarjeta Zybo}}{28}{figure.2.1}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Infraestructura de red de tarjetas Zybo}}{29}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Prueba de \texttt {Inicio.sh}}}{30}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Fichero inicial en el ordenador central y env\IeC {\'\i }o al primer nodo}}{31}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Estado del fichero despu\IeC {\'e}s de su modificaci\IeC {\'o}n en Zybo1}}{32}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Fichero final en el ordenador central}}{33}{figure.2.6}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Red completa}}{31}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Red sin nodo intermedio}}{32}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Red sin primer nodo}}{32}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Red completa}}{36}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Red sin nodo intermedio}}{36}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Red sin primer nodo}}{37}{figure.3.3}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Ejemplo de creaci\IeC {\'o}n del usuario zybo0}}{40}{figure.A.1}% 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Fichero \texttt {sshd\_config} modificado}}{41}{figure.A.2}% 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Reiniciando el servicio SSH}}{42}{figure.A.3}% 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Placa Zybo Zynq 7010}}{43}{figure.A.4}% 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Diagrama de Zybo Zynq 7010 procedente del manual de referencias}}{44}{figure.A.5}% 
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Interfaces de red del ordenador central}}{46}{figure.A.6}% 
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Configuraci\IeC {\'o}n de PuTTY}}{47}{figure.A.7}% 
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Interfaces de red de la tarjeta Zybo}}{48}{figure.A.8}% 
-\contentsline {figure}{\numberline {A.9}{\ignorespaces L\IeC {\'\i }neas a modificar en el script Inicio.sh.}}{50}{figure.A.9}% 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Ejemplo de creaci\IeC {\'o}n del usuario zybo0}}{44}{figure.A.1}% 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Fichero \texttt {sshd\_config} modificado}}{45}{figure.A.2}% 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Reiniciando el servicio SSH}}{46}{figure.A.3}% 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Placa Zybo Zynq 7010}}{47}{figure.A.4}% 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Diagrama de Zybo Zynq 7010 procedente del manual de referencias}}{48}{figure.A.5}% 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Interfaces de red del ordenador central}}{50}{figure.A.6}% 
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Configuraci\IeC {\'o}n de PuTTY}}{51}{figure.A.7}% 
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Interfaces de red de la tarjeta Zybo}}{52}{figure.A.8}% 
+\contentsline {figure}{\numberline {A.9}{\ignorespaces L\IeC {\'\i }neas a modificar en el script Inicio.sh.}}{54}{figure.A.9}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de flujo de \texttt {Inicio.sh}}}{58}{figure.B.1}% 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Diagrama de flujo de \texttt {Lanzador.sh}.}}{60}{figure.B.2}% 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Diagrama de flujo de \texttt {Automatico.sh}.}}{61}{figure.B.3}% 
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Diagrama de flujo de \texttt {Recibiendo.sh}.}}{62}{figure.B.4}% 
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Diagrama de flujo de \texttt {Cristian.sh}.}}{64}{figure.B.5}% 
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Diagrama de flujo de \texttt {Diagramas/Enviando.sh}.}}{67}{figure.B.6}% 
-\contentsline {figure}{\numberline {B.7}{\ignorespaces Diagrama de flujo de \texttt {Borrar.sh}.}}{69}{figure.B.7}% 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Diagrama de flujo de \texttt {Inicio.sh}}}{62}{figure.B.1}% 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Diagrama de flujo de \texttt {Lanzador.sh}.}}{64}{figure.B.2}% 
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Diagrama de flujo de \texttt {Automatico.sh}.}}{65}{figure.B.3}% 
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Diagrama de flujo de \texttt {Recibiendo.sh}.}}{66}{figure.B.4}% 
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Diagrama de flujo de \texttt {Cristian.sh}.}}{68}{figure.B.5}% 
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Diagrama de flujo de \texttt {Diagramas/Enviando.sh}.}}{71}{figure.B.6}% 
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Diagrama de flujo de \texttt {Borrar.sh}.}}{73}{figure.B.7}% 
