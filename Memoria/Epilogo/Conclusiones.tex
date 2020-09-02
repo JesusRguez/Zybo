@@ -1,9 +1,7 @@
 \section{Conclusiones}
 Después de las pruebas llevadas a cabo, podemos concluir el proyecto con un enfoque positivo. Gracias a la infraestructura de red creada, se ha conseguido con éxito una recopilación de datos colaborativa partiendo de un fichero inicial de datos desde el ordenador central, pasando por todos los nodos de la red y llegando, de nuevo, al ordenador central.
 
-Desgraciadamente, no se ha podido realizar la implementación del IP cifrador/descifrador AES de Cristian Ambrosio Costoya \hyperlink{1}{[1]} debido a una incompatibilidad de la red con el sistema operativo aportado por Gabriel Fernando Sánchez Reina \hyperlink{2}{[2]}.
-
-Aún así, la información aportada por cada uno de los nodos de la red, está desligada de su dirección IP, de forma que, a priori, no se conozca la información que añadió cada nodo. El único inconveniente de esto es que, al ser una cadena secuencial, solo tendremos que saber qué nodos están conectados a la red para saber la información añadida por cada nodo.
+Además se ha conseguido que la información aportada por cada uno de los nodos de la red, está desligada de su dirección IP, de forma que, a priori, no se conozca la información que añadió cada nodo. El único inconveniente de esto es que, al ser una cadena secuencial, solo tendremos que saber qué nodos están conectados a la red para saber la información añadida por cada nodo.
 
 Se pueden destacar varios escenarios de trabajo:
 \begin{itemize}
@@ -14,6 +12,7 @@ Se pueden destacar varios escenarios de trabajo:
 		\caption{Red completa}
 		\label{Red completa}
 	\end{figure}
+\newpage
 	\item Cuando algún nodo intermedio de la red está desconectado, la cadena se romperá y, el nodo anterior, al no conseguir comunicación, enviará el fichero con la información recopilada al ordenador central, obviando el resto de nodos.
 	\begin{figure}[h]
 		\centering
@@ -21,6 +20,7 @@ Se pueden destacar varios escenarios de trabajo:
 		\caption{Red sin nodo intermedio}
 		\label{Red sin nodo intermedio}
 	\end{figure}
+%\newpage
 	\item Otro escenario será cuando el primer nodo de la red está desconectado.
 	\begin{figure}[h]
 		\centering
@@ -35,11 +35,13 @@ Se pueden destacar varios escenarios de trabajo:
 	\end{itemize}
 \end{itemize}
 
+Como ejemplo práctico de aplicación de esta red, se planteó como objetivo que la información aportada localmente por cada nodo fuera cifrada mediante un IP cifrador/descifrador AES \hyperlink{1}{[1]}. Para llevar a cabo esta aplicación, era necesario contar con el driver incluido en el sistema operativo compilado en otro Trabajo de Fin de Grado \hyperlink{2}{[2]}. A causa de la incompatibilidad de dicho sistema operativo compilado y los modelos de tarjeta Zybo utilizados en ambos proyectos, este objetivo no se ha podido completar.
+
 \section{Trabajo futuro}
 Como trabajo futuro quedaría cambiar la cadena de conexiones y que, en vez de recorrer los nodos de forma secuencial, se hiciera de forma aleatoria, para que no se supiera qué nodo ha seguido a cual. De esta forma, se conseguirá un desconocimiento total por parte del ordenador central sobre qué nodo añadió cada información al fichero final.
 
 Para completar el trabajo de cifrado/descifrado de datos en la cadena de nodos de la red, deberíamos encontrar la compatibilidad con el sistema operativo aportado por el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina. Una vez tengamos dicha compatibilidad y, debido a que dicho sistema operativo incluye el IP cifrador/descifrador de Cristian Ambrosio Costoya, ya podríamos realizar el cifrado/descifrado de los ficheros enviados por la red.
 
-También se podría mejorar el proyecto incluyendo un módulo Wi-Fi, de modo que los nodos, no tengan que estar necesariamente conectados por cable. Esto nos daría la posibilidad de ubicar cada nodo donde quisiéramos (dentro de las capacidades físicas de la red Wi-Fi) y así poder usar dicha estructura en un entorno de IoT\footnote{Internet of Things.} para una casa o el edificio que necesitemos.
+Otro posible uso de la red sería el tratamiento de una imagen, de modo que un IP dedicado a esto, formara parte del nodo de red.
 
-Este proyecto nos aporta una gran ventaja frente a la seguridad informática ya que, los ficheros transmitidos están doblemente cifrados, tanto por el propio protocolo SSH como por el IP cifrador/descifrador AES incorporado en los nodos Zybo. Esto hace que podamos recrearlo en cualquier red sin miedo a posibles filtraciones de datos.
+También se podría mejorar el proyecto incluyendo un módulo Wi-Fi, de modo que los nodos, no tengan que estar necesariamente conectados por cable. Esto nos daría la posibilidad de ubicar cada nodo donde quisiéramos (dentro de las capacidades físicas de la red Wi-Fi) y así poder usar dicha estructura en un entorno de IoT\footnote{Internet of Things.} para una casa o el edificio que necesitemos. Para este cambio no haría falta modificar nada del software aportado por este proyecto.

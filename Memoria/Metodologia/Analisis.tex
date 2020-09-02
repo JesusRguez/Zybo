@@ -32,13 +32,15 @@ Para la transmisión del fichero de datos, usaremos SSH \hyperlink{4}{[4]} debid
 
 Se han diseñado una serie de scripts para automatizar el proceso de transmisión, cifrado/descifrado y adición de datos. Estos scripts\footnote{Para ver detalladamente todos los scripts, ver el \hyperlink{Scripts}{Apéndice B}.} son los siguientes:
 \begin{itemize}
-	\item \hyperlink{ScriptConexion}{\textbf{\texttt{Inicio.sh}:}} Script encargado de probar las conexiones de todos los dispositivos de la red. Será lanzado manualmente para que el usuario pueda comprobar el estado de las conexiones.
-	\item \hyperlink{ScriptLanzador}{\textbf{\texttt{Lanzador.sh}:}} Script encargado de lanzar el script \texttt{Automatico.sh} que contará con las correspondientes comprobaciones cíclicas. Éste script será lanzado mediante la herramienta cron al inicio del sistema operativo.
-	\item \hyperlink{ScriptAutomatico}{\textbf{\texttt{Automatico.sh}:}} Script encargado de lanzar periódicamente los siguientes scripts cada segundo para realizar las comprobaciones pertinentes. Debido a su comportamiento periódico, podemos garantizar la correcta comprobación de los directorios y ficheros implicados en el proceso.
-	\item \hyperlink{ScriptRecibiendo}{\textbf{\texttt{Recibiendo.sh}:}} Script encargado de comprobar si se ha recibido algo y prepararlo para su tratamiento en cada nodo.
-	\item \hyperlink{ScriptCristian}{\textbf{\texttt{Cristian.sh}:}} Script encargado de descifrar los datos, añadir información y volver a cifrarlos en cada nodo. \textcolor{red}{Esto cambiará de nombre una vez que tenga lo de Gabri implementado.}
-	\item \hyperlink{ScriptEnviando}{\textbf{\texttt{Enviando.sh}:}} Script encargado de enviar los datos al siguiente nodo. En caso de que no exista el siguiente nodo (o no esté disponible), se enviará de vuelta al ordenador central.
+	\item \hyperlink{ScriptConexion}{\textbf{\texttt{Inicio.sh}:}} Script encargado de probar las conexiones de todos los dispositivos de la red. Será lanzado manualmente desde el ordenador central para que el usuario pueda comprobar el estado de las conexiones. La ejecución de este script, será recomendado pero opcional.
+	\item \hyperlink{ScriptLanzador}{\textbf{\texttt{Lanzador.sh}:}} Script encargado de lanzar el script \texttt{Automatico.sh}. Éste script será lanzado mediante la herramienta de programación de tareas \texttt{cron}.
+	\item \hyperlink{ScriptAutomatico}{\textbf{\texttt{Automatico.sh}:}} Script encargado de lanzar periódicamente los siguientes scripts cada segundo. Debido a su comportamiento periódico, podemos garantizar la correcta comprobación de los directorios y ficheros implicados en el proceso.
+	\begin{itemize}
+		\item \hyperlink{ScriptRecibiendo}{\textbf{\texttt{Recibiendo.sh}:}} Script encargado de comprobar si se ha recibido algo y prepararlo para su tratamiento en cada nodo.
+		\item \hyperlink{ScriptCristian}{\textbf{\texttt{Cristian.sh}:}} Script encargado de añadir información en cada nodo de la red. En el caso de tener implementado en hardware el IP cifrador/descifrador, será también el encargado de realizar el proceso de cifrado/descifrado a la información localmente añadida.
+		\item \hyperlink{ScriptEnviando}{\textbf{\texttt{Enviando.sh}:}} Script encargado de enviar los datos al siguiente nodo. En caso de que no exista el siguiente nodo (o no esté disponible), se enviará de vuelta al ordenador central.
+	\end{itemize}
 	\item \hyperlink{ScriptBorrar}{\textbf{\texttt{Borrar.sh}:}} Sctipt encargado de borrar vaciar todos los directorios de trabajo. Deberá ser lanzado manualmente por el usuario en caso de querer vaciar los directorios de trabajo.
 \end{itemize}
 
-\textcolor{red}{Cuando tenga todo completo, hay que añadir un diagrama de flujo para ver aquí como va la secuencia de scripts desde que llega un nuevo fichero a un nodo hasta que se envía al nuevo nodo.}
+\textcolor{red}{Cuando tenga todo completo, hay que añadir un diagrama de flujo para ver aquí como va la secuencia de scripts desde que llega un nuevo fichero a un nodo hasta que se envía al nuevo nodo. Cuando haga el diagrama, empezarlo desglosando primeramente Automático.}

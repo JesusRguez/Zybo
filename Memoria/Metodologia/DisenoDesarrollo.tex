@@ -38,7 +38,7 @@ Toda esta comunicación se realiza gracias a la función de varios scripts progr
 Dichos scripts estarán automatizados mediante crontab\footnote{Crontab es un administrador regular de procesos en segundo plano que ejecuta procesos o guiones a intervalos regulares.}. Los podemos encontrar en el \hyperlink{Scripts}{Apéndice B} y se corresponden con la siguiente secuencia:
 \begin{enumerate}
 	\item Recepción del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptRecibiendo}{\texttt{Recibiendo.sh}}. Gracias al comando \texttt{stat} de Linux, podemos comprobar el estado del directorio de forma cíclica para poder detectar cualquier cambio (como la recepción de un fichero) en cuanto se produzca.
-	\item Descifrado, adición de datos y cifrado del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}}. \textcolor{red}{Esto cambiará de nombre una vez que tenga lo de Gabri implementado.}
+	\item Adición de datos: Proceso llevado a cabo por el script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}}.
 	\item Envío del fichero: Proceso llevado a cabo por el script \hyperlink{ScriptEnviando}{\texttt{Enviando.sh}}. Gracias al protocolo SSH y a la herramienta \texttt{sshpass}\footnote{Esta herramienta es necesaria para poder funcionar automáticamente sin tener que aceptar manualmente la conexión con el servidor.} de Linux, podremos enviar de forma automática el fichero modificado al siguiente nodo de la red.
 \end{enumerate}
 

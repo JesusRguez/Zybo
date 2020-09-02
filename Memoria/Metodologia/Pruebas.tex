@@ -13,17 +13,17 @@ Para realizar la prueba de la arquitectura de red, lanzaremos el script \hyperli
 
 \subsection{Software}
 %\textcolor{red}{Prueba de funcionamiento de la recolección de datos: Una prueba de todo funcionando.}
-Para realizar las pruebas de funcionamiento, directamente se usaron los scripts descritos en el \hyperlink{Scripts}{Apéndice B} una vez instalados y configuradas las tarjetas Zybo.
+Para realizar las pruebas de funcionamiento, basta con alimentar los nodos participantes en la cadena. En ese momento se ejecuta automáticamente los scripts descritos en el \hyperlink{Scripts}{Apéndice B}. 
 
-Para ello, se siguió la cadena de conexión desde que el fichero se crea en el ordenador monitor, hasta que vuelve a él después de haber pasado por el resto de nodos de la red.
+Para el correcto funcionamiento de estos scripts, se requiere que el monitor central disponga del fichero inicial de datos creado por el usuario y que dicho usuario lo envíe al primer nodo de la red.
+
+Hecho esto, sucede lo siguiente:
 \begin{enumerate}
-	\item Creación del fichero: Creamos un fichero en el ordenador central. Para esta prueba, he creado un fichero en la carpeta ``Descargas'' del ordenador central.
-
 	\item Envío del fichero inicial a la primera tarjeta: Esto lo haremos gracias a la herramienta \texttt{sshpass} de Linux con la siguiente orden:
 	\begin{center}
 		\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no archivoLocal zyboX@zyboX:/home/zyboX/ficheros/recibir}
 	\end{center}
-	Este proceso lo podemos ver más detallada mente en el \hyperlink{EnvioRecepcionFicheros}{Apéndce A.4}.
+	Este proceso (Figura \ref{Fichero inicial en el ordenador central y envío al primer nodo}) lo podemos ver más detalladamente en el \hyperlink{EnvioRecepcionFicheros}{Apéndce A.4}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{Metodologia/Pruebas/Fichero_inicial_en_PC.png}
@@ -33,7 +33,7 @@ Para ello, se siguió la cadena de conexión desde que el fichero se crea en el 
 \newpage
 	\item Recepción del fichero en las tarjetas: Será el script \hyperlink{ScriptRecibiendo}{\texttt{Recibiendo.sh}} el encargado de comprobar la llegada del fichero y actuar en consecuencia cambiándolo de directorio.
 
-	\item Modificación del fichero: El script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}} será el encargado de abrir el fichero, modificarlo en cada una de las tarjetas y dejarlo preparado para su envío al siguiente nodo de la red.
+	\item Modificación del fichero: El script \hyperlink{ScriptCristian}{\texttt{Cristian.sh}} será el encargado de abrir el fichero, modificarlo en cada una de las tarjetas y dejarlo preparado para su envío al siguiente nodo de la red. Para comprobar que los resultados de este script son correctos, podemos usar los comandos que vemos en la Figura \ref{Estado del fichero después de su modificación en Zybo1}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{Metodologia/Pruebas/Fichero_en_Zybo1.png}
