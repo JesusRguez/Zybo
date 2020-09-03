@@ -1,11 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Interfaces de red en la tarjeta Zybo}}{28}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Infraestructura de red de tarjetas Zybo}}{29}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Prueba de \texttt {Inicio.sh}}}{30}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Fichero inicial en el ordenador central y env\IeC {\'\i }o al primer nodo}}{31}{figure.2.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Estado del fichero despu\IeC {\'e}s de su modificaci\IeC {\'o}n en Zybo1}}{32}{figure.2.5}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Fichero final en el ordenador central}}{33}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Secuencia de trabajo}}{28}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Interfaces de red en la tarjeta Zybo}}{29}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Infraestructura de red de tarjetas Zybo}}{30}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Prueba de \texttt {Inicio.sh}}}{31}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Fichero inicial en el ordenador central y env\IeC {\'\i }o al primer nodo}}{32}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Estado del fichero despu\IeC {\'e}s de su modificaci\IeC {\'o}n en Zybo1}}{33}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Fichero final en el ordenador central}}{34}{figure.2.7}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Red completa}}{35}{figure.3.1}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Red sin nodo intermedio}}{36}{figure.3.2}% 

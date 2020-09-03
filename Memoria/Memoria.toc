@@ -14,12 +14,12 @@
 \contentsline {section}{\numberline {2.3}An\IeC {\'a}lisis del sistema}{27}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Hardware}{27}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Software}{27}{subsection.2.3.2}% 
-\contentsline {section}{\numberline {2.4}Dise\IeC {\~n}o y desarrollo}{28}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Hardware}{28}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Software}{29}{subsection.2.4.2}% 
+\contentsline {section}{\numberline {2.4}Dise\IeC {\~n}o y desarrollo}{29}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Hardware}{29}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Software}{30}{subsection.2.4.2}% 
 \contentsline {section}{\numberline {2.5}Pruebas del sistema}{30}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Hardware}{30}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Software}{30}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.5.2}Software}{31}{subsection.2.5.2}% 
 \contentsline {chapter}{\numberline {3}Conclusiones y trabajo futuro}{35}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Conclusiones}{35}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Trabajo futuro}{37}{section.3.2}% 
