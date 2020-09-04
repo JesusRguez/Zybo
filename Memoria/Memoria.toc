@@ -6,76 +6,76 @@
 \contentsline {chapter}{\numberline {2}Metodolog\IeC {\'\i }a}{25}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Marco te\IeC {\'o}rico}{25}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Tarjetas Zybo}{25}{subsection.2.1.1}% 
-\contentsline {section}{\numberline {2.2}Tecnolog\IeC {\'\i }as a utilizar}{25}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Dise\IeC {\~n}o de la arquitectura}{25}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Dise\IeC {\~n}o de componentes}{25}{subsection.2.2.2}% 
-\contentsline {subsubsection}{Ordenador monitor}{25}{section*.4}% 
-\contentsline {subsubsection}{Tarjetas Zybo Zynq 7010}{26}{section*.5}% 
-\contentsline {subsubsection}{Switch}{26}{section*.6}% 
-\contentsline {section}{\numberline {2.3}An\IeC {\'a}lisis del sistema}{27}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Hardware}{27}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Software}{27}{subsection.2.3.2}% 
-\contentsline {section}{\numberline {2.4}Dise\IeC {\~n}o y desarrollo}{29}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Hardware}{29}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Software}{30}{subsection.2.4.2}% 
-\contentsline {section}{\numberline {2.5}Pruebas del sistema}{30}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Hardware}{30}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Software}{31}{subsection.2.5.2}% 
-\contentsline {chapter}{\numberline {3}Conclusiones y trabajo futuro}{35}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Conclusiones}{35}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Trabajo futuro}{37}{section.3.2}% 
-\contentsline {chapter}{\numberline {4}Referencias/Bibliograf\IeC {\'\i }a}{39}{chapter.4}% 
-\contentsline {part}{II\hspace {1em}Anexos t\IeC {\'e}cnicos}{41}{part.2}% 
-\contentsline {chapter}{\numberline {A}Manuales de usuario}{43}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}Clonaci\IeC {\'o}n de tarjetas SD para tarjetas Zybo}{43}{section.A.1}% 
-\contentsline {subsection}{\numberline {A.1.1}Clonaci\IeC {\'o}n de Linux en tarjeta SD}{43}{subsection.A.1.1}% 
-\contentsline {subsection}{\numberline {A.1.2}Inicio de Linux desde la tarjeta SD}{43}{subsection.A.1.2}% 
-\contentsline {subsection}{\numberline {A.1.3}Creaci\IeC {\'o}n de usuarios}{44}{subsection.A.1.3}% 
-\contentsline {subsection}{\numberline {A.1.4}Habilitar SSH en placas Zybo}{45}{subsection.A.1.4}% 
-\contentsline {section}{\numberline {A.2}Creaci\IeC {\'o}n de una infraestructura de red de tarjetas Zybo}{47}{section.A.2}% 
-\contentsline {subsection}{\numberline {A.2.1}Material necesario}{47}{subsection.A.2.1}% 
-\contentsline {subsubsection}{Placas Zybo Zynq-7000}{47}{section*.7}% 
-\contentsline {subsubsection}{Ordenador central}{49}{section*.8}% 
-\contentsline {subsubsection}{Switch}{49}{section*.9}% 
-\contentsline {subsection}{\numberline {A.2.2}Pasos para el montaje de la infraestructura}{49}{subsection.A.2.2}% 
-\contentsline {subsubsection}{Asignar direcciones IP}{49}{section*.10}% 
-\contentsline {subsubsection}{Conexi\IeC {\'o}n al switch de las placas Zybo}{53}{section*.11}% 
-\contentsline {section}{\numberline {A.3}Test de interconexi\IeC {\'o}n de red Zybo}{54}{section.A.3}% 
-\contentsline {subsection}{\numberline {A.3.1}Descripci\IeC {\'o}n}{54}{subsection.A.3.1}% 
-\contentsline {subsubsection}{Normal}{54}{section*.12}% 
-\contentsline {subsubsection}{Verboso}{55}{section*.13}% 
-\contentsline {section}{\numberline {A.4}Env\IeC {\'\i }o y recepci\IeC {\'o}n de ficheros}{56}{section.A.4}% 
-\contentsline {subsection}{\numberline {A.4.1}Entre ordenador y tarjeta}{56}{subsection.A.4.1}% 
-\contentsline {subsection}{\numberline {A.4.2}Entre tarjetas}{57}{subsection.A.4.2}% 
-\contentsline {subsubsection}{Manual}{57}{section*.14}% 
-\contentsline {subsubsection}{Autom\IeC {\'a}tica}{57}{section*.15}% 
-\contentsline {section}{\numberline {A.5}Comunicaci\IeC {\'o}n y tratamiento de ficheros}{58}{section.A.5}% 
-\contentsline {subsection}{\numberline {A.5.1}Introducci\IeC {\'o}n}{58}{subsection.A.5.1}% 
-\contentsline {subsection}{\numberline {A.5.2}Directorios}{59}{subsection.A.5.2}% 
-\contentsline {subsubsection}{Directorio \texttt {/backups}}{59}{section*.16}% 
-\contentsline {subsubsection}{Directorio \texttt {/recibir}}{60}{section*.17}% 
-\contentsline {subsubsection}{Directorio \texttt {/desencriptar}}{60}{section*.18}% 
-\contentsline {subsubsection}{Directorio \texttt {/trabajar}}{60}{section*.19}% 
-\contentsline {subsubsection}{Directorio \texttt {/enviar}}{60}{section*.20}% 
-\contentsline {chapter}{\numberline {B}Scripts}{61}{appendix.B}% 
-\contentsline {section}{\numberline {B.1}\texttt {Inicio.sh}}{62}{section.B.1}% 
-\contentsline {subsection}{\numberline {B.1.1}Diagrama de flujo}{62}{subsection.B.1.1}% 
-\contentsline {subsection}{\numberline {B.1.2}C\IeC {\'o}digo}{63}{subsection.B.1.2}% 
-\contentsline {section}{\numberline {B.2}\texttt {Lanzador.sh}}{63}{section.B.2}% 
-\contentsline {subsection}{\numberline {B.2.1}Diagrama de flujo}{64}{subsection.B.2.1}% 
-\contentsline {subsection}{\numberline {B.2.2}C\IeC {\'o}digo}{64}{subsection.B.2.2}% 
-\contentsline {section}{\numberline {B.3}\texttt {Automatico.sh}}{65}{section.B.3}% 
-\contentsline {subsection}{\numberline {B.3.1}Diagrama de flujo}{65}{subsection.B.3.1}% 
-\contentsline {subsection}{\numberline {B.3.2}C\IeC {\'o}digo}{65}{subsection.B.3.2}% 
-\contentsline {section}{\numberline {B.4}\texttt {Recibiendo.sh}}{66}{section.B.4}% 
-\contentsline {subsection}{\numberline {B.4.1}Diagrama de flujo}{66}{subsection.B.4.1}% 
-\contentsline {subsection}{\numberline {B.4.2}C\IeC {\'o}digo}{67}{subsection.B.4.2}% 
-\contentsline {section}{\numberline {B.5}\texttt {Cristian.sh}}{67}{section.B.5}% 
-\contentsline {subsection}{\numberline {B.5.1}Diagrama de flujo}{68}{subsection.B.5.1}% 
-\contentsline {subsection}{\numberline {B.5.2}C\IeC {\'o}digo}{69}{subsection.B.5.2}% 
-\contentsline {section}{\numberline {B.6}\texttt {Enviando.sh}}{70}{section.B.6}% 
-\contentsline {subsection}{\numberline {B.6.1}Diagrama de flujo}{71}{subsection.B.6.1}% 
-\contentsline {subsection}{\numberline {B.6.2}C\IeC {\'o}digo}{72}{subsection.B.6.2}% 
-\contentsline {section}{\numberline {B.7}\texttt {Borrar.sh}}{73}{section.B.7}% 
-\contentsline {subsection}{\numberline {B.7.1}Diagrama de flujo}{73}{subsection.B.7.1}% 
-\contentsline {subsection}{\numberline {B.7.2}C\IeC {\'o}digo}{73}{subsection.B.7.2}% 
+\contentsline {section}{\numberline {2.2}Tecnolog\IeC {\'\i }as a utilizar}{26}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Dise\IeC {\~n}o de la arquitectura}{26}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Dise\IeC {\~n}o de componentes}{26}{subsection.2.2.2}% 
+\contentsline {subsubsection}{Ordenador monitor}{26}{section*.4}% 
+\contentsline {subsubsection}{Tarjetas Zybo Zynq 7010}{27}{section*.5}% 
+\contentsline {subsubsection}{Switch}{27}{section*.6}% 
+\contentsline {section}{\numberline {2.3}An\IeC {\'a}lisis del sistema}{28}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Hardware}{28}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Software}{28}{subsection.2.3.2}% 
+\contentsline {section}{\numberline {2.4}Dise\IeC {\~n}o y desarrollo}{30}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Hardware}{30}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Software}{31}{subsection.2.4.2}% 
+\contentsline {section}{\numberline {2.5}Pruebas del sistema}{31}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Hardware}{31}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Software}{32}{subsection.2.5.2}% 
+\contentsline {chapter}{\numberline {3}Conclusiones y trabajo futuro}{37}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Conclusiones}{37}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Trabajo futuro}{39}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Referencias/Bibliograf\IeC {\'\i }a}{41}{chapter.4}% 
+\contentsline {part}{II\hspace {1em}Anexos t\IeC {\'e}cnicos}{43}{part.2}% 
+\contentsline {chapter}{\numberline {A}Manuales de usuario}{45}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Clonaci\IeC {\'o}n de tarjetas SD para tarjetas Zybo}{45}{section.A.1}% 
+\contentsline {subsection}{\numberline {A.1.1}Clonaci\IeC {\'o}n de Linux en tarjeta SD}{45}{subsection.A.1.1}% 
+\contentsline {subsection}{\numberline {A.1.2}Inicio de Linux desde la tarjeta SD}{45}{subsection.A.1.2}% 
+\contentsline {subsection}{\numberline {A.1.3}Creaci\IeC {\'o}n de usuarios}{46}{subsection.A.1.3}% 
+\contentsline {subsection}{\numberline {A.1.4}Habilitar SSH en placas Zybo}{47}{subsection.A.1.4}% 
+\contentsline {section}{\numberline {A.2}Creaci\IeC {\'o}n de una infraestructura de red de tarjetas Zybo}{49}{section.A.2}% 
+\contentsline {subsection}{\numberline {A.2.1}Material necesario}{49}{subsection.A.2.1}% 
+\contentsline {subsubsection}{Placas Zybo Zynq-7000}{49}{section*.7}% 
+\contentsline {subsubsection}{Ordenador central}{51}{section*.8}% 
+\contentsline {subsubsection}{Switch}{51}{section*.9}% 
+\contentsline {subsection}{\numberline {A.2.2}Pasos para el montaje de la infraestructura}{51}{subsection.A.2.2}% 
+\contentsline {subsubsection}{Asignar direcciones IP}{51}{section*.10}% 
+\contentsline {subsubsection}{Conexi\IeC {\'o}n al switch de las placas Zybo}{55}{section*.11}% 
+\contentsline {section}{\numberline {A.3}Test de interconexi\IeC {\'o}n de red Zybo}{56}{section.A.3}% 
+\contentsline {subsection}{\numberline {A.3.1}Descripci\IeC {\'o}n}{56}{subsection.A.3.1}% 
+\contentsline {subsubsection}{Normal}{56}{section*.12}% 
+\contentsline {subsubsection}{Verboso}{57}{section*.13}% 
+\contentsline {section}{\numberline {A.4}Env\IeC {\'\i }o y recepci\IeC {\'o}n de ficheros}{58}{section.A.4}% 
+\contentsline {subsection}{\numberline {A.4.1}Entre ordenador y tarjeta}{58}{subsection.A.4.1}% 
+\contentsline {subsection}{\numberline {A.4.2}Entre tarjetas}{59}{subsection.A.4.2}% 
+\contentsline {subsubsection}{Manual}{59}{section*.14}% 
+\contentsline {subsubsection}{Autom\IeC {\'a}tica}{59}{section*.15}% 
+\contentsline {section}{\numberline {A.5}Comunicaci\IeC {\'o}n y tratamiento de ficheros}{60}{section.A.5}% 
+\contentsline {subsection}{\numberline {A.5.1}Introducci\IeC {\'o}n}{60}{subsection.A.5.1}% 
+\contentsline {subsection}{\numberline {A.5.2}Directorios}{61}{subsection.A.5.2}% 
+\contentsline {subsubsection}{Directorio \texttt {/backups}}{61}{section*.16}% 
+\contentsline {subsubsection}{Directorio \texttt {/recibir}}{62}{section*.17}% 
+\contentsline {subsubsection}{Directorio \texttt {/desencriptar}}{62}{section*.18}% 
+\contentsline {subsubsection}{Directorio \texttt {/trabajar}}{62}{section*.19}% 
+\contentsline {subsubsection}{Directorio \texttt {/enviar}}{62}{section*.20}% 
+\contentsline {chapter}{\numberline {B}Scripts}{63}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}\texttt {Inicio.sh}}{64}{section.B.1}% 
+\contentsline {subsection}{\numberline {B.1.1}Diagrama de flujo}{64}{subsection.B.1.1}% 
+\contentsline {subsection}{\numberline {B.1.2}C\IeC {\'o}digo}{65}{subsection.B.1.2}% 
+\contentsline {section}{\numberline {B.2}\texttt {Lanzador.sh}}{65}{section.B.2}% 
+\contentsline {subsection}{\numberline {B.2.1}Diagrama de flujo}{66}{subsection.B.2.1}% 
+\contentsline {subsection}{\numberline {B.2.2}C\IeC {\'o}digo}{66}{subsection.B.2.2}% 
+\contentsline {section}{\numberline {B.3}\texttt {Automatico.sh}}{67}{section.B.3}% 
+\contentsline {subsection}{\numberline {B.3.1}Diagrama de flujo}{67}{subsection.B.3.1}% 
+\contentsline {subsection}{\numberline {B.3.2}C\IeC {\'o}digo}{67}{subsection.B.3.2}% 
+\contentsline {section}{\numberline {B.4}\texttt {Recibiendo.sh}}{68}{section.B.4}% 
+\contentsline {subsection}{\numberline {B.4.1}Diagrama de flujo}{68}{subsection.B.4.1}% 
+\contentsline {subsection}{\numberline {B.4.2}C\IeC {\'o}digo}{69}{subsection.B.4.2}% 
+\contentsline {section}{\numberline {B.5}\texttt {Cristian.sh}}{69}{section.B.5}% 
+\contentsline {subsection}{\numberline {B.5.1}Diagrama de flujo}{70}{subsection.B.5.1}% 
+\contentsline {subsection}{\numberline {B.5.2}C\IeC {\'o}digo}{71}{subsection.B.5.2}% 
+\contentsline {section}{\numberline {B.6}\texttt {Enviando.sh}}{72}{section.B.6}% 
+\contentsline {subsection}{\numberline {B.6.1}Diagrama de flujo}{73}{subsection.B.6.1}% 
+\contentsline {subsection}{\numberline {B.6.2}C\IeC {\'o}digo}{74}{subsection.B.6.2}% 
+\contentsline {section}{\numberline {B.7}\texttt {Borrar.sh}}{75}{section.B.7}% 
+\contentsline {subsection}{\numberline {B.7.1}Diagrama de flujo}{75}{subsection.B.7.1}% 
+\contentsline {subsection}{\numberline {B.7.2}C\IeC {\'o}digo}{75}{subsection.B.7.2}% 
