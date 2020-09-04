@@ -56,7 +56,7 @@ El switch usado en este proyecto es el modelo tp-link TL-SG1024D que cuenta con 
 \subsubsection{Asignar direcciones IP}
 Para asignarles las direcciones de IP a los dispositivos diferenciamos entre:
 \begin{itemize}
-	\item \textbf{Ordenador:} Debemos identificar la interfaz de red con la que estamos trabajando. Para ello, abrimos un terminal y ejecutamos el siguiente comando como super-usuario\footnote{Comando \texttt{su} y contraseña \texttt{zybomonitor}.}:
+	\item \textbf{Ordenador:} Debemos identificar la interfaz de red con la que estamos trabajando. Para ello, abrimos un terminal y ejecutamos el siguiente comando como super-usuario\footnote{Comando \texttt{su} y contraseña \texttt{zybomonitor}.}, tal como se puede ver en la Figura \ref{Interfaces de red del ordenador central}:
 	\begin{center}
 		\texttt{ifconfig}
 	\end{center}
@@ -88,7 +88,7 @@ Para asignarles las direcciones de IP a los dispositivos diferenciamos entre:
 	\end{lstlisting}
 	
 	\newpage
-	\item \textbf{Tarjetas Zybo:} Conectamos la tarjeta mediante USB al ordenador y abrimos un terminal serie en PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} e iniciamos sesión en Linux\footnote{Usuario: \texttt{zyboX}; contraseña \texttt{zyboX}. Siendo \texttt{X} el identificador de la tarjeta.}.
+	\item \textbf{Tarjetas Zybo:} Conectamos la tarjeta mediante USB al ordenador y abrimos un terminal serie en PuTTY\footnote{Puerto ttyUSB1 y velocidad 115200.} (Figura \ref{Configuración de PuTTY}) e iniciamos sesión en Linux\footnote{Usuario: \texttt{zyboX}; contraseña \texttt{zyboX}. Siendo \texttt{X} el identificador de la tarjeta.}.
 	
 	\begin{figure}[h]
 		\centering
@@ -97,7 +97,7 @@ Para asignarles las direcciones de IP a los dispositivos diferenciamos entre:
 		\label{Configuración de PuTTY}
 	\end{figure}
 	
-	Debemos identificar la interfaz de red con la que estamos trabajando. Para ello, ejecutamos el siguiente comando como super-usuario\footnote{Comando \texttt{su} y contraseña \texttt{root}.}:
+	Debemos identificar la interfaz de red con la que estamos trabajando. Para ello, ejecutamos el siguiente comando como super-usuario\footnote{Comando \texttt{su} y contraseña \texttt{root}.} como se puede ver en la Figura \ref{Interfaces de red de la tarjeta Zybo}:
 	\begin{center}
 		\texttt{ifconfig}
 	\end{center}
@@ -122,7 +122,7 @@ Para asignarles las direcciones de IP a los dispositivos diferenciamos entre:
 	    gateway 192.168.1.1
 	\end{lstlisting}
 	\newpage
-	Para establecer la dirección IP del resto de dispositivos, repetiremos el proceso y estableceremos las direcciones IP siguiendo la siguiente tabla:
+	Para establecer la dirección IP del resto de dispositivos, repetiremos el proceso y estableceremos las direcciones IP siguiendo Tabla \ref{Direcciones IP de las tarjetas}:
 	\begin{table}[h]
 		\centering
 		\begin{tabular}{|c|c|}

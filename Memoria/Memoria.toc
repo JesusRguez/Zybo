@@ -69,7 +69,7 @@
 \contentsline {subsection}{\numberline {B.3.2}C\IeC {\'o}digo}{65}{subsection.B.3.2}% 
 \contentsline {section}{\numberline {B.4}\texttt {Recibiendo.sh}}{66}{section.B.4}% 
 \contentsline {subsection}{\numberline {B.4.1}Diagrama de flujo}{66}{subsection.B.4.1}% 
-\contentsline {subsection}{\numberline {B.4.2}C\IeC {\'o}digo}{66}{subsection.B.4.2}% 
+\contentsline {subsection}{\numberline {B.4.2}C\IeC {\'o}digo}{67}{subsection.B.4.2}% 
 \contentsline {section}{\numberline {B.5}\texttt {Cristian.sh}}{67}{section.B.5}% 
 \contentsline {subsection}{\numberline {B.5.1}Diagrama de flujo}{68}{subsection.B.5.1}% 
 \contentsline {subsection}{\numberline {B.5.2}C\IeC {\'o}digo}{69}{subsection.B.5.2}% 
