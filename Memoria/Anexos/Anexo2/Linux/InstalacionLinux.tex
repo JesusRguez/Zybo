@@ -34,7 +34,7 @@ Al ser la primera vez que arrancamos el sistema operativo Linux, contamos única
 \end{center}
 Donde \texttt{X} es el identificador de la placa con la que estamos trabajando.
 
-A continuación, tendremos que rellenar los siguientes campos:
+A continuación, tendremos que rellenar los siguientes campos (Figura \ref{Ejemplo de creación del usuario zybo0}):
 \begin{itemize}
 	\item \textbf{Contraseña de usuario:} Introducimos la contraseña para el usuario creado. Si seguimos la nomenclatura que sigue el proyecto, será \texttt{zyboX}.
 	\item \textbf{Repetir contraseña:} Repetiremos la contraseña para comprobar que no nos hemos equivocado.
@@ -61,7 +61,7 @@ A continuación, nos dirigimos a la línea que tiene la siguiente sentencia:
 \begin{center}
 	\texttt{\#PasswordAuthentification yes}
 \end{center}
-Borramos la almohadilla (\#), guardamos y cerramos el fichero.
+Borramos la almohadilla (\#), guardamos y cerramos el fichero (Figura \ref{Fichero ssh_d modificado}).
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{Anexos/Anexo2/Linux/SSH.png}
@@ -70,7 +70,7 @@ Borramos la almohadilla (\#), guardamos y cerramos el fichero.
 \end{figure}
 
 \newpage
-Para establecer los cambios realizados, debemos reiniciar el servicio SSH. Para ello utilizamos:
+Para establecer los cambios realizados, debemos reiniciar el servicio SSH (Figura \ref{Reiniciando el servicio SSH}). Para ello utilizamos:
 \begin{center}
 	\texttt{/etc/init.d/ssh restart}
 \end{center}
