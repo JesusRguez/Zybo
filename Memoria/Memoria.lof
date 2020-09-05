@@ -1,13 +1,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Tarjeta Zybo Zynq 7010}}{25}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Secuencia de trabajo}}{29}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Interfaces de red en la tarjeta Zybo}}{30}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Infraestructura de red de tarjetas Zybo}}{31}{figure.2.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Prueba de \texttt {Inicio.sh}}}{32}{figure.2.5}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Fichero inicial en el ordenador central y env\IeC {\'\i }o al primer nodo}}{33}{figure.2.6}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Estado del fichero despu\IeC {\'e}s de su modificaci\IeC {\'o}n en Zybo1}}{34}{figure.2.7}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Fichero final en el ordenador central}}{35}{figure.2.8}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Arquitectura ApSoC de las tarjetas Zybo Zynq 7010}}{26}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Secuencia de trabajo}}{30}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Interfaces de red en la tarjeta Zybo}}{31}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Infraestructura de red de tarjetas Zybo}}{32}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Prueba de \texttt {Inicio.sh}}}{33}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Fichero inicial en el ordenador central y env\IeC {\'\i }o al primer nodo}}{34}{figure.2.7}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estado del fichero despu\IeC {\'e}s de su modificaci\IeC {\'o}n en Zybo1}}{35}{figure.2.8}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Fichero final en el ordenador central}}{36}{figure.2.9}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Red completa}}{37}{figure.3.1}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Red sin nodo intermedio}}{38}{figure.3.2}% 
