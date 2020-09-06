@@ -9,8 +9,8 @@ Se describirá una estructura de directorios que serán recorridos por el ficher
 
 \begin{itemize}
 	\item \texttt{~/ficheros/recibir}: Directorio donde se recibirán los ficheros.
-	\item \texttt{~/ficheros/desencriptar}: Directorio donde se dejan los ficheros una vez desencriptados.
-	\item \texttt{~/ficheros/trabajar}: Directorio donde se dejan los ficheros para incluir los datos y volverlo a cifrar.
+	\item \texttt{~/ficheros/desencriptar}: Directorio donde se dejan temporalmente los ficheros.
+	\item \texttt{~/ficheros/trabajar}: Directorio donde se dejan los ficheros para incluir los datos.
 	\item \texttt{~/ficheros/enviar}: Directorio donde se dejan los ficheros que están listos para ser enviados al siguiente dispositivo.
 \end{itemize}
 
@@ -20,7 +20,7 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 %Los que están comentados es porque ésta es la versión que emula el trabajo de Cristian, descomentarla para ver el proceso completo sin la emulación del trabajo de Cristian.
 \texttt{
 \textasciitilde/ficheros/backups/\\
-%\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
+\textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoDesencriptar.txt\\
 \textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoEnviar.txt\\
 \textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoRecibir.txt\\
 \textcolor{white}{.}\hspace{3.15cm}|\hspace{1.8cm}|ViejoTrabajar.txt\\
@@ -28,6 +28,7 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 \textcolor{white}{.}\hspace{3.15cm}|enviar/..\\
 \textcolor{white}{.}\hspace{3.15cm}|recibir/..\\
 \textcolor{white}{.}\hspace{3.15cm}|trabajar/..\\
+\textcolor{white}{.}\hspace{3.15cm}|Lanzador.sh\\
 \textcolor{white}{.}\hspace{3.15cm}|Automatico.sh\\
 \textcolor{white}{.}\hspace{3.15cm}|Borrar.sh\\
 \textcolor{white}{.}\hspace{3.15cm}|Cristian.sh\\
@@ -41,12 +42,12 @@ Para realizar una comunicación automática y secuencial entre los distintos dis
 
 Este árbol de directorios estará en el archivo \texttt{ficheros.tar.gz} que se encontrará en el ordenador central y será distribuido a cada tarjeta mediante ssh\footnote{Recordemos que, tanto para \texttt{ssh} como para \texttt{scp}, el elemento \texttt{zyboX} es el identificador de la tarjeta Zybo con la que estamos trabajando.} con el siguiente comando:
 \begin{center}
-	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no ficheros.tar.gz zyboX@zyboX:}
+	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no ficheros.tar.gz zyboX@zyboX:/home/zyboX/}
 \end{center}
 
 Luego, entramos en la tarjeta mediante ssh con el siguiente comando:
 \begin{center}
-	\texttt{sshpass -p zyboX ssh -o StrictHostKeyChecking=no zyboX@zuboX}
+	\texttt{sshpass -p zyboX ssh -o StrictHostKeyChecking=no zyboX@zyboX}
 \end{center}
 
 Para ver si tenemos el archivo \texttt{ficheros.tar.gz} usamos el comando:
@@ -63,7 +64,7 @@ Se nos creará el árbol de directorios anteriormente citado en el directorio \t
 
 Para que la automatización del proceso se lleve a cabo correctamente, también tendremos que modificar el fichero \texttt{/etc/hosts} de la tarjeta. Para ello, enviamos el fichero con el siguiente comando:
 \begin{center}
-	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no hosts zyboX@zyboX:}
+	\texttt{sshpass -p zyboX scp -o StrictHostKeyChecking=no hosts zyboX@zyboX:/home/zyboX/}
 \end{center}
 
 Y, luego, lo copiamos como super-usuario\footnote{Comando: \texttt{su}, y contraseña \texttt{root}.} en el directorio \texttt{/etc} con el siguiente comando:
@@ -81,10 +82,10 @@ Dicha descripción se hará siguiendo el orden que recorrerá el archivo recibid
 \subsubsection{Directorio \texttt{/backups}}
 En este directorio se guardarán los últimos estados de los directorios nombrados a continuación, generados por el comando \texttt{stat} \hyperlink{9}{[9]}.
 \begin{itemize}
-	\item \textbf{\texttt{ViejoDesencriptar.txt}:} Este fichero contendrá el estado del directorio \texttt{/desencriptar} una vez que el script \texttt{Desencriptando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+	\item \textbf{\texttt{ViejoDesencriptar.txt}:} Este fichero contendrá el estado del directorio \texttt{/desencriptar} una vez que el script \texttt{Cristian.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
 	\item \textbf{\texttt{ViejoEnviar.txt}:} Este fichero contendrá el estado del directorio \texttt{/enviar} una vez que el script \texttt{Enviando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
 	\item \textbf{\texttt{ViejoRecibir.txt}:} Este fichero contendrá el estado del directorio \texttt{/recibir} una vez que el script \texttt{Recibiendo.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
-	\item \textbf{\texttt{ViejoTrabajar.txt}:} Este fichero contendrá el estado del directorio \texttt{/trabajar} una vez que el script \texttt{Trabajando.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
+	\item \textbf{\texttt{ViejoTrabajar.txt}:} Este fichero contendrá el estado del directorio \texttt{/trabajar} una vez que el script \texttt{Cristian.sh} lo compruebe. Si no se producen cambios en dicho directorio, este fichero no se modificará.
 \end{itemize}
 
 \subsubsection{Directorio \texttt{/recibir}}
@@ -101,7 +102,7 @@ Será donde ser realicen las acciones específicas que se contemplan en este tut
 \subsubsection{Directorio \texttt{/enviar}}
 Este directorio contendrá los ficheros enviados por el script \texttt{Cristian.sh} que comprobará el estado del directorio anterior.
 
-Una vez aquí, dichos ficheros estarán listos para pasar al siguiente dispositivo.
+Una vez aquí, dichos ficheros estarán listos para pasar al siguiente dispositivo de la red gracias al script \texttt{Enviando.sh}.
 
 
 

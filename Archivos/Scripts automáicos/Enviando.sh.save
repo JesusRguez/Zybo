@@ -2,7 +2,7 @@
 
 DIR_TO_CHECK=$PWD/enviar #Directorio que queremos inspeccionar
 
-OLD_STAT_FILE=$PWD/backups/ViejoEnviar.txt #Fichero "hash" con el estadod del directorio antiguo
+OLD_STAT_FILE=$PWD/backups/ViejoEnviar.txt #Fichero "hash" con el estado del directorio antiguo
 
 if [ -e $OLD_STAT_FILE ]
 then
@@ -23,20 +23,22 @@ then
 	if [[ n -ne cero ]]
 	then
 		fichero=$(ls -t | head -1) #Obtenemos el fichero más reciente
-		#echo Copiando el fichero al monitor
+#		echo Copiado el fichero $fichero a Monitor:
 		actual=$(cat /etc/passwd | cut -d : -f1 | grep zybo)
 		nActual=$(echo ${actual##*o})
 		let nSiguiente=nActual+1
+#		echo nSiguiente: $nSiguiente
 		siguiente=zybo$nSiguiente
+#		echo siguiente: $siguiente
 
 		string=$(ping -c 3 $siguiente)
-		#Comprobamos la conectivdad al siguiente nodo de la red
+#Para que tire el ping debemos cambiar los permisos del propio comando porque no
+#está hecho por defecto. Hacemos lo siguiente como su: chmod u+s /bin/ping y ya
+#nos deja hacer ping como usuarios normales
 		if [[ $string == *100%\ packet\ loss* ]]
 		then
-			#Si no hay conexión, enviamos el fichero al ordenador central
-			sshpass -p 1997 scp -o StrictHostKeyChecking=no $fichero jesus@monitor:/home/jesus/Vídeos
+			sshpass -p 1997 scp -o StrictHostKeyChecking=no $fichero jesus@monitor:/home/jesus/Vídeos #Estos son los datos de mi casa, ponerlo bien
 		else
-			#Si hay conexión, enviamos el fichero al siguiente nodo de la red
 			siguienteZybo=$siguiente
 			siguienteZybo+=@
 			siguienteZybo+=$siguiente

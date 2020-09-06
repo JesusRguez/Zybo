@@ -19,7 +19,7 @@ Para la creación de la infraestructura de red física de placas Zybo contaremos
 \end{figure}
 Para este proyecto necesitaremos poder programar la FPGA integrada en la placa desde la tarjeta SD de memoria. Para ello se va a preparar una imagen para que el procesador ARM integrado en la placa arranque desde la tarjeta SD y pueda programar la FPGA. El sistema operativo elegido es Linux.
 
-Las tarjetas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos seleccionar con el jumper JP5: QSPI, SD, JTAG. En este proyecto, el sistema operativo estará en la tarjeta SD, por lo tanto, tendremos que cambiar el jumper JP5 (situado arriba a la derecha) a la posición ``SD''\footnote{Dicho jumper está identificado con el número 21 en la imagen de la siguiente página.}. Podemos ver el diagrama de la tarjeta en la Figura \ref{Diagrama de Zybo Zynq 7010 procedente del manual de referencias}.
+Las tarjetas Zybo Zynq 7010 tienen tres posibles modos de arranque que podemos seleccionar con el jumper JP5: QSPI, SD, JTAG. En este proyecto, el sistema operativo estará en la tarjeta SD, por lo tanto, tendremos que cambiar el jumper JP5 (situado arriba a la derecha) a la posición ``SD''\footnote{Dicho jumper está identificado con el número 21 en la Figura \ref{Diagrama de Zybo Zynq 7010 procedente del manual de referencias}.}. Podemos ver el diagrama de la tarjeta en la Figura \ref{Diagrama de Zybo Zynq 7010 procedente del manual de referencias}.
 
 \newpage
 \begin{figure}[h]

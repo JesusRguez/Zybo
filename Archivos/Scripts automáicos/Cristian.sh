@@ -1,13 +1,12 @@
 #!/bin/bash
 
-
 DIR_TO_CHECK=$PWD/desencriptar #Directorio que queremos inspeccionar
 
-DIR_TEMP=$PWD/trabajar
+DIR_TEMP=$PWD/trabajar #Directorio temporal de trabajo
 
 DIR_TO_SEND=$PWD/enviar #Directorio donde enviar
 
-OLD_STAT_FILE=$PWD/backups/ViejoTrabajar.txt #Fichero "hash" con el directorio antiguo
+OLD_STAT_FILE=$PWD/backups/ViejoTrabajar.txt #Fichero "hash" con el estado del directorio antiguo
 
 if [ -e $OLD_STAT_FILE ]
 then
@@ -20,14 +19,6 @@ NEW_STAT=`stat -t $DIR_TO_CHECK`
 
 if [ "$OLD_STAT" != "$NEW_STAT" ]
 then
-#        echo 'Directory has changed. Do something!'
-
-        #Si ha habido algún cambio en el directorio a inspeccionar te dice esto y aquí podemos hacer lo que sea, por ejemplo el mandar el fichero que queramos a la fpga para que haga lo que tenga que hacer y luego ir haciendo comprobaciones.
-        # do whatever you want to do with the directory.
-        #Podemos lanzarlo con el comando: watch -n 1 ./Estado.sh y cada segundo, comprobará si ha cambiado el directorio "Ficheros" y en función de eso, podremos programar la fpga o lanzar el scp
-
-        # update the OLD_STAT_FILE
-
 	cd $DIR_TO_CHECK
 
 	n=$(ls | wc -l)
@@ -35,13 +26,12 @@ then
 
 	if [[ n -ne cero ]]
 	then
-		fichero=$(ls -t | head -1) #Obtenemso el fichero más reciente
-		#echo $fichero
-#		echo Copiado el fichero $fichero a $DIR_TO_SEND
-		cp $fichero $DIR_TEMP
-		cd $DIR_TEMP
-		echo 'Archivo tratado en '$USER >> $fichero
-		cp $fichero $DIR_TO_SEND
+		fichero=$(ls -t | head -1) #Obtenemos el fichero más reciente
+		cp $fichero $DIR_TEMP #Copiamos el fichero a $DIR_TEMP
+		cd $DIR_TEMP #Entramos en $DIR_TEMP
+		tarjeta=$(cat /etc/passwd | cut -d : -f1 | grep zybo)
+		echo 'Archivo tratado en '$tarjeta >> $fichero #Actualizamos el coontenido del fichero
+		cp $fichero $DIR_TO_SEND #Copiamos el fichero a $DIR_TO_SEND
 	fi
 
         echo $NEW_STAT > $OLD_STAT_FILE

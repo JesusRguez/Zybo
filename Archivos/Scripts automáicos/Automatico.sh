@@ -2,10 +2,9 @@
 
 while :
 do
-	./Recibiendo.sh &
-#	./Desencriptando.sh & #Simulan el tratamiento del archivo
-#	./Trabajando.sh & #Simulan el tratamiento del archivo
-	./Cristian.sh & #Este ponerlo solo para hacer el tratamiento del archivo
-	./Enviando.sh &
+	./Recibiendo.sh
+	./Cristian.sh  #Este script simula el tratamiento del archivo
+	sleep 5
+	./Enviando.sh
 	sleep 1
 done
