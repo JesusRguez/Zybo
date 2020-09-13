@@ -126,16 +126,14 @@
 \subsection{Objetivos}
 \begin{frame}{Objetivos}
 %\textcolor{red}{Aquí hablaríamos de lo que son los objetivos al igual que en la memoria pero mucho más esquemático para que me permita hablar más que lo que es la lectura de la diapositiva por parte del tribunal}
+Los objetivos generales de este proyecto son los siguientes:
 \begin{itemize}
 	\item Diseñar red de nodos basada en la tecnología ApSoC.
 	\item Establecer comunicación entre nodos de la red.
 	\item Aportar información a un fichero común de forma secuencial.
 \end{itemize}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{Fotos/RedCompleta.png}
-\end{figure}
 \end{frame}
+
 \subsection{Descripción}
 \begin{frame}{Descripción}
 %\textcolor{red}{Hablamos de la descripción como en la memoria}
@@ -187,6 +185,10 @@
 		\item Switch.
 	\end{itemize}
 \end{block}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{Fotos/RedCompleta.png}
+\end{figure}
 \end{frame}
 
 \subsection{Análisis del sistema}
@@ -220,7 +222,8 @@
 \begin{frame}{Análisis del sistema}
 	La secuencia de trabajo de estos scripts será la siguiente:
 	\begin{figure}[h]
-		\includegraphics[scale=0.3]{Fotos/CadenaScriptsAncho.png}
+		\centering
+		\includegraphics[scale=0.45]{Fotos/CadenaScriptsAncho.png}
 	\end{figure}
 \end{frame}
 
@@ -248,6 +251,7 @@
 \begin{block}{Prueba de funcionamiento (I)}
 	Creamos el fichero de pruebas y lo enviamos al primer nodo de la red.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.3]{Fotos/Fichero_inicial_en_PC.png}
 	\end{figure}
 \end{block}
@@ -257,6 +261,7 @@
 \begin{block}{Prueba de funcionamiento (II)}
 	Comprobamos el paso del fichero por la tarjeta Zybo.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.3]{Fotos/Fichero_en_zybo1.png}
 	\end{figure}
 \end{block}
@@ -266,6 +271,7 @@
 \begin{block}{Prueba de funcionamiento (III)}
 	Una vez completada la cadena de nodos, comprobamos el fichero en el monitor.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.3]{Fotos/Fichero_final_en_PC.png}
 	\end{figure}
 \end{block}
@@ -277,6 +283,7 @@
 \begin{block}{Escenario de trabajo 1}
 	Todos los nodos están conectados correctamente a la red.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.4]{Fotos/RedCompleta.png}
 	\end{figure}
 \end{block}
@@ -286,6 +293,7 @@
 \begin{block}{Escenario de trabajo 2}
 	Un nodo intermedio se encuentra desconectado.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.4]{Fotos/RedSinNodo2.png}
 	\end{figure}
 \end{block}
@@ -295,6 +303,7 @@
 \begin{block}{Escenario de trabajo 3}
 	El primer nodo está desconectado.
 	\begin{figure}[h]
+		\centering
 		\includegraphics[scale=0.4]{Fotos/RedSinNodo1.png}
 	\end{figure}
 \end{block}
