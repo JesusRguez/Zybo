@@ -185,7 +185,7 @@ Los objetivos generales de este proyecto son los siguientes:
 		\item Switch.
 	\end{itemize}
 \end{block}
-\textcolor{red}{Poner un simbolito de debian al lado de cada elemento. Poner un simbolito de un fichero de texto numerado al lado de cada elemento.}
+\textcolor{red}{Poner un simbolito de debian al lado de cada elemento dentro de una tarjeta SD. Poner un simbolito de un fichero de texto numerado al lado de cada elemento.}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.3]{Fotos/RedCompleta.png}
@@ -206,21 +206,38 @@ Los objetivos generales de este proyecto son los siguientes:
 %\end{frame}
 
 \begin{frame}{Análisis del sistema}
-	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xiliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH.}
+	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xilliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH. SSH porque permite comunicación serie mediante consola a través de la red y de forma cifrada. De tal forma que la información que añade cada nodo al fichero, queda cifrada durante el proceso de comunicación. Gracias a SCP (utilidad de SSH) podemos enviar ficheros entre dispositivos que estarán cifrados durante el proceso de comunicación. Contar también que usamos el comando stat.}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
-	Para la transmisión del fichero de datos a través de la red, usaremos el protocolo SSH y una serie de scripts:
-	\begin{block}{Scripts}
-		\begin{itemize}
-			\item \texttt{Inicio.sh}
-			\item \texttt{Lanzador.sh}
-			\item \texttt{Automatico.sh}
-			\item \texttt{Recibiendo.sh}
-			\item \texttt{Cristian.sh}
-			\item \texttt{Enviando.sh}
-			\item \texttt{Borrar.sh}
-		\end{itemize}
+	Las tareas a realizar por cada nodo se realizan en los siguientes scripts:
+	\begin{block}{\texttt{Recibiendo.sh} (Nodo)}
+		Comprobar recepción del fichero de texto.
+	\end{block}
+	\begin{block}{\texttt{Cristian.sh} (Nodo)}
+		Comprobar el directorio de trabajo.
+		Añade la información local.
+	\end{block}
+	\begin{block}{\texttt{Enviando.sh} (Nodo)}
+		Comprueba el directorio de envío.
+		Envía el fichero mediante SCP.
+	\end{block}
+	\textcolor{red}{Ver si se puede añadir una imagen pequeña de la tarjeta.}
+\end{frame}
+
+\begin{frame}{Análisis del sistema}
+	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que ontarlo.}
+\end{frame}
+
+\begin{frame}{Análisis del sistema}
+Para evitar saturar el arranque del sistema, hacemos una planificación del arranque de cada tarjeta con los siguientes scripts:
+	\begin{block}{\texttt{Lanzador.sh} (Nodo)}
+		Es ejecutado por la herramienta cron del sistema operativo.
+		Ejecuta el script \texttt{Automatico.sh}.
+	\end{block}
+	\begin{block}{\texttt{Automatico.sh} (Nodo)}
+		Periódicamente, ejecuta los scripts \texttt{Recibiendo.sh}, \texttt{Cristian.sh} y\texttt{Enviando.sh}.
+		El parámetro de tiempo seleccionado es de un segundo. %Se considera tiempo suficiente para que el resto de acciones hayan tenido lugar.
 	\end{block}
 \end{frame}
 
@@ -244,43 +261,46 @@ Los objetivos generales de este proyecto son los siguientes:
 
 \subsection{Pruebas del sistema}
 \begin{frame}{Pruebas del sistema}
-\begin{block}{Prueba de conexión}
-	Lanzamos el script \texttt{Inicio.sh} en el ordenador central.
-	\begin{figure}[h]
-		\includegraphics[scale=0.3]{Fotos/Prueba_Inicio_sh.png}
-	\end{figure}
-\end{block}
+	\textcolor{red}{Enumerar las dos pruebas, la de conexión de red y la de comunicación completa. Como usuario del sistema lanzo Inicio.sh y se ejecuta la de red. Y la otra se verá en directo.}
 \end{frame}
-
-\begin{frame}{Pruebas del sistema}
-\begin{block}{Prueba de funcionamiento (I)}
-	Creamos el fichero de pruebas y lo enviamos al primer nodo de la red.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[scale=0.3]{Fotos/Fichero_inicial_en_PC.png}
-	\end{figure}
-\end{block}
-\end{frame}
-
-\begin{frame}{Pruebas del sistema}
-\begin{block}{Prueba de funcionamiento (II)}
-	Comprobamos el paso del fichero por la tarjeta Zybo.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[scale=0.3]{Fotos/Fichero_en_zybo1.png}
-	\end{figure}
-\end{block}
-\end{frame}
-
-\begin{frame}{Pruebas del sistema}
-\begin{block}{Prueba de funcionamiento (III)}
-	Una vez completada la cadena de nodos, comprobamos el fichero en el monitor.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[scale=0.3]{Fotos/Fichero_final_en_PC.png}
-	\end{figure}
-\end{block}
-\end{frame}
+%\begin{frame}{Pruebas del sistema}
+%\begin{block}{Prueba de conexión}
+%	Lanzamos el script \texttt{Inicio.sh} en el ordenador central.
+%	\begin{figure}[h]
+%		\includegraphics[scale=0.3]{Fotos/Prueba_Inicio_sh.png}
+%	\end{figure}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}{Pruebas del sistema}
+%\begin{block}{Prueba de funcionamiento (I)}
+%	Creamos el fichero de pruebas y lo enviamos al primer nodo de la red.
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[scale=0.3]{Fotos/Fichero_inicial_en_PC.png}
+%	\end{figure}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}{Pruebas del sistema}
+%\begin{block}{Prueba de funcionamiento (II)}
+%	Comprobamos el paso del fichero por la tarjeta Zybo.
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[scale=0.3]{Fotos/Fichero_en_zybo1.png}
+%	\end{figure}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}{Pruebas del sistema}
+%\begin{block}{Prueba de funcionamiento (III)}
+%	Una vez completada la cadena de nodos, comprobamos el fichero en el monitor.
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[scale=0.3]{Fotos/Fichero_final_en_PC.png}
+%	\end{figure}
+%\end{block}
+%\end{frame}
 
 \section{Conclusiones y trabajo futuro}
 \subsection{Conclusiones}
