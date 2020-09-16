@@ -4,11 +4,10 @@
 \beamer@subsectionintoc {1}{2}{Descripci\IeC {\'o}n}{5}{0}{1}
 \beamer@subsectionintoc {1}{3}{Alcance}{6}{0}{1}
 \beamer@sectionintoc {2}{Metodolog\IeC {\'\i }a}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Marco te\IeC {\'o}rico}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Tecnolog\IeC {\'\i }as a utilizar}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{An\IeC {\'a}lisis del sistema}{10}{0}{2}
-\beamer@subsectionintoc {2}{4}{Dise\IeC {\~n}o y desarrollo}{13}{0}{2}
-\beamer@subsectionintoc {2}{5}{Pruebas del sistema}{14}{0}{2}
-\beamer@sectionintoc {3}{Conclusiones y trabajo futuro}{18}{0}{3}
-\beamer@subsectionintoc {3}{1}{Conclusiones}{19}{0}{3}
-\beamer@subsectionintoc {3}{2}{Trabajo futuro}{22}{0}{3}
+\beamer@subsectionintoc {2}{1}{Tecnolog\IeC {\'\i }as a utilizar}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{An\IeC {\'a}lisis del sistema}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Dise\IeC {\~n}o y desarrollo}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Pruebas del sistema}{13}{0}{2}
+\beamer@sectionintoc {3}{Conclusiones y trabajo futuro}{17}{0}{3}
+\beamer@subsectionintoc {3}{1}{Conclusiones}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{Trabajo futuro}{21}{0}{3}

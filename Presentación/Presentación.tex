@@ -130,13 +130,13 @@ Los objetivos generales de este proyecto son los siguientes:
 \begin{itemize}
 	\item Diseñar red de nodos basada en la tecnología ApSoC.
 	\item Establecer comunicación entre nodos de la red.
-	\item Aportar información a un fichero común de forma secuencial.
+	\item Cada nodo aportará información a un fichero común de forma secuencial.
 \end{itemize}
 \end{frame}
 
 \subsection{Descripción}
 \begin{frame}{Descripción}
-%\textcolor{red}{Hablamos de la descripción como en la memoria}
+\textcolor{red}{Añadir zoom en el chip del medio para que quede claro que ahí dentro está el ARM y la FPGA. Una vez comentado, hay que justificar que esa pareja es lo interesante de la red de nodos. Una flecha que salga del centro y lleve a otra imagen que describa lo que tiene dentro de forma básica. Poner la imagen roja y azul y poner de donde ha salido.}
 \begin{block}{Nodos}
 	Los nodos de la red serán tarjetas de desarrollo Zybo Zynq 7010.
 \end{block}
@@ -152,9 +152,9 @@ Los objetivos generales de este proyecto son los siguientes:
 \begin{frame}{Alcance}
 \begin{block}{Infraestructura de red}
 	\begin{itemize}
-		\item Instalación de Linux en las tarjetas.
+		\item Instalación de Linux sobre el núcleo ARM de las tarjetas.
 		\item Interconexión física de los elementos de la red.
-		\item Desarrollo de scripts automáticos.
+		\item Desarrollo de scripts para automatizar la comunicación y el agregado de información por parte de cada nodo.
 		\item Creación y ejecición de pruebas.
 	\end{itemize}
 \end{block}
@@ -168,13 +168,13 @@ Los objetivos generales de este proyecto son los siguientes:
 %\end{frame}
 
 \section{Metodología}
-\subsection{Marco teórico}
-\begin{frame}{Marco teórico}
-\begin{itemize}
-	\item El punto de partida de este proyecto son las tarjetas de desarrollo Zybo Zynq 7010 que actuarán como nodos de la red.
-	\item Se establecerán comunicaciones entre ellas para enviar un fichero recolector de información.
-\end{itemize}
-\end{frame}
+%\subsection{Marco teórico}
+%\begin{frame}{Marco teórico}
+%\begin{itemize}
+%	\item El punto de partida de este proyecto son las tarjetas de desarrollo Zybo Zynq 7010 que actuarán como nodos de la red.
+%	\item Se establecerán comunicaciones entre ellas para enviar un fichero recolector de información.
+%\end{itemize}
+%\end{frame}
 
 \subsection{Tecnologías a utilizar}
 \begin{frame}{Tecnologías a utilizar}
@@ -185,6 +185,7 @@ Los objetivos generales de este proyecto son los siguientes:
 		\item Switch.
 	\end{itemize}
 \end{block}
+\textcolor{red}{Poner un simbolito de debian al lado de cada elemento. Poner un simbolito de un fichero de texto numerado al lado de cada elemento.}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.3]{Fotos/RedCompleta.png}
@@ -192,16 +193,20 @@ Los objetivos generales de este proyecto son los siguientes:
 \end{frame}
 
 \subsection{Análisis del sistema}
+%\begin{frame}{Análisis del sistema}
+%\begin{block}{Ordenador central}
+%	Creará el fichero inicial y será el punto de partida y final de la cadena.
+%\end{block}
+%\begin{block}{Nodos}
+%	Tendrán instalado un sistema operativo Linux para la gestión de ficheros y las funcionalidades de red.
+%\end{block}
+%\begin{block}{Switch}
+%	No tendrá ninguna configuración adicional.
+%\end{block}
+%\end{frame}
+
 \begin{frame}{Análisis del sistema}
-\begin{block}{Ordenador central}
-	Creará el fichero inicial y será el punto de partida y final de la cadena.
-\end{block}
-\begin{block}{Nodos}
-	Tendrán instalado un sistema operativo Linux para la gestión de ficheros y las funcionalidades de red.
-\end{block}
-\begin{block}{Switch}
-	No tendrá ninguna configuración adicional.
-\end{block}
+	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xiliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH.}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}

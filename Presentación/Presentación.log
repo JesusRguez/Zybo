@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  15 SEP 2020 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  16 SEP 2020 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,11 +1156,15 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [4
 
 ]
-<Fotos/zybo.jpg, id=228, 487.8225pt x 353.82187pt>
+<Fotos/zybo.jpg, id=221, 487.8225pt x 353.82187pt>
 File: Fotos/zybo.jpg Graphic file (type jpg)
 <use Fotos/zybo.jpg>
 Package pdftex.def Info: Fotos/zybo.jpg  used on input line 147.
 (pdftex.def)             Requested size: 195.12553pt x 141.52623pt.
+
+Overfull \vbox (35.65329pt too high) detected at line 147
+ []
+
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
@@ -1186,26 +1190,30 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [7
 
 ]
+<Fotos/RedCompleta.png, id=314, 652.4375pt x 369.38pt>
+File: Fotos/RedCompleta.png Graphic file (type png)
+<use Fotos/RedCompleta.png>
+Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 193.
+(pdftex.def)             Requested size: 195.73276pt x 110.81485pt.
+
+Overfull \vbox (8.12523pt too high) detected at line 193
+ []
+
+
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [8
 
-]
-<Fotos/RedCompleta.png, id=347, 652.4375pt x 369.38pt>
-File: Fotos/RedCompleta.png Graphic file (type png)
-<use Fotos/RedCompleta.png>
-Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 192.
-(pdftex.def)             Requested size: 195.73276pt x 110.81485pt.
-
+ <./Fotos/RedCompleta.png>]
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [9
 
- <./Fotos/RedCompleta.png>]
+]
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1213,42 +1221,49 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [10
 
 ]
+<Fotos/CadenaScriptsAncho.png, id=396, 663.47874pt x 427.5975pt>
+File: Fotos/CadenaScriptsAncho.png Graphic file (type png)
+<use Fotos/CadenaScriptsAncho.png>
+Package pdftex.def Info: Fotos/CadenaScriptsAncho.png  used on input line 233.
+(pdftex.def)             Requested size: 298.56267pt x 192.41708pt.
+
+Overfull \vbox (4.14749pt too high) detected at line 233
+ []
+
+
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
-]
-<Fotos/CadenaScriptsAncho.png, id=429, 663.47874pt x 427.5975pt>
-File: Fotos/CadenaScriptsAncho.png Graphic file (type png)
-<use Fotos/CadenaScriptsAncho.png>
-Package pdftex.def Info: Fotos/CadenaScriptsAncho.png  used on input line 228.
-(pdftex.def)             Requested size: 298.56267pt x 192.41708pt.
-
-Overfull \vbox (4.14749pt too high) detected at line 228
- []
-
-
+ <./Fotos/CadenaScriptsAncho.png>]
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
- <./Fotos/CadenaScriptsAncho.png>]
+]
+<Fotos/Prueba_Inicio_sh.png, id=448, 742.775pt x 496.85625pt>
+File: Fotos/Prueba_Inicio_sh.png Graphic file (type png)
+<use Fotos/Prueba_Inicio_sh.png>
+Package pdftex.def Info: Fotos/Prueba_Inicio_sh.png  used on input line 253.
+(pdftex.def)             Requested size: 222.83421pt x 149.05801pt.
+
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
-]
-<Fotos/Prueba_Inicio_sh.png, id=483, 742.775pt x 496.85625pt>
-File: Fotos/Prueba_Inicio_sh.png Graphic file (type png)
-<use Fotos/Prueba_Inicio_sh.png>
-Package pdftex.def Info: Fotos/Prueba_Inicio_sh.png  used on input line 248.
-(pdftex.def)             Requested size: 222.83421pt x 149.05801pt.
+ <./Fotos/Prueba_Inicio_sh.png>]
+<Fotos/Fichero_inicial_en_PC.png, id=477, 744.7825pt x 498.86375pt>
+File: Fotos/Fichero_inicial_en_PC.png Graphic file (type png)
+<use Fotos/Fichero_inicial_en_PC.png>
+Package pdftex.def Info: Fotos/Fichero_inicial_en_PC.png  used on input line 26
+3.
+(pdftex.def)             Requested size: 223.43648pt x 149.66028pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
@@ -1256,12 +1271,11 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 
 [14
 
- <./Fotos/Prueba_Inicio_sh.png>]
-<Fotos/Fichero_inicial_en_PC.png, id=510, 744.7825pt x 498.86375pt>
-File: Fotos/Fichero_inicial_en_PC.png Graphic file (type png)
-<use Fotos/Fichero_inicial_en_PC.png>
-Package pdftex.def Info: Fotos/Fichero_inicial_en_PC.png  used on input line 25
-8.
+ <./Fotos/Fichero_inicial_en_PC.png>]
+<Fotos/Fichero_en_zybo1.png, id=504, 744.7825pt x 498.86375pt>
+File: Fotos/Fichero_en_zybo1.png Graphic file (type png)
+<use Fotos/Fichero_en_zybo1.png>
+Package pdftex.def Info: Fotos/Fichero_en_zybo1.png  used on input line 273.
 (pdftex.def)             Requested size: 223.43648pt x 149.66028pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1270,11 +1284,12 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 
 [15
 
- <./Fotos/Fichero_inicial_en_PC.png>]
-<Fotos/Fichero_en_zybo1.png, id=537, 744.7825pt x 498.86375pt>
-File: Fotos/Fichero_en_zybo1.png Graphic file (type png)
-<use Fotos/Fichero_en_zybo1.png>
-Package pdftex.def Info: Fotos/Fichero_en_zybo1.png  used on input line 268.
+ <./Fotos/Fichero_en_Zybo1.png>]
+<Fotos/Fichero_final_en_PC.png, id=530, 744.7825pt x 498.86375pt>
+File: Fotos/Fichero_final_en_PC.png Graphic file (type png)
+<use Fotos/Fichero_final_en_PC.png>
+Package pdftex.def Info: Fotos/Fichero_final_en_PC.png  used on input line 283.
+
 (pdftex.def)             Requested size: 223.43648pt x 149.66028pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1282,20 +1297,6 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  []
 
 [16
-
- <./Fotos/Fichero_en_Zybo1.png>]
-<Fotos/Fichero_final_en_PC.png, id=563, 744.7825pt x 498.86375pt>
-File: Fotos/Fichero_final_en_PC.png Graphic file (type png)
-<use Fotos/Fichero_final_en_PC.png>
-Package pdftex.def Info: Fotos/Fichero_final_en_PC.png  used on input line 278.
-
-(pdftex.def)             Requested size: 223.43648pt x 149.66028pt.
-
-Overfull \hbox (59.12767pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[17
 
  <./Fotos/Fichero_final_en_PC.png>] (./Presentación.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1305,12 +1306,25 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[18
+[17
 
 ]
 File: Fotos/RedCompleta.png Graphic file (type png)
 <use Fotos/RedCompleta.png>
-Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 290.
+Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 295.
+(pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
+
+Overfull \hbox (59.12767pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[18
+
+]
+<Fotos/RedSinNodo2.png, id=621, 652.4375pt x 369.38pt>
+File: Fotos/RedSinNodo2.png Graphic file (type png)
+<use Fotos/RedSinNodo2.png>
+Package pdftex.def Info: Fotos/RedSinNodo2.png  used on input line 305.
 (pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1319,11 +1333,11 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 
 [19
 
-]
-<Fotos/RedSinNodo2.png, id=656, 652.4375pt x 369.38pt>
-File: Fotos/RedSinNodo2.png Graphic file (type png)
-<use Fotos/RedSinNodo2.png>
-Package pdftex.def Info: Fotos/RedSinNodo2.png  used on input line 300.
+ <./Fotos/RedSinNodo2.png>]
+<Fotos/RedSinNodo1.png, id=649, 652.4375pt x 369.38pt>
+File: Fotos/RedSinNodo1.png Graphic file (type png)
+<use Fotos/RedSinNodo1.png>
+Package pdftex.def Info: Fotos/RedSinNodo1.png  used on input line 315.
 (pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1332,25 +1346,12 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 
 [20
 
- <./Fotos/RedSinNodo2.png>]
-<Fotos/RedSinNodo1.png, id=684, 652.4375pt x 369.38pt>
-File: Fotos/RedSinNodo1.png Graphic file (type png)
-<use Fotos/RedSinNodo1.png>
-Package pdftex.def Info: Fotos/RedSinNodo1.png  used on input line 310.
-(pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
-
-Overfull \hbox (59.12767pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[21
-
  <./Fotos/RedSinNodo1.png>]
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[22
+[21
 
 ]
 \tf@nav=\write6
@@ -1362,22 +1363,22 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Presentación.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
  (./Presentación.aux
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 326.
 Package rerunfilecheck Info: File `Presentación.out' has not changed.
-(rerunfilecheck)             Checksum: A3551FD2C83205811B4963ECCA0520B5;823.
+(rerunfilecheck)             Checksum: C74A139B3F11E0D8F20CCF18D0D2D95E;756.
  ) 
 Here is how much of TeX's memory you used:
- 29299 strings out of 492615
- 552425 string characters out of 6131390
- 646514 words of memory out of 5000000
- 32665 multiletter control sequences out of 15000+600000
+ 29291 strings out of 492615
+ 552342 string characters out of 6131390
+ 642514 words of memory out of 5000000
+ 32660 multiletter control sequences out of 15000+600000
  534625 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,74p,780b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1385,10 +1386,10 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentación.pdf (22 pages, 578866 bytes).
+Output written on Presentación.pdf (21 pages, 576683 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 58 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 732 PDF objects out of 1000 (max. 8388607)
+ 669 compressed objects within 7 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 
