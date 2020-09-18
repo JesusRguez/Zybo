@@ -136,14 +136,17 @@ Los objetivos generales de este proyecto son los siguientes:
 
 \subsection{Descripción}
 \begin{frame}{Descripción}
-\textcolor{red}{Añadir zoom en el chip del medio para que quede claro que ahí dentro está el ARM y la FPGA. Una vez comentado, hay que justificar que esa pareja es lo interesante de la red de nodos. Una flecha que salga del centro y lleve a otra imagen que describa lo que tiene dentro de forma básica. Poner la imagen roja y azul y poner de donde ha salido.}
+%\textcolor{red}{Añadir zoom en el chip del medio para que quede claro que ahí dentro está el ARM y la FPGA. Una vez comentado, hay que justificar que esa pareja es lo interesante de la red de nodos. Una flecha que salga del centro y lleve a otra imagen que describa lo que tiene dentro de forma básica. Poner la imagen roja y azul y poner de donde ha salido.}
 \begin{block}{Nodos}
 	Los nodos de la red serán tarjetas de desarrollo Zybo Zynq 7010.
 \end{block}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{Fotos/zybo.jpg}
+	\includegraphics[scale=0.25]{Fotos/ZyboDescripcion.png}
 \end{figure}
+\begin{center}
+	Imagen sustraída del artículo ``Implementing high-performance, low-power FPGA-based optical flow accelerators in C.'', escrito por: Joshua Scott Monson.
+\end{center}
 \end{frame}
 
 
@@ -185,10 +188,10 @@ Los objetivos generales de este proyecto son los siguientes:
 		\item Switch.
 	\end{itemize}
 \end{block}
-\textcolor{red}{Poner un simbolito de debian al lado de cada elemento dentro de una tarjeta SD. Poner un simbolito de un fichero de texto numerado al lado de cada elemento.}
+%\textcolor{red}{Poner un simbolito de debian al lado de cada elemento dentro de una tarjeta SD. Poner un simbolito de un fichero de texto numerado al lado de cada elemento.}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{Fotos/RedCompleta.png}
+\includegraphics[scale=0.4]{Fotos/RedCompletaTecnologias.png}
 \end{figure}
 \end{frame}
 
@@ -206,7 +209,14 @@ Los objetivos generales de este proyecto son los siguientes:
 %\end{frame}
 
 \begin{frame}{Análisis del sistema}
-	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xilliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH. SSH porque permite comunicación serie mediante consola a través de la red y de forma cifrada. De tal forma que la información que añade cada nodo al fichero, queda cifrada durante el proceso de comunicación. Gracias a SCP (utilidad de SSH) podemos enviar ficheros entre dispositivos que estarán cifrados durante el proceso de comunicación. Contar también que usamos el comando stat.}
+%	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xilliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH. SSH porque permite comunicación serie mediante consola a través de la red y de forma cifrada. De tal forma que la información que añade cada nodo al fichero, queda cifrada durante el proceso de comunicación. Gracias a SCP (utilidad de SSH) podemos enviar ficheros entre dispositivos que estarán cifrados durante el proceso de comunicación. Contar también que usamos el comando stat.}
+	\begin{itemize}
+		\item Sistema operativo del ordenador central: Debian 9 Stretch.
+		\item Sistema operativo de las tarjetas de desarrollo: Debian 8 Jessie (compilado para ARM en tarjeta micro SD).
+		\item Uso de SSH en las comunicaciones.
+		\item Uso de SCP para el envío de ficheros.
+		\item Comprobación de directorios con el comando \texttt{stat}.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
@@ -222,11 +232,11 @@ Los objetivos generales de este proyecto son los siguientes:
 		Comprueba el directorio de envío.
 		Envía el fichero mediante SCP.
 	\end{block}
-	\textcolor{red}{Ver si se puede añadir una imagen pequeña de la tarjeta.}
+%	\textcolor{red}{Ver si se puede añadir una imagen pequeña de la tarjeta.}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
-	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que ontarlo.}
+	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que contarlo.}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
