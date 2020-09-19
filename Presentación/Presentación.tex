@@ -236,7 +236,14 @@ Los objetivos generales de este proyecto son los siguientes:
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
-	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que contarlo.}
+%	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que contarlo.}
+	\begin{block}{¿Cómo conseguir la automatización?}
+		\begin{itemize}
+			\item Lanzamiento de scripts al inicio del Sistema Operativo con la herramienta \texttt{cron}.
+			\item Evitar la saturación del arranque del Sistema Operativo.
+			\item Periodicidad de las comprobaciones de los directorios de trabajo y lanzamiento de scripts.
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
@@ -271,7 +278,12 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 
 \subsection{Pruebas del sistema}
 \begin{frame}{Pruebas del sistema}
-	\textcolor{red}{Enumerar las dos pruebas, la de conexión de red y la de comunicación completa. Como usuario del sistema lanzo Inicio.sh y se ejecuta la de red. Y la otra se verá en directo.}
+%	\textcolor{red}{Enumerar las dos pruebas, la de conexión de red y la de comunicación completa. Como usuario del sistema lanzo Inicio.sh y se ejecuta la de red. Y la otra se verá en directo.}
+	Tendremos dos pruebas principales:
+	\begin{itemize}
+		\item Prueba de conexión de red con el lanzamiento de \texttt{Inicio.sh} por parte del monitor.
+		\item Prueba de comunicación del sistema completamente automatizado.
+	\end{itemize}
 \end{frame}
 %\begin{frame}{Pruebas del sistema}
 %\begin{block}{Prueba de conexión}
