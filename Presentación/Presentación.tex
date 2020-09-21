@@ -136,7 +136,7 @@ Los objetivos generales de este proyecto son los siguientes:
 
 \subsection{Descripción}
 \begin{frame}{Descripción}
-%\textcolor{red}{Añadir zoom en el chip del medio para que quede claro que ahí dentro está el ARM y la FPGA. Una vez comentado, hay que justificar que esa pareja es lo interesante de la red de nodos. Una flecha que salga del centro y lleve a otra imagen que describa lo que tiene dentro de forma básica. Poner la imagen roja y azul y poner de donde ha salido.}
+%\textcolor{red}{ARM y FPGA en el mismo circuito integrado que permite programar cualquier periférico hardware y controlarlo a través del procesador ARM. Hablar más de lo que es la comunicación en red gracias al ARM y de la FPGA.}
 \begin{block}{Nodos}
 	Los nodos de la red serán tarjetas de desarrollo Zybo Zynq 7010.
 \end{block}
@@ -145,7 +145,7 @@ Los objetivos generales de este proyecto son los siguientes:
 	\includegraphics[scale=0.25]{Fotos/ZyboDescripcion.png}
 \end{figure}
 \begin{center}
-	Imagen sustraída del artículo ``Implementing high-performance, low-power FPGA-based optical flow accelerators in C.'', escrito por: Joshua Scott Monson.
+	Fuente: Artículo ``Implementing high-performance, low-power FPGA-based optical flow accelerators in C.'', escrito por: Joshua Scott Monson.
 \end{center}
 \end{frame}
 
@@ -209,7 +209,7 @@ Los objetivos generales de este proyecto son los siguientes:
 %\end{frame}
 
 \begin{frame}{Análisis del sistema}
-%	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xilliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH. SSH porque permite comunicación serie mediante consola a través de la red y de forma cifrada. De tal forma que la información que añade cada nodo al fichero, queda cifrada durante el proceso de comunicación. Gracias a SCP (utilidad de SSH) podemos enviar ficheros entre dispositivos que estarán cifrados durante el proceso de comunicación. Contar también que usamos el comando stat.}
+%	\textcolor{red}{Comentar que el sistema operativo del portátil es debian (x86). Y, el de las tarjetas puede ser Xilliunx o debian compilado para ARM, pero que hay que incluir el devicetree (fichero de linux que recopila los dispositivos). De momento, no incluye ningún driver. Como ya tenemos un sistema operativo Linux, nos permitirá la creación de scripts en bash y la comunicación mediante SSH. SSH porque permite comunicación serie mediante consola a través de la red y de forma cifrada. De tal forma que la información que añade cada nodo al fichero, queda cifrada durante el proceso de comunicación. Gracias a SCP (utilidad de SSH) podemos enviar ficheros entre dispositivos que estarán cifrados durante el proceso de comunicación. Contar también que usamos el comando stat. Añadir una foto con los directorios de los nodos para que se vea la secuencia.}
 	\begin{itemize}
 		\item Sistema operativo del ordenador central: Debian 9 Stretch.
 		\item Sistema operativo de las tarjetas de desarrollo: Debian 8 Jessie (compilado para ARM en tarjeta micro SD).
@@ -220,23 +220,25 @@ Los objetivos generales de este proyecto son los siguientes:
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
+%Ahora vamos a ver las tareas que realiza cada nodo de forma individual. Se centra en tres tareas.
 	Las tareas a realizar por cada nodo se realizan en los siguientes scripts:
 	\begin{block}{\texttt{Recibiendo.sh} (Nodo)}
-		Comprobar recepción del fichero de texto.
+		Comprobar (stat) recepción del fichero de texto.
 	\end{block}
 	\begin{block}{\texttt{Cristian.sh} (Nodo)}
-		Comprobar el directorio de trabajo.
+		Comprobar (stat) el directorio de trabajo.
 		Añade la información local.
 	\end{block}
 	\begin{block}{\texttt{Enviando.sh} (Nodo)}
-		Comprueba el directorio de envío.
+		Comprobar (stat) el directorio de envío.
+		Comprobar la conexión del siguiente nodo (ping).
 		Envía el fichero mediante SCP.
 	\end{block}
 %	\textcolor{red}{Ver si se puede añadir una imagen pequeña de la tarjeta.}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
-%	\textcolor{red}{Contar aquí como conseguir que todo se automatice. Hemos usado la herramienta cron que lanza Lanzador.sh para no saturar el arranque del sistema con el demonio cron. Plasmarlo con algunas palabras para saber que hay que contarlo.}
+%	\textcolor{red}{Para que el sistema trabaje de forma autonoma se necesita que la red funcione de forma desatendida, para ello se han programado una serie de scripts que serán lanzados mediante la herramienta cron. Esta herramienta permite programar mediante eventos o temporalmente la ejecución de scripts.}
 	\begin{block}{¿Cómo conseguir la automatización?}
 		\begin{itemize}
 			\item Lanzamiento de scripts al inicio del Sistema Operativo con la herramienta \texttt{cron}.
@@ -253,8 +255,8 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 		Ejecuta el script \texttt{Automatico.sh}.
 	\end{block}
 	\begin{block}{\texttt{Automatico.sh} (Nodo)}
-		Periódicamente, ejecuta los scripts \texttt{Recibiendo.sh}, \texttt{Cristian.sh} y\texttt{Enviando.sh}.
-		El parámetro de tiempo seleccionado es de un segundo. %Se considera tiempo suficiente para que el resto de acciones hayan tenido lugar.
+		Periódicamente, ejecuta los scripts \texttt{Recibiendo.sh}, \texttt{Cristian.sh} y \texttt{Enviando.sh}.
+		El parámetro de tiempo seleccionado es de un segundo. %Se considera tiempo suficiente para que el resto de acciones hayan tenido lugar. Hay que justificar este segundo.
 	\end{block}
 \end{frame}
 
@@ -262,6 +264,7 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 	La secuencia de trabajo de estos scripts será la siguiente:
 	\begin{figure}[h]
 		\centering
+		\textcolor{red}{La foto está mal.}
 		\includegraphics[scale=0.45]{Fotos/CadenaScriptsAncho.png}
 	\end{figure}
 \end{frame}
@@ -327,6 +330,13 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 \section{Conclusiones y trabajo futuro}
 \subsection{Conclusiones}
 \begin{frame}{Conclusiones}
+\begin{itemize}
+	\item Aunque la red se pensó inicialmente para un cifrado/descifrado AES, realmente, puede usarse para cualquier tipo de módulo hardware implementado en la FPGA de la tarjeta de desarrollo Zybo Zynq 7010, como por ejemplo, el tratamiento de imágenes.
+	\item El sistema está preparado para soportar tantos nodos de red como capacidad física tenga la red usada.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusiones}
 \begin{block}{Escenario de trabajo 1}
 	Todos los nodos están conectados correctamente a la red.
 	\begin{figure}[h]
@@ -356,12 +366,20 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 \end{block}
 \end{frame}
 
+\subsection{Aclaraciones}
+\begin{frame}{Aclaraciones}
+	\begin{itemize}
+		\item Hay un cifrado en la comunicación ya que se usa el protocolo SSH y SCP para las comunicaciones y envío de ficheros.
+		\item No hay cifrado local de la información del nodo aportado por el Trabajo de Fin de Grado de Cristian Ambrosio Costoya por incompatibilidad con el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina el cual debía proporcionar el driver Linux para comunicarse con este módulo cifrador.
+	\end{itemize}
+\end{frame}
+
 \subsection{Trabajo futuro}
 \begin{frame}{Trabajo futuro}
 \begin{itemize}
 	\item Cambiar cadena de conexiones a aleatorio.
-	\item Completar el trabajo de cifrado/descifrado incluyendo el IP cifrador/descifrador AES de Cristian Ambrosio Costoya.
-	\item Implementación de un módulo IEEE 802.11 para conexiones inalámbricas.
+	\item Completar el trabajo de cifrado/descifrado incluyendo el IP cifrador/descifrador AES de Cristian Ambrosio Costoya y el driver de Gabriel Fernando Sánchez Reina.
+	\item Implementación de un módulo IEEE 802.11 para conexiones inalámbricas de todos los nodos de la red.
 \end{itemize}
 \end{frame}
 

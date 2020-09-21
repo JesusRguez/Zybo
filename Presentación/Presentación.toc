@@ -10,4 +10,5 @@
 \beamer@subsectionintoc {2}{4}{Pruebas del sistema}{15}{0}{2}
 \beamer@sectionintoc {3}{Conclusiones y trabajo futuro}{16}{0}{3}
 \beamer@subsectionintoc {3}{1}{Conclusiones}{17}{0}{3}
-\beamer@subsectionintoc {3}{2}{Trabajo futuro}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Aclaraciones}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Trabajo futuro}{22}{0}{3}
