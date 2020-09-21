@@ -258,7 +258,10 @@ Los objetivos generales de este proyecto son los siguientes:
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
-Para evitar saturar el arranque del sistema, hacemos una planificación del arranque de cada tarjeta con los siguientes scripts:
+
+\begin{columns}
+	\column{0.45\textwidth}
+	Para evitar saturar el arranque del sistema, hacemos una planificación del arranque de cada tarjeta con los siguientes scripts:
 	\begin{block}{\texttt{Lanzador.sh} (Nodo)}
 		Es ejecutado por la herramienta cron del sistema operativo.
 		Ejecuta el script \texttt{Automatico.sh}.
@@ -267,6 +270,12 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 		Periódicamente, ejecuta los scripts \texttt{Recibiendo.sh}, \texttt{Cristian.sh} y \texttt{Enviando.sh}.
 		El parámetro de tiempo seleccionado es de un segundo. %Se considera tiempo suficiente para que el resto de acciones hayan tenido lugar. Hay que justificar este segundo.
 	\end{block}
+	\column{0.55\textwidth}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.56]{Fotos/Tree.png}
+	\end{figure}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
