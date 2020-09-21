@@ -222,19 +222,28 @@ Los objetivos generales de este proyecto son los siguientes:
 \begin{frame}{Análisis del sistema}
 %Ahora vamos a ver las tareas que realiza cada nodo de forma individual. Se centra en tres tareas.
 	Las tareas a realizar por cada nodo se realizan en los siguientes scripts:
-	\begin{block}{\texttt{Recibiendo.sh} (Nodo)}
-		Comprobar (stat) recepción del fichero de texto.
-	\end{block}
-	\begin{block}{\texttt{Cristian.sh} (Nodo)}
-		Comprobar (stat) el directorio de trabajo.
-		Añade la información local.
-	\end{block}
-	\begin{block}{\texttt{Enviando.sh} (Nodo)}
-		Comprobar (stat) el directorio de envío.
-		Comprobar la conexión del siguiente nodo (ping).
-		Envía el fichero mediante SCP.
-	\end{block}
-%	\textcolor{red}{Ver si se puede añadir una imagen pequeña de la tarjeta.}
+	
+
+\begin{columns}
+	\column{0.45\textwidth}
+		\begin{block}{\texttt{Recibiendo.sh} (Nodo)}
+			Comprobar (stat) recepción del fichero de texto.
+		\end{block}
+		\begin{block}{\texttt{Cristian.sh} (Nodo)}
+			Comprobar (stat) el directorio de trabajo.
+			Añade la información local.
+		\end{block}
+		\begin{block}{\texttt{Enviando.sh} (Nodo)}
+			Comprobar (stat) el directorio de envío.
+			Comprobar la conexión del siguiente nodo (ping).
+			Envía el fichero mediante SCP.
+		\end{block}
+	\column{0.55\textwidth}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.56]{Fotos/Tree.png}
+		\end{figure}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Análisis del sistema}
@@ -264,7 +273,6 @@ Para evitar saturar el arranque del sistema, hacemos una planificación del arra
 	La secuencia de trabajo de estos scripts será la siguiente:
 	\begin{figure}[h]
 		\centering
-		\textcolor{red}{La foto está mal.}
 		\includegraphics[scale=0.45]{Fotos/CadenaScriptsAncho.png}
 	\end{figure}
 \end{frame}

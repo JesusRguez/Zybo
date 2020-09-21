@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  21 SEP 2020 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.9.10)  21 SEP 2020 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1211,13 +1211,35 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [9
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 247.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 247.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 247.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+<Fotos/Tree.png, id=379, 417.05812pt x 313.17pt>
+File: Fotos/Tree.png Graphic file (type png)
+<use Fotos/Tree.png>
+Package pdftex.def Info: Fotos/Tree.png  used on input line 247.
+(pdftex.def)             Requested size: 233.55095pt x 175.374pt.
+
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [10
 
-]
+ <./Fotos/Tree.png (PNG copy)>]
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1232,13 +1254,13 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [12
 
 ]
-<Fotos/CadenaScriptsAncho.png, id=457, 663.47874pt x 427.5975pt>
+<Fotos/CadenaScriptsAncho.png, id=458, 663.47874pt x 427.5975pt>
 File: Fotos/CadenaScriptsAncho.png Graphic file (type png)
 <use Fotos/CadenaScriptsAncho.png>
-Package pdftex.def Info: Fotos/CadenaScriptsAncho.png  used on input line 270.
+Package pdftex.def Info: Fotos/CadenaScriptsAncho.png  used on input line 278.
 (pdftex.def)             Requested size: 298.56267pt x 192.41708pt.
 
-Overfull \vbox (4.14749pt too high) detected at line 270
+Overfull \vbox (4.14749pt too high) detected at line 278
  []
 
 
@@ -1280,10 +1302,10 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [17
 
 ]
-<Fotos/RedCompleta.png, id=602, 652.4375pt x 369.38pt>
+<Fotos/RedCompleta.png, id=603, 652.4375pt x 369.38pt>
 File: Fotos/RedCompleta.png Graphic file (type png)
 <use Fotos/RedCompleta.png>
-Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 347.
+Package pdftex.def Info: Fotos/RedCompleta.png  used on input line 355.
 (pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1293,10 +1315,10 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [18
 
  <./Fotos/RedCompleta.png>]
-<Fotos/RedSinNodo2.png, id=630, 652.4375pt x 369.38pt>
+<Fotos/RedSinNodo2.png, id=631, 652.4375pt x 369.38pt>
 File: Fotos/RedSinNodo2.png Graphic file (type png)
 <use Fotos/RedSinNodo2.png>
-Package pdftex.def Info: Fotos/RedSinNodo2.png  used on input line 357.
+Package pdftex.def Info: Fotos/RedSinNodo2.png  used on input line 365.
 (pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1306,10 +1328,10 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 [19
 
  <./Fotos/RedSinNodo2.png>]
-<Fotos/RedSinNodo1.png, id=658, 652.4375pt x 369.38pt>
+<Fotos/RedSinNodo1.png, id=659, 652.4375pt x 369.38pt>
 File: Fotos/RedSinNodo1.png Graphic file (type png)
 <use Fotos/RedSinNodo1.png>
-Package pdftex.def Info: Fotos/RedSinNodo1.png  used on input line 367.
+Package pdftex.def Info: Fotos/RedSinNodo1.png  used on input line 375.
 (pdftex.def)             Requested size: 260.97037pt x 147.74937pt.
 
 Overfull \hbox (59.12767pt too wide) has occurred while \output is active
@@ -1342,23 +1364,23 @@ Overfull \hbox (59.12767pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Presentación.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
  (./Presentación.aux
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
 Package rerunfilecheck Info: File `Presentación.out' has not changed.
 (rerunfilecheck)             Checksum: 9093ACC55120A2A6D84B58BD120892F9;819.
  ) 
 Here is how much of TeX's memory you used:
- 29284 strings out of 492615
- 552050 string characters out of 6131390
- 646514 words of memory out of 5000000
- 32653 multiletter control sequences out of 15000+600000
- 534794 words of font info for 33 fonts, out of 8000000 for 9000
+ 29351 strings out of 492615
+ 553587 string characters out of 6131390
+ 647514 words of memory out of 5000000
+ 32698 multiletter control sequences out of 15000+600000
+ 539732 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,74p,896b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
@@ -1366,10 +1388,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Presentación.pdf (22 pages, 1153754 bytes).
+Output written on Presentación.pdf (22 pages, 1177177 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
+ 771 PDF objects out of 1000 (max. 8388607)
  705 compressed objects within 8 object streams
  58 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
