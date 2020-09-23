@@ -158,7 +158,7 @@ Los objetivos generales de este proyecto son los siguientes:
 		\item Instalación de Linux sobre el núcleo ARM de las tarjetas.
 		\item Interconexión física de los elementos de la red.
 		\item Desarrollo de scripts para automatizar la comunicación y el agregado de información por parte de cada nodo.
-		\item Creación y ejecición de pruebas.
+		\item Creación y ejecución de pruebas.
 	\end{itemize}
 \end{block}
 \end{frame}
@@ -215,7 +215,10 @@ Los objetivos generales de este proyecto son los siguientes:
 		\item Sistema operativo de las tarjetas de desarrollo: Debian 8 Jessie (compilado para ARM en tarjeta micro SD).
 		\item Uso de SSH en las comunicaciones.
 		\item Uso de SCP para el envío de ficheros.
-		\item Comprobación de directorios con el comando \texttt{stat}.
+		\item Comprobación de directorios con el comando \texttt{stat}. 
+		\begin{itemize}
+			\item Genera un HASH por cada cambio en el estado del directorio.
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -387,13 +390,14 @@ Los objetivos generales de este proyecto son los siguientes:
 \begin{frame}{Aclaraciones}
 	\begin{itemize}
 		\item Hay un cifrado en la comunicación ya que se usa el protocolo SSH y SCP para las comunicaciones y envío de ficheros.
-		\item No hay cifrado local de la información del nodo aportado por el Trabajo de Fin de Grado de Cristian Ambrosio Costoya por incompatibilidad con el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina el cual debía proporcionar el driver Linux para comunicarse con este módulo cifrador.
+		\item No hay cifrado local de la información del nodo aportado por el Trabajo de Fin de Grado de Cristian Ambrosio Costoya por incompatibilidad con el Trabajo de Fin de Grado de Gabriel Fernando Sánchez Reina, el cual debía proporcionar el driver Linux para comunicarse con este módulo cifrador.
 	\end{itemize}
 \end{frame}
 
 \subsection{Trabajo futuro}
 \begin{frame}{Trabajo futuro}
 \begin{itemize}
+	\item Evitar que se rompa la cadena de envío debido a que un nodo no esté conectado.
 	\item Cambiar cadena de conexiones a aleatorio.
 	\item Completar el trabajo de cifrado/descifrado incluyendo el IP cifrador/descifrador AES de Cristian Ambrosio Costoya y el driver de Gabriel Fernando Sánchez Reina.
 	\item Implementación de un módulo IEEE 802.11 para conexiones inalámbricas de todos los nodos de la red.
